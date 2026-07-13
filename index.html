@@ -274,6 +274,11 @@
               <li><b>追加処理</b><span>ノックバック衝突、編隊機数、演出用の表示値を更新</span></li>
             </ol>
             <div class="formula-box"><code>ダメージ ≈ 武器威力 × 編隊率 × (1−迎撃率) × 威力乱数 × (1−実効地形防御) × 属性相性</code></div>
+            <p>乱数要素として、通常攻撃ではダメージが下振れ、一方反撃ではダメージが上振れるように乗ります。</p>
+            <div class="knowledge-cards two">
+              <div><b>通常攻撃RNG</b><strong>57.5～100%</strong><span>平均78.75%</span></div>
+              <div><b>反撃RNG</b><strong>100～142.5%</strong><span>平均121.25%</span></div>
+            </div>
           </section>
 
           <section id="knowledgeAvoid">
@@ -282,10 +287,6 @@
             </div>
             <div class="formula-box"><code>実効回避 = 対象回避 × (1 + 0.5 / 占有HEX数) + 地形回避 − 武器命中</code></div>
             <p>0～100%に制限後、24bit一様乱数を1回比較します。占有HEX数が少ない対象ほど回避側の倍率が高く、武器ごとの命中値は回避値から差し引かれます。</p>
-            <div class="knowledge-cards two">
-              <div><b>通常攻撃RNG</b><strong>57.5～100%</strong><span>平均78.75%</span></div>
-              <div><b>反撃RNG</b><strong>100～142.5%</strong><span>平均121.25%</span></div>
-            </div>
           </section>
 
           <section id="knowledgeAffinity">
