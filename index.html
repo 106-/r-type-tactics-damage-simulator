@@ -41,7 +41,7 @@
           <label>攻撃ユニット<select id="attacker"></select></label>
           <label>使用武器<select id="weapon"></select></label>
           <div id="weaponMeta" class="meta-line"></div>
-          <div class="grid six">
+          <div class="grid five">
             <label>熟練ランク<select id="rank">
                 <option value="0">0 (100%)</option>
                 <option value="1">1 (101%)</option>
@@ -55,9 +55,6 @@
             <label>攻撃種別<select id="attackMode">
                 <option value="normal">通常攻撃</option>
                 <option value="counter">反撃</option>
-              </select></label>
-            <label>攻撃距離<select id="attackDistance">
-                <option value="">武器から自動設定</option>
               </select></label>
             <label>現在編隊数<input id="formationCurrent" type="number" min="1" max="1" value="1" disabled></label>
             <label>最大編隊数<input id="formationMax" type="number" min="1" max="5" value="1" readonly></label>
@@ -117,7 +114,7 @@
               <small id="interceptFormula">迎撃武器を選択してください</small>
             </div>
             <p class="hint">
-              迎撃可能な属性の攻撃に対して、対象が所持する迎撃武器を組み合わせます。選択した攻撃距離に届く武器だけを表示し、初期状態では基礎威力が最も高い武器を選びます。残弾・燃料・射線などの実行時使用可否は含みません。
+              迎撃可能な属性の攻撃に対して、攻撃武器と射程が重なる迎撃武器だけを表示します。候補には迎撃可能な共通射程も表示し、初期状態では基礎威力が最も高い武器を選びます。残弾・燃料・射線などの実行時使用可否は含みません。
             </p>
           </div>
         </section>
@@ -389,6 +386,7 @@
               <h3>迎撃は武器対武器の比例減衰</h3>
             </div>
             <p>機械・生体・氷属性の攻撃に対して、対象が持つ迎撃武器が候補になります。</p>
+            <p>攻撃距離を個別に選ぶのではなく、攻撃武器と迎撃武器の射程が1HEXでも重なれば、その共通射程で迎撃可能として計算します。射程が一部だけ重なる場合は、候補欄に迎撃可能な距離を表示します。</p>
             <div class="formula-box">
               <code>未補正迎撃率 = (迎撃武器威力 / 攻撃武器威力) × (迎撃側現在HP / 最大HP) × (攻撃側最大HP / 現在HP) × 迎撃武器命中</code>
             </div>
@@ -399,7 +397,7 @@
             </div>
             <p>鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
             <h4 class="knowledge-subtitle">体当たりに対する迎撃</h4>
-            <p>体当たり・フォースシュートが射程内の迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
+            <p>体当たり・フォースシュートと射程が重なる迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
             <div class="formula-box"><code>反動 = 攻撃側現在HP × 迎撃率 × 迎撃武器係数（最低25・最大115）</code></div>
             <div class="knowledge-cards two">
               <div><b>複数弾の迎撃武器</b><strong>×0.85</strong><span>反動をやや軽減</span></div>

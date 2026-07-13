@@ -114,7 +114,6 @@
     $("knockbackBlocked").disabled = !knockbackEnabled;
     $("knockbackLabel").classList.toggle("disabled-control", !knockbackEnabled);
     if (!knockbackEnabled) $("knockbackBlocked").checked = false;
-    updateAttackDistance(weapon);
     updatePartialCoverControl(weapon);
     if (!weapon) {
       $("weaponMeta").textContent = "攻撃武器の関連付けがないユニットです。";
@@ -129,39 +128,26 @@
     updateInterceptWeapons();
   }
 
-  function updateAttackDistance(weapon) {
-    const select = $("attackDistance");
-    const previous = Number(select.value);
-    const range = effectiveAttackRange(weapon);
-    select.replaceChildren();
-    if (!weapon || range.min == null || range.max == null || range.min < 1 || range.max < range.min) {
-      select.append(option("", "専用範囲"));
-      select.disabled = true;
-      return;
-    }
-    for (let distance = range.min; distance <= range.max; distance++) {
-      select.append(option(String(distance), `${distance} HEX`));
-    }
-    if (previous >= range.min && previous <= range.max) select.value = String(previous);
-    select.disabled = range.min === range.max;
-  }
-
   function effectiveAttackRange(weapon) {
     const override = attackRangeOverrides.get(weapon?.id);
     return override || { min: weapon?.rangeMin, max: weapon?.rangeMax, note: "" };
   }
 
-  function selectedAttackDistance() {
-    const distance = Number($("attackDistance").value);
-    return Number.isFinite(distance) && distance >= 1 ? distance : 0;
+  function sharedInterceptRange(attackWeapon, interceptWeapon) {
+    const attackRange = effectiveAttackRange(attackWeapon);
+    if (!interceptWeapon || attackRange.min < 1 || attackRange.max < attackRange.min
+      || interceptWeapon.rangeMin < 1 || interceptWeapon.rangeMax < interceptWeapon.rangeMin) return null;
+    const min = Math.max(attackRange.min, interceptWeapon.rangeMin);
+    const max = Math.min(attackRange.max, interceptWeapon.rangeMax);
+    return min <= max ? { min, max } : null;
   }
 
-  function weaponCoversDistance(weapon, distance = selectedAttackDistance()) {
-    return Boolean(weapon && distance >= 1 && weapon.rangeMin <= distance && distance <= weapon.rangeMax);
+  function formatHexRange(range) {
+    return range.min === range.max ? `${range.min} HEX` : `${range.min}–${range.max} HEX`;
   }
 
   function partialCoverEligible(weapon) {
-    return Boolean(weapon && selectedAttackDistance() === 2 && weapon.rangeMax === 2 && weapon.material !== 1);
+    return Boolean(weapon && effectiveAttackRange(weapon).max === 2 && weapon.material !== 1);
   }
 
   function updatePartialCoverControl(weapon) {
@@ -180,12 +166,9 @@
     } else if (weapon.material === 1) {
       status.textContent = "機械属性は無視";
       label.title = "機械属性は部分遮蔽による50%減衰を受けません";
-    } else if (weapon.rangeMax !== 2) {
+    } else if (effectiveAttackRange(weapon).max !== 2) {
       status.textContent = "最大射程2のみ";
       label.title = "部分遮蔽フラグは最大射程2の攻撃でのみ生成されます";
-    } else if (selectedAttackDistance() !== 2) {
-      status.textContent = "距離2のみ";
-      label.title = "部分遮蔽は実際の攻撃距離が2 HEXのときだけ発生します";
     } else {
       status.textContent = "有効時 −50%";
       label.title = "中間経路の片方だけが遮られている場合に選択します";
@@ -257,7 +240,7 @@
 
   function interceptDetails(attackWeapon, attacker, target) {
     const interceptWeapon = weapons.get($("interceptWeapon").value);
-    if (!incomingInterceptable(attackWeapon) || !interceptWeapon?.canIntercept || !weaponCoversDistance(interceptWeapon)) {
+    if (!incomingInterceptable(attackWeapon) || !interceptWeapon?.canIntercept || !sharedInterceptRange(attackWeapon, interceptWeapon)) {
       return { rate: 0, raw: 0, attackAp: 0, interceptAp: 0, interceptHit: 0, attackerHp: 1, interceptorHp: 1, weapon: null };
     }
     const attackAp = effectiveWeaponAp(attackWeapon, attacker, Number($("rank").value));
@@ -295,13 +278,12 @@
     const panel = $("interceptPanel");
     const status = $("interceptStatus");
     const previous = select.value;
-    const distance = selectedAttackDistance();
-    const contextKey = `${attackWeapon?.id || ""}|${target?.id || ""}|${distance}`;
+    const contextKey = `${attackWeapon?.id || ""}|${target?.id || ""}`;
     const allCandidates = (target?.weapons || [])
       .map((id) => weapons.get(id))
       .filter((weapon) => weapon?.canIntercept)
       .sort((a, b) => b.ap - a.ap || b.hit - a.hit);
-    const candidates = allCandidates.filter((weapon) => weaponCoversDistance(weapon, distance));
+    const candidates = allCandidates.filter((weapon) => sharedInterceptRange(attackWeapon, weapon));
     const eligible = incomingInterceptable(attackWeapon);
 
     select.replaceChildren();
@@ -318,18 +300,19 @@
       select.append(option("", "対象に迎撃武器なし"));
       status.textContent = "迎撃武器なし";
     } else if (!candidates.length) {
-      select.append(option("", `${distance} HEXに届く迎撃武器なし`));
-      status.textContent = `距離${distance}に非対応`;
+      select.append(option("", "攻撃武器と射程が重なる迎撃武器なし"));
+      status.textContent = "共通射程なし";
     } else {
       select.append(option("", "迎撃しない"));
       for (const candidate of candidates) {
         const range = candidate.rangeMin === -1 ? "専用範囲" : `${candidate.rangeMin}–${candidate.rangeMax} HEX`;
-        select.append(option(candidate.id, `${candidate.name}  [威力 ${candidate.ap} / 命中 ${(candidate.hit * 100).toFixed(0)}% / ${range}]`));
+        const shared = formatHexRange(sharedInterceptRange(attackWeapon, candidate));
+        select.append(option(candidate.id, `${candidate.name}  [威力 ${candidate.ap} / 命中 ${(candidate.hit * 100).toFixed(0)}% / 射程 ${range} / 共通 ${shared}]`));
       }
       const keepPrevious = contextKey === interceptContextKey
         && (previous === "" || candidates.some((weapon) => weapon.id === previous));
       select.value = keepPrevious ? previous : candidates[0].id;
-      status.textContent = `${candidates.length}武器から選択`;
+      status.textContent = `${candidates.length}武器・共通射程あり`;
     }
 
     const available = eligible && candidates.length > 0;
@@ -585,10 +568,6 @@
   $("attacker").addEventListener("change", updateWeapons);
   $("weapon").addEventListener("change", updateWeaponMeta);
   $("target").addEventListener("change", updateTargetType);
-  $("attackDistance").addEventListener("change", () => {
-    updatePartialCoverControl(weapons.get($("weapon").value));
-    updateInterceptWeapons();
-  });
   $("knowledgeOpen").addEventListener("click", openKnowledge);
   $("knowledgeClose").addEventListener("click", closeKnowledge);
   $("knowledgeDialog").addEventListener("click", (event) => {
