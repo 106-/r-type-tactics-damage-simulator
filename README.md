@@ -2,7 +2,10 @@
 
 R-TYPE TACTICSの各種武器の攻撃・迎撃・反撃のダメージや回避率をシミュレートします。いろいろなデータを解析して作っています。
 
-アクセスはこちら → https://106-.github.io/r-type-tactics-damage-simulator/
+アクセスはこちら:
+
+- https://106-.github.io/r-type-tactics-damage-simulator/
+- https://r-11s2.vercel.app/
 
 ヘッダーの「解析知見」から、復元した戦闘フロー、回避式、属性相性表、地形・迎撃・熟練・特殊攻撃の要点を参照できます。
 

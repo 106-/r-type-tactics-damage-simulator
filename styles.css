@@ -179,6 +179,12 @@ input[type=text]:read-only { color: #a4b1b4 }
 .knowledge-list li { margin: 7px 0 }
 .knowledge-list b { color: #cedbda }
 
+/* ===== フッター ===== */
+.site-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 22px; border-top: 1px solid var(--line); padding-top: 16px; color: #526b72; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 10px; letter-spacing: .08em }
+.site-footer a { display: inline-flex; align-items: center; gap: 6px; color: #87a1a7; text-decoration: none }
+.site-footer a:hover, .site-footer a:focus-visible { color: var(--cyan); outline: none }
+.site-footer svg { width: 14px; height: 14px; fill: currentColor }
+
 /* ===== レスポンシブ ===== */
 @media (max-width: 1250px) {
   .grid.five, .grid.six { grid-template-columns: repeat(2, minmax(0, 1fr)) }
