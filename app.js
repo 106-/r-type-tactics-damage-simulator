@@ -15,6 +15,11 @@
     [255, "なし"],
   ]);
   const weapons = new Map(data.weapons.map((weapon) => [weapon.id, weapon]));
+  const unitWeaponOverrides = new Map([
+    ["UNIT_ID.ED_R9AD", ["WEAPON_ID.E_WAV_DECOY1", "WEAPON_ID.E_DB_REFUEL"]],
+    ["UNIT_ID.ED_R9AD2", ["WEAPON_ID.E_WAV_DECOY2", "WEAPON_ID.E_DB_REFUEL"]],
+    ["UNIT_ID.ED_R9AD3", ["WEAPON_ID.E_WAV_DECOY3", "WEAPON_ID.E_DB_REFUEL"]],
+  ]);
   const attackRangeOverrides = new Map([
     ["WEAPON_ID.B_FINE_ATTACK", { min: 2, max: 2, note: "特殊体当たり距離" }],
   ]);
@@ -49,8 +54,20 @@
     return element;
   }
 
+  function unitWeaponIds(unit) {
+    return unitWeaponOverrides.get(unit?.id) || unit?.weapons || [];
+  }
+
+  function isDecoyUnit(unit) {
+    return unitWeaponIds(unit).some((id) => weapons.get(id)?.name === "デコイ爆破");
+  }
+
+  function hasNormalAttack(unit) {
+    return unitWeaponIds(unit).some((id) => weapons.get(id)?.attack);
+  }
+
   function unitLabel(unit) {
-    return unit.name;
+    return `${unit.name}${isDecoyUnit(unit) ? " [デコイ]" : ""}`;
   }
 
   function skillName(unit, role) {
@@ -78,8 +95,10 @@
   function filteredUnits(query, requireWeapon) {
     const needle = query.trim().toLocaleLowerCase("ja");
     return data.units.filter((unit) => {
-      if (requireWeapon && !unit.weapons.some((id) => weapons.get(id)?.attack)) return false;
-      return !needle || unit.name.toLocaleLowerCase("ja").includes(needle) || unit.id.toLowerCase().includes(needle);
+      const hasAttack = hasNormalAttack(unit);
+      if (isDecoyUnit(unit) && !hasAttack) return false;
+      if (requireWeapon && !hasAttack) return false;
+      return !needle || unitLabel(unit).toLocaleLowerCase("ja").includes(needle) || unit.id.toLowerCase().includes(needle);
     });
   }
 
@@ -101,7 +120,7 @@
     }
     $("formationCurrent").disabled = formationMax === 1;
     const previous = $("weapon").value;
-    const list = (attacker?.weapons || []).map((id) => weapons.get(id)).filter((weapon) => weapon?.attack);
+    const list = unitWeaponIds(attacker).map((id) => weapons.get(id)).filter((weapon) => weapon?.attack);
     $("weapon").replaceChildren();
     for (const weapon of list) $("weapon").append(option(weapon.id, `${weapon.name}  [威力 ${weapon.ap}]`));
     if (list.some((weapon) => weapon.id === previous)) $("weapon").value = previous;
@@ -279,7 +298,7 @@
     const status = $("interceptStatus");
     const previous = select.value;
     const contextKey = `${attackWeapon?.id || ""}|${target?.id || ""}`;
-    const allCandidates = (target?.weapons || [])
+    const allCandidates = unitWeaponIds(target)
       .map((id) => weapons.get(id))
       .filter((weapon) => weapon?.canIntercept)
       .sort((a, b) => b.ap - a.ap || b.hit - a.hit);

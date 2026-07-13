@@ -258,7 +258,8 @@
           <a href="#knowledgeAffinity">03 属性相性</a>
           <a href="#knowledgeTerrain">04 地形・遮蔽</a>
           <a href="#knowledgeIntercept">05 迎撃</a>
-          <a href="#knowledgeSpecial">06 特殊攻撃</a>
+          <a href="#knowledgeSeize">06 鹵獲</a>
+          <a href="#knowledgeSpecial">07 特殊攻撃</a>
         </nav>
         <article class="knowledge-content">
           <section id="knowledgeFlow">
@@ -406,8 +407,28 @@
             <p>反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。迎撃しない場合や、迎撃武器の射程外では発生しません。</p>
           </section>
 
-          <section id="knowledgeSpecial">
+          <section id="knowledgeSeize">
             <div class="knowledge-section-title"><b>06</b>
+              <h3>鹵獲弾の対象条件と成功率</h3>
+            </div>
+            <p>鹵獲弾は通常の武器命中・対象回避計算とは別の専用判定を使います。武器データ上の命中値92%は鹵獲成功率ではありません。</p>
+            <div class="formula-box"><code>鹵獲可能条件 = 残HPが0%超～25%以下 または 残燃料が0～40%以下</code></div>
+            <div class="knowledge-cards three">
+              <div><b>通常時</b><strong>60%</strong><span>鹵獲成功率</span></div>
+              <div><b>回避扱い</b><strong>15%</strong><span>鹵獲成功率</span></div>
+              <div><b>HP・燃料条件外</b><strong>0%</strong><span>鹵獲不可</span></div>
+            </div>
+            <ul class="knowledge-list">
+              <li><b>HP条件</b>は最大HPの75%以上を削り、残HPを25%以下にすると成立します。25%ちょうどを含み、HP 0は含みません。</li>
+              <li><b>燃料条件</b>は残燃料40%以下で成立します。HPが高くても、燃料を60%以上消費させれば候補になります。</li>
+              <li><b>HPをさらに減らしても成功率は上がりません。</b>残HP25%でも1%でも、通常60%・回避扱い15%です。</li>
+              <li><b>対象外</b>は旗艦、大型、親子・接続中のユニットなどです。攻撃失敗扱いの場合も鹵獲できません。</li>
+              <li><b>鹵獲弾は迎撃率0%</b>の特例で、成功後はミッション中だけ自軍ユニットになり、終了後に資源へ解体されます。</li>
+            </ul>
+          </section>
+
+          <section id="knowledgeSpecial">
+            <div class="knowledge-section-title"><b>07</b>
               <h3>チャージ・ノックバック・特殊武器</h3>
             </div>
             <ul class="knowledge-list">
