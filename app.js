@@ -207,6 +207,24 @@
     return "異質";
   }
 
+  function renderFormula(boxId, rowsId, rows) {
+    const container = $(rowsId);
+    container.replaceChildren();
+    for (const row of rows) {
+      const line = document.createElement("div");
+      if (row.result) line.className = "is-result";
+      const op = document.createElement("i");
+      op.textContent = row.op || "";
+      const label = document.createElement("span");
+      label.textContent = row.label;
+      const value = document.createElement("b");
+      value.textContent = row.value;
+      line.append(op, label, value);
+      container.append(line);
+    }
+    $(boxId).hidden = rows.length === 0;
+  }
+
   function setModifierBadgeState(element, value) {
     element.classList.toggle("is-positive", value > 0);
     element.classList.toggle("is-negative", value < 0);
@@ -360,12 +378,12 @@
     $("avoidResult").textContent = "--";
     $("avoidBar").style.width = "0%";
     $("hitResult").textContent = "命中率 --%";
-    $("avoidFormula").textContent = "";
+    renderFormula("avoidFormulaBox", "avoidFormula", []);
+    renderFormula("damageFormulaBox", "damageFormula", []);
     $("damageExpected").textContent = "--";
     $("damageContext").textContent = "";
     $("damageMin").textContent = "--";
     $("damageMax").textContent = "--";
-    $("unconditional").textContent = "--";
     $("targetMaxHp").textContent = "--";
     $("hpDamagePercent").textContent = "--";
     $("expectedHpPercent").textContent = "--";
@@ -428,20 +446,62 @@
     $("avoidResult").textContent = (effectiveAvoid * 100).toFixed(1);
     $("avoidBar").style.width = `${effectiveAvoid * 100}%`;
     $("hitResult").textContent = `命中率 ${(hit * 100).toFixed(1)}%`;
-    const rankText = target?.skill === 1
-      ? ` × ランク倍率 ${targetRankMultiplier.toFixed(2)} → ${(targetAvoid * 100).toFixed(0)}%`
-      : "（ランク補正なし）";
-    const hitText = attacker?.skill === 4
-      ? `${(weaponHit * 100).toFixed(0)}%（基礎 ${(weapon.hit * 100).toFixed(0)}% × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`
-      : `${(weaponHit * 100).toFixed(0)}%`;
-    $("avoidFormula").textContent = `基礎 ${(baseTargetAvoid * 100).toFixed(0)}%${rankText}; 実効 = (${(targetAvoid * 100).toFixed(0)}% × [1 + 0.5 / ${scaleDenom}] + ${(fixedBonus * 100).toFixed(0)}%) − 武器命中 ${hitText}`;
+    const avoidRows = [{ label: "基礎回避率", value: `${(baseTargetAvoid * 100).toFixed(0)}%` }];
+    if (target?.skill === 1) {
+      avoidRows.push({ op: "×", label: `熟練ランク倍率（ランク${targetRank}）`, value: `${targetRankMultiplier.toFixed(2)} → ${(targetAvoid * 100).toFixed(0)}%` });
+    }
+    avoidRows.push({ op: "×", label: `占有HEX補正（1 + 0.5 ÷ ${scaleDenom}）`, value: (1 + .5 / scaleDenom).toFixed(2) });
+    if (fixedBonus > 0) {
+      avoidRows.push({ op: "+", label: "地形の固定回避加算", value: `${(fixedBonus * 100).toFixed(0)}%` });
+    }
+    avoidRows.push(
+      attacker?.skill === 4
+        ? { op: "−", label: `武器命中（基礎 ${(weapon.hit * 100).toFixed(0)}% × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`, value: `${(weaponHit * 100).toFixed(0)}%` }
+        : { op: "−", label: "武器命中", value: `${(weaponHit * 100).toFixed(0)}%` },
+      { op: "=", label: "回避率", value: `${(effectiveAvoid * 100).toFixed(1)}%`, result: true },
+      { op: "", label: "命中率（100% − 回避率）", value: `${(hit * 100).toFixed(1)}%`, result: true },
+    );
+    renderFormula("avoidFormulaBox", "avoidFormula", avoidRows);
+
+    const isCounter = $("attackMode").value === "counter";
+    const randomMean = isCounter ? 1 + .5 * .425 : 1 - .5 * .425;
+    const formationRate = Math.min(1, Math.max(0, Number($("formationCurrent").value) / Math.max(1, Number($("formationMax").value))));
+    const damageRows = [
+      attacker?.skill === 3
+        ? { label: `実効威力（基礎 ${weapon.ap} × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`, value: String(dMean.effectiveAp) }
+        : { label: "武器威力", value: String(dMean.effectiveAp) },
+    ];
+    if (dMean.effectiveDefense > 0) {
+      damageRows.push({ op: "×", label: `地形防御（1 − ${(dMean.effectiveDefense * 100).toFixed(0)}%）`, value: (1 - dMean.effectiveDefense).toFixed(2) });
+    }
+    if (formationRate < 1) {
+      damageRows.push({ op: "×", label: `編隊率（${Number($("formationCurrent").value)} ÷ ${Number($("formationMax").value)}機）`, value: formationRate.toFixed(2) });
+    }
+    if (dMean.intercept > 0) {
+      damageRows.push({ op: "×", label: `迎撃通過率（1 − ${(dMean.intercept * 100).toFixed(1)}%）`, value: (1 - dMean.intercept).toFixed(3) });
+    }
+    damageRows.push({
+      op: "×",
+      label: isCounter ? "威力乱数の平均（反撃: 1.000〜1.425）" : "威力乱数の平均（0.575〜1.000）",
+      value: randomMean.toFixed(3),
+    });
+    if ($("partialCover").checked && partialCoverEligible(weapon)) {
+      damageRows.push({ op: "×", label: "部分遮蔽", value: "0.50" });
+    }
+    if ($("knockbackBlocked").checked && weapon.tackle) {
+      damageRows.push({ op: "+", label: "ノックバック先が塞がっている", value: "25" });
+    }
+    if (eff !== 0) {
+      damageRows.push({ op: "×", label: `属性相性（${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%）`, value: (1 + eff).toFixed(2) });
+    }
+    damageRows.push({ op: "=", label: "命中時ダメージ（平均乱数）", value: dMean.damage.toFixed(1), result: true });
+    renderFormula("damageFormulaBox", "damageFormula", damageRows);
     $("damageExpected").textContent = dMean.damage.toFixed(1);
     $("damageContext").textContent = formationMax === 5
       ? `${lossMean}機減`
       : `HP ${percent(dMean.damage).toFixed(1)}%減`;
     $("damageMin").textContent = min.toFixed(1);
     $("damageMax").textContent = max.toFixed(1);
-    $("unconditional").textContent = (dMean.damage * hit).toFixed(1);
     $("targetMaxHp").textContent = maxHp.toFixed(0);
     $("hpDamagePercent").textContent = `${percent(dMean.damage).toFixed(1)}% (${percent(min).toFixed(1)}–${percent(max).toFixed(1)}%)`;
     $("expectedHpPercent").textContent = `${percent(dMean.damage * hit).toFixed(1)}%`;
@@ -486,10 +546,7 @@
     if (Number($("terrainDefense").value) > 0 && dMean.effectiveDefense === 0) notes.push("この武器/対象では地形防御をバイパス");
     if (intercept.rate === 1) notes.push("完全迎撃: 実機では攻撃計算自体をスキップ");
     if (tackleSelfDamage.destroyed) notes.push("迎撃反動で攻撃側撃破: 対象ダメージ0");
-    const attackRankText = attacker?.skill === 3
-      ? `（基礎威力 ${weapon.ap} × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`
-      : "";
-    $("formulaNote").textContent = notes.join(" / ") || `実効威力 ${dMean.effectiveAp}${attackRankText} × 編隊・迎撃 × 威力乱数 × 属性相性`;
+    $("formulaNote").textContent = notes.join(" / ");
     $("formulaNote").classList.toggle("warning", notes.length > 0);
   }
 

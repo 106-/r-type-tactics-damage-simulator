@@ -24,6 +24,8 @@
       </div>
     </header>
 
+    <p class="disclaimer">※ 本シミュレータは解析に基づく非公式ツールです。計算結果は実際のゲームと異なる(間違っている)可能性があります。</p>
+
     <section class="workspace">
       <div class="inputs">
         <section class="panel">
@@ -73,13 +75,6 @@
           <label>ユニット検索<input id="targetSearch" type="search" placeholder="例：ガウパー"></label>
           <label>被害ユニット<select id="target"></select></label>
           <div class="grid five">
-            <label>ユニット種別 <span class="fixed-badge">固定</span><select id="targetType" disabled></select></label>
-            <label>占有HEX数 <span class="fixed-badge">固定</span><input id="targetScaleDenom" type="number" min="1"
-                max="999" value="1" readonly></label>
-            <label>基礎回避率（%） <span class="fixed-badge">固定</span><input id="targetAvoid" type="number" min="0" max="100"
-                value="0" readonly></label>
-            <label>熟練で向上 <span class="fixed-badge">固定</span><input id="targetSkill" type="text" value="なし"
-                readonly></label>
             <label>熟練ランク<select id="targetRank">
                 <option value="0">0 (100%)</option>
                 <option value="1">1 (101%)</option>
@@ -88,6 +83,13 @@
                 <option value="4">4 (110%)</option>
                 <option value="5">5 (118%)</option>
               </select></label>
+            <label>熟練で向上 <span class="fixed-badge">固定</span><input id="targetSkill" type="text" value="なし"
+                readonly></label>
+            <label>ユニット種別 <span class="fixed-badge">固定</span><select id="targetType" disabled></select></label>
+            <label>占有HEX数 <span class="fixed-badge">固定</span><input id="targetScaleDenom" type="number" min="1"
+                max="999" value="1" readonly></label>
+            <label>基礎回避率（%） <span class="fixed-badge">固定</span><input id="targetAvoid" type="number" min="0" max="100"
+                value="0" readonly></label>
           </div>
           <p class="hint">ユニット種別、占有HEX数、基礎回避率、熟練で向上する能力は、選択したユニットに固定されており変更できません。</p>
           <div id="interceptPanel" class="intercept-panel is-unavailable">
@@ -182,39 +184,45 @@
           <strong><span id="avoidResult">0.0</span><small>%</small></strong>
           <div class="bar"><i id="avoidBar"></i></div>
           <span id="hitResult">命中率 100.0%</span>
-          <p id="avoidFormula" class="hint"></p>
         </div>
-        <dl class="summary">
-          <div>
-            <dt>回避込み期待ダメージ</dt>
-            <dd id="unconditional">0.0</dd>
+        <details class="results-details">
+          <summary>計算式・内訳を表示</summary>
+          <div id="damageFormulaBox" class="formula-box" hidden>
+            <p class="formula-box-title">攻撃力の式</p>
+            <div id="damageFormula" class="formula-rows"></div>
           </div>
-          <div>
-            <dt>対象最大HP（満タン）</dt>
-            <dd id="targetMaxHp">0</dd>
+          <div id="avoidFormulaBox" class="formula-box" hidden>
+            <p class="formula-box-title">命中率の式</p>
+            <div id="avoidFormula" class="formula-rows"></div>
           </div>
-          <div>
-            <dt>命中時HP損耗</dt>
-            <dd id="hpDamagePercent">0.0%</dd>
-          </div>
-          <div>
-            <dt>回避込みHP損耗</dt>
-            <dd id="expectedHpPercent">0.0%</dd>
-          </div>
-          <div id="formationLossRow" hidden>
-            <dt>編隊損耗（満タン時）</dt>
-            <dd id="formationLoss">0機</dd>
-          </div>
-          <div>
-            <dt>迎撃による被ダメ減衰</dt>
-            <dd id="interceptRateResult">0.0%</dd>
-          </div>
-          <div>
-            <dt>迎撃後通過率</dt>
-            <dd id="interceptPass">100.0%</dd>
-          </div>
-        </dl>
-        <p id="formationRule" class="hint" hidden>5機編隊はHP損耗が20%を超えるごとに1機減少します。</p>
+          <dl class="summary">
+            <div>
+              <dt>対象最大HP（満タン）</dt>
+              <dd id="targetMaxHp">0</dd>
+            </div>
+            <div>
+              <dt>命中時HP損耗</dt>
+              <dd id="hpDamagePercent">0.0%</dd>
+            </div>
+            <div>
+              <dt>回避込みHP損耗</dt>
+              <dd id="expectedHpPercent">0.0%</dd>
+            </div>
+            <div id="formationLossRow" hidden>
+              <dt>編隊損耗（満タン時）</dt>
+              <dd id="formationLoss">0機</dd>
+            </div>
+            <div>
+              <dt>迎撃による被ダメ減衰</dt>
+              <dd id="interceptRateResult">0.0%</dd>
+            </div>
+            <div>
+              <dt>迎撃後通過率</dt>
+              <dd id="interceptPass">100.0%</dd>
+            </div>
+          </dl>
+          <p id="formationRule" class="hint" hidden>5機編隊はHP損耗が20%を超えるごとに1機減少します。</p>
+        </details>
         <p id="formulaNote" class="formula-note"></p>
       </aside>
     </section>
@@ -248,13 +256,12 @@
           <a href="#knowledgeAffinity">03 属性相性</a>
           <a href="#knowledgeTerrain">04 地形・遮蔽</a>
           <a href="#knowledgeIntercept">05 迎撃</a>
-          <a href="#knowledgeRank">06 熟練・編隊</a>
-          <a href="#knowledgeSpecial">07 特殊攻撃</a>
+          <a href="#knowledgeSpecial">06 特殊攻撃</a>
         </nav>
         <article class="knowledge-content">
           <section id="knowledgeFlow">
             <div class="knowledge-section-title"><b>01</b>
-              <h3>統一された戦闘フロー</h3><span class="knowledge-tag confirmed">確定</span>
+              <h3>戦闘フロー</h3>
             </div>
             <ol class="flow-list">
               <li><b>攻撃成立</b><span>攻撃武器・通常/反撃・射程などを決定</span></li>
@@ -264,12 +271,11 @@
               <li><b>追加処理</b><span>ノックバック衝突、編隊機数、演出用の表示値を更新</span></li>
             </ol>
             <div class="formula-box"><code>ダメージ ≈ 武器威力 × 編隊率 × (1−迎撃率) × 威力乱数 × (1−実効地形防御) × 属性相性</code></div>
-            <p>ゲーム画面に出す防御効果の表示値と、最終的なHP減算値は別系統です。このシミュレータはHPに適用される実値を出します。</p>
           </section>
 
           <section id="knowledgeAvoid">
             <div class="knowledge-section-title"><b>02</b>
-              <h3>回避・命中は1d100対抗ではない</h3><span class="knowledge-tag confirmed">確定</span>
+              <h3>回避・命中</h3>
             </div>
             <div class="formula-box"><code>実効回避 = 対象回避 × (1 + 0.5 / 占有HEX数) + 地形回避 − 武器命中</code></div>
             <p>0～100%に制限後、24bit一様乱数を1回比較します。占有HEX数が少ない対象ほど回避側の倍率が高く、武器ごとの命中値は回避値から差し引かれます。</p>
@@ -281,9 +287,9 @@
 
           <section id="knowledgeAffinity">
             <div class="knowledge-section-title"><b>03</b>
-              <h3>武器属性とユニット相性</h3><span class="knowledge-tag confirmed">確定</span>
+              <h3>武器属性とユニット相性</h3>
             </div>
-            <p>武器には、ダメージ相性を決める属性と、直行・偏光・追尾など射線や使用条件を決める分類があります。両者は別物で、相性ダメージに使われるのは光学・機械・生体などの属性です。</p>
+            <p>武器には、ダメージ相性を決める属性と、直行・偏光・追尾など射線や使用条件を決める分類があります。相性ダメージに使われるのは光学・機械・生体などの属性です。</p>
             <div class="table-scroll">
               <table class="affinity-table">
                 <thead>
@@ -301,7 +307,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th>機械（0～6）</th>
+                    <th>機械</th>
                     <td>±0</td>
                     <td>±0</td>
                     <td class="plus">+20%</td>
@@ -312,7 +318,7 @@
                     <td class="plus">+10%</td>
                   </tr>
                   <tr>
-                    <th>生物（7～16）</th>
+                    <th>生物</th>
                     <td class="plus">+10%</td>
                     <td class="plus">+20%</td>
                     <td>±0</td>
@@ -323,7 +329,7 @@
                     <td class="plus">+15%</td>
                   </tr>
                   <tr>
-                    <th>岩石（17）</th>
+                    <th>岩石</th>
                     <td>±0</td>
                     <td>±0</td>
                     <td>±0</td>
@@ -334,7 +340,7 @@
                     <td>±0</td>
                   </tr>
                   <tr>
-                    <th>氷（18）</th>
+                    <th>氷</th>
                     <td class="plus">+10%</td>
                     <td>±0</td>
                     <td class="minus">−10%</td>
@@ -345,7 +351,7 @@
                     <td>±0</td>
                   </tr>
                   <tr>
-                    <th>異質（19～20）</th>
+                    <th>異質</th>
                     <td>±0</td>
                     <td>±0</td>
                     <td>±0</td>
@@ -358,12 +364,12 @@
                 </tbody>
               </table>
             </div>
-            <p>ユニット分類が単なる3カテゴリでないのは、移動・壁や床・水中・艦種などの性質も同じ分類で表しているためです。上表はダメージ相性用にまとめたグループです。</p>
+            <p>"異質"はグリッドロックや琥珀色の瞳孔などに振られています。</p>
           </section>
 
           <section id="knowledgeTerrain">
             <div class="knowledge-section-title"><b>04</b>
-              <h3>地形回避・地形防御・部分遮蔽</h3><span class="knowledge-tag confirmed">確定</span>
+              <h3>地形回避・地形防御・部分遮蔽</h3>
             </div>
             <ul class="knowledge-list">
               <li><b>地形回避</b>は命中判定のブロック率に固定加算されます。</li>
@@ -375,11 +381,12 @@
 
           <section id="knowledgeIntercept">
             <div class="knowledge-section-title"><b>05</b>
-              <h3>迎撃は武器対武器の比例減衰</h3><span class="knowledge-tag confirmed">確定</span>
+              <h3>迎撃は武器対武器の比例減衰</h3>
             </div>
-            <p>機械・生体・氷属性の攻撃に対して、対象が持つ迎撃武器が候補になります。ただし、実際の攻撃距離が迎撃武器の射程内に入る必要があります。実機はその中の使用可能な候補から基礎威力が最も高い武器を選びます。</p>
+            <p>機械・生体・氷属性の攻撃に対して、対象が持つ迎撃武器が候補になります。</p>
             <div class="formula-box">
-              <code>未補正迎撃率 = (迎撃武器威力 / 攻撃武器威力) × (迎撃側現在HP / 最大HP) × (攻撃側最大HP / 現在HP) × 迎撃武器命中</code></div>
+              <code>未補正迎撃率 = (迎撃武器威力 / 攻撃武器威力) × (迎撃側現在HP / 最大HP) × (攻撃側最大HP / 現在HP) × 迎撃武器命中</code>
+            </div>
             <div class="knowledge-cards three">
               <div><b>10%未満</b><strong>10%</strong><span>最低迎撃率</span></div>
               <div><b>10～90%未満</b><strong>計算値</strong><span>そのまま減衰</span></div>
@@ -388,7 +395,6 @@
             <p>鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
             <h4 class="knowledge-subtitle">体当たりに対する迎撃</h4>
             <p>体当たり・フォースシュートが射程内の迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
-            <p><b>ファインアタックだけは距離2の特殊体当たり</b>として判定されます。したがって距離1専用の迎撃武器では迎撃できず、距離2を射程に含む迎撃武器だけが候補になります。</p>
             <div class="formula-box"><code>反動 = 攻撃側現在HP × 迎撃率 × 迎撃武器係数（最低25・最大115）</code></div>
             <div class="knowledge-cards two">
               <div><b>複数弾の迎撃武器</b><strong>×0.85</strong><span>反動をやや軽減</span></div>
@@ -397,66 +403,13 @@
             <p>反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。迎撃しない場合や、迎撃武器の射程外では発生しません。</p>
           </section>
 
-          <section id="knowledgeRank">
-            <div class="knowledge-section-title"><b>06</b>
-              <h3>熟練補正と編隊HP</h3><span class="knowledge-tag confirmed">確定</span>
-            </div>
-            <div class="table-scroll">
-              <table class="skill-table">
-                <thead>
-                  <tr>
-                    <th>ユニットの熟練特性</th>
-                    <th>熟練で向上</th>
-                    <th>シミュレータでの適用先</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>耐久型</td>
-                    <td>HP</td>
-                    <td>最大HP</td>
-                  </tr>
-                  <tr>
-                    <td>回避型</td>
-                    <td>回避率</td>
-                    <td>基礎回避率</td>
-                  </tr>
-                  <tr>
-                    <td>航続型</td>
-                    <td>燃料</td>
-                    <td>1回のダメージ計算には未使用</td>
-                  </tr>
-                  <tr>
-                    <td>火力型</td>
-                    <td>攻撃力</td>
-                    <td>攻撃武器と迎撃武器の威力</td>
-                  </tr>
-                  <tr>
-                    <td>命中型</td>
-                    <td>命中率</td>
-                    <td>攻撃武器と迎撃武器の命中値</td>
-                  </tr>
-                  <tr>
-                    <td>補正なし</td>
-                    <td>なし</td>
-                    <td>熟練補正なし</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p>熟練倍率はランク0～5で <code>100 / 101 / 103 / 106 / 110 / 118%</code>。最大編隊数はユニット固有の1または5で、攻撃側ダメージは
-              <code>現在編隊数 / 最大編隊数</code> で比例します。</p>
-          </section>
-
           <section id="knowledgeSpecial">
-            <div class="knowledge-section-title"><b>07</b>
-              <h3>チャージ・ノックバック・特殊武器</h3><span class="knowledge-tag mixed">複合</span>
+            <div class="knowledge-section-title"><b>06</b>
+              <h3>チャージ・ノックバック・特殊武器</h3>
             </div>
             <ul class="knowledge-list">
               <li><b>波動砲などのチャージ武器</b>は、チャージ・範囲選択・専用演出に特殊分岐がありますが、命中後のHPダメージは基本的に表記APから同じ系統へ合流します。</li>
-              <li><b>範囲威力係数</b>は現在の対人攻撃シミュレータで100%固定としています。</li>
-              <li><b>体当たり・フォースシュート</b>などはノックバックを発生させます。移動先が地形またはユニットで塞がると追加ダメージ <b>+25</b> です。</li>
-              <li><b>直行/偏光系光学武器</b>の違いによる、表記APと別の威力係数は実HP減算式では確認できません。主な差は射線・射程・攻撃可否側です。</li>
+              <li><b>体当たり・フォースシュート</b>などはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ <b>+25</b> です。</li>
             </ul>
           </section>
 
