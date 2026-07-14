@@ -81,6 +81,9 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .fixed-badge { display: inline-block; margin-left: 6px; padding: 1px 5px; border: 1px solid #68767a; background: #30383b; color: #d4dcdd; font-size: 12px; letter-spacing: .08em; vertical-align: 1px }
 .condition-badge { display: inline-block; margin-left: 3px; padding: 2px 6px; border: 1px solid #34545d; background: #10242a; color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: .02em; white-space: nowrap }
 .checks label.available-control .condition-badge { border-color: #7d6033; background: #2a2115; color: #f0b965 }
+.reaction-checks { margin-top: 14px; padding: 10px 12px; border: 1px solid #294b52; background: #0a191e }
+.reaction-checks label { margin-top: 0; color: var(--ink-soft) }
+.reaction-checks label.available-control { color: var(--cyan) }
 
 /* ===== 迎撃パネル ===== */
 .intercept-panel { margin-top: 16px; padding: 14px; border: 1px solid #2a5960; background: linear-gradient(135deg, #0b2226, #0a171c); transition: opacity .15s, border-color .15s }

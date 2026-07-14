@@ -94,6 +94,11 @@
                 value="0" readonly></label>
           </div>
           <p class="hint">ユニット種別、占有HEX数、基礎回避率、熟練で向上する能力は、選択したユニットに固定されており変更できません。</p>
+          <div class="checks reaction-checks">
+            <label id="evadeFocusLabel" class="available-control"><input id="evadeFocus" type="checkbox" checked>
+              回避に専念 <span id="evadeFocusStatus" class="condition-badge">基礎回避 × 0.5 ÷ 占有HEXを加算</span></label>
+          </div>
+          <p class="hint">回避に専念すると反撃・迎撃は行わず、占有HEX数に応じた回避ボーナスを受けます。迎撃武器とは排他選択です。</p>
           <div id="interceptPanel" class="intercept-panel is-unavailable">
             <div class="intercept-heading">
               <div><span>INTERCEPTION</span><strong>迎撃システム</strong></div>
@@ -285,8 +290,8 @@
             <div class="knowledge-section-title"><b>02</b>
               <h3>回避・命中</h3>
             </div>
-            <div class="formula-box"><code>実効回避 = 対象回避 × (1 + 0.5 / 占有HEX数) + 地形回避 − 武器命中</code></div>
-            <p>0～100%に制限後、24bit一様乱数を1回比較します。占有HEX数が少ない対象ほど回避側の倍率が高く、武器ごとの命中値は回避値から差し引かれます。</p>
+            <div class="formula-box"><code>実効回避 = 対象回避 + [回避専念時: 対象回避 × 0.5 / 占有HEX数] + 地形回避 − 武器命中</code></div>
+            <p>0～100%に制限後、24bit一様乱数を1回比較します。回避に専念すると、基礎回避率の <code>0.5 / 占有HEX数</code> 倍を加算します。反撃・迎撃時はこのボーナスを受けません。</p>
           </section>
 
           <section id="knowledgeAffinity">

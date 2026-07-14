@@ -23,6 +23,36 @@
   const attackRangeOverrides = new Map([
     ["WEAPON_ID.B_FINE_ATTACK", { min: 2, max: 2, note: "特殊体当たり距離" }],
   ]);
+  const bridgeParentNames = new Map([
+    ["UNIT_ID.BS_BRIDGE", "ヘイムダル級"],
+    ["UNIT_ID.EW_BS_BRIDGE", "ヘイムダル級"],
+    ["UNIT_ID.E_BS2_BRIDGE", "テュール級"],
+    ["UNIT_ID.EW_BS2_BRIDGE", "テュール級"],
+    ["UNIT_ID.E_BSAE1_BRIDGE", "ヨトゥンヘイム級"],
+    ["UNIT_ID.EW_BSAE1_BRIDGE", "ヨトゥンヘイム級"],
+    ["UNIT_ID.E_BSAE2_BRIDGE", "ムスペルヘイム級"],
+    ["UNIT_ID.EW_BSAE2_BRIDGE", "ムスペルヘイム級"],
+    ["UNIT_ID.E_BS_LAST_BRIDGE", "ニヴルヘイム級"],
+    ["UNIT_ID.EW_BS_LAST_BRIDGE", "ニヴルヘイム級"],
+    ["UNIT_ID.E_CR_BRIDGE", "ヴァナルガンド級"],
+    ["UNIT_ID.EW_CR_BRIDGE", "ヴァナルガンド級"],
+    ["UNIT_ID.E_CR2_BRIDGE", "ガルム級"],
+    ["UNIT_ID.EW_CR2_BRIDGE", "ガルム級"],
+    ["UNIT_ID.E_CR3_BRIDGE", "マーナガルム級"],
+    ["UNIT_ID.EW_CR3_BRIDGE", "マーナガルム級"],
+  ]);
+  const unitVariantLabels = new Map([
+    ["UNIT_ID.E_L_DANCER_A", "ウェーブ・マスター系"],
+    ["UNIT_ID.E_L_DANCER_B", "コンサート・マスター系"],
+    ["UNIT_ID.E_L_DANCER_C", "カロン系"],
+    ["UNIT_ID.E_L_DANCER_D", "ワイズ・マン系"],
+  ]);
+  const acceleratedUnitIds = new Set([
+    "UNIT_ID.E_TXT_BOOST",
+    "UNIT_ID.E_TXT2_BOOST",
+    "UNIT_ID.E_TXT3_BOOST",
+    "UNIT_ID.B_SCANT_4_BOOST",
+  ]);
   let visibleAttackers = data.units;
   let visibleTargets = data.units;
   let interceptContextKey = "";
@@ -62,12 +92,26 @@
     return unitWeaponIds(unit).some((id) => weapons.get(id)?.name === "デコイ爆破");
   }
 
+  function isWarpStateUnit(unit) {
+    return /^UNIT_ID\.[EB]W_/.test(unit?.id || "")
+      && ["utyp_battle_ship", "utyp_b_battle_ship", "utyp_cruiser", "utyp_b_cruiser", "utyp_carrier"].includes(unit?.typeKey);
+  }
+
   function hasNormalAttack(unit) {
     return unitWeaponIds(unit).some((id) => weapons.get(id)?.attack);
   }
 
   function unitLabel(unit) {
-    return `${unit.name}${isDecoyUnit(unit) ? " [デコイ]" : ""}`;
+    const accelerated = acceleratedUnitIds.has(unit?.id);
+    const displayName = accelerated ? unit.name.replace(/[\(\uff08]加速時[\)\uff09]$/, "") : unit.name;
+    const parent = bridgeParentNames.get(unit?.id);
+    const parentLabel = parent ? ` [${parent}]` : "";
+    const variant = unitVariantLabels.get(unit?.id);
+    const variantLabel = variant ? ` [${variant}]` : "";
+    const acceleration = accelerated ? " [加速時]" : "";
+    const warp = isWarpStateUnit(unit) ? " [ワープ時]" : "";
+    const decoy = isDecoyUnit(unit) ? " [デコイ]" : "";
+    return `${displayName}${parentLabel}${variantLabel}${acceleration}${warp}${decoy}`;
   }
 
   function skillName(unit, role) {
@@ -240,7 +284,7 @@
   }
 
   function incomingInterceptable(weapon) {
-    return Boolean(weapon && !weapon.seize && [1, 2, 6].includes(weapon.material));
+    return Boolean(weapon && !weapon.charge && !weapon.seize && [1, 2, 6].includes(weapon.material));
   }
 
   function effectiveWeaponAp(weapon, unit, rank) {
@@ -298,6 +342,7 @@
     const status = $("interceptStatus");
     const previous = select.value;
     const contextKey = `${attackWeapon?.id || ""}|${target?.id || ""}`;
+    const contextChanged = contextKey !== interceptContextKey;
     const allCandidates = unitWeaponIds(target)
       .map((id) => weapons.get(id))
       .filter((weapon) => weapon?.canIntercept)
@@ -340,7 +385,21 @@
     $("interceptorHpRate").disabled = !available;
     panel.classList.toggle("is-unavailable", !available);
     interceptContextKey = contextKey;
+    if (select.value) $("evadeFocus").checked = false;
+    else if (contextChanged) $("evadeFocus").checked = true;
+    updateEvadeFocusStatus();
     scheduleCalculate();
+  }
+
+  function updateEvadeFocusStatus() {
+    const input = $("evadeFocus");
+    const label = $("evadeFocusLabel");
+    const status = $("evadeFocusStatus");
+    const intercepting = Boolean($("interceptWeapon").value);
+    label.classList.toggle("available-control", input.checked);
+    status.textContent = intercepting
+      ? "迎撃選択中（専念なし）"
+      : input.checked ? "基礎回避 × 0.5 ÷ 占有HEXを加算" : "補正なし";
   }
 
   function baseBeforeRandom(weapon, randomValue, attacker, target) {
@@ -427,7 +486,9 @@
     const targetAvoid = rankAdjustedRate(baseTargetAvoid, targetRank, target?.skill === 1);
     const weaponHit = effectiveWeaponHit(weapon, attacker, attackerRank);
     const fixedBonus = (unitType === 5 || unitType === 14) ? 0 : Number($("terrainAvoidBonus").value) / 100;
-    const scaledAvoid = targetAvoid * (1 + .5 / scaleDenom);
+    const evadeFocus = $("evadeFocus").checked && !$("interceptWeapon").value;
+    const evadeFocusBonus = evadeFocus ? targetAvoid * .5 / scaleDenom : 0;
+    const scaledAvoid = targetAvoid + evadeFocusBonus;
     const effectiveAvoid = Math.min(1, Math.max(0, scaledAvoid + fixedBonus - weaponHit));
     const hit = 1 - effectiveAvoid;
     const d0 = baseBeforeRandom(weapon, 0, attacker, target).damage;
@@ -452,7 +513,9 @@
     if (target?.skill === 1) {
       avoidRows.push({ op: "×", label: `熟練ランク倍率（ランク${targetRank}）`, value: `${targetRankMultiplier.toFixed(2)} → ${(targetAvoid * 100).toFixed(0)}%` });
     }
-    avoidRows.push({ op: "×", label: `占有HEX補正（1 + 0.5 ÷ ${scaleDenom}）`, value: (1 + .5 / scaleDenom).toFixed(2) });
+    avoidRows.push(evadeFocus
+      ? { op: "+", label: `回避に専念（${(targetAvoid * 100).toFixed(0)}% × 0.5 ÷ ${scaleDenom} HEX）`, value: `${(evadeFocusBonus * 100).toFixed(1)}%` }
+      : { op: "+", label: "回避に専念", value: "OFF" });
     if (fixedBonus > 0) {
       avoidRows.push({ op: "+", label: "地形の固定回避加算", value: `${(fixedBonus * 100).toFixed(0)}%` });
     }
@@ -587,6 +650,19 @@
   $("attacker").addEventListener("change", updateWeapons);
   $("weapon").addEventListener("change", updateWeaponMeta);
   $("target").addEventListener("change", updateTargetType);
+  $("evadeFocus").addEventListener("change", () => {
+    if ($("evadeFocus").checked && $("interceptWeapon").value) {
+      $("interceptWeapon").value = "";
+    }
+    updateEvadeFocusStatus();
+    $("targetSkill").value = skillName(selectedUnit("target", visibleTargets), "target");
+  });
+  $("interceptWeapon").addEventListener("change", () => {
+    if ($("interceptWeapon").value) $("evadeFocus").checked = false;
+    else $("evadeFocus").checked = true;
+    updateEvadeFocusStatus();
+    $("targetSkill").value = skillName(selectedUnit("target", visibleTargets), "target");
+  });
   $("knowledgeOpen").addEventListener("click", openKnowledge);
   $("knowledgeClose").addEventListener("click", closeKnowledge);
   $("knowledgeDialog").addEventListener("click", (event) => {
