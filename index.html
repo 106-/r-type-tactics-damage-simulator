@@ -104,7 +104,7 @@
               <div><span>INTERCEPTION</span><strong>迎撃システム</strong></div>
               <b id="interceptStatus">迎撃対象外</b>
             </div>
-            <div class="grid three">
+            <div class="grid four">
               <label>迎撃武器
                 <select id="interceptWeapon" disabled>
                   <option value="">迎撃なし</option>
@@ -112,6 +112,7 @@
               </label>
               <label>攻撃側 現在HP率（%）<input id="attackerHpRate" type="number" min="1" max="100" value="100"></label>
               <label>迎撃側 現在HP率（%）<input id="interceptorHpRate" type="number" min="1" max="100" value="100"></label>
+              <label>迎撃武器 弾数<input id="interceptBulletNum" type="text" value="--" readonly></label>
             </div>
             <div class="intercept-readout">
               <span>迎撃による被ダメ減衰</span>
@@ -404,6 +405,7 @@
             </div>
             <p>鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
             <h4 class="knowledge-subtitle">体当たりに対する迎撃</h4>
+            <p>体当たり・フォースシュートなどはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ <b>+25</b> です。</p>
             <p>体当たり・フォースシュートと射程が重なる迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
             <div class="formula-box"><code>反動 = 攻撃側現在HP × 迎撃率 × 迎撃武器係数（最低25・最大115）</code></div>
             <div class="knowledge-cards two">
@@ -435,11 +437,10 @@
 
           <section id="knowledgeSpecial">
             <div class="knowledge-section-title"><b>07</b>
-              <h3>チャージ・ノックバック・特殊武器</h3>
+              <h3>チャージ・特殊武器</h3>
             </div>
             <ul class="knowledge-list">
               <li><b>波動砲などのチャージ武器</b>は、チャージ・範囲選択・専用演出に特殊分岐がありますが、命中後のHPダメージは基本的に表記APから同じ系統へ合流します。</li>
-              <li><b>体当たり・フォースシュート</b>などはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ <b>+25</b> です。</li>
             </ul>
           </section>
 

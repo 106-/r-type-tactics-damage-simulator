@@ -334,6 +334,11 @@
     return { active: true, damage, raw, maxHp, currentHp, remainingHp, multiplier, destroyed: remainingHp <= 0 };
   }
 
+  function updateInterceptWeaponDetails() {
+    const weapon = weapons.get($("interceptWeapon").value);
+    $("interceptBulletNum").value = weapon ? String(weapon.bulletNum) : "--";
+  }
+
   function updateInterceptWeapons() {
     const attackWeapon = weapons.get($("weapon").value);
     const target = selectedUnit("target", visibleTargets);
@@ -371,7 +376,7 @@
       for (const candidate of candidates) {
         const range = candidate.rangeMin === -1 ? "専用範囲" : `${candidate.rangeMin}–${candidate.rangeMax} HEX`;
         const shared = formatHexRange(sharedInterceptRange(attackWeapon, candidate));
-        select.append(option(candidate.id, `${candidate.name}  [威力 ${candidate.ap} / 命中 ${(candidate.hit * 100).toFixed(0)}% / 射程 ${range} / 共通 ${shared}]`));
+        select.append(option(candidate.id, `${candidate.name}  [威力 ${candidate.ap} / 命中 ${(candidate.hit * 100).toFixed(0)}% / 弾数 ${candidate.bulletNum} / 射程 ${range} / 共通 ${shared}]`));
       }
       const keepPrevious = contextKey === interceptContextKey
         && (previous === "" || candidates.some((weapon) => weapon.id === previous));
@@ -387,6 +392,7 @@
     interceptContextKey = contextKey;
     if (select.value) $("evadeFocus").checked = false;
     else if (contextChanged) $("evadeFocus").checked = true;
+    updateInterceptWeaponDetails();
     updateEvadeFocusStatus();
     scheduleCalculate();
   }
@@ -463,6 +469,7 @@
     $("interceptRateResult").textContent = "--";
     $("interceptPass").textContent = "--";
     $("interceptFormula").textContent = "";
+    $("interceptBulletNum").value = "--";
     $("tackleSelfCard").hidden = true;
     $("formulaNote").textContent = "攻撃ユニット・武器・対象ユニットを選択してください。";
     $("formulaNote").classList.remove("warning");
@@ -660,6 +667,7 @@
   $("interceptWeapon").addEventListener("change", () => {
     if ($("interceptWeapon").value) $("evadeFocus").checked = false;
     else $("evadeFocus").checked = true;
+    updateInterceptWeaponDetails();
     updateEvadeFocusStatus();
     $("targetSkill").value = skillName(selectedUnit("target", visibleTargets), "target");
   });
