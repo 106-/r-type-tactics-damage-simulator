@@ -240,6 +240,10 @@
     return min <= max ? { min, max } : null;
   }
 
+  function interceptRangeAllowed(attackWeapon, interceptWeapon) {
+    return Boolean($("relaxInterceptRange")?.checked || sharedInterceptRange(attackWeapon, interceptWeapon));
+  }
+
   function formatHexRange(range) {
     return range.min === range.max ? `${range.min} HEX` : `${range.min}–${range.max} HEX`;
   }
@@ -338,7 +342,7 @@
 
   function interceptDetails(attackWeapon, attacker, target) {
     const interceptWeapon = weapons.get($("interceptWeapon").value);
-    if (!incomingInterceptable(attackWeapon) || !interceptWeapon?.canIntercept || !sharedInterceptRange(attackWeapon, interceptWeapon)) {
+    if (!incomingInterceptable(attackWeapon) || !interceptWeapon?.canIntercept || !interceptRangeAllowed(attackWeapon, interceptWeapon)) {
       return { rate: 0, raw: 0, attackAp: 0, interceptAp: 0, interceptHit: 0, attackerHp: 1, interceptorHp: 1, weapon: null };
     }
     const attackAp = effectiveWeaponAp(attackWeapon, attacker, Number($("rank").value));
@@ -376,14 +380,18 @@
     const panel = $("interceptPanel");
     const status = $("interceptStatus");
     const previous = select.value;
-    const contextKey = `${attackWeapon?.id || ""}|${target?.id || ""}`;
+    const relaxed = $("relaxInterceptRange").checked;
+    const contextKey = `${attackWeapon?.id || ""}|${target?.id || ""}|${relaxed ? "relaxed" : "normal"}`;
     const contextChanged = contextKey !== interceptContextKey;
     const allCandidates = unitWeaponIds(target)
       .map((id) => weapons.get(id))
       .filter((weapon) => weapon?.canIntercept)
       .sort((a, b) => b.ap - a.ap || b.hit - a.hit);
-    const candidates = allCandidates.filter((weapon) => sharedInterceptRange(attackWeapon, weapon));
+    const candidates = relaxed ? allCandidates : allCandidates.filter((weapon) => sharedInterceptRange(attackWeapon, weapon));
     const eligible = incomingInterceptable(attackWeapon);
+
+    $("relaxInterceptRangeLabel").classList.toggle("available-control", relaxed);
+    $("relaxInterceptRangeStatus").textContent = relaxed ? "ON" : "OFF";
 
     select.replaceChildren();
     if (!attackWeapon) {
@@ -405,13 +413,17 @@
       select.append(option("", L("迎撃しない", "Do not intercept")));
       for (const candidate of candidates) {
         const range = candidate.rangeMin === -1 ? L("専用範囲", "Special range") : `${candidate.rangeMin}–${candidate.rangeMax} HEX`;
-        const shared = formatHexRange(sharedInterceptRange(attackWeapon, candidate));
-        select.append(option(candidate.id, `${displayName(candidate)}  [${L("威力", "Power")} ${candidate.ap} / ${L("命中", "Accuracy")} ${(candidate.hit * 100).toFixed(0)}% / ${L("弾数", "Ammo")} ${candidate.bulletNum} / ${L("射程", "Range")} ${range} / ${L("共通", "Shared")} ${shared}]`));
+        const rangeRule = relaxed
+          ? `${L("距離制限", "Range limit")} ${L("なし", "None")}`
+          : `${L("共通", "Shared")} ${formatHexRange(sharedInterceptRange(attackWeapon, candidate))}`;
+        select.append(option(candidate.id, `${displayName(candidate)}  [${L("威力", "Power")} ${candidate.ap} / ${L("命中", "Accuracy")} ${(candidate.hit * 100).toFixed(0)}% / ${L("弾数", "Ammo")} ${candidate.bulletNum} / ${L("射程", "Range")} ${range} / ${rangeRule}]`));
       }
       const keepPrevious = contextKey === interceptContextKey
         && (previous === "" || candidates.some((weapon) => weapon.id === previous));
       select.value = keepPrevious ? previous : candidates[0].id;
-      status.textContent = L(`${candidates.length}武器・共通射程あり`, `${candidates.length} weapon${candidates.length === 1 ? "" : "s"} with shared range`);
+      status.textContent = relaxed
+        ? L(`${candidates.length}武器・距離制限なし`, `${candidates.length} weapon${candidates.length === 1 ? "" : "s"} · no range limit`)
+        : L(`${candidates.length}武器・共通射程あり`, `${candidates.length} weapon${candidates.length === 1 ? "" : "s"} with shared range`);
     }
 
     const available = eligible && candidates.length > 0;
@@ -749,6 +761,7 @@
     updateEvadeFocusStatus();
     $("targetSkill").value = skillName(selectedUnit("target", visibleTargets), "target");
   });
+  $("relaxInterceptRange").addEventListener("change", updateInterceptWeapons);
   $("knowledgeOpen").addEventListener("click", openKnowledge);
   $("knowledgeClose").addEventListener("click", closeKnowledge);
   $("knowledgeDialog").addEventListener("click", (event) => {

@@ -91,6 +91,8 @@ The target's interception weapons are candidates against mechanical, biological,
 
 Rather than choosing an attack distance individually, interception is allowed when the attack and interception weapon ranges overlap by at least one hex. A partial overlap is shown as the shared interceptable range.
 
+Enabling **Relax interception range limit** ignores only range overlap, representing cases where unit shape permits interception. Other conditions, including attack attributes and interception eligibility, still apply.
+
 ```
 Raw interception = (Interceptor power / Attack power) × (Interceptor current HP / max HP) × (Attacker max HP / current HP) × Interceptor accuracy
 ```
@@ -107,7 +109,7 @@ Capture rounds are a special case with 0% interception. Interception is processe
 
 Tackles, Force Shoot, and similar attacks cause knockback. If terrain or a unit blocks the destination, they gain additional base damage of **+25**.
 
-When a tackle or Force Shoot is intercepted by a weapon with overlapping range, the target takes reduced damage and the attacker takes recoil damage.
+When a tackle or Force Shoot is intercepted by an eligible interception weapon, the target takes reduced damage and the attacker takes recoil damage.
 
 ```
 Recoil = Attacker current HP × Interception rate × 0.85 (minimum 25, maximum 115)
@@ -120,7 +122,7 @@ Recoil = Attacker current HP × Interception rate × 0.85 (minimum 25, maximum 1
 
 This branch checks the weapon's defined initial/maximum ammo, not its remaining ammo in battle. Remaining ammo is tracked separately, so the factor does not change when one shot remains. All 99 extracted interception definitions have at least two shots, so the simulator fixes the factor at **0.85**.
 
-Recoil is clamped to 25–115. If it destroys the attacker, tackle damage to the target becomes zero. It does not occur without interception or outside the interceptor's range.
+Recoil is clamped to 25–115. If it destroys the attacker, tackle damage to the target becomes zero. It does not occur without interception or when the weapon is not an eligible interception candidate.
 
 ### 06 Capture-round eligibility and success rate
 

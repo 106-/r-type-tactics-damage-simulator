@@ -88,6 +88,9 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .reaction-checks { margin-top: 14px; padding: 10px 12px; border: 1px solid #294b52; background: #0a191e }
 .reaction-checks label { margin-top: 0; color: var(--ink-soft) }
 .reaction-checks label.available-control { color: var(--cyan) }
+.intercept-options { margin: 12px 0 0; padding: 9px 11px; border: 1px solid #294b52; background: #0a191e }
+.intercept-options label { margin-top: 0; color: var(--ink-soft) }
+.intercept-options label.available-control { color: var(--cyan) }
 
 /* ===== 迎撃パネル ===== */
 .intercept-panel { margin-top: 16px; padding: 14px; border: 1px solid #2a5960; background: linear-gradient(135deg, #0b2226, #0a171c); transition: opacity .15s, border-color .15s }

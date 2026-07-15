@@ -121,6 +121,12 @@
               <div><span>INTERCEPTION</span><strong data-i18n="intercept.title">迎撃システム</strong></div>
               <b id="interceptStatus">--</b>
             </div>
+            <div class="checks intercept-options">
+              <label id="relaxInterceptRangeLabel"><input id="relaxInterceptRange" type="checkbox">
+                <span data-i18n="intercept.relaxRange">迎撃距離制限の緩和</span>
+                <span id="relaxInterceptRangeStatus" class="condition-badge">OFF</span></label>
+            </div>
+            <p class="hint" data-i18n="intercept.relaxRangeHint">ONにすると、ユニットの形状によって迎撃できる状況を再現するため、迎撃武器の距離制限を無視します。</p>
             <div class="grid three">
               <label><span data-i18n="intercept.weapon">迎撃武器</span>
                 <select id="interceptWeapon" disabled>
@@ -442,6 +448,7 @@
             <p data-i18n="notes.intercept.intro">機械・生体・氷属性の攻撃に対して、対象が持つ迎撃武器が候補になります。</p>
             <p data-i18n="notes.intercept.range">
               攻撃距離を個別に選ぶのではなく、攻撃武器と迎撃武器の射程が1HEXでも重なれば、その共通射程で迎撃可能として計算します。射程が一部だけ重なる場合は、候補欄に迎撃可能な距離を表示します。</p>
+            <p data-i18n="notes.intercept.rangeRelax">「迎撃距離制限の緩和」をONにすると、ユニットの形状によって迎撃できる状況として、射程の重なりだけを無視します。属性や迎撃可否など、ほかの条件は維持されます。</p>
             <div class="formula-box">
               <code
                 data-i18n="notes.intercept.formula">未補正迎撃率 = (迎撃武器威力 / 攻撃武器威力) × (迎撃側現在HP / 最大HP) × (攻撃側最大HP / 現在HP) × 迎撃武器命中</code>
@@ -458,7 +465,7 @@
             <p data-i18n="notes.intercept.order">鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
             <h4 class="knowledge-subtitle" data-i18n="notes.intercept.tackleTitle">体当たりに対する迎撃</h4>
             <p data-i18n="notes.intercept.tackleIntro">
-              体当たり・フォースシュートと射程が重なる迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
+              体当たり・フォースシュートを迎撃候補となった武器で迎撃すると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
             <p data-i18n-html="notes.intercept.knockback">体当たり・フォースシュートなどはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ
               <b>+25</b> です。</p>
             <div class="formula-box"><code
@@ -473,7 +480,7 @@
               この分岐が見るのはゲーム中の残弾数ではなく、武器定義上の初期・最大弾数です。現在残弾は別に管理されるため、残り1発になっても係数は変わりません。抽出した迎撃武器99定義はすべて定義弾数2以上であるため、シミュレーターでは係数を
               <b>0.85固定</b> としています。</p>
             <p data-i18n="notes.intercept.recoilNote">
-              反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。迎撃しない場合や、迎撃武器の射程外では発生しません。</p>
+              反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。迎撃しない場合や、迎撃候補にならない場合は発生しません。</p>
           </section>
 
           <section id="knowledgeSeize">
