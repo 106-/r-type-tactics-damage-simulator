@@ -7493,7 +7493,7 @@ window.RTYPE_SIM_DATA = {
             "avoidSkill": 3,
             "weapons": [],
             "nameJa": "コルベルトの防御壁",
-            "nameEn": "コルベルトの防御壁"
+            "nameEn": "CORBETT WALL"
         },
         {
             "id": "UNIT_ID.E_SOLAR_SYS",
@@ -10471,7 +10471,7 @@ window.RTYPE_SIM_DATA = {
                 "WEAPON_ID.E_FORCE_SHOOT"
             ],
             "nameJa": "ギャロップ・フォース",
-            "nameEn": "ギャロップ・フォース"
+            "nameEn": "GALLOP FORCE"
         },
         {
             "id": "UNIT_ID.F_FIRE",

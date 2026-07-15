@@ -10,7 +10,7 @@
   const materialNames = ["光学", "機械", "生体", "粒子", "火炎", "精神", "氷", "酸"];
   const materialNamesEn = ["Optical", "Mechanical", "Biological", "Particle", "Flame", "Mental", "Ice", "Acid"];
   const typeNames = ["機械ユニット", "機械艦", "機械艦パーツ", "艦船", "潜行機械", "機械壁", "機械床", "生物ユニット", "生物艦", "生物艦パーツ", "水中生物", "非水中生物", "潜行生物", "浮遊生物", "生体壁", "生体床", "宇宙水棲生物", "岩石", "氷", "異文明ユニット", "異文明艦パーツ"];
-  const typeNamesEn = ["Mechanical unit", "Mechanical ship", "Mechanical ship part", "Ship", "Submerged mechanical", "Mechanical wall", "Mechanical floor", "Biological unit", "Biological ship", "Biological ship part", "Aquatic lifeform", "Non-aquatic lifeform", "Submerged lifeform", "Floating lifeform", "Biological wall", "Biological floor", "Space aquatic lifeform", "Rock", "Ice", "Alien-civilization unit", "Alien-civilization ship part"];
+  const typeNamesEn = ["Mechanical unit", "Mechanical ship", "Mechanical ship part", "Ship", "Submerged mechanical unit", "Mechanical wall", "Mechanical floor", "Biological unit", "Biological ship", "Biological ship part", "Aquatic lifeform", "Non-aquatic lifeform", "Submerged lifeform", "Floating lifeform", "Biological wall", "Biological floor", "Space aquatic lifeform", "Rock", "Ice", "Alien-civilization unit", "Alien-civilization ship part"];
   const skillNames = new Map([
     [0, "HP"],
     [1, "回避率"],
@@ -19,7 +19,7 @@
     [4, "命中率"],
     [255, "なし"],
   ]);
-  const skillNamesEn = new Map([[0, "HP"], [1, "Evasion"], [2, "Fuel (no current unit)"], [3, "Attack power"], [4, "Accuracy"], [255, "None"]]);
+  const skillNamesEn = new Map([[0, "HP"], [1, "Evasion"], [2, "Fuel (not simulated)"], [3, "Attack power"], [4, "Accuracy"], [255, "None"]]);
   const materialName = (index) => (i18n.language === "ja" ? materialNames : materialNamesEn)[index] || L("不明", "Unknown");
   const bypassesEvasion = (weapon) => Boolean(weapon
     && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
@@ -141,7 +141,7 @@
     const variant = (i18n.language === "ja" ? unitVariantLabels : unitVariantLabelsEn).get(unit?.id);
     const variantLabel = variant ? ` [${variant}]` : "";
     const acceleration = accelerated ? L(" [加速時]", " [Boosted]") : "";
-    const warp = isWarpStateUnit(unit) ? L(" [ワープ時]", " [Warp state]") : "";
+    const warp = isWarpStateUnit(unit) ? L(" [ワープ時]", " [Warping]") : "";
     const decoy = isDecoyUnit(unit) ? L(" [デコイ]", " [Decoy]") : "";
     return `${name}${parentLabel}${variantLabel}${acceleration}${warp}${decoy}`;
   }
@@ -217,7 +217,7 @@
       return;
     }
     const attackRange = effectiveAttackRange(weapon);
-    const range = attackRange.min === -1 ? L("専用範囲", "Special area") : `${attackRange.min ?? "?"}–${attackRange.max ?? "?"} HEX${attackRange.note ? ` (${L(attackRange.note, "special tackle range")})` : ""}`;
+    const range = attackRange.min === -1 ? L("専用範囲", "Special range") : `${attackRange.min ?? "?"}–${attackRange.max ?? "?"} HEX${attackRange.note ? ` (${L(attackRange.note, "special tackle range")})` : ""}`;
     const charge = weapon.charge ? ` / ${L("チャージ", "Charge")} ${weapon.charge}T` : "";
     const guaranteed = bypassesEvasion(weapon);
     const guaranteedLabel = guaranteed ? L(" / 必中（回避計算をバイパス）", " / Guaranteed hit (evasion calculation bypassed)") : "";
@@ -262,7 +262,7 @@
       status.textContent = L("武器未選択", "No weapon selected");
       label.title = L("攻撃武器を選択してください", "Select an attack weapon");
     } else if (weapon.material === 1) {
-      status.textContent = L("機械属性は無視", "Mechanical bypasses it");
+      status.textContent = L("機械属性は無視", "Ignored by mechanical");
       label.title = L("機械属性は部分遮蔽による50%減衰を受けません", "Mechanical attacks are not reduced by partial cover");
     } else if (effectiveAttackRange(weapon).max !== 2) {
       status.textContent = L("最大射程2のみ", "Maximum range 2 only");
@@ -391,10 +391,10 @@
       status.textContent = L("武器未選択", "No weapon selected");
     } else if (attackWeapon.seize) {
       select.append(option("", L("鹵獲弾は迎撃率0%", "Capture rounds have 0% interception")));
-      status.textContent = L("迎撃例外", "Interception exception");
+      status.textContent = L("迎撃例外", "Exempt from interception");
     } else if (!eligible) {
       select.append(option("", L(`${materialName(attackWeapon.material)}属性は迎撃対象外`, `${materialName(attackWeapon.material)} attacks are not interceptable`)));
-      status.textContent = L("攻撃属性が対象外", "Attack attribute not eligible");
+      status.textContent = L("攻撃属性が対象外", "Attribute not interceptable");
     } else if (!allCandidates.length) {
       select.append(option("", L("対象に迎撃武器なし", "Target has no interception weapon")));
       status.textContent = L("迎撃武器なし", "No interception weapon");
@@ -404,14 +404,14 @@
     } else {
       select.append(option("", L("迎撃しない", "Do not intercept")));
       for (const candidate of candidates) {
-        const range = candidate.rangeMin === -1 ? L("専用範囲", "Special area") : `${candidate.rangeMin}–${candidate.rangeMax} HEX`;
+        const range = candidate.rangeMin === -1 ? L("専用範囲", "Special range") : `${candidate.rangeMin}–${candidate.rangeMax} HEX`;
         const shared = formatHexRange(sharedInterceptRange(attackWeapon, candidate));
         select.append(option(candidate.id, `${displayName(candidate)}  [${L("威力", "Power")} ${candidate.ap} / ${L("命中", "Accuracy")} ${(candidate.hit * 100).toFixed(0)}% / ${L("弾数", "Ammo")} ${candidate.bulletNum} / ${L("射程", "Range")} ${range} / ${L("共通", "Shared")} ${shared}]`));
       }
       const keepPrevious = contextKey === interceptContextKey
         && (previous === "" || candidates.some((weapon) => weapon.id === previous));
       select.value = keepPrevious ? previous : candidates[0].id;
-      status.textContent = L(`${candidates.length}武器・共通射程あり`, `${candidates.length} weapon(s) with shared range`);
+      status.textContent = L(`${candidates.length}武器・共通射程あり`, `${candidates.length} weapon${candidates.length === 1 ? "" : "s"} with shared range`);
     }
 
     const available = eligible && candidates.length > 0;
@@ -437,7 +437,7 @@
     label.classList.toggle("disabled-control", Boolean(guaranteed));
     label.classList.toggle("available-control", input.checked && !guaranteed);
     status.textContent = guaranteed
-      ? L("必中攻撃には無効", "Disabled against guaranteed-hit attacks")
+      ? L("必中攻撃には無効", "No effect against guaranteed hits")
       : intercepting
       ? L("迎撃選択中（専念なし）", "Intercepting (no evasion focus)")
       : input.checked ? L("基礎回避 × 0.5 ÷ 占有HEXを加算", "Add base evasion × 0.5 ÷ occupied hexes") : L("補正なし", "No bonus");
@@ -619,14 +619,14 @@
     renderFormula("damageFormulaBox", "damageFormula", damageRows);
     $("damageExpected").textContent = dMean.damage.toFixed(1);
     $("damageContext").textContent = formationMax === 5
-      ? L(`${lossMean}機減`, `${lossMean} unit(s) lost`)
+      ? L(`${lossMean}機減`, `${lossMean} unit${lossMean === 1 ? "" : "s"} lost`)
       : L(`HP ${percent(dMean.damage).toFixed(1)}%減`, `${percent(dMean.damage).toFixed(1)}% HP lost`);
     $("damageMin").textContent = min.toFixed(1);
     $("damageMax").textContent = max.toFixed(1);
     $("targetMaxHp").textContent = maxHp.toFixed(0);
     $("hpDamagePercent").textContent = `${percent(dMean.damage).toFixed(1)}% (${percent(min).toFixed(1)}–${percent(max).toFixed(1)}%)`;
     $("expectedHpPercent").textContent = `${percent(dMean.damage * hit).toFixed(1)}%`;
-    $("formationLoss").textContent = L(`平均 ${lossMean}機（${lossMin}～${lossMax}機）`, `Mean ${lossMean} units (${lossMin}–${lossMax})`);
+    $("formationLoss").textContent = L(`平均 ${lossMean}機（${lossMin}～${lossMax}機）`, `Mean ${lossMean} unit${lossMean === 1 ? "" : "s"} (${lossMin}–${lossMax})`);
     $("formationLossRow").hidden = formationMax !== 5;
     $("formationRule").hidden = formationMax !== 5;
     $("affinityLabel").textContent = `${unitGroupName(unitType)} vs ${materialName(weapon.material)}`;
@@ -664,7 +664,7 @@
 
     const notes = [];
     if (Number($("terrainDefense").value) > 0 && dMean.effectiveDefense === 0) notes.push(L("この武器/対象では地形防御をバイパス", "Terrain defense bypassed for this weapon/target"));
-    if (intercept.rate === 1) notes.push(L("完全迎撃: 実機では攻撃計算自体をスキップ", "Full interception: the game skips the attack calculation"));
+    if (intercept.rate === 1) notes.push(L("完全迎撃: 実機では攻撃計算自体をスキップ", "Full interception: the game skips the attack calculation entirely"));
     if (tackleSelfDamage.destroyed) notes.push(L("迎撃反動で攻撃側撃破: 対象ダメージ0", "Interception recoil destroys attacker: target damage is 0"));
     $("formulaNote").textContent = notes.join(" / ");
     $("formulaNote").classList.toggle("warning", notes.length > 0);

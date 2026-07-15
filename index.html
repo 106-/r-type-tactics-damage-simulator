@@ -22,33 +22,35 @@
     <header class="hero">
       <div>
         <p class="eyebrow">COMBAT ANALYSIS</p>
-        <h1>R-TYPE TACTICS<br><span>戦闘シミュレータ</span></h1>
+        <h1>R-TYPE TACTICS<br><span data-i18n="hero.subtitle">戦闘シミュレータ</span></h1>
       </div>
       <div class="hero-actions">
         <label class="language-control" for="languageSelect"><span>LANGUAGE</span>
-          <select id="languageSelect" aria-label="表示言語">
+          <select id="languageSelect" aria-label="表示言語" data-i18n-aria-label="hero.languageLabel" data-i18n-ignore>
             <option value="ja">日本語</option>
             <option value="en">English</option>
           </select>
         </label>
-        <button id="knowledgeOpen" class="knowledge-open" type="button"><span aria-hidden="true">i</span> 解析知見</button>
+        <button id="knowledgeOpen" class="knowledge-open" type="button"><span aria-hidden="true">i</span> <span
+            data-i18n="hero.notesButton">解析知見</span></button>
       </div>
     </header>
 
-    <p class="disclaimer">※ 本シミュレータは解析に基づく非公式ツールです。計算結果は実際のゲームと異なる(間違っている)可能性があります。</p>
+    <p class="disclaimer" data-i18n="app.disclaimer">※ 本シミュレータは解析に基づく非公式ツールです。計算結果は実際のゲームと異なる(間違っている)可能性があります。</p>
 
     <section class="workspace">
       <div class="inputs">
         <section class="panel">
           <div class="panel-title"><b>01</b>
-            <h2>攻撃側</h2>
+            <h2 data-i18n="attacker.title">攻撃側</h2>
           </div>
-          <label>ユニット検索<input id="attackerSearch" type="search" placeholder="例：アロー・ヘッド"></label>
-          <label>攻撃ユニット<select id="attacker"></select></label>
-          <label>使用武器<select id="weapon"></select></label>
+          <label><span data-i18n="common.unitSearch">ユニット検索</span><input id="attackerSearch" type="search"
+              placeholder="例：アロー・ヘッド" data-i18n-placeholder="attacker.searchExample"></label>
+          <label><span data-i18n="attacker.unit">攻撃ユニット</span><select id="attacker"></select></label>
+          <label><span data-i18n="attacker.weapon">使用武器</span><select id="weapon"></select></label>
           <div id="weaponMeta" class="meta-line"></div>
           <div class="grid five">
-            <label>熟練ランク<select id="rank">
+            <label><span data-i18n="common.rank">熟練ランク</span><select id="rank">
                 <option value="0">0 (100%)</option>
                 <option value="1">1 (101%)</option>
                 <option value="2">2 (103%)</option>
@@ -56,34 +58,38 @@
                 <option value="4">4 (110%)</option>
                 <option value="5">5 (118%)</option>
               </select></label>
-            <label>熟練で向上 <span class="fixed-badge">固定</span><input id="attackerSkill" type="text" value="なし"
+            <label><span data-i18n="common.veterancySkill">熟練で向上</span> <span class="fixed-badge"
+                data-i18n="common.fixedBadge">固定</span><input id="attackerSkill" type="text" value=""
                 readonly></label>
-            <label>攻撃種別<select id="attackMode">
-                <option value="normal">通常攻撃</option>
-                <option value="counter">反撃</option>
+            <label><span data-i18n="attacker.mode">攻撃種別</span><select id="attackMode">
+                <option value="normal" data-i18n="attacker.modeNormal">通常攻撃</option>
+                <option value="counter" data-i18n="attacker.modeCounter">反撃</option>
               </select></label>
-            <label>現在編隊数<input id="formationCurrent" type="number" min="1" max="1" value="1" disabled></label>
-            <label>最大編隊数<input id="formationMax" type="number" min="1" max="5" value="1" readonly></label>
+            <label><span data-i18n="attacker.formationCurrent">現在編隊数</span><input id="formationCurrent" type="number"
+                min="1" max="1" value="1" disabled></label>
+            <label><span data-i18n="attacker.formationMax">最大編隊数</span><input id="formationMax" type="number" min="1"
+                max="5" value="1" readonly></label>
           </div>
-          <p class="hint">熟練で向上する能力と最大編隊数は、選択したユニットに合わせて自動設定されます。5機編隊のみ現在編隊数を変更できます。</p>
+          <p class="hint" data-i18n="attacker.formationHint">熟練で向上する能力と最大編隊数は、選択したユニットに合わせて自動設定されます。5機編隊のみ現在編隊数を変更できます。</p>
           <div class="checks">
             <label id="knockbackLabel" class="disabled-control"><input id="knockbackBlocked" type="checkbox" disabled>
-              ノックバック先が塞がっている</label>
-            <label id="partialCoverLabel" class="disabled-control" title="最大射程2の非機械属性武器でのみ発生します"><input
-                id="partialCover" type="checkbox" disabled> 部分遮蔽 <span id="partialCoverStatus"
-                class="condition-badge">射程2・非機械のみ</span></label>
+              <span data-i18n="attacker.knockback">ノックバック先が塞がっている</span></label>
+            <label id="partialCoverLabel" class="disabled-control"><input id="partialCover" type="checkbox" disabled>
+              <span data-i18n="attacker.partialCover">部分遮蔽</span> <span id="partialCoverStatus"
+                class="condition-badge">--</span></label>
           </div>
-          <p class="hint">部分遮蔽は、距離2の攻撃で2つある中間経路の片方だけが地形・障害物ユニットに遮られた状態です。対象武器ではダメージが50%になります。</p>
+          <p class="hint" data-i18n="attacker.partialCoverHint">部分遮蔽は、距離2の攻撃で2つある中間経路の片方だけが地形・障害物ユニットに遮られた状態です。対象武器ではダメージが50%になります。</p>
         </section>
 
         <section class="panel">
           <div class="panel-title"><b>02</b>
-            <h2>対象</h2>
+            <h2 data-i18n="target.title">対象</h2>
           </div>
-          <label>ユニット検索<input id="targetSearch" type="search" placeholder="例：ガウパー"></label>
-          <label>被害ユニット<select id="target"></select></label>
+          <label><span data-i18n="common.unitSearch">ユニット検索</span><input id="targetSearch" type="search"
+              placeholder="例：ガウパー" data-i18n-placeholder="target.searchExample"></label>
+          <label><span data-i18n="target.unit">被害ユニット</span><select id="target"></select></label>
           <div class="grid five">
-            <label>熟練ランク<select id="targetRank">
+            <label><span data-i18n="common.rank">熟練ランク</span><select id="targetRank">
                 <option value="0">0 (100%)</option>
                 <option value="1">1 (101%)</option>
                 <option value="2">2 (103%)</option>
@@ -91,40 +97,47 @@
                 <option value="4">4 (110%)</option>
                 <option value="5">5 (118%)</option>
               </select></label>
-            <label>熟練で向上 <span class="fixed-badge">固定</span><input id="targetSkill" type="text" value="なし"
+            <label><span data-i18n="common.veterancySkill">熟練で向上</span> <span class="fixed-badge"
+                data-i18n="common.fixedBadge">固定</span><input id="targetSkill" type="text" value=""
                 readonly></label>
-            <label>ユニット種別 <span class="fixed-badge">固定</span><select id="targetType" disabled></select></label>
-            <label>占有HEX数 <span class="fixed-badge">固定</span><input id="targetScaleDenom" type="number" min="1"
-                max="999" value="1" readonly></label>
-            <label>基礎回避率（%） <span class="fixed-badge">固定</span><input id="targetAvoid" type="number" min="0" max="100"
+            <label><span data-i18n="target.type">ユニット種別</span> <span class="fixed-badge"
+                data-i18n="common.fixedBadge">固定</span><select id="targetType" disabled></select></label>
+            <label><span data-i18n="target.hexes">占有HEX数</span> <span class="fixed-badge"
+                data-i18n="common.fixedBadge">固定</span><input id="targetScaleDenom" type="number" min="1" max="999"
+                value="1" readonly></label>
+            <label><span data-i18n="target.avoid">基礎回避率（%）</span> <span class="fixed-badge"
+                data-i18n="common.fixedBadge">固定</span><input id="targetAvoid" type="number" min="0" max="100"
                 value="0" readonly></label>
           </div>
-          <p class="hint">ユニット種別、占有HEX数、基礎回避率、熟練で向上する能力は、選択したユニットに固定されており変更できません。</p>
+          <p class="hint" data-i18n="target.fixedHint">ユニット種別、占有HEX数、基礎回避率、熟練で向上する能力は、選択したユニットに固定されており変更できません。</p>
           <div class="checks reaction-checks">
             <label id="evadeFocusLabel" class="available-control"><input id="evadeFocus" type="checkbox" checked>
-              回避に専念 <span id="evadeFocusStatus" class="condition-badge">基礎回避 × 0.5 ÷ 占有HEXを加算</span></label>
+              <span data-i18n="target.evadeFocus">回避に専念</span> <span id="evadeFocusStatus"
+                class="condition-badge">--</span></label>
           </div>
-          <p class="hint">回避に専念すると反撃・迎撃は行わず、占有HEX数に応じた回避ボーナスを受けます。迎撃武器とは排他選択です。</p>
+          <p class="hint" data-i18n="target.evadeFocusHint">回避に専念すると反撃・迎撃は行わず、占有HEX数に応じた回避ボーナスを受けます。迎撃武器とは排他選択です。</p>
           <div id="interceptPanel" class="intercept-panel is-unavailable">
             <div class="intercept-heading">
-              <div><span>INTERCEPTION</span><strong>迎撃システム</strong></div>
-              <b id="interceptStatus">迎撃対象外</b>
+              <div><span>INTERCEPTION</span><strong data-i18n="intercept.title">迎撃システム</strong></div>
+              <b id="interceptStatus">--</b>
             </div>
             <div class="grid three">
-              <label>迎撃武器
+              <label><span data-i18n="intercept.weapon">迎撃武器</span>
                 <select id="interceptWeapon" disabled>
-                  <option value="">迎撃なし</option>
+                  <option value="">--</option>
                 </select>
               </label>
-              <label>攻撃側 現在HP率（%）<input id="attackerHpRate" type="number" min="1" max="100" value="100"></label>
-              <label>迎撃側 現在HP率（%）<input id="interceptorHpRate" type="number" min="1" max="100" value="100"></label>
+              <label><span data-i18n="intercept.attackerHp">攻撃側 現在HP率（%）</span><input id="attackerHpRate"
+                  type="number" min="1" max="100" value="100"></label>
+              <label><span data-i18n="intercept.interceptorHp">迎撃側 現在HP率（%）</span><input id="interceptorHpRate"
+                  type="number" min="1" max="100" value="100"></label>
             </div>
             <div class="intercept-readout">
-              <span>迎撃による被ダメ減衰</span>
+              <span data-i18n="intercept.reduction">迎撃による被ダメ減衰</span>
               <strong id="interceptRateDisplay">0.0%</strong>
-              <small id="interceptFormula">迎撃武器を選択してください</small>
+              <small id="interceptFormula"></small>
             </div>
-            <p class="hint">
+            <p class="hint" data-i18n="intercept.hint">
               迎撃可能な属性の攻撃に対して、攻撃武器と射程が重なる迎撃武器だけを表示します。候補には迎撃可能な共通射程も表示し、初期状態では基礎威力が最も高い武器を選びます。残弾・燃料・射線などの実行時使用可否は含みません。
             </p>
           </div>
@@ -132,109 +145,111 @@
 
         <section class="panel">
           <div class="panel-title"><b>03</b>
-            <h2>地形・戦闘条件</h2>
+            <h2 data-i18n="terrain.title">地形・戦闘条件</h2>
           </div>
           <div class="grid two">
-            <label>地形の固定回避加算
+            <label><span data-i18n="terrain.avoidBonus">地形の固定回避加算</span>
               <select id="terrainAvoidBonus">
-                <option value="0">0%（空間・空気など）</option>
-                <option value="5">5%（森・弱い暴風など）</option>
-                <option value="10">10%（デブリ帯・水面・水中など）</option>
-                <option value="20">20%（基地・ドックなど）</option>
-                <option value="30">30%（岩群・冥王星）</option>
-                <option value="50">50%（滝・残骸密集地帯など）</option>
+                <option value="0" data-i18n="terrain.opt0">0%（空間・空気など）</option>
+                <option value="5" data-i18n="terrain.opt5">5%（森・弱い暴風など）</option>
+                <option value="10" data-i18n="terrain.avoidOpt10">10%（デブリ帯・水面・水中など）</option>
+                <option value="20" data-i18n="terrain.avoidOpt20">20%（基地・ドックなど）</option>
+                <option value="30" data-i18n="terrain.opt30">30%（岩群・冥王星）</option>
+                <option value="50" data-i18n="terrain.avoidOpt50">50%（滝・残骸密集地帯など）</option>
               </select>
             </label>
-            <label>地形防御率
+            <label><span data-i18n="terrain.defense">地形防御率</span>
               <select id="terrainDefense">
-                <option value="0">0%（空間・空気など）</option>
-                <option value="5">5%（森・弱い暴風など）</option>
-                <option value="10">10%（デブリ帯・ガス・雷雲など）</option>
-                <option value="20">20%（基地・水面・海面など）</option>
-                <option value="30">30%（岩群・冥王星）</option>
-                <option value="50">50%（滝・水中など）</option>
+                <option value="0" data-i18n="terrain.opt0">0%（空間・空気など）</option>
+                <option value="5" data-i18n="terrain.opt5">5%（森・弱い暴風など）</option>
+                <option value="10" data-i18n="terrain.defenseOpt10">10%（デブリ帯・ガス・雷雲など）</option>
+                <option value="20" data-i18n="terrain.defenseOpt20">20%（基地・水面・海面など）</option>
+                <option value="30" data-i18n="terrain.opt30">30%（岩群・冥王星）</option>
+                <option value="50" data-i18n="terrain.defenseOpt50">50%（滝・水中など）</option>
               </select>
             </label>
           </div>
-          <p class="hint">括弧内は抽出データで確認できた代表的な地形例です。同名系統でもマップ固有データにより補正が異なる場合があります。</p>
+          <p class="hint" data-i18n="terrain.hint">括弧内は抽出データで確認できた代表的な地形例です。同名系統でもマップ固有データにより補正が異なる場合があります。</p>
         </section>
       </div>
 
       <aside class="results">
         <div class="result-head"><span>CALCULATION RESULT</span><i></i></div>
         <div class="damage-card">
-          <p>命中時ダメージ</p>
+          <p data-i18n="result.damageTitle">命中時ダメージ</p>
           <strong id="damageExpected">0.0</strong>
-          <span id="damageContext">HP 0.0%減</span>
+          <span id="damageContext"></span>
           <div class="range"><b id="damageMin">0.0</b><i></i><b id="damageMax">0.0</b></div>
-          <div class="range-label"><span>最小</span><span>最大</span></div>
+          <div class="range-label"><span data-i18n="result.min">最小</span><span data-i18n="result.max">最大</span></div>
         </div>
         <div id="tackleSelfCard" class="tackle-self-card" hidden>
-          <div class="tackle-self-head"><span>INTERCEPTED TACKLE</span><b>攻撃側への反動</b></div>
-          <div class="tackle-self-value"><strong id="tackleSelfDamage">0.0</strong><span id="tackleSelfContext">攻撃側HP
-              0.0%減</span></div>
-          <p id="tackleSelfFormula">体当たり迎撃の反動式</p>
+          <div class="tackle-self-head"><span>INTERCEPTED TACKLE</span><b data-i18n="result.tackleRecoil">攻撃側への反動</b>
+          </div>
+          <div class="tackle-self-value"><strong id="tackleSelfDamage">0.0</strong><span
+              id="tackleSelfContext"></span></div>
+          <p id="tackleSelfFormula"></p>
         </div>
         <div class="modifier-block">
           <p class="modifier-title">DAMAGE MODIFIERS</p>
           <div class="modifier-badges">
             <div id="affinityBadge" class="modifier-badge is-neutral">
-              <span id="affinityLabel">機械 vs 光学</span>
+              <span id="affinityLabel"></span>
               <strong id="effectiveness">±0%</strong>
             </div>
             <div id="terrainBadge" class="modifier-badge is-neutral">
-              <span id="terrainLabel">地形減衰</span>
+              <span id="terrainLabel"></span>
               <strong id="effectiveDefense">±0%</strong>
             </div>
             <div id="interceptBadge" class="modifier-badge is-neutral">
-              <span id="interceptLabel">迎撃減衰</span>
+              <span id="interceptLabel"></span>
               <strong id="interceptModifier">±0%</strong>
             </div>
           </div>
         </div>
         <div class="probability">
-          <p>回避（地形ブロック）率 <span id="guaranteedHitBadge" class="condition-badge guaranteed-hit-badge" hidden>必中</span></p>
+          <p><span data-i18n="result.avoidTitle">回避（地形ブロック）率</span> <span id="guaranteedHitBadge"
+              class="condition-badge guaranteed-hit-badge" hidden></span></p>
           <strong><span id="avoidResult">0.0</span><small>%</small></strong>
           <div class="bar"><i id="avoidBar"></i></div>
-          <span id="hitResult">命中率 100.0%</span>
+          <span id="hitResult"></span>
         </div>
         <details class="results-details">
-          <summary>計算式・内訳を表示</summary>
+          <summary data-i18n="result.showDetails">計算式・内訳を表示</summary>
           <div id="damageFormulaBox" class="formula-box" hidden>
-            <p class="formula-box-title">攻撃力の式</p>
+            <p class="formula-box-title" data-i18n="result.damageFormulaTitle">攻撃力の式</p>
             <div id="damageFormula" class="formula-rows"></div>
           </div>
           <div id="avoidFormulaBox" class="formula-box" hidden>
-            <p class="formula-box-title">命中率の式</p>
+            <p class="formula-box-title" data-i18n="result.avoidFormulaTitle">命中率の式</p>
             <div id="avoidFormula" class="formula-rows"></div>
           </div>
           <dl class="summary">
             <div>
-              <dt>対象最大HP（満タン）</dt>
+              <dt data-i18n="result.targetMaxHp">対象最大HP（満タン）</dt>
               <dd id="targetMaxHp">0</dd>
             </div>
             <div>
-              <dt>命中時HP損耗</dt>
+              <dt data-i18n="result.hpLossOnHit">命中時HP損耗</dt>
               <dd id="hpDamagePercent">0.0%</dd>
             </div>
             <div>
-              <dt>回避込みHP損耗</dt>
+              <dt data-i18n="result.expectedHpLoss">回避込みHP損耗</dt>
               <dd id="expectedHpPercent">0.0%</dd>
             </div>
             <div id="formationLossRow" hidden>
-              <dt>編隊損耗（満タン時）</dt>
-              <dd id="formationLoss">0機</dd>
+              <dt data-i18n="result.formationLoss">編隊損耗（満タン時）</dt>
+              <dd id="formationLoss"></dd>
             </div>
             <div>
-              <dt>迎撃による被ダメ減衰</dt>
+              <dt data-i18n="intercept.reduction">迎撃による被ダメ減衰</dt>
               <dd id="interceptRateResult">0.0%</dd>
             </div>
             <div>
-              <dt>迎撃後通過率</dt>
+              <dt data-i18n="result.interceptPass">迎撃後通過率</dt>
               <dd id="interceptPass">100.0%</dd>
             </div>
           </dl>
-          <p id="formationRule" class="hint" hidden>5機編隊はHP損耗が20%を超えるごとに1機減少します。</p>
+          <p id="formationRule" class="hint" hidden data-i18n="result.formationRule">5機編隊はHP損耗が20%を超えるごとに1機減少します。</p>
         </details>
         <p id="formulaNote" class="formula-note"></p>
       </aside>
@@ -258,78 +273,95 @@
       <header class="knowledge-head">
         <div>
           <p>REVERSE ENGINEERING NOTES</p>
-          <h2 id="knowledgeTitle">ダメージシステムの解析知見</h2>
+          <h2 id="knowledgeTitle" data-i18n="notes.title">ダメージシステムの解析知見</h2>
         </div>
-        <button id="knowledgeClose" type="button" aria-label="閉じる">×</button>
+        <button id="knowledgeClose" type="button" aria-label="閉じる" data-i18n-aria-label="notes.close">×</button>
       </header>
       <div class="knowledge-layout">
-        <nav aria-label="解析知見の目次">
-          <a href="#knowledgeFlow">01 戦闘フロー</a>
-          <a href="#knowledgeAvoid">02 回避・命中</a>
-          <a href="#knowledgeAffinity">03 属性相性</a>
-          <a href="#knowledgeTerrain">04 地形・遮蔽</a>
-          <a href="#knowledgeIntercept">05 迎撃</a>
-          <a href="#knowledgeSeize">06 鹵獲</a>
-          <a href="#knowledgeSpecial">07 特殊攻撃</a>
+        <nav aria-label="解析知見の目次" data-i18n-aria-label="notes.toc">
+          <a href="#knowledgeFlow" data-i18n="notes.nav.flow">01 戦闘フロー</a>
+          <a href="#knowledgeAvoid" data-i18n="notes.nav.avoid">02 回避・命中</a>
+          <a href="#knowledgeAffinity" data-i18n="notes.nav.affinity">03 属性相性</a>
+          <a href="#knowledgeTerrain" data-i18n="notes.nav.terrain">04 地形・遮蔽</a>
+          <a href="#knowledgeIntercept" data-i18n="notes.nav.intercept">05 迎撃</a>
+          <a href="#knowledgeSeize" data-i18n="notes.nav.seize">06 鹵獲</a>
+          <a href="#knowledgeSpecial" data-i18n="notes.nav.special">07 特殊攻撃</a>
         </nav>
         <article class="knowledge-content">
           <section id="knowledgeFlow">
             <div class="knowledge-section-title"><b>01</b>
-              <h3>戦闘フロー</h3>
+              <h3 data-i18n="notes.flow.title">戦闘フロー</h3>
             </div>
             <ol class="flow-list">
-              <li><b>攻撃成立</b><span>攻撃武器・通常/反撃・射程などを決定</span></li>
-              <li><b>迎撃</b><span>対象攻撃だけ武器対武器の減衰率を算出</span></li>
-              <li><b>地形ブロック</b><span>実効回避率に対する乱数1回で命中判定</span></li>
-              <li><b>HPダメージ</b><span>武器威力、編隊、迎撃、威力乱数、地形防御、属性相性を適用</span></li>
-              <li><b>追加処理</b><span>ノックバック衝突、編隊機数、演出用の表示値を更新</span></li>
+              <li><b data-i18n="notes.flow.step1">攻撃成立</b><span
+                  data-i18n="notes.flow.step1Desc">攻撃武器・通常/反撃・射程などを決定</span></li>
+              <li><b data-i18n="notes.flow.step2">迎撃</b><span
+                  data-i18n="notes.flow.step2Desc">対象攻撃だけ武器対武器の減衰率を算出</span></li>
+              <li><b data-i18n="notes.flow.step3">地形ブロック</b><span
+                  data-i18n="notes.flow.step3Desc">実効回避率に対する乱数1回で命中判定</span></li>
+              <li><b data-i18n="notes.flow.step4">HPダメージ</b><span
+                  data-i18n="notes.flow.step4Desc">武器威力、編隊、迎撃、威力乱数、地形防御、属性相性を適用</span></li>
+              <li><b data-i18n="notes.flow.step5">追加処理</b><span
+                  data-i18n="notes.flow.step5Desc">ノックバック衝突、編隊機数、演出用の表示値を更新</span></li>
             </ol>
-            <div class="formula-box"><code>ダメージ ≈ 武器威力 × 編隊率 × (1−迎撃率) × 威力乱数 × (1−実効地形防御) × 属性相性</code></div>
-            <p>乱数要素として、通常攻撃ではダメージが下振れ、一方反撃ではダメージが上振れるように乗ります。</p>
+            <div class="formula-box"><code
+                data-i18n="notes.flow.formula">ダメージ ≈ 武器威力 × 編隊率 × (1−迎撃率) × 威力乱数 × (1−実効地形防御) × 属性相性</code></div>
+            <p data-i18n="notes.flow.rng">乱数要素として、通常攻撃ではダメージが下振れ、一方反撃ではダメージが上振れるように乗ります。</p>
             <div class="knowledge-cards two">
-              <div><b>通常攻撃RNG</b><strong>57.5～100%</strong><span>平均78.75%</span></div>
-              <div><b>反撃RNG</b><strong>100～142.5%</strong><span>平均121.25%</span></div>
+              <div><b data-i18n="notes.flow.normalRng">通常攻撃RNG</b><strong
+                  data-i18n="notes.flow.normalRngRange">57.5～100%</strong><span
+                  data-i18n="notes.flow.normalRngMean">平均78.75%</span></div>
+              <div><b data-i18n="notes.flow.counterRng">反撃RNG</b><strong
+                  data-i18n="notes.flow.counterRngRange">100～142.5%</strong><span
+                  data-i18n="notes.flow.counterRngMean">平均121.25%</span></div>
             </div>
           </section>
 
           <section id="knowledgeAvoid">
             <div class="knowledge-section-title"><b>02</b>
-              <h3>回避・命中</h3>
+              <h3 data-i18n="notes.avoid.title">回避・命中</h3>
             </div>
-            <div class="formula-box"><code>実効回避 = 対象回避 + [回避専念時: 対象回避 × 0.5 / 占有HEX数] + 地形回避 − 武器命中</code></div>
-            <p>0～100%に制限後、24bit一様乱数を1回比較します。回避に専念すると、基礎回避率の <code>0.5 / 占有HEX数</code> 倍を加算します。反撃・迎撃時はこのボーナスを受けません。</p>
-            <h4 class="knowledge-subtitle">必中バイパス</h4>
-            <div class="formula-box"><code>必中バイパス設定あり → 回避率 0% / 命中率 100%</code></div>
-            <p>この設定を持つ攻撃は、対象回避・地形回避・武器命中による通常の回避計算を通りません。表示命中値100%や粒子属性そのものが直接の条件ではありません。</p>
+            <div class="formula-box"><code
+                data-i18n="notes.avoid.formula">実効回避 = 対象回避 + [回避専念時: 対象回避 × 0.5 / 占有HEX数] + 地形回避 − 武器命中</code></div>
+            <p data-i18n-html="notes.avoid.body">0～100%に制限後、24bit一様乱数を1回比較します。回避に専念すると、基礎回避率の <code>0.5 /
+                占有HEX数</code> 倍を加算します。反撃・迎撃時はこのボーナスを受けません。</p>
+            <h4 class="knowledge-subtitle" data-i18n="notes.avoid.bypassTitle">必中バイパス</h4>
+            <div class="formula-box"><code data-i18n="notes.avoid.bypassFormula">必中バイパス設定あり → 回避率 0% / 命中率 100%</code>
+            </div>
+            <p data-i18n="notes.avoid.bypassBody">
+              この設定を持つ攻撃は、対象回避・地形回避・武器命中による通常の回避計算を通りません。表示命中値100%や粒子属性そのものが直接の条件ではありません。</p>
             <ul class="knowledge-list">
-              <li>収録中の<b>チャージ武器131定義はすべて必中バイパス設定済み</b>です。チャージ武器以外の一部の特殊攻撃も含まれます。</li>
-              <li><b>表示命中値が100%未満でも必中です。</b>アイビーロッドは表示75%ですが、必中バイパス対象のため実戦では回避計算を通りません。</li>
+              <li data-i18n-html="notes.avoid.bypassCharge">収録中の<b>チャージ武器131定義はすべて必中バイパス設定済み</b>です。チャージ武器以外の一部の特殊攻撃も含まれます。
+              </li>
+              <li data-i18n-html="notes.avoid.bypassDisplay"><b>表示命中値が100%未満でも必中です。</b>アイビーロッドは表示75%ですが、必中バイパス対象のため実戦では回避計算を通りません。
+              </li>
             </ul>
           </section>
 
           <section id="knowledgeAffinity">
             <div class="knowledge-section-title"><b>03</b>
-              <h3>武器属性とユニット相性</h3>
+              <h3 data-i18n="notes.affinity.title">武器属性とユニット相性</h3>
             </div>
-            <p>武器には、ダメージ相性を決める属性と、直行・偏光・追尾など射線や使用条件を決める分類があります。相性ダメージに使われるのは光学・機械・生体などの属性です。</p>
+            <p data-i18n="notes.affinity.intro">
+              武器には、ダメージ相性を決める属性と、直行・偏光・追尾など射線や使用条件を決める分類があります。相性ダメージに使われるのは光学・機械・生体などの属性です。</p>
             <div class="table-scroll">
               <table class="affinity-table">
                 <thead>
                   <tr>
-                    <th>対象系統</th>
-                    <th>光学</th>
-                    <th>機械</th>
-                    <th>生体</th>
-                    <th>粒子</th>
-                    <th>火炎</th>
-                    <th>精神</th>
-                    <th>氷</th>
-                    <th>酸</th>
+                    <th data-i18n="notes.affinity.targetGroup">対象系統</th>
+                    <th data-i18n="notes.affinity.optical">光学</th>
+                    <th data-i18n="notes.affinity.mechanical">機械</th>
+                    <th data-i18n="notes.affinity.biological">生体</th>
+                    <th data-i18n="notes.affinity.particle">粒子</th>
+                    <th data-i18n="notes.affinity.flame">火炎</th>
+                    <th data-i18n="notes.affinity.mental">精神</th>
+                    <th data-i18n="notes.affinity.ice">氷</th>
+                    <th data-i18n="notes.affinity.acid">酸</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th>機械</th>
+                    <th data-i18n="notes.affinity.mechanical">機械</th>
                     <td>±0</td>
                     <td>±0</td>
                     <td class="plus">+20%</td>
@@ -340,7 +372,7 @@
                     <td class="plus">+10%</td>
                   </tr>
                   <tr>
-                    <th>生物</th>
+                    <th data-i18n="notes.affinity.bioGroup">生物</th>
                     <td class="plus">+10%</td>
                     <td class="plus">+20%</td>
                     <td>±0</td>
@@ -351,7 +383,7 @@
                     <td class="plus">+15%</td>
                   </tr>
                   <tr>
-                    <th>岩石</th>
+                    <th data-i18n="notes.affinity.rock">岩石</th>
                     <td>±0</td>
                     <td>±0</td>
                     <td>±0</td>
@@ -362,7 +394,7 @@
                     <td>±0</td>
                   </tr>
                   <tr>
-                    <th>氷</th>
+                    <th data-i18n="notes.affinity.ice">氷</th>
                     <td class="plus">+10%</td>
                     <td>±0</td>
                     <td class="minus">−10%</td>
@@ -373,7 +405,7 @@
                     <td>±0</td>
                   </tr>
                   <tr>
-                    <th>異質</th>
+                    <th data-i18n="notes.affinity.other">異質</th>
                     <td>±0</td>
                     <td>±0</td>
                     <td>±0</td>
@@ -386,77 +418,98 @@
                 </tbody>
               </table>
             </div>
-            <p>"異質"はグリッドロックや琥珀色の瞳孔などに振られています。</p>
+            <p data-i18n="notes.affinity.otherNote">"異質"はグリッドロックや琥珀色の瞳孔などに振られています。</p>
           </section>
 
           <section id="knowledgeTerrain">
             <div class="knowledge-section-title"><b>04</b>
-              <h3>地形回避・地形防御・部分遮蔽</h3>
+              <h3 data-i18n="notes.terrain.title">地形回避・地形防御・部分遮蔽</h3>
             </div>
             <ul class="knowledge-list">
-              <li><b>地形回避</b>は命中判定のブロック率に固定加算されます。</li>
-              <li><b>地形防御</b>は命中後のダメージ減衰です。現在確認できた実HP式では光学属性に適用され、機械属性ミサイルなどはバイパスします。</li>
-              <li><b>機械壁・生体壁</b>は地形回避と光学地形防御の特例対象です。</li>
-              <li><b>部分遮蔽</b>は最大射程2で中間経路の片方だけが塞がる状態。機械属性以外のダメージを50%にします。</li>
+              <li data-i18n-html="notes.terrain.avoid"><b>地形回避</b>は命中判定のブロック率に固定加算されます。</li>
+              <li data-i18n-html="notes.terrain.defense"><b>地形防御</b>は命中後のダメージ減衰です。現在確認できた実HP式では光学属性に適用され、機械属性ミサイルなどはバイパスします。
+              </li>
+              <li data-i18n-html="notes.terrain.walls"><b>機械壁・生体壁</b>は地形回避と光学地形防御の特例対象です。</li>
+              <li data-i18n-html="notes.terrain.partialCover"><b>部分遮蔽</b>は最大射程2で中間経路の片方だけが塞がる状態。機械属性以外のダメージを50%にします。
+              </li>
             </ul>
           </section>
 
           <section id="knowledgeIntercept">
             <div class="knowledge-section-title"><b>05</b>
-              <h3>迎撃は武器対武器の比例減衰</h3>
+              <h3 data-i18n="notes.intercept.title">迎撃は武器対武器の比例減衰</h3>
             </div>
-            <p>機械・生体・氷属性の攻撃に対して、対象が持つ迎撃武器が候補になります。</p>
-            <p>攻撃距離を個別に選ぶのではなく、攻撃武器と迎撃武器の射程が1HEXでも重なれば、その共通射程で迎撃可能として計算します。射程が一部だけ重なる場合は、候補欄に迎撃可能な距離を表示します。</p>
+            <p data-i18n="notes.intercept.intro">機械・生体・氷属性の攻撃に対して、対象が持つ迎撃武器が候補になります。</p>
+            <p data-i18n="notes.intercept.range">
+              攻撃距離を個別に選ぶのではなく、攻撃武器と迎撃武器の射程が1HEXでも重なれば、その共通射程で迎撃可能として計算します。射程が一部だけ重なる場合は、候補欄に迎撃可能な距離を表示します。</p>
             <div class="formula-box">
-              <code>未補正迎撃率 = (迎撃武器威力 / 攻撃武器威力) × (迎撃側現在HP / 最大HP) × (攻撃側最大HP / 現在HP) × 迎撃武器命中</code>
+              <code
+                data-i18n="notes.intercept.formula">未補正迎撃率 = (迎撃武器威力 / 攻撃武器威力) × (迎撃側現在HP / 最大HP) × (攻撃側最大HP / 現在HP) × 迎撃武器命中</code>
             </div>
             <div class="knowledge-cards three">
-              <div><b>10%未満</b><strong>10%</strong><span>最低迎撃率</span></div>
-              <div><b>10～90%未満</b><strong>計算値</strong><span>そのまま減衰</span></div>
-              <div><b>90%以上</b><strong>100%</strong><span>完全迎撃</span></div>
+              <div><b data-i18n="notes.intercept.low">10%未満</b><strong>10%</strong><span
+                  data-i18n="notes.intercept.lowLabel">最低迎撃率</span></div>
+              <div><b data-i18n="notes.intercept.mid">10～90%未満</b><strong
+                  data-i18n="notes.intercept.midValue">計算値</strong><span
+                  data-i18n="notes.intercept.midLabel">そのまま減衰</span></div>
+              <div><b data-i18n="notes.intercept.high">90%以上</b><strong>100%</strong><span
+                  data-i18n="notes.intercept.highLabel">完全迎撃</span></div>
             </div>
-            <p>鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
-            <h4 class="knowledge-subtitle">体当たりに対する迎撃</h4>
-            <p>体当たり・フォースシュートと射程が重なる迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
-            <p>体当たり・フォースシュートなどはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ <b>+25</b> です。</p>
-            <div class="formula-box"><code>反動 = 攻撃側現在HP × 迎撃率 × 0.85（最低25・最大115）</code></div>
+            <p data-i18n="notes.intercept.order">鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
+            <h4 class="knowledge-subtitle" data-i18n="notes.intercept.tackleTitle">体当たりに対する迎撃</h4>
+            <p data-i18n="notes.intercept.tackleIntro">
+              体当たり・フォースシュートと射程が重なる迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
+            <p data-i18n-html="notes.intercept.knockback">体当たり・フォースシュートなどはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ
+              <b>+25</b> です。</p>
+            <div class="formula-box"><code
+                data-i18n="notes.intercept.recoilFormula">反動 = 攻撃側現在HP × 迎撃率 × 0.85（最低25・最大115）</code></div>
             <div class="knowledge-cards two">
-              <div><b>現行の全迎撃武器</b><strong>×0.85</strong><span>定義弾数はすべて2以上</span></div>
-              <div><b>コード上の未使用分岐</b><strong>×1.05</strong><span>定義弾数1・該当武器なし</span></div>
+              <div><b data-i18n="notes.intercept.ammo2">現行の全迎撃武器</b><strong>×0.85</strong><span
+                  data-i18n="notes.intercept.ammo2Label">定義弾数はすべて2以上</span></div>
+              <div><b data-i18n="notes.intercept.ammo1">コード上の未使用分岐</b><strong>×1.05</strong><span
+                  data-i18n="notes.intercept.ammo1Label">定義弾数1・該当武器なし</span></div>
             </div>
-            <p>
+            <p data-i18n-html="notes.intercept.ammoNote">
               この分岐が見るのはゲーム中の残弾数ではなく、武器定義上の初期・最大弾数です。現在残弾は別に管理されるため、残り1発になっても係数は変わりません。抽出した迎撃武器99定義はすべて定義弾数2以上であるため、シミュレーターでは係数を
               <b>0.85固定</b> としています。</p>
-            <p>反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。迎撃しない場合や、迎撃武器の射程外では発生しません。</p>
+            <p data-i18n="notes.intercept.recoilNote">
+              反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。迎撃しない場合や、迎撃武器の射程外では発生しません。</p>
           </section>
 
           <section id="knowledgeSeize">
             <div class="knowledge-section-title"><b>06</b>
-              <h3>鹵獲弾の対象条件と成功率</h3>
+              <h3 data-i18n="notes.seize.title">鹵獲弾の対象条件と成功率</h3>
             </div>
-            <p>鹵獲弾は通常の武器命中・対象回避計算とは別の専用判定を使います。武器データ上の命中値92%は鹵獲成功率ではありません。</p>
-            <div class="formula-box"><code>鹵獲可能条件 = 残HPが0%超～25%以下 または 残燃料が0～40%以下</code></div>
+            <p data-i18n="notes.seize.intro">鹵獲弾は通常の武器命中・対象回避計算とは別の専用判定を使います。武器データ上の命中値92%は鹵獲成功率ではありません。</p>
+            <div class="formula-box"><code
+                data-i18n="notes.seize.formula">鹵獲可能条件 = 残HPが0%超～25%以下 または 残燃料が0～40%以下</code></div>
             <div class="knowledge-cards three">
-              <div><b>通常時</b><strong>60%</strong><span>鹵獲成功率</span></div>
-              <div><b>回避扱い</b><strong>15%</strong><span>鹵獲成功率</span></div>
-              <div><b>HP・燃料条件外</b><strong>0%</strong><span>鹵獲不可</span></div>
+              <div><b data-i18n="notes.seize.normal">通常時</b><strong>60%</strong><span
+                  data-i18n="notes.seize.successRate">鹵獲成功率</span></div>
+              <div><b data-i18n="notes.seize.evaded">回避扱い</b><strong>15%</strong><span
+                  data-i18n="notes.seize.successRate">鹵獲成功率</span></div>
+              <div><b data-i18n="notes.seize.ineligible">HP・燃料条件外</b><strong>0%</strong><span
+                  data-i18n="notes.seize.ineligibleLabel">鹵獲不可</span></div>
             </div>
             <ul class="knowledge-list">
-              <li><b>HP条件</b>は最大HPの75%以上を削り、残HPを25%以下にすると成立します。25%ちょうどを含み、HP 0は含みません。</li>
-              <li><b>燃料条件</b>は残燃料40%以下で成立します。HPが高くても、燃料を60%以上消費させれば候補になります。</li>
-              <li><b>HPをさらに減らしても成功率は上がりません。</b>残HP25%でも1%でも、通常60%・回避扱い15%です。</li>
-              <li><b>対象外</b>は旗艦、大型、親子・接続中のユニットなどです。攻撃失敗扱いの場合も鹵獲できません。</li>
-              <li><b>鹵獲弾は迎撃率0%</b>の特例で、成功後はミッション中だけ自軍ユニットになり、終了後に資源へ解体されます。</li>
+              <li data-i18n-html="notes.seize.hpCondition"><b>HP条件</b>は最大HPの75%以上を削り、残HPを25%以下にすると成立します。25%ちょうどを含み、HP
+                0は含みません。</li>
+              <li data-i18n-html="notes.seize.fuelCondition"><b>燃料条件</b>は残燃料40%以下で成立します。HPが高くても、燃料を60%以上消費させれば候補になります。
+              </li>
+              <li data-i18n-html="notes.seize.noScaling"><b>HPをさらに減らしても成功率は上がりません。</b>残HP25%でも1%でも、通常60%・回避扱い15%です。</li>
+              <li data-i18n-html="notes.seize.excluded"><b>対象外</b>は旗艦、大型、親子・接続中のユニットなどです。攻撃失敗扱いの場合も鹵獲できません。</li>
+              <li data-i18n-html="notes.seize.special"><b>鹵獲弾は迎撃率0%</b>の特例で、成功後はミッション中だけ自軍ユニットになり、終了後に資源へ解体されます。</li>
             </ul>
           </section>
 
           <section id="knowledgeSpecial">
             <div class="knowledge-section-title"><b>07</b>
-              <h3>チャージ・特殊武器</h3>
+              <h3 data-i18n="notes.special.title">チャージ・特殊武器</h3>
             </div>
             <ul class="knowledge-list">
-              <li><b>波動砲などのチャージ武器</b>は、チャージ・範囲選択・専用演出に特殊分岐がありますが、命中後のHPダメージは基本的に表記APから同じ系統へ合流します。</li>
-              <li>命中判定では、収録中のチャージ武器はすべて上記の<b>必中バイパス</b>が適用され、対象や地形の回避率を無視します。</li>
+              <li data-i18n-html="notes.special.charge"><b>波動砲などのチャージ武器</b>は、チャージ・範囲選択・専用演出に特殊分岐がありますが、命中後のHPダメージは基本的に表記APから同じ系統へ合流します。
+              </li>
+              <li data-i18n-html="notes.special.bypass">命中判定では、収録中のチャージ武器はすべて上記の<b>必中バイパス</b>が適用され、対象や地形の回避率を無視します。</li>
             </ul>
           </section>
 
