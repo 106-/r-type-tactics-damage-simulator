@@ -76,11 +76,16 @@
     "UNIT_ID.E_TXT3_BOOST",
     "UNIT_ID.B_SCANT_4_BOOST",
   ]);
+  const shipUnitTypes = new Set([2, 3, 8, 9, 20]);
+  const shipTypeKeyPattern = /(^utyp_ship$|battle_ship|cruiser|carrier|destroyer|cargo|landing_ship|^utyp_bs_|^utyp_cr_|^utyp_weapon$|^utyp_super_bs$|^utyp_b_last_)/;
   let visibleAttackers = data.units;
   let visibleTargets = data.units;
   let interceptContextKey = "";
   let lastAttackerId = "";
   let calculatePending = false;
+  let unitPickerRole = "attacker";
+  let unitPickerFaction = "all";
+  let unitPickerCategory = "all";
 
   // 1操作で複数の更新経路からcalculateが呼ばれるため、1フレームに1回へまとめる
   function scheduleCalculate() {
@@ -166,17 +171,154 @@
     select.replaceChildren();
     for (const unit of units) select.append(option(unit.id, unitLabel(unit)));
     if (units.some((unit) => unit.id === selectedId)) select.value = selectedId;
+    updateUnitPickerTrigger(select.id);
   }
 
   function filteredUnits(query, requireWeapon) {
     const needle = query.trim().toLocaleLowerCase(i18n.language);
     return data.units.filter((unit) => {
+      if (unit.id.endsWith("_SHARE")) return false;
       const hasNormal = hasNormalAttack(unit);
       if (!requireWeapon && isDecoyUnit(unit) && !hasNormal) return false;
       if (requireWeapon && !hasSelectableAttack(unit)) return false;
       const names = `${unitLabel(unit)} ${unit.nameJa || ""} ${unit.nameEn || ""}`.toLocaleLowerCase(i18n.language);
       return !needle || names.includes(needle) || unit.id.toLowerCase().includes(needle);
     });
+  }
+
+  function unitFaction(unit) {
+    return unit?.faction || "other";
+  }
+
+  function isForceUnit(unit) {
+    const id = (unit?.id || "").replace(/^UNIT_ID\./, "");
+    return /(^F_|^FB_)/.test(id) || String(unit?.typeKey || "").includes("force");
+  }
+
+  function isShipUnit(unit) {
+    return shipUnitTypes.has(unit?.type) || shipTypeKeyPattern.test(String(unit?.typeKey || ""));
+  }
+
+  function matchesUnitCategory(unit, category) {
+    if (category === "all") return true;
+    if (category === "force") return isForceUnit(unit);
+    if (category === "ship") return isShipUnit(unit);
+    if (category === "formation") return unit?.formationMax === 5;
+    return true;
+  }
+
+  function unitCategory(unit) {
+    if (isForceUnit(unit)) return "force";
+    if (isShipUnit(unit)) return "ship";
+    if (unit?.formationMax === 5) return "formation";
+    return "single";
+  }
+
+  function factionLabel(faction) {
+    return {
+      human: L("人類側", "Human"),
+      bydo: L("バイド側", "Bydo"),
+      other: L("その他側", "Other"),
+    }[faction] || L("その他側", "Other");
+  }
+
+  function categoryLabel(category) {
+    return {
+      ship: L("艦船", "Ship"),
+      formation: L("編隊ユニット", "Formation unit"),
+      force: L("フォース", "Force"),
+      single: L("単体・施設", "Single unit / object"),
+    }[category] || L("単体・施設", "Single unit / object");
+  }
+
+  function unitPickerMeta(unit) {
+    const formation = L(`${unit?.formationMax || 1}機編成`, `${unit?.formationMax || 1}-unit formation`);
+    return `${factionLabel(unitFaction(unit))} / ${categoryLabel(unitCategory(unit))} / HP ${unit?.hp || 0} / ${formation} / ${unit?.occupiedHex || 1} HEX`;
+  }
+
+  function updateUnitPickerTrigger(role) {
+    const select = $(role);
+    const unit = data.units.find((item) => item.id === select?.value);
+    const value = $(`${role}PickerValue`);
+    const meta = $(`${role}PickerMeta`);
+    if (!value || !meta) return;
+    value.textContent = unit ? unitLabel(unit) : "--";
+    meta.textContent = unit ? unitPickerMeta(unit) : "--";
+  }
+
+  function updateUnitPickerFilterButtons() {
+    document.querySelectorAll("[data-unit-filter]").forEach((button) => {
+      const active = button.dataset.value === (button.dataset.unitFilter === "faction" ? unitPickerFaction : unitPickerCategory);
+      button.setAttribute("aria-pressed", String(active));
+    });
+  }
+
+  function renderUnitPicker() {
+    const requireWeapon = unitPickerRole === "attacker";
+    const selectedId = $(unitPickerRole).value;
+    const query = $("unitPickerSearch").value;
+    const candidates = filteredUnits(query, requireWeapon)
+      .filter((unit) => unitPickerFaction === "all" || unitFaction(unit) === unitPickerFaction)
+      .filter((unit) => matchesUnitCategory(unit, unitPickerCategory))
+      .sort((a, b) => unitLabel(a).localeCompare(unitLabel(b), i18n.language === "ja" ? "ja" : "en"));
+
+    $("unitPickerCount").textContent = L(`${candidates.length}件`, `${candidates.length} result${candidates.length === 1 ? "" : "s"}`);
+    $("unitPickerEmpty").hidden = candidates.length > 0;
+    const list = $("unitPickerList");
+    list.hidden = candidates.length === 0;
+    list.replaceChildren();
+
+    for (const unit of candidates) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "unit-picker-item";
+      button.dataset.unitId = unit.id;
+      button.setAttribute("role", "option");
+      button.setAttribute("aria-selected", String(unit.id === selectedId));
+
+      const title = document.createElement("strong");
+      title.textContent = unitLabel(unit);
+      const badges = document.createElement("span");
+      badges.className = "unit-picker-item-badges";
+      const faction = unitFaction(unit);
+      const factionBadge = document.createElement("i");
+      factionBadge.className = `unit-picker-badge faction-${faction}`;
+      factionBadge.textContent = factionLabel(faction);
+      const categoryBadge = document.createElement("i");
+      categoryBadge.className = "unit-picker-badge";
+      categoryBadge.textContent = categoryLabel(unitCategory(unit));
+      badges.append(factionBadge, categoryBadge);
+      const meta = document.createElement("small");
+      meta.textContent = `HP ${unit.hp || 0} / ${L(`最大${unit.formationMax || 1}機`, `max ${unit.formationMax || 1} unit${(unit.formationMax || 1) === 1 ? "" : "s"}`)} / ${unit.occupiedHex || 1} HEX`;
+      button.append(title, badges, meta);
+      list.append(button);
+    }
+  }
+
+  function openUnitPicker(role) {
+    unitPickerRole = role;
+    unitPickerFaction = "all";
+    unitPickerCategory = "all";
+    $("unitPickerSearch").value = "";
+    $("unitPickerContext").textContent = role === "attacker" ? L("攻撃側", "Attacker") : L("対象側", "Target");
+    updateUnitPickerFilterButtons();
+    renderUnitPicker();
+    $(`${role}Picker`).setAttribute("aria-expanded", "true");
+    $("unitPickerDialog").showModal();
+    requestAnimationFrame(() => {
+      $("unitPickerSearch").focus();
+      $("unitPickerList").querySelector('[aria-selected="true"]')?.scrollIntoView({ block: "nearest" });
+    });
+  }
+
+  function chooseUnitFromPicker(unitId) {
+    const select = $(unitPickerRole);
+    if (![...select.options].some((item) => item.value === unitId)) return;
+    select.value = unitId;
+    updateUnitPickerTrigger(unitPickerRole);
+    if (unitPickerRole === "attacker") updateWeapons();
+    else updateTargetType();
+    $("unitPickerDialog").close();
   }
 
   function selectedUnit(selectId, list) {
@@ -709,8 +851,8 @@
     i18n.setLanguage(next);
     $("languageSelect").value = i18n.language;
     fillTargetTypeNames();
-    visibleAttackers = filteredUnits($("attackerSearch").value, true);
-    visibleTargets = filteredUnits($("targetSearch").value, false);
+    visibleAttackers = filteredUnits("", true);
+    visibleTargets = filteredUnits("", false);
     fillUnitSelect($("attacker"), visibleAttackers, attackerId);
     fillUnitSelect($("target"), visibleTargets, targetId);
     lastAttackerId = attackerId;
@@ -720,6 +862,10 @@
     updateTargetType();
     if ([...$("interceptWeapon").options].some((item) => item.value === interceptId)) $("interceptWeapon").value = interceptId;
     updateEvadeFocusStatus();
+    if ($("unitPickerDialog").open) {
+      $("unitPickerContext").textContent = unitPickerRole === "attacker" ? L("攻撃側", "Attacker") : L("対象側", "Target");
+      renderUnitPicker();
+    }
     calculate();
   }
 
@@ -733,21 +879,38 @@
   updateWeaponMeta();
   updateTargetType();
 
-  $("attackerSearch").addEventListener("input", (event) => {
-    const previous = $("attacker").value;
-    visibleAttackers = filteredUnits(event.target.value, true);
-    fillUnitSelect($("attacker"), visibleAttackers, previous);
+  $("attackerPicker").addEventListener("click", () => openUnitPicker("attacker"));
+  $("targetPicker").addEventListener("click", () => openUnitPicker("target"));
+  $("unitPickerClose").addEventListener("click", () => $("unitPickerDialog").close());
+  $("unitPickerDialog").addEventListener("close", () => {
+    $("attackerPicker").setAttribute("aria-expanded", "false");
+    $("targetPicker").setAttribute("aria-expanded", "false");
+  });
+  $("unitPickerDialog").addEventListener("click", (event) => {
+    if (event.target === $("unitPickerDialog")) $("unitPickerDialog").close();
+  });
+  $("unitPickerSearch").addEventListener("input", renderUnitPicker);
+  $("unitPickerList").addEventListener("click", (event) => {
+    const item = event.target.closest("[data-unit-id]");
+    if (item) chooseUnitFromPicker(item.dataset.unitId);
+  });
+  document.querySelectorAll("[data-unit-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.dataset.unitFilter === "faction") unitPickerFaction = button.dataset.value;
+      else unitPickerCategory = button.dataset.value;
+      updateUnitPickerFilterButtons();
+      renderUnitPicker();
+    });
+  });
+  $("attacker").addEventListener("change", () => {
+    updateUnitPickerTrigger("attacker");
     updateWeapons();
   });
-  $("targetSearch").addEventListener("input", (event) => {
-    const previous = $("target").value;
-    visibleTargets = filteredUnits(event.target.value, false);
-    fillUnitSelect($("target"), visibleTargets, previous);
+  $("weapon").addEventListener("change", updateWeaponMeta);
+  $("target").addEventListener("change", () => {
+    updateUnitPickerTrigger("target");
     updateTargetType();
   });
-  $("attacker").addEventListener("change", updateWeapons);
-  $("weapon").addEventListener("change", updateWeaponMeta);
-  $("target").addEventListener("change", updateTargetType);
   $("evadeFocus").addEventListener("change", () => {
     if ($("evadeFocus").checked && $("interceptWeapon").value) {
       $("interceptWeapon").value = "";
@@ -769,7 +932,7 @@
   });
   $("languageSelect").addEventListener("change", (event) => changeLanguage(event.target.value));
 
-  document.querySelectorAll("input, select").forEach((element) => {
+  document.querySelectorAll("input:not(#unitPickerSearch), select").forEach((element) => {
     element.addEventListener("input", scheduleCalculate);
     element.addEventListener("change", scheduleCalculate);
   });

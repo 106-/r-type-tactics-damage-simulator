@@ -44,9 +44,15 @@
           <div class="panel-title"><b>01</b>
             <h2 data-i18n="attacker.title">攻撃側</h2>
           </div>
-          <label><span data-i18n="common.unitSearch">ユニット検索</span><input id="attackerSearch" type="search"
-              placeholder="例：アロー・ヘッド" data-i18n-placeholder="attacker.searchExample"></label>
-          <label><span data-i18n="attacker.unit">攻撃ユニット</span><select id="attacker"></select></label>
+          <div class="unit-picker-field">
+            <span class="form-field-label" data-i18n="attacker.unit">攻撃ユニット</span>
+            <button id="attackerPicker" class="unit-picker-trigger" type="button" aria-haspopup="dialog"
+              aria-controls="unitPickerDialog" aria-expanded="false">
+              <span><strong id="attackerPickerValue">--</strong><small id="attackerPickerMeta">--</small></span>
+              <b data-i18n="unitPicker.choose">選択</b>
+            </button>
+            <select id="attacker" class="unit-native-select" tabindex="-1" aria-hidden="true"></select>
+          </div>
           <label><span data-i18n="attacker.weapon">使用武器</span><select id="weapon"></select></label>
           <div id="weaponMeta" class="meta-line"></div>
           <div class="grid five">
@@ -85,9 +91,15 @@
           <div class="panel-title"><b>02</b>
             <h2 data-i18n="target.title">対象</h2>
           </div>
-          <label><span data-i18n="common.unitSearch">ユニット検索</span><input id="targetSearch" type="search"
-              placeholder="例：ガウパー" data-i18n-placeholder="target.searchExample"></label>
-          <label><span data-i18n="target.unit">被害ユニット</span><select id="target"></select></label>
+          <div class="unit-picker-field">
+            <span class="form-field-label" data-i18n="target.unit">被害ユニット</span>
+            <button id="targetPicker" class="unit-picker-trigger" type="button" aria-haspopup="dialog"
+              aria-controls="unitPickerDialog" aria-expanded="false">
+              <span><strong id="targetPickerValue">--</strong><small id="targetPickerMeta">--</small></span>
+              <b data-i18n="unitPicker.choose">選択</b>
+            </button>
+            <select id="target" class="unit-native-select" tabindex="-1" aria-hidden="true"></select>
+          </div>
           <div class="grid five">
             <label><span data-i18n="common.rank">熟練ランク</span><select id="targetRank">
                 <option value="0">0 (100%)</option>
@@ -273,6 +285,48 @@
     </footer>
 
   </main>
+
+  <dialog id="unitPickerDialog" class="unit-picker-dialog" aria-labelledby="unitPickerTitle">
+    <div class="unit-picker-shell">
+      <header class="unit-picker-head">
+        <div>
+          <p>UNIT DATABASE</p>
+          <h2 id="unitPickerTitle" data-i18n="unitPicker.title">ユニット選択</h2>
+          <span id="unitPickerContext">--</span>
+        </div>
+        <button id="unitPickerClose" type="button" aria-label="閉じる" data-i18n-aria-label="notes.close">×</button>
+      </header>
+      <div class="unit-picker-tools">
+        <label><span data-i18n="unitPicker.search">ユニット名で検索</span>
+          <input id="unitPickerSearch" type="search" placeholder="名前を入力" data-i18n-placeholder="unitPicker.searchPlaceholder"
+            autocomplete="off"></label>
+        <div class="unit-filter-group" role="group" aria-label="陣営" data-i18n-aria-label="unitPicker.faction">
+          <span data-i18n="unitPicker.faction">陣営</span>
+          <div>
+            <button type="button" data-unit-filter="faction" data-value="all" aria-pressed="true" data-i18n="unitPicker.all">すべて</button>
+            <button type="button" data-unit-filter="faction" data-value="human" aria-pressed="false" data-i18n="unitPicker.human">人類側</button>
+            <button type="button" data-unit-filter="faction" data-value="bydo" aria-pressed="false" data-i18n="unitPicker.bydo">バイド側</button>
+            <button type="button" data-unit-filter="faction" data-value="other" aria-pressed="false" data-i18n="unitPicker.other">その他側</button>
+          </div>
+        </div>
+        <div class="unit-filter-group" role="group" aria-label="種別" data-i18n-aria-label="unitPicker.category">
+          <span data-i18n="unitPicker.category">種別</span>
+          <div>
+            <button type="button" data-unit-filter="category" data-value="all" aria-pressed="true" data-i18n="unitPicker.all">すべて</button>
+            <button type="button" data-unit-filter="category" data-value="ship" aria-pressed="false" data-i18n="unitPicker.ship">艦船</button>
+            <button type="button" data-unit-filter="category" data-value="formation" aria-pressed="false" data-i18n="unitPicker.formation">編隊ユニット</button>
+            <button type="button" data-unit-filter="category" data-value="force" aria-pressed="false" data-i18n="unitPicker.force">フォース</button>
+          </div>
+        </div>
+      </div>
+      <div class="unit-picker-result-head">
+        <span id="unitPickerCount">--</span>
+        <small data-i18n="unitPicker.selectHint">候補を選択すると即座に反映します</small>
+      </div>
+      <div id="unitPickerList" class="unit-picker-list" role="listbox"></div>
+      <p id="unitPickerEmpty" class="unit-picker-empty" hidden data-i18n="unitPicker.empty">条件に一致するユニットがありません。</p>
+    </div>
+  </dialog>
 
   <dialog id="knowledgeDialog" class="knowledge-dialog" aria-labelledby="knowledgeTitle">
     <div class="knowledge-shell">

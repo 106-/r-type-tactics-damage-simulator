@@ -23,6 +23,7 @@ The "Analysis Notes" button in the header shows the reconstructed combat flow, e
 - Normal/counterattack modes, unit-specific formation size (1/5) with loss ratios, knockback collision, and the 50%-damage flag
 - Target unit type and occupied hexes are set automatically from the selected unit
 - The veterancy-improved stat is shown for both sides, and the bonus is applied automatically to HP, evasion, weapon AP, and accuracy
+- Rich unit picker with name search plus faction (Human, Bydo, Other) and category (Ship, Formation unit, Force) filters
 
 ## Analysis Notes
 
