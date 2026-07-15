@@ -327,16 +327,11 @@
     }
     const maxHp = unitMaxHp(attacker, Number($("rank").value));
     const currentHp = maxHp * intercept.attackerHp;
-    const multiplier = intercept.weapon.bulletNum > 1 ? .85 : 1.05;
+    const multiplier = .85;
     const raw = currentHp * intercept.rate * multiplier;
     const damage = Math.min(115, Math.max(25, raw));
     const remainingHp = Math.max(0, currentHp - damage);
     return { active: true, damage, raw, maxHp, currentHp, remainingHp, multiplier, destroyed: remainingHp <= 0 };
-  }
-
-  function updateInterceptWeaponDetails() {
-    const weapon = weapons.get($("interceptWeapon").value);
-    $("interceptBulletNum").value = weapon ? String(weapon.bulletNum) : "--";
   }
 
   function updateInterceptWeapons() {
@@ -392,7 +387,6 @@
     interceptContextKey = contextKey;
     if (select.value) $("evadeFocus").checked = false;
     else if (contextChanged) $("evadeFocus").checked = true;
-    updateInterceptWeaponDetails();
     updateEvadeFocusStatus();
     scheduleCalculate();
   }
@@ -469,7 +463,6 @@
     $("interceptRateResult").textContent = "--";
     $("interceptPass").textContent = "--";
     $("interceptFormula").textContent = "";
-    $("interceptBulletNum").value = "--";
     $("tackleSelfCard").hidden = true;
     $("formulaNote").textContent = "攻撃ユニット・武器・対象ユニットを選択してください。";
     $("formulaNote").classList.remove("warning");
@@ -604,8 +597,7 @@
         ? `攻撃側撃破（現在HP ${tackleSelfDamage.currentHp.toFixed(1)}）`
         : `攻撃側HP ${maxHpPercent.toFixed(1)}%減 / 残り ${tackleSelfDamage.remainingHp.toFixed(1)}`;
       const clampText = tackleSelfDamage.raw < 25 ? " → 下限25" : tackleSelfDamage.raw > 115 ? " → 上限115" : "";
-      const bulletText = intercept.weapon.bulletNum > 1 ? "複数弾の迎撃武器" : "単発の迎撃武器";
-      $("tackleSelfFormula").textContent = `現在HP ${tackleSelfDamage.currentHp.toFixed(1)} × 迎撃 ${(intercept.rate * 100).toFixed(1)}% × 係数 ${tackleSelfDamage.multiplier.toFixed(2)}（${bulletText}） = ${tackleSelfDamage.raw.toFixed(1)}${clampText}`;
+      $("tackleSelfFormula").textContent = `現在HP ${tackleSelfDamage.currentHp.toFixed(1)} × 迎撃 ${(intercept.rate * 100).toFixed(1)}% × 係数 ${tackleSelfDamage.multiplier.toFixed(2)} = ${tackleSelfDamage.raw.toFixed(1)}${clampText}`;
     }
     if (intercept.weapon) {
       const clampText = intercept.raw < .1 ? " / 最低10%へ補正" : intercept.raw >= .9 ? " / 90%以上のため完全迎撃" : "";
@@ -667,7 +659,6 @@
   $("interceptWeapon").addEventListener("change", () => {
     if ($("interceptWeapon").value) $("evadeFocus").checked = false;
     else $("evadeFocus").checked = true;
-    updateInterceptWeaponDetails();
     updateEvadeFocusStatus();
     $("targetSkill").value = skillName(selectedUnit("target", visibleTargets), "target");
   });

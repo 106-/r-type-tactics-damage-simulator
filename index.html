@@ -104,7 +104,7 @@
               <div><span>INTERCEPTION</span><strong>迎撃システム</strong></div>
               <b id="interceptStatus">迎撃対象外</b>
             </div>
-            <div class="grid four">
+            <div class="grid three">
               <label>迎撃武器
                 <select id="interceptWeapon" disabled>
                   <option value="">迎撃なし</option>
@@ -112,7 +112,6 @@
               </label>
               <label>攻撃側 現在HP率（%）<input id="attackerHpRate" type="number" min="1" max="100" value="100"></label>
               <label>迎撃側 現在HP率（%）<input id="interceptorHpRate" type="number" min="1" max="100" value="100"></label>
-              <label>迎撃武器 弾数<input id="interceptBulletNum" type="text" value="--" readonly></label>
             </div>
             <div class="intercept-readout">
               <span>迎撃による被ダメ減衰</span>
@@ -405,13 +404,16 @@
             </div>
             <p>鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
             <h4 class="knowledge-subtitle">体当たりに対する迎撃</h4>
-            <p>体当たり・フォースシュートなどはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ <b>+25</b> です。</p>
             <p>体当たり・フォースシュートと射程が重なる迎撃武器で迎撃されると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
-            <div class="formula-box"><code>反動 = 攻撃側現在HP × 迎撃率 × 迎撃武器係数（最低25・最大115）</code></div>
+            <p>体当たり・フォースシュートなどはノックバックを発生させます。移動先が地形またはユニットで塞がると追加基礎ダメージ <b>+25</b> です。</p>
+            <div class="formula-box"><code>反動 = 攻撃側現在HP × 迎撃率 × 0.85（最低25・最大115）</code></div>
             <div class="knowledge-cards two">
-              <div><b>複数弾の迎撃武器</b><strong>×0.85</strong><span>反動をやや軽減</span></div>
-              <div><b>単発の迎撃武器</b><strong>×1.05</strong><span>反動をやや増加</span></div>
+              <div><b>現行の全迎撃武器</b><strong>×0.85</strong><span>定義弾数はすべて2以上</span></div>
+              <div><b>コード上の未使用分岐</b><strong>×1.05</strong><span>定義弾数1・該当武器なし</span></div>
             </div>
+            <p>
+              この分岐が見るのはゲーム中の残弾数ではなく、武器定義上の初期・最大弾数です。現在残弾は別に管理されるため、残り1発になっても係数は変わりません。抽出した迎撃武器99定義はすべて定義弾数2以上であるため、シミュレーターでは係数を
+              <b>0.85固定</b> としています。</p>
             <p>反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。迎撃しない場合や、迎撃武器の射程外では発生しません。</p>
           </section>
 
