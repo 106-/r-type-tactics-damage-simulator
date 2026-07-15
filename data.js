@@ -751,7 +751,7 @@ window.RTYPE_SIM_DATA = {
         },
         {
             "id": "UNIT_ID.N_3002_BILL",
-            "name": "UNIT_ID.N_3002_BILL",
+            "name": "高層ビル",
             "type": 17,
             "typeKey": "utyp_facility",
             "formationMax": 1,
@@ -761,12 +761,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_3002_BILL",
-            "nameEn": "UNIT_ID.N_3002_BILL"
+            "nameJa": "高層ビル",
+            "nameEn": "SKYSCRAPER"
         },
         {
             "id": "UNIT_ID.N_BUILDING_AFTER",
-            "name": "UNIT_ID.N_BUILDING_AFTER",
+            "name": "崩壊しつつある建造物",
             "type": 17,
             "typeKey": "utyp_facility",
             "formationMax": 1,
@@ -776,12 +776,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_BUILDING_AFTER",
-            "nameEn": "UNIT_ID.N_BUILDING_AFTER"
+            "nameJa": "崩壊しつつある建造物",
+            "nameEn": "CRUMBLING BUILDING"
         },
         {
             "id": "UNIT_ID.N_JUPITER_DEBRIS",
-            "name": "UNIT_ID.N_JUPITER_DEBRIS",
+            "name": "艦船の残骸",
             "type": 17,
             "typeKey": "utyp_facility",
             "formationMax": 1,
@@ -791,12 +791,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_JUPITER_DEBRIS",
-            "nameEn": "UNIT_ID.N_JUPITER_DEBRIS"
+            "nameJa": "艦船の残骸",
+            "nameEn": "SHIP'S WRECKAGE"
         },
         {
             "id": "UNIT_ID.N_LAST_SPACE_DEBRIS",
-            "name": "UNIT_ID.N_LAST_SPACE_DEBRIS",
+            "name": "正体不明の障壁",
             "type": 1,
             "typeKey": "utyp_facility",
             "formationMax": 1,
@@ -806,12 +806,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_LAST_SPACE_DEBRIS",
-            "nameEn": "UNIT_ID.N_LAST_SPACE_DEBRIS"
+            "nameJa": "正体不明の障壁",
+            "nameEn": "UNIDENTIFIED BARRIER"
         },
         {
             "id": "UNIT_ID.BASE_WALL_GRITONIL",
-            "name": "UNIT_ID.BASE_WALL_GRITONIL",
+            "name": "グリトニルの開閉ゲート",
             "type": 1,
             "typeKey": "utyp_facility",
             "formationMax": 1,
@@ -821,12 +821,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.BASE_WALL_GRITONIL",
-            "nameEn": "UNIT_ID.BASE_WALL_GRITONIL"
+            "nameJa": "グリトニルの開閉ゲート",
+            "nameEn": "GLITNIR GATES"
         },
         {
             "id": "UNIT_ID.N_MARS_ROCK",
-            "name": "UNIT_ID.N_MARS_ROCK",
+            "name": "火星の岩盤",
             "type": 17,
             "typeKey": "unit_n_mars_rock",
             "formationMax": 1,
@@ -836,12 +836,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_MARS_ROCK",
-            "nameEn": "UNIT_ID.N_MARS_ROCK"
+            "nameJa": "火星の岩盤",
+            "nameEn": "MARS ROCK"
         },
         {
             "id": "UNIT_ID.N_MOON_ROCK",
-            "name": "UNIT_ID.N_MOON_ROCK",
+            "name": "月の岩盤",
             "type": 17,
             "typeKey": "unit_n_moon_rock",
             "formationMax": 1,
@@ -851,12 +851,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_MOON_ROCK",
-            "nameEn": "UNIT_ID.N_MOON_ROCK"
+            "nameJa": "月の岩盤",
+            "nameEn": "MOON ROCK"
         },
         {
             "id": "UNIT_ID.N_ROCK",
-            "name": "UNIT_ID.N_ROCK",
+            "name": "岩",
             "type": 17,
             "typeKey": "unit_n_rock",
             "formationMax": 1,
@@ -866,12 +866,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_ROCK",
-            "nameEn": "UNIT_ID.N_ROCK"
+            "nameJa": "岩",
+            "nameEn": "ROCKS"
         },
         {
             "id": "UNIT_ID.N_ICE_S",
-            "name": "UNIT_ID.N_ICE_S",
+            "name": "氷塊・小",
             "type": 18,
             "typeKey": "unit_n_ice_s",
             "formationMax": 5,
@@ -881,12 +881,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_ICE_S",
-            "nameEn": "UNIT_ID.N_ICE_S"
+            "nameJa": "氷塊・小",
+            "nameEn": "SMALL ICE FLOE"
         },
         {
             "id": "UNIT_ID.N_ICE_S_NARUKI",
-            "name": "UNIT_ID.N_ICE_S_NARUKI",
+            "name": "氷塊・小",
             "type": 18,
             "typeKey": "unit_n_ice_s",
             "formationMax": 5,
@@ -896,12 +896,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_ICE_S_NARUKI",
-            "nameEn": "UNIT_ID.N_ICE_S_NARUKI"
+            "nameJa": "氷塊・小",
+            "nameEn": "SMALL ICE FLOE"
         },
         {
             "id": "UNIT_ID.N_ICE_M",
-            "name": "UNIT_ID.N_ICE_M",
+            "name": "氷塊・中",
             "type": 18,
             "typeKey": "unit_n_ice_m",
             "formationMax": 1,
@@ -911,12 +911,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_ICE_M",
-            "nameEn": "UNIT_ID.N_ICE_M"
+            "nameJa": "氷塊・中",
+            "nameEn": "ICE FLOE"
         },
         {
             "id": "UNIT_ID.N_DRYICE",
-            "name": "UNIT_ID.N_DRYICE",
+            "name": "水面浮遊氷",
             "type": 18,
             "typeKey": "unit_n_dryice",
             "formationMax": 1,
@@ -926,8 +926,8 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DRYICE",
-            "nameEn": "UNIT_ID.N_DRYICE"
+            "nameJa": "水面浮遊氷",
+            "nameEn": "ICEBERG"
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE",
@@ -991,7 +991,7 @@ window.RTYPE_SIM_DATA = {
         },
         {
             "id": "UNIT_ID.N_ICICLE_1",
-            "name": "UNIT_ID.N_ICICLE_1",
+            "name": "氷柱",
             "type": 18,
             "typeKey": "unit_n_icicle",
             "formationMax": 1,
@@ -1001,12 +1001,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_ICICLE_1",
-            "nameEn": "UNIT_ID.N_ICICLE_1"
+            "nameJa": "氷柱",
+            "nameEn": "ICE PILLAR"
         },
         {
             "id": "UNIT_ID.N_ICICLE_2",
-            "name": "UNIT_ID.N_ICICLE_2",
+            "name": "氷柱",
             "type": 18,
             "typeKey": "unit_n_icicle",
             "formationMax": 1,
@@ -1016,8 +1016,8 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_ICICLE_2",
-            "nameEn": "UNIT_ID.N_ICICLE_2"
+            "nameJa": "氷柱",
+            "nameEn": "ICE PILLAR"
         },
         {
             "id": "UNIT_ID.N_HOUDAI",
@@ -2139,7 +2139,7 @@ window.RTYPE_SIM_DATA = {
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_4",
-            "name": "UNIT_ID.N_DEGI_YOKO_4",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2149,12 +2149,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_YOKO_4",
-            "nameEn": "UNIT_ID.N_DEGI_YOKO_4"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_6",
-            "name": "UNIT_ID.N_DEGI_YOKO_6",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2164,12 +2164,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_YOKO_6",
-            "nameEn": "UNIT_ID.N_DEGI_YOKO_6"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_3_UE",
-            "name": "UNIT_ID.N_DEGI_3_UE",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2179,12 +2179,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_3_UE",
-            "nameEn": "UNIT_ID.N_DEGI_3_UE"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA",
-            "name": "UNIT_ID.N_DEGI_3_SHITA",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2194,12 +2194,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_3_SHITA",
-            "nameEn": "UNIT_ID.N_DEGI_3_SHITA"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_6",
-            "name": "UNIT_ID.N_DEGI_6",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2209,12 +2209,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_6",
-            "nameEn": "UNIT_ID.N_DEGI_6"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_1",
-            "name": "UNIT_ID.N_DEGI_1",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2224,12 +2224,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_1",
-            "nameEn": "UNIT_ID.N_DEGI_1"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_8",
-            "name": "UNIT_ID.N_DEGI_8",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2239,12 +2239,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_8",
-            "nameEn": "UNIT_ID.N_DEGI_8"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA_G",
-            "name": "UNIT_ID.N_DEGI_3_SHITA_G",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2254,12 +2254,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_3_SHITA_G",
-            "nameEn": "UNIT_ID.N_DEGI_3_SHITA_G"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_DEGI_6_Y",
-            "name": "UNIT_ID.N_DEGI_6_Y",
+            "name": "デジタルウォール",
             "type": 19,
             "typeKey": "utyp_digi_wall",
             "formationMax": 1,
@@ -2269,12 +2269,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_DEGI_6_Y",
-            "nameEn": "UNIT_ID.N_DEGI_6_Y"
+            "nameJa": "デジタルウォール",
+            "nameEn": "DIGITAL WALL"
         },
         {
             "id": "UNIT_ID.N_YOUGAN_01",
-            "name": "UNIT_ID.N_YOUGAN_01",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2284,12 +2284,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_YOUGAN_01",
-            "nameEn": "UNIT_ID.N_YOUGAN_01"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.N_YOUGAN_02",
-            "name": "UNIT_ID.N_YOUGAN_02",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2299,12 +2299,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_YOUGAN_02",
-            "nameEn": "UNIT_ID.N_YOUGAN_02"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.N_YOUGAN_03",
-            "name": "UNIT_ID.N_YOUGAN_03",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2314,12 +2314,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_YOUGAN_03",
-            "nameEn": "UNIT_ID.N_YOUGAN_03"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.N_YOUGAN_04",
-            "name": "UNIT_ID.N_YOUGAN_04",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2329,12 +2329,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_YOUGAN_04",
-            "nameEn": "UNIT_ID.N_YOUGAN_04"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.N_YOUGAN_05",
-            "name": "UNIT_ID.N_YOUGAN_05",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2344,12 +2344,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_YOUGAN_05",
-            "nameEn": "UNIT_ID.N_YOUGAN_05"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.YOUGAN_A",
-            "name": "UNIT_ID.YOUGAN_A",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2359,12 +2359,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.YOUGAN_A",
-            "nameEn": "UNIT_ID.YOUGAN_A"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.YOUGAN_B",
-            "name": "UNIT_ID.YOUGAN_B",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2374,12 +2374,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.YOUGAN_B",
-            "nameEn": "UNIT_ID.YOUGAN_B"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.YOUGAN_C",
-            "name": "UNIT_ID.YOUGAN_C",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2389,12 +2389,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.YOUGAN_C",
-            "nameEn": "UNIT_ID.YOUGAN_C"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.YOUGAN_D",
-            "name": "UNIT_ID.YOUGAN_D",
+            "name": "溶岩",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2404,12 +2404,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.YOUGAN_D",
-            "nameEn": "UNIT_ID.YOUGAN_D"
+            "nameJa": "溶岩",
+            "nameEn": "LAVA"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A",
-            "name": "UNIT_ID.N_PROMINENCE_A",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2419,12 +2419,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_A",
-            "nameEn": "UNIT_ID.N_PROMINENCE_A"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_01",
-            "name": "UNIT_ID.N_PROMINENCE_A_01",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2434,12 +2434,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_A_01",
-            "nameEn": "UNIT_ID.N_PROMINENCE_A_01"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_02",
-            "name": "UNIT_ID.N_PROMINENCE_A_02",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2449,12 +2449,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_A_02",
-            "nameEn": "UNIT_ID.N_PROMINENCE_A_02"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B",
-            "name": "UNIT_ID.N_PROMINENCE_B",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2464,12 +2464,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_B",
-            "nameEn": "UNIT_ID.N_PROMINENCE_B"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_01",
-            "name": "UNIT_ID.N_PROMINENCE_B_01",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2479,12 +2479,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_B_01",
-            "nameEn": "UNIT_ID.N_PROMINENCE_B_01"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_02",
-            "name": "UNIT_ID.N_PROMINENCE_B_02",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2494,12 +2494,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_B_02",
-            "nameEn": "UNIT_ID.N_PROMINENCE_B_02"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_03",
-            "name": "UNIT_ID.N_PROMINENCE_B_03",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2509,12 +2509,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_B_03",
-            "nameEn": "UNIT_ID.N_PROMINENCE_B_03"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_04",
-            "name": "UNIT_ID.N_PROMINENCE_B_04",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2524,12 +2524,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_B_04",
-            "nameEn": "UNIT_ID.N_PROMINENCE_B_04"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C",
-            "name": "UNIT_ID.N_PROMINENCE_C",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2539,12 +2539,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_C",
-            "nameEn": "UNIT_ID.N_PROMINENCE_C"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_01",
-            "name": "UNIT_ID.N_PROMINENCE_C_01",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2554,12 +2554,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_C_01",
-            "nameEn": "UNIT_ID.N_PROMINENCE_C_01"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_02",
-            "name": "UNIT_ID.N_PROMINENCE_C_02",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2569,12 +2569,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_C_02",
-            "nameEn": "UNIT_ID.N_PROMINENCE_C_02"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D",
-            "name": "UNIT_ID.N_PROMINENCE_D",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2584,12 +2584,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_D",
-            "nameEn": "UNIT_ID.N_PROMINENCE_D"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_01",
-            "name": "UNIT_ID.N_PROMINENCE_D_01",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2599,12 +2599,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_D_01",
-            "nameEn": "UNIT_ID.N_PROMINENCE_D_01"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_02",
-            "name": "UNIT_ID.N_PROMINENCE_D_02",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2614,12 +2614,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_D_02",
-            "nameEn": "UNIT_ID.N_PROMINENCE_D_02"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_03",
-            "name": "UNIT_ID.N_PROMINENCE_D_03",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2629,12 +2629,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_D_03",
-            "nameEn": "UNIT_ID.N_PROMINENCE_D_03"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_04",
-            "name": "UNIT_ID.N_PROMINENCE_D_04",
+            "name": "プロミネンス",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2644,12 +2644,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PROMINENCE_D_04",
-            "nameEn": "UNIT_ID.N_PROMINENCE_D_04"
+            "nameJa": "プロミネンス",
+            "nameEn": "PROMINENCE"
         },
         {
             "id": "UNIT_ID.N_METEOR_A",
-            "name": "UNIT_ID.N_METEOR_A",
+            "name": "流星",
             "type": 19,
             "typeKey": "utyp_meteor",
             "formationMax": 1,
@@ -2659,12 +2659,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_METEOR_A",
-            "nameEn": "UNIT_ID.N_METEOR_A"
+            "nameJa": "流星",
+            "nameEn": "METEOR"
         },
         {
             "id": "UNIT_ID.N_METEOR_B",
-            "name": "UNIT_ID.N_METEOR_B",
+            "name": "流星",
             "type": 19,
             "typeKey": "utyp_meteor",
             "formationMax": 1,
@@ -2674,12 +2674,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_METEOR_B",
-            "nameEn": "UNIT_ID.N_METEOR_B"
+            "nameJa": "流星",
+            "nameEn": "METEOR"
         },
         {
             "id": "UNIT_ID.B_YOUKAI_EKI",
-            "name": "UNIT_ID.B_YOUKAI_EKI",
+            "name": "溶解液（破壊不可）",
             "type": 19,
             "typeKey": "utyp_liquid",
             "formationMax": 1,
@@ -2689,12 +2689,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.B_YOUKAI_EKI",
-            "nameEn": "UNIT_ID.B_YOUKAI_EKI"
+            "nameJa": "溶解液（破壊不可）",
+            "nameEn": "LYSATE (INDESTRUCTIBLE)"
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_A",
-            "name": "UNIT_ID.N_HEAT_METAL_A",
+            "name": "超高熱溶解金属",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2704,12 +2704,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_HEAT_METAL_A",
-            "nameEn": "UNIT_ID.N_HEAT_METAL_A"
+            "nameJa": "超高熱溶解金属",
+            "nameEn": "MOLTEN METAL"
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_B",
-            "name": "UNIT_ID.N_HEAT_METAL_B",
+            "name": "超高熱溶解金属",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2719,12 +2719,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_HEAT_METAL_B",
-            "nameEn": "UNIT_ID.N_HEAT_METAL_B"
+            "nameJa": "超高熱溶解金属",
+            "nameEn": "MOLTEN METAL"
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_C",
-            "name": "UNIT_ID.N_HEAT_METAL_C",
+            "name": "超高熱溶解金属",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2734,12 +2734,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_HEAT_METAL_C",
-            "nameEn": "UNIT_ID.N_HEAT_METAL_C"
+            "nameJa": "超高熱溶解金属",
+            "nameEn": "MOLTEN METAL"
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_D",
-            "name": "UNIT_ID.N_HEAT_METAL_D",
+            "name": "超高熱溶解金属",
             "type": 19,
             "typeKey": "utyp_maguma",
             "formationMax": 1,
@@ -2749,8 +2749,8 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_HEAT_METAL_D",
-            "nameEn": "UNIT_ID.N_HEAT_METAL_D"
+            "nameJa": "超高熱溶解金属",
+            "nameEn": "MOLTEN METAL"
         },
         {
             "id": "UNIT_ID.E_R902",
@@ -3900,7 +3900,7 @@ window.RTYPE_SIM_DATA = {
         },
         {
             "id": "UNIT_ID.N_PLUTO",
-            "name": "UNIT_ID.N_PLUTO",
+            "name": "二つの星",
             "type": 19,
             "typeKey": "unit_n_pluto",
             "formationMax": 1,
@@ -3910,12 +3910,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_PLUTO",
-            "nameEn": "UNIT_ID.N_PLUTO"
+            "nameJa": "二つの星",
+            "nameEn": "TWO PLANETS"
         },
         {
             "id": "UNIT_ID.N_NEPTUNUS",
-            "name": "UNIT_ID.N_NEPTUNUS",
+            "name": "青く激しい風が吹く星",
             "type": 19,
             "typeKey": "unit_n_neptunus",
             "formationMax": 1,
@@ -3925,12 +3925,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_NEPTUNUS",
-            "nameEn": "UNIT_ID.N_NEPTUNUS"
+            "nameJa": "青く激しい風が吹く星",
+            "nameEn": "WINDY BLUE PLANET"
         },
         {
             "id": "UNIT_ID.N_URANUS",
-            "name": "UNIT_ID.N_URANUS",
+            "name": "青白い氷の星",
             "type": 19,
             "typeKey": "unit_n_uranus",
             "formationMax": 1,
@@ -3940,12 +3940,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_URANUS",
-            "nameEn": "UNIT_ID.N_URANUS"
+            "nameJa": "青白い氷の星",
+            "nameEn": "ICY WHITE PLANET"
         },
         {
             "id": "UNIT_ID.N_SATURN",
-            "name": "UNIT_ID.N_SATURN",
+            "name": "環を持った星",
             "type": 19,
             "typeKey": "unit_saturn",
             "formationMax": 1,
@@ -3955,12 +3955,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_SATURN",
-            "nameEn": "UNIT_ID.N_SATURN"
+            "nameJa": "環を持った星",
+            "nameEn": "RINGED PLANET"
         },
         {
             "id": "UNIT_ID.N_JUPITER",
-            "name": "UNIT_ID.N_JUPITER",
+            "name": "縞模様の大きな星",
             "type": 19,
             "typeKey": "unit_n_jupiter",
             "formationMax": 1,
@@ -3970,12 +3970,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_JUPITER",
-            "nameEn": "UNIT_ID.N_JUPITER"
+            "nameJa": "縞模様の大きな星",
+            "nameEn": "BIG STRIPED PLANET"
         },
         {
             "id": "UNIT_ID.N_MARS",
-            "name": "UNIT_ID.N_MARS",
+            "name": "赤い星",
             "type": 19,
             "typeKey": "unit_n_mars",
             "formationMax": 1,
@@ -3985,12 +3985,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_MARS",
-            "nameEn": "UNIT_ID.N_MARS"
+            "nameJa": "赤い星",
+            "nameEn": "RED PLANET"
         },
         {
             "id": "UNIT_ID.N_EARTH",
-            "name": "UNIT_ID.N_EARTH",
+            "name": "青く美しい星",
             "type": 19,
             "typeKey": "unit_n_earth",
             "formationMax": 1,
@@ -4000,12 +4000,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_EARTH",
-            "nameEn": "UNIT_ID.N_EARTH"
+            "nameJa": "青く美しい星",
+            "nameEn": "BLUE PLANET"
         },
         {
             "id": "UNIT_ID.N_VENUS",
-            "name": "UNIT_ID.N_VENUS",
+            "name": "黄橙色の星",
             "type": 19,
             "typeKey": "unit_n_venus",
             "formationMax": 1,
@@ -4015,12 +4015,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_VENUS",
-            "nameEn": "UNIT_ID.N_VENUS"
+            "nameJa": "黄橙色の星",
+            "nameEn": "YELLOW-ORANGE PLANET"
         },
         {
             "id": "UNIT_ID.N_MERCURY",
-            "name": "UNIT_ID.N_MERCURY",
+            "name": "小さく灰色がかった星",
             "type": 19,
             "typeKey": "unit_n_mercury",
             "formationMax": 1,
@@ -4030,12 +4030,12 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_MERCURY",
-            "nameEn": "UNIT_ID.N_MERCURY"
+            "nameJa": "小さく灰色がかった星",
+            "nameEn": "LITTLE GREY PLANET"
         },
         {
             "id": "UNIT_ID.N_MOON",
-            "name": "UNIT_ID.N_MOON",
+            "name": "月",
             "type": 19,
             "typeKey": "unit_n_moon",
             "formationMax": 1,
@@ -4045,8 +4045,8 @@ window.RTYPE_SIM_DATA = {
             "skill": 255,
             "avoidSkill": 255,
             "weapons": [],
-            "nameJa": "UNIT_ID.N_MOON",
-            "nameEn": "UNIT_ID.N_MOON"
+            "nameJa": "月",
+            "nameEn": "MOON"
         },
         {
             "id": "UNIT_ID.B_DOP_CHILD",
@@ -6742,7 +6742,7 @@ window.RTYPE_SIM_DATA = {
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_U",
-            "name": "UNIT_ID.B_LAST_NOZZLE_U",
+            "name": "巨大推進装置？",
             "type": 2,
             "typeKey": "utyp_b_last_nzl",
             "formationMax": 1,
@@ -6754,12 +6754,12 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.B_LAST_NZL_U"
             ],
-            "nameJa": "UNIT_ID.B_LAST_NOZZLE_U",
-            "nameEn": "UNIT_ID.B_LAST_NOZZLE_U"
+            "nameJa": "巨大推進装置？",
+            "nameEn": "A GIANT THRUSTER?"
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_D",
-            "name": "UNIT_ID.B_LAST_NOZZLE_D",
+            "name": "巨大推進装置？",
             "type": 2,
             "typeKey": "utyp_b_last_nzl",
             "formationMax": 1,
@@ -6771,12 +6771,12 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.B_LAST_NZL_D"
             ],
-            "nameJa": "UNIT_ID.B_LAST_NOZZLE_D",
-            "nameEn": "UNIT_ID.B_LAST_NOZZLE_D"
+            "nameJa": "巨大推進装置？",
+            "nameEn": "A GIANT THRUSTER?"
         },
         {
             "id": "UNIT_ID.B_LAST_WP_1",
-            "name": "UNIT_ID.B_LAST_WP_1",
+            "name": "艦船の残骸",
             "type": 2,
             "typeKey": "utyp_b_last_wp",
             "formationMax": 1,
@@ -6788,12 +6788,12 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.B_LAST_WP_1"
             ],
-            "nameJa": "UNIT_ID.B_LAST_WP_1",
-            "nameEn": "UNIT_ID.B_LAST_WP_1"
+            "nameJa": "艦船の残骸",
+            "nameEn": "SHIP'S WRECKAGE"
         },
         {
             "id": "UNIT_ID.B_LAST_WP_2",
-            "name": "UNIT_ID.B_LAST_WP_2",
+            "name": "艦船の残骸",
             "type": 2,
             "typeKey": "utyp_b_last_wp",
             "formationMax": 1,
@@ -6805,8 +6805,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.B_LAST_WP_2"
             ],
-            "nameJa": "UNIT_ID.B_LAST_WP_2",
-            "nameEn": "UNIT_ID.B_LAST_WP_2"
+            "nameJa": "艦船の残骸",
+            "nameEn": "SHIP'S WRECKAGE"
         },
         {
             "id": "UNIT_ID.B_GOMANDA",
@@ -9437,7 +9437,7 @@ window.RTYPE_SIM_DATA = {
         },
         {
             "id": "UNIT_ID.E_RED_POD",
-            "name": "UNIT_ID.E_RED_POD",
+            "name": "レッド・ポッド",
             "type": 1,
             "typeKey": "utyp_red_pod",
             "formationMax": 1,
@@ -9449,12 +9449,12 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.E_PTN_VULCAN"
             ],
-            "nameJa": "UNIT_ID.E_RED_POD",
-            "nameEn": "UNIT_ID.E_RED_POD"
+            "nameJa": "レッド・ポッド",
+            "nameEn": "RED POD"
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT",
-            "name": "UNIT_ID.E_RED_POD_LEFT",
+            "name": "レッド・ポッド",
             "type": 1,
             "typeKey": "utyp_red_pod",
             "formationMax": 1,
@@ -9466,12 +9466,12 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.E_PTN_VULCAN"
             ],
-            "nameJa": "UNIT_ID.E_RED_POD_LEFT",
-            "nameEn": "UNIT_ID.E_RED_POD_LEFT"
+            "nameJa": "レッド・ポッド",
+            "nameEn": "RED POD"
         },
         {
             "id": "UNIT_ID.E_RED_POD_OF3",
-            "name": "UNIT_ID.E_RED_POD_OF3",
+            "name": "レッド・ポッド",
             "type": 1,
             "typeKey": "utyp_red_pod",
             "formationMax": 1,
@@ -9483,12 +9483,12 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.E_PTN_VULCAN"
             ],
-            "nameJa": "UNIT_ID.E_RED_POD_OF3",
-            "nameEn": "UNIT_ID.E_RED_POD_OF3"
+            "nameJa": "レッド・ポッド",
+            "nameEn": "RED POD"
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT_OF3",
-            "name": "UNIT_ID.E_RED_POD_LEFT_OF3",
+            "name": "レッド・ポッド",
             "type": 1,
             "typeKey": "utyp_red_pod",
             "formationMax": 1,
@@ -9500,12 +9500,12 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.E_PTN_VULCAN"
             ],
-            "nameJa": "UNIT_ID.E_RED_POD_LEFT_OF3",
-            "nameEn": "UNIT_ID.E_RED_POD_LEFT_OF3"
+            "nameJa": "レッド・ポッド",
+            "nameEn": "RED POD"
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_LD",
-            "name": "UNIT_ID.E_GREEN_POD_LD",
+            "name": "グリーン・ポッド",
             "type": 1,
             "typeKey": "utyp_red_pod",
             "formationMax": 1,
@@ -9518,12 +9518,12 @@ window.RTYPE_SIM_DATA = {
                 "WEAPON_ID.E_PTN_VULCAN_W",
                 "WEAPON_ID.E_G_POD_TWIN_VULCAN"
             ],
-            "nameJa": "UNIT_ID.E_GREEN_POD_LD",
-            "nameEn": "UNIT_ID.E_GREEN_POD_LD"
+            "nameJa": "グリーン・ポッド",
+            "nameEn": "GREEN POD"
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_RU",
-            "name": "UNIT_ID.E_GREEN_POD_RU",
+            "name": "グリーン・ポッド",
             "type": 1,
             "typeKey": "utyp_red_pod",
             "formationMax": 1,
@@ -9536,8 +9536,8 @@ window.RTYPE_SIM_DATA = {
                 "WEAPON_ID.E_PTN_VULCAN_W",
                 "WEAPON_ID.E_G_POD_TWIN_VULCAN"
             ],
-            "nameJa": "UNIT_ID.E_GREEN_POD_RU",
-            "nameEn": "UNIT_ID.E_GREEN_POD_RU"
+            "nameJa": "グリーン・ポッド",
+            "nameEn": "GREEN POD"
         },
         {
             "id": "UNIT_ID.E_R9LEO",
