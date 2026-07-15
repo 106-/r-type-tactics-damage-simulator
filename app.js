@@ -3,9 +3,14 @@
 
   const data = window.RTYPE_SIM_DATA;
   const $ = (id) => document.getElementById(id);
+  const i18n = window.RTYPE_I18N;
+  const L = (ja, en) => i18n.pick(ja, en);
+  const displayName = (value) => i18n.name(value);
   const rankBonus = [1, 1.01, 1.03, 1.06, 1.10, 1.18];
   const materialNames = ["光学", "機械", "生体", "粒子", "火炎", "精神", "氷", "酸"];
+  const materialNamesEn = ["Optical", "Mechanical", "Biological", "Particle", "Flame", "Mental", "Ice", "Acid"];
   const typeNames = ["機械ユニット", "機械艦", "機械艦パーツ", "艦船", "潜行機械", "機械壁", "機械床", "生物ユニット", "生物艦", "生物艦パーツ", "水中生物", "非水中生物", "潜行生物", "浮遊生物", "生体壁", "生体床", "宇宙水棲生物", "岩石", "氷", "異文明ユニット", "異文明艦パーツ"];
+  const typeNamesEn = ["Mechanical unit", "Mechanical ship", "Mechanical ship part", "Ship", "Submerged mechanical", "Mechanical wall", "Mechanical floor", "Biological unit", "Biological ship", "Biological ship part", "Aquatic lifeform", "Non-aquatic lifeform", "Submerged lifeform", "Floating lifeform", "Biological wall", "Biological floor", "Space aquatic lifeform", "Rock", "Ice", "Alien-civilization unit", "Alien-civilization ship part"];
   const skillNames = new Map([
     [0, "HP"],
     [1, "回避率"],
@@ -14,6 +19,10 @@
     [4, "命中率"],
     [255, "なし"],
   ]);
+  const skillNamesEn = new Map([[0, "HP"], [1, "Evasion"], [2, "Fuel (no current unit)"], [3, "Attack power"], [4, "Accuracy"], [255, "None"]]);
+  const materialName = (index) => (i18n.language === "ja" ? materialNames : materialNamesEn)[index] || L("不明", "Unknown");
+  const bypassesEvasion = (weapon) => Boolean(weapon
+    && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
   const weapons = new Map(data.weapons.map((weapon) => [weapon.id, weapon]));
   const unitWeaponOverrides = new Map([
     ["UNIT_ID.ED_R9AD", ["WEAPON_ID.E_WAV_DECOY1", "WEAPON_ID.E_DB_REFUEL"]],
@@ -41,11 +50,25 @@
     ["UNIT_ID.E_CR3_BRIDGE", "マーナガルム級"],
     ["UNIT_ID.EW_CR3_BRIDGE", "マーナガルム級"],
   ]);
+  const bridgeParentNamesEn = new Map([
+    ["UNIT_ID.BS_BRIDGE", "Heimdall-class"], ["UNIT_ID.EW_BS_BRIDGE", "Heimdall-class"],
+    ["UNIT_ID.E_BS2_BRIDGE", "Tyr-class"], ["UNIT_ID.EW_BS2_BRIDGE", "Tyr-class"],
+    ["UNIT_ID.E_BSAE1_BRIDGE", "Jotunheim-class"], ["UNIT_ID.EW_BSAE1_BRIDGE", "Jotunheim-class"],
+    ["UNIT_ID.E_BSAE2_BRIDGE", "Muspelheim-class"], ["UNIT_ID.EW_BSAE2_BRIDGE", "Muspelheim-class"],
+    ["UNIT_ID.E_BS_LAST_BRIDGE", "Niflheim-class"], ["UNIT_ID.EW_BS_LAST_BRIDGE", "Niflheim-class"],
+    ["UNIT_ID.E_CR_BRIDGE", "Vanargand-class"], ["UNIT_ID.EW_CR_BRIDGE", "Vanargand-class"],
+    ["UNIT_ID.E_CR2_BRIDGE", "Garm-class"], ["UNIT_ID.EW_CR2_BRIDGE", "Garm-class"],
+    ["UNIT_ID.E_CR3_BRIDGE", "Managarm-class"], ["UNIT_ID.EW_CR3_BRIDGE", "Managarm-class"],
+  ]);
   const unitVariantLabels = new Map([
     ["UNIT_ID.E_L_DANCER_A", "ウェーブ・マスター系"],
     ["UNIT_ID.E_L_DANCER_B", "コンサート・マスター系"],
     ["UNIT_ID.E_L_DANCER_C", "カロン系"],
     ["UNIT_ID.E_L_DANCER_D", "ワイズ・マン系"],
+  ]);
+  const unitVariantLabelsEn = new Map([
+    ["UNIT_ID.E_L_DANCER_A", "Wave Master line"], ["UNIT_ID.E_L_DANCER_B", "Concert Master line"],
+    ["UNIT_ID.E_L_DANCER_C", "Charon line"], ["UNIT_ID.E_L_DANCER_D", "Wise Man line"],
   ]);
   const acceleratedUnitIds = new Set([
     "UNIT_ID.E_TXT_BOOST",
@@ -89,7 +112,7 @@
   }
 
   function isDecoyUnit(unit) {
-    return unitWeaponIds(unit).some((id) => weapons.get(id)?.name === "デコイ爆破");
+    return unitWeaponIds(unit).some((id) => weapons.get(id)?.nameJa === "デコイ爆破");
   }
 
   function isWarpStateUnit(unit) {
@@ -101,28 +124,37 @@
     return unitWeaponIds(unit).some((id) => weapons.get(id)?.attack);
   }
 
+  function isSelectableAttackWeapon(weapon) {
+    return Boolean(weapon && (weapon.attack || weapon.akuukanBuster || weapon.nameJa === "デコイ爆破"));
+  }
+
+  function hasSelectableAttack(unit) {
+    return unitWeaponIds(unit).some((id) => isSelectableAttackWeapon(weapons.get(id)));
+  }
+
   function unitLabel(unit) {
     const accelerated = acceleratedUnitIds.has(unit?.id);
-    const displayName = accelerated ? unit.name.replace(/[\(\uff08]加速時[\)\uff09]$/, "") : unit.name;
-    const parent = bridgeParentNames.get(unit?.id);
+    const baseName = displayName(unit);
+    const name = accelerated ? baseName.replace(/[\(\uff08]加速時[\)\uff09]$/, "") : baseName;
+    const parent = (i18n.language === "ja" ? bridgeParentNames : bridgeParentNamesEn).get(unit?.id);
     const parentLabel = parent ? ` [${parent}]` : "";
-    const variant = unitVariantLabels.get(unit?.id);
+    const variant = (i18n.language === "ja" ? unitVariantLabels : unitVariantLabelsEn).get(unit?.id);
     const variantLabel = variant ? ` [${variant}]` : "";
-    const acceleration = accelerated ? " [加速時]" : "";
-    const warp = isWarpStateUnit(unit) ? " [ワープ時]" : "";
-    const decoy = isDecoyUnit(unit) ? " [デコイ]" : "";
-    return `${displayName}${parentLabel}${variantLabel}${acceleration}${warp}${decoy}`;
+    const acceleration = accelerated ? L(" [加速時]", " [Boosted]") : "";
+    const warp = isWarpStateUnit(unit) ? L(" [ワープ時]", " [Warp state]") : "";
+    const decoy = isDecoyUnit(unit) ? L(" [デコイ]", " [Decoy]") : "";
+    return `${name}${parentLabel}${variantLabel}${acceleration}${warp}${decoy}`;
   }
 
   function skillName(unit, role) {
     const skill = unit?.skill;
-    const name = skillNames.get(skill) || `不明 (${skill ?? "-"})`;
+    const name = (i18n.language === "ja" ? skillNames : skillNamesEn).get(skill) || `${L("不明", "Unknown")} (${skill ?? "-"})`;
     if (skill === 255 || skill == null) return name;
     const intercepting = role === "target" && Boolean($("interceptWeapon")?.value);
     const usedHere = role === "attacker"
       ? skill === 3 || skill === 4
       : skill === 0 || skill === 1 || (intercepting && (skill === 3 || skill === 4));
-    return `${name}${usedHere ? "（今回反映）" : "（今回不使用）"}`;
+    return `${name}${usedHere ? L("（今回反映）", " (applied)") : L("（今回不使用）", " (not used)")}`;
   }
 
   function rankAdjustedRate(baseValue, rank, enabled) {
@@ -137,12 +169,13 @@
   }
 
   function filteredUnits(query, requireWeapon) {
-    const needle = query.trim().toLocaleLowerCase("ja");
+    const needle = query.trim().toLocaleLowerCase(i18n.language);
     return data.units.filter((unit) => {
-      const hasAttack = hasNormalAttack(unit);
-      if (isDecoyUnit(unit) && !hasAttack) return false;
-      if (requireWeapon && !hasAttack) return false;
-      return !needle || unitLabel(unit).toLocaleLowerCase("ja").includes(needle) || unit.id.toLowerCase().includes(needle);
+      const hasNormal = hasNormalAttack(unit);
+      if (!requireWeapon && isDecoyUnit(unit) && !hasNormal) return false;
+      if (requireWeapon && !hasSelectableAttack(unit)) return false;
+      const names = `${unitLabel(unit)} ${unit.nameJa || ""} ${unit.nameEn || ""}`.toLocaleLowerCase(i18n.language);
+      return !needle || names.includes(needle) || unit.id.toLowerCase().includes(needle);
     });
   }
 
@@ -164,9 +197,9 @@
     }
     $("formationCurrent").disabled = formationMax === 1;
     const previous = $("weapon").value;
-    const list = unitWeaponIds(attacker).map((id) => weapons.get(id)).filter((weapon) => weapon?.attack);
+    const list = unitWeaponIds(attacker).map((id) => weapons.get(id)).filter(isSelectableAttackWeapon);
     $("weapon").replaceChildren();
-    for (const weapon of list) $("weapon").append(option(weapon.id, `${weapon.name}  [威力 ${weapon.ap}]`));
+    for (const weapon of list) $("weapon").append(option(weapon.id, `${displayName(weapon)}  [${L("威力", "Power")} ${weapon.ap}]`));
     if (list.some((weapon) => weapon.id === previous)) $("weapon").value = previous;
     updateWeaponMeta();
   }
@@ -179,15 +212,17 @@
     if (!knockbackEnabled) $("knockbackBlocked").checked = false;
     updatePartialCoverControl(weapon);
     if (!weapon) {
-      $("weaponMeta").textContent = "攻撃武器の関連付けがないユニットです。";
+      $("weaponMeta").textContent = L("攻撃武器の関連付けがないユニットです。", "This unit has no linked attack weapon.");
       updateInterceptWeapons();
       return;
     }
     const attackRange = effectiveAttackRange(weapon);
-    const range = attackRange.min === -1 ? "専用範囲" : `${attackRange.min ?? "?"}–${attackRange.max ?? "?"} HEX${attackRange.note ? `（${attackRange.note}）` : ""}`;
-    const charge = weapon.charge ? ` / チャージ ${weapon.charge}T` : "";
-    const interceptable = incomingInterceptable(weapon) ? " / 迎撃対象" : " / 迎撃対象外";
-    $("weaponMeta").textContent = `${materialNames[weapon.material] || "?"} / 命中値 ${(weapon.hit * 100).toFixed(0)}% / ${range}${charge}${weapon.tackle ? " / ノックバック" : ""}${interceptable}`;
+    const range = attackRange.min === -1 ? L("専用範囲", "Special area") : `${attackRange.min ?? "?"}–${attackRange.max ?? "?"} HEX${attackRange.note ? ` (${L(attackRange.note, "special tackle range")})` : ""}`;
+    const charge = weapon.charge ? ` / ${L("チャージ", "Charge")} ${weapon.charge}T` : "";
+    const guaranteed = bypassesEvasion(weapon);
+    const guaranteedLabel = guaranteed ? L(" / 必中（回避計算をバイパス）", " / Guaranteed hit (evasion calculation bypassed)") : "";
+    const interceptable = incomingInterceptable(weapon) ? L(" / 迎撃対象", " / Interceptable") : L(" / 迎撃対象外", " / Not interceptable");
+    $("weaponMeta").textContent = `${materialName(weapon.material)} / ${L("命中値", "Accuracy")} ${(weapon.hit * 100).toFixed(0)}% / ${range}${charge}${guaranteedLabel}${weapon.tackle ? L(" / ノックバック", " / Knockback") : ""}${interceptable}`;
     updateInterceptWeapons();
   }
 
@@ -224,17 +259,17 @@
     if (!eligible) input.checked = false;
 
     if (!weapon) {
-      status.textContent = "武器未選択";
-      label.title = "攻撃武器を選択してください";
+      status.textContent = L("武器未選択", "No weapon selected");
+      label.title = L("攻撃武器を選択してください", "Select an attack weapon");
     } else if (weapon.material === 1) {
-      status.textContent = "機械属性は無視";
-      label.title = "機械属性は部分遮蔽による50%減衰を受けません";
+      status.textContent = L("機械属性は無視", "Mechanical bypasses it");
+      label.title = L("機械属性は部分遮蔽による50%減衰を受けません", "Mechanical attacks are not reduced by partial cover");
     } else if (effectiveAttackRange(weapon).max !== 2) {
-      status.textContent = "最大射程2のみ";
-      label.title = "部分遮蔽フラグは最大射程2の攻撃でのみ生成されます";
+      status.textContent = L("最大射程2のみ", "Maximum range 2 only");
+      label.title = L("部分遮蔽フラグは最大射程2の攻撃でのみ生成されます", "Partial cover is generated only for attacks with maximum range 2");
     } else {
-      status.textContent = "有効時 −50%";
-      label.title = "中間経路の片方だけが遮られている場合に選択します";
+      status.textContent = L("有効時 −50%", "−50% when enabled");
+      label.title = L("中間経路の片方だけが遮られている場合に選択します", "Enable when only one intermediate path is blocked");
     }
   }
 
@@ -246,11 +281,11 @@
   }
 
   function unitGroupName(unitType) {
-    if (unitType <= 6) return "機械";
-    if (unitType <= 16) return "生物";
-    if (unitType === 17) return "岩石";
-    if (unitType === 18) return "氷";
-    return "異質";
+    if (unitType <= 6) return L("機械", "Mechanical");
+    if (unitType <= 16) return L("生物", "Biological");
+    if (unitType === 17) return L("岩石", "Rock");
+    if (unitType === 18) return L("氷", "Ice");
+    return L("異質", "Other");
   }
 
   function renderFormula(boxId, rowsId, rows) {
@@ -352,31 +387,31 @@
 
     select.replaceChildren();
     if (!attackWeapon) {
-      select.append(option("", "攻撃武器を選択"));
-      status.textContent = "武器未選択";
+      select.append(option("", L("攻撃武器を選択", "Select attack weapon")));
+      status.textContent = L("武器未選択", "No weapon selected");
     } else if (attackWeapon.seize) {
-      select.append(option("", "鹵獲弾は迎撃率0%"));
-      status.textContent = "迎撃例外";
+      select.append(option("", L("鹵獲弾は迎撃率0%", "Capture rounds have 0% interception")));
+      status.textContent = L("迎撃例外", "Interception exception");
     } else if (!eligible) {
-      select.append(option("", `${materialNames[attackWeapon.material] || "不明"}属性は迎撃対象外`));
-      status.textContent = "攻撃属性が対象外";
+      select.append(option("", L(`${materialName(attackWeapon.material)}属性は迎撃対象外`, `${materialName(attackWeapon.material)} attacks are not interceptable`)));
+      status.textContent = L("攻撃属性が対象外", "Attack attribute not eligible");
     } else if (!allCandidates.length) {
-      select.append(option("", "対象に迎撃武器なし"));
-      status.textContent = "迎撃武器なし";
+      select.append(option("", L("対象に迎撃武器なし", "Target has no interception weapon")));
+      status.textContent = L("迎撃武器なし", "No interception weapon");
     } else if (!candidates.length) {
-      select.append(option("", "攻撃武器と射程が重なる迎撃武器なし"));
-      status.textContent = "共通射程なし";
+      select.append(option("", L("攻撃武器と射程が重なる迎撃武器なし", "No interception weapon has overlapping range")));
+      status.textContent = L("共通射程なし", "No shared range");
     } else {
-      select.append(option("", "迎撃しない"));
+      select.append(option("", L("迎撃しない", "Do not intercept")));
       for (const candidate of candidates) {
-        const range = candidate.rangeMin === -1 ? "専用範囲" : `${candidate.rangeMin}–${candidate.rangeMax} HEX`;
+        const range = candidate.rangeMin === -1 ? L("専用範囲", "Special area") : `${candidate.rangeMin}–${candidate.rangeMax} HEX`;
         const shared = formatHexRange(sharedInterceptRange(attackWeapon, candidate));
-        select.append(option(candidate.id, `${candidate.name}  [威力 ${candidate.ap} / 命中 ${(candidate.hit * 100).toFixed(0)}% / 弾数 ${candidate.bulletNum} / 射程 ${range} / 共通 ${shared}]`));
+        select.append(option(candidate.id, `${displayName(candidate)}  [${L("威力", "Power")} ${candidate.ap} / ${L("命中", "Accuracy")} ${(candidate.hit * 100).toFixed(0)}% / ${L("弾数", "Ammo")} ${candidate.bulletNum} / ${L("射程", "Range")} ${range} / ${L("共通", "Shared")} ${shared}]`));
       }
       const keepPrevious = contextKey === interceptContextKey
         && (previous === "" || candidates.some((weapon) => weapon.id === previous));
       select.value = keepPrevious ? previous : candidates[0].id;
-      status.textContent = `${candidates.length}武器・共通射程あり`;
+      status.textContent = L(`${candidates.length}武器・共通射程あり`, `${candidates.length} weapon(s) with shared range`);
     }
 
     const available = eligible && candidates.length > 0;
@@ -395,11 +430,17 @@
     const input = $("evadeFocus");
     const label = $("evadeFocusLabel");
     const status = $("evadeFocusStatus");
+    const guaranteed = bypassesEvasion(weapons.get($("weapon").value));
     const intercepting = Boolean($("interceptWeapon").value);
-    label.classList.toggle("available-control", input.checked);
-    status.textContent = intercepting
-      ? "迎撃選択中（専念なし）"
-      : input.checked ? "基礎回避 × 0.5 ÷ 占有HEXを加算" : "補正なし";
+    input.disabled = Boolean(guaranteed);
+    if (guaranteed) input.checked = false;
+    label.classList.toggle("disabled-control", Boolean(guaranteed));
+    label.classList.toggle("available-control", input.checked && !guaranteed);
+    status.textContent = guaranteed
+      ? L("必中攻撃には無効", "Disabled against guaranteed-hit attacks")
+      : intercepting
+      ? L("迎撃選択中（専念なし）", "Intercepting (no evasion focus)")
+      : input.checked ? L("基礎回避 × 0.5 ÷ 占有HEXを加算", "Add base evasion × 0.5 ÷ occupied hexes") : L("補正なし", "No bonus");
   }
 
   function baseBeforeRandom(weapon, randomValue, attacker, target) {
@@ -438,7 +479,8 @@
   function resetResults() {
     $("avoidResult").textContent = "--";
     $("avoidBar").style.width = "0%";
-    $("hitResult").textContent = "命中率 --%";
+    $("hitResult").textContent = L("命中率 --%", "Hit rate --%");
+    $("guaranteedHitBadge").hidden = true;
     renderFormula("avoidFormulaBox", "avoidFormula", []);
     renderFormula("damageFormulaBox", "damageFormula", []);
     $("damageExpected").textContent = "--";
@@ -450,13 +492,13 @@
     $("expectedHpPercent").textContent = "--";
     $("formationLossRow").hidden = true;
     $("formationRule").hidden = true;
-    $("affinityLabel").textContent = "属性相性";
+    $("affinityLabel").textContent = L("属性相性", "Affinity");
     $("effectiveness").textContent = "±0%";
     setModifierBadgeState($("affinityBadge"), 0);
-    $("terrainLabel").textContent = "地形減衰";
+    $("terrainLabel").textContent = L("地形減衰", "Terrain reduction");
     $("effectiveDefense").textContent = "±0%";
     setModifierBadgeState($("terrainBadge"), 0);
-    $("interceptLabel").textContent = "迎撃減衰";
+    $("interceptLabel").textContent = L("迎撃減衰", "Interception reduction");
     $("interceptModifier").textContent = "±0%";
     setModifierBadgeState($("interceptBadge"), 0);
     $("interceptRateDisplay").textContent = "--";
@@ -464,7 +506,7 @@
     $("interceptPass").textContent = "--";
     $("interceptFormula").textContent = "";
     $("tackleSelfCard").hidden = true;
-    $("formulaNote").textContent = "攻撃ユニット・武器・対象ユニットを選択してください。";
+    $("formulaNote").textContent = L("攻撃ユニット・武器・対象ユニットを選択してください。", "Select an attacking unit, weapon, and target unit.");
     $("formulaNote").classList.remove("warning");
   }
 
@@ -486,10 +528,11 @@
     const targetAvoid = rankAdjustedRate(baseTargetAvoid, targetRank, target?.skill === 1);
     const weaponHit = effectiveWeaponHit(weapon, attacker, attackerRank);
     const fixedBonus = (unitType === 5 || unitType === 14) ? 0 : Number($("terrainAvoidBonus").value) / 100;
-    const evadeFocus = $("evadeFocus").checked && !$("interceptWeapon").value;
+    const guaranteed = bypassesEvasion(weapon);
+    const evadeFocus = !guaranteed && $("evadeFocus").checked && !$("interceptWeapon").value;
     const evadeFocusBonus = evadeFocus ? targetAvoid * .5 / scaleDenom : 0;
     const scaledAvoid = targetAvoid + evadeFocusBonus;
-    const effectiveAvoid = Math.min(1, Math.max(0, scaledAvoid + fixedBonus - weaponHit));
+    const effectiveAvoid = guaranteed ? 0 : Math.min(1, Math.max(0, scaledAvoid + fixedBonus - weaponHit));
     const hit = 1 - effectiveAvoid;
     const d0 = baseBeforeRandom(weapon, 0, attacker, target).damage;
     const d1 = baseBeforeRandom(weapon, 1, attacker, target).damage;
@@ -508,24 +551,37 @@
 
     $("avoidResult").textContent = (effectiveAvoid * 100).toFixed(1);
     $("avoidBar").style.width = `${effectiveAvoid * 100}%`;
-    $("hitResult").textContent = `命中率 ${(hit * 100).toFixed(1)}%`;
-    const avoidRows = [{ label: "基礎回避率", value: `${(baseTargetAvoid * 100).toFixed(0)}%` }];
+    $("guaranteedHitBadge").hidden = !guaranteed;
+    $("guaranteedHitBadge").textContent = L("必中", "Guaranteed hit");
+    $("hitResult").textContent = guaranteed
+      ? L("必中・命中率 100.0%（回避計算なし）", "Guaranteed hit · 100.0% hit rate (evasion calculation bypassed)")
+      : `${L("命中率", "Hit rate")} ${(hit * 100).toFixed(1)}%`;
+    const avoidRows = guaranteed
+      ? [
+        { label: L("必中バイパス設定", "Guaranteed-hit bypass setting"), value: L("有効", "Enabled") },
+        { op: "→", label: L("対象回避・地形回避・武器命中", "Target evasion, terrain evasion, and weapon accuracy"), value: L("計算をバイパス", "Bypassed") },
+        { op: "=", label: L("回避率", "Evasion rate"), value: "0.0%", result: true },
+        { op: "", label: L("命中率", "Hit rate"), value: "100.0%", result: true },
+      ]
+      : [{ label: L("基礎回避率", "Base evasion"), value: `${(baseTargetAvoid * 100).toFixed(0)}%` }];
+    if (!guaranteed) {
     if (target?.skill === 1) {
-      avoidRows.push({ op: "×", label: `熟練ランク倍率（ランク${targetRank}）`, value: `${targetRankMultiplier.toFixed(2)} → ${(targetAvoid * 100).toFixed(0)}%` });
+      avoidRows.push({ op: "×", label: L(`熟練ランク倍率（ランク${targetRank}）`, `Veterancy multiplier (rank ${targetRank})`), value: `${targetRankMultiplier.toFixed(2)} → ${(targetAvoid * 100).toFixed(0)}%` });
     }
     avoidRows.push(evadeFocus
-      ? { op: "+", label: `回避に専念（${(targetAvoid * 100).toFixed(0)}% × 0.5 ÷ ${scaleDenom} HEX）`, value: `${(evadeFocusBonus * 100).toFixed(1)}%` }
-      : { op: "+", label: "回避に専念", value: "OFF" });
+      ? { op: "+", label: L(`回避に専念（${(targetAvoid * 100).toFixed(0)}% × 0.5 ÷ ${scaleDenom} HEX）`, `Focus on evasion (${(targetAvoid * 100).toFixed(0)}% × 0.5 ÷ ${scaleDenom} HEX)`), value: `${(evadeFocusBonus * 100).toFixed(1)}%` }
+      : { op: "+", label: L("回避に専念", "Focus on evasion"), value: "OFF" });
     if (fixedBonus > 0) {
-      avoidRows.push({ op: "+", label: "地形の固定回避加算", value: `${(fixedBonus * 100).toFixed(0)}%` });
+      avoidRows.push({ op: "+", label: L("地形の固定回避加算", "Terrain evasion bonus"), value: `${(fixedBonus * 100).toFixed(0)}%` });
     }
     avoidRows.push(
       attacker?.skill === 4
-        ? { op: "−", label: `武器命中（基礎 ${(weapon.hit * 100).toFixed(0)}% × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`, value: `${(weaponHit * 100).toFixed(0)}%` }
-        : { op: "−", label: "武器命中", value: `${(weaponHit * 100).toFixed(0)}%` },
-      { op: "=", label: "回避率", value: `${(effectiveAvoid * 100).toFixed(1)}%`, result: true },
-      { op: "", label: "命中率（100% − 回避率）", value: `${(hit * 100).toFixed(1)}%`, result: true },
+        ? { op: "−", label: L(`武器命中（基礎 ${(weapon.hit * 100).toFixed(0)}% × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`, `Weapon accuracy (base ${(weapon.hit * 100).toFixed(0)}% × rank multiplier ${(rankBonus[attackerRank] || 1).toFixed(2)})`), value: `${(weaponHit * 100).toFixed(0)}%` }
+        : { op: "−", label: L("武器命中", "Weapon accuracy"), value: `${(weaponHit * 100).toFixed(0)}%` },
+      { op: "=", label: L("回避率", "Evasion rate"), value: `${(effectiveAvoid * 100).toFixed(1)}%`, result: true },
+      { op: "", label: L("命中率（100% − 回避率）", "Hit rate (100% − evasion rate)"), value: `${(hit * 100).toFixed(1)}%`, result: true },
     );
+    }
     renderFormula("avoidFormulaBox", "avoidFormula", avoidRows);
 
     const isCounter = $("attackMode").value === "counter";
@@ -533,57 +589,57 @@
     const formationRate = Math.min(1, Math.max(0, Number($("formationCurrent").value) / Math.max(1, Number($("formationMax").value))));
     const damageRows = [
       attacker?.skill === 3
-        ? { label: `実効威力（基礎 ${weapon.ap} × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`, value: String(dMean.effectiveAp) }
-        : { label: "武器威力", value: String(dMean.effectiveAp) },
+        ? { label: L(`実効威力（基礎 ${weapon.ap} × ランク倍率 ${(rankBonus[attackerRank] || 1).toFixed(2)}）`, `Effective power (base ${weapon.ap} × rank multiplier ${(rankBonus[attackerRank] || 1).toFixed(2)})`), value: String(dMean.effectiveAp) }
+        : { label: L("武器威力", "Weapon power"), value: String(dMean.effectiveAp) },
     ];
     if (dMean.effectiveDefense > 0) {
-      damageRows.push({ op: "×", label: `地形防御（1 − ${(dMean.effectiveDefense * 100).toFixed(0)}%）`, value: (1 - dMean.effectiveDefense).toFixed(2) });
+      damageRows.push({ op: "×", label: L(`地形防御（1 − ${(dMean.effectiveDefense * 100).toFixed(0)}%）`, `Terrain defense (1 − ${(dMean.effectiveDefense * 100).toFixed(0)}%)`), value: (1 - dMean.effectiveDefense).toFixed(2) });
     }
     if (formationRate < 1) {
-      damageRows.push({ op: "×", label: `編隊率（${Number($("formationCurrent").value)} ÷ ${Number($("formationMax").value)}機）`, value: formationRate.toFixed(2) });
+      damageRows.push({ op: "×", label: L(`編隊率（${Number($("formationCurrent").value)} ÷ ${Number($("formationMax").value)}機）`, `Formation ratio (${Number($("formationCurrent").value)} ÷ ${Number($("formationMax").value)} units)`), value: formationRate.toFixed(2) });
     }
     if (dMean.intercept > 0) {
-      damageRows.push({ op: "×", label: `迎撃通過率（1 − ${(dMean.intercept * 100).toFixed(1)}%）`, value: (1 - dMean.intercept).toFixed(3) });
+      damageRows.push({ op: "×", label: L(`迎撃通過率（1 − ${(dMean.intercept * 100).toFixed(1)}%）`, `Interception pass rate (1 − ${(dMean.intercept * 100).toFixed(1)}%)`), value: (1 - dMean.intercept).toFixed(3) });
     }
     damageRows.push({
       op: "×",
-      label: isCounter ? "威力乱数の平均（反撃: 1.000〜1.425）" : "威力乱数の平均（0.575〜1.000）",
+      label: isCounter ? L("威力乱数の平均（反撃: 1.000〜1.425）", "Mean damage RNG (counter: 1.000–1.425)") : L("威力乱数の平均（0.575〜1.000）", "Mean damage RNG (0.575–1.000)"),
       value: randomMean.toFixed(3),
     });
     if ($("partialCover").checked && partialCoverEligible(weapon)) {
-      damageRows.push({ op: "×", label: "部分遮蔽", value: "0.50" });
+      damageRows.push({ op: "×", label: L("部分遮蔽", "Partial cover"), value: "0.50" });
     }
     if ($("knockbackBlocked").checked && weapon.tackle) {
-      damageRows.push({ op: "+", label: "ノックバック先が塞がっている", value: "25" });
+      damageRows.push({ op: "+", label: L("ノックバック先が塞がっている", "Knockback destination is blocked"), value: "25" });
     }
     if (eff !== 0) {
-      damageRows.push({ op: "×", label: `属性相性（${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%）`, value: (1 + eff).toFixed(2) });
+      damageRows.push({ op: "×", label: L(`属性相性（${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%）`, `Affinity (${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%)`), value: (1 + eff).toFixed(2) });
     }
-    damageRows.push({ op: "=", label: "命中時ダメージ（平均乱数）", value: dMean.damage.toFixed(1), result: true });
+    damageRows.push({ op: "=", label: L("命中時ダメージ（平均乱数）", "Damage on hit (mean RNG)"), value: dMean.damage.toFixed(1), result: true });
     renderFormula("damageFormulaBox", "damageFormula", damageRows);
     $("damageExpected").textContent = dMean.damage.toFixed(1);
     $("damageContext").textContent = formationMax === 5
-      ? `${lossMean}機減`
-      : `HP ${percent(dMean.damage).toFixed(1)}%減`;
+      ? L(`${lossMean}機減`, `${lossMean} unit(s) lost`)
+      : L(`HP ${percent(dMean.damage).toFixed(1)}%減`, `${percent(dMean.damage).toFixed(1)}% HP lost`);
     $("damageMin").textContent = min.toFixed(1);
     $("damageMax").textContent = max.toFixed(1);
     $("targetMaxHp").textContent = maxHp.toFixed(0);
     $("hpDamagePercent").textContent = `${percent(dMean.damage).toFixed(1)}% (${percent(min).toFixed(1)}–${percent(max).toFixed(1)}%)`;
     $("expectedHpPercent").textContent = `${percent(dMean.damage * hit).toFixed(1)}%`;
-    $("formationLoss").textContent = `平均 ${lossMean}機（${lossMin}～${lossMax}機）`;
+    $("formationLoss").textContent = L(`平均 ${lossMean}機（${lossMin}～${lossMax}機）`, `Mean ${lossMean} units (${lossMin}–${lossMax})`);
     $("formationLossRow").hidden = formationMax !== 5;
     $("formationRule").hidden = formationMax !== 5;
-    $("affinityLabel").textContent = `${unitGroupName(unitType)} vs ${materialNames[weapon.material] || "不明"}`;
+    $("affinityLabel").textContent = `${unitGroupName(unitType)} vs ${materialName(weapon.material)}`;
     $("effectiveness").textContent = eff === 0 ? "±0%" : `${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%`;
     setModifierBadgeState($("affinityBadge"), eff);
     const selectedTerrainDefense = Number($("terrainDefense").value) / 100;
     const terrainBypassed = selectedTerrainDefense > 0 && dMean.effectiveDefense === 0;
-    $("terrainLabel").textContent = terrainBypassed ? "地形減衰（無視）" : "地形減衰";
+    $("terrainLabel").textContent = terrainBypassed ? L("地形減衰（無視）", "Terrain reduction (bypassed)") : L("地形減衰", "Terrain reduction");
     $("effectiveDefense").textContent = dMean.effectiveDefense > 0
       ? `-${(dMean.effectiveDefense * 100).toFixed(0)}%`
       : "±0%";
     setModifierBadgeState($("terrainBadge"), -dMean.effectiveDefense);
-    $("interceptLabel").textContent = intercept.weapon ? `${intercept.weapon.name}で迎撃` : "迎撃減衰";
+    $("interceptLabel").textContent = intercept.weapon ? L(`${displayName(intercept.weapon)}で迎撃`, `Intercepted by ${displayName(intercept.weapon)}`) : L("迎撃減衰", "Interception reduction");
     $("interceptModifier").textContent = intercept.rate > 0 ? `-${(intercept.rate * 100).toFixed(1)}%` : "±0%";
     setModifierBadgeState($("interceptBadge"), -intercept.rate);
     $("interceptRateDisplay").textContent = `${(intercept.rate * 100).toFixed(1)}%`;
@@ -594,22 +650,22 @@
       const maxHpPercent = tackleSelfDamage.maxHp > 0 ? tackleSelfDamage.damage / tackleSelfDamage.maxHp * 100 : 0;
       $("tackleSelfDamage").textContent = tackleSelfDamage.damage.toFixed(1);
       $("tackleSelfContext").textContent = tackleSelfDamage.destroyed
-        ? `攻撃側撃破（現在HP ${tackleSelfDamage.currentHp.toFixed(1)}）`
-        : `攻撃側HP ${maxHpPercent.toFixed(1)}%減 / 残り ${tackleSelfDamage.remainingHp.toFixed(1)}`;
-      const clampText = tackleSelfDamage.raw < 25 ? " → 下限25" : tackleSelfDamage.raw > 115 ? " → 上限115" : "";
-      $("tackleSelfFormula").textContent = `現在HP ${tackleSelfDamage.currentHp.toFixed(1)} × 迎撃 ${(intercept.rate * 100).toFixed(1)}% × 係数 ${tackleSelfDamage.multiplier.toFixed(2)} = ${tackleSelfDamage.raw.toFixed(1)}${clampText}`;
+        ? L(`攻撃側撃破（現在HP ${tackleSelfDamage.currentHp.toFixed(1)}）`, `Attacker destroyed (current HP ${tackleSelfDamage.currentHp.toFixed(1)})`)
+        : L(`攻撃側HP ${maxHpPercent.toFixed(1)}%減 / 残り ${tackleSelfDamage.remainingHp.toFixed(1)}`, `Attacker loses ${maxHpPercent.toFixed(1)}% HP / ${tackleSelfDamage.remainingHp.toFixed(1)} remaining`);
+      const clampText = tackleSelfDamage.raw < 25 ? L(" → 下限25", " → minimum 25") : tackleSelfDamage.raw > 115 ? L(" → 上限115", " → maximum 115") : "";
+      $("tackleSelfFormula").textContent = L(`現在HP ${tackleSelfDamage.currentHp.toFixed(1)} × 迎撃 ${(intercept.rate * 100).toFixed(1)}% × 係数 ${tackleSelfDamage.multiplier.toFixed(2)} = ${tackleSelfDamage.raw.toFixed(1)}${clampText}`, `Current HP ${tackleSelfDamage.currentHp.toFixed(1)} × interception ${(intercept.rate * 100).toFixed(1)}% × factor ${tackleSelfDamage.multiplier.toFixed(2)} = ${tackleSelfDamage.raw.toFixed(1)}${clampText}`);
     }
     if (intercept.weapon) {
-      const clampText = intercept.raw < .1 ? " / 最低10%へ補正" : intercept.raw >= .9 ? " / 90%以上のため完全迎撃" : "";
-      $("interceptFormula").textContent = `未補正 ${(intercept.raw * 100).toFixed(1)}% = 威力比 ${intercept.interceptAp}/${intercept.attackAp} × 迎撃側HP率 ${(intercept.interceptorHp * 100).toFixed(0)}% × 攻撃側HP逆比 ${(100 / intercept.attackerHp).toFixed(0)}% × 命中 ${(intercept.interceptHit * 100).toFixed(0)}%${clampText}`;
+      const clampText = intercept.raw < .1 ? L(" / 最低10%へ補正", " / raised to 10% minimum") : intercept.raw >= .9 ? L(" / 90%以上のため完全迎撃", " / full interception at 90% or more") : "";
+      $("interceptFormula").textContent = L(`未補正 ${(intercept.raw * 100).toFixed(1)}% = 威力比 ${intercept.interceptAp}/${intercept.attackAp} × 迎撃側HP率 ${(intercept.interceptorHp * 100).toFixed(0)}% × 攻撃側HP逆比 ${(100 / intercept.attackerHp).toFixed(0)}% × 命中 ${(intercept.interceptHit * 100).toFixed(0)}%${clampText}`, `Raw ${(intercept.raw * 100).toFixed(1)}% = power ratio ${intercept.interceptAp}/${intercept.attackAp} × interceptor HP ${(intercept.interceptorHp * 100).toFixed(0)}% × inverse attacker HP ${(100 / intercept.attackerHp).toFixed(0)}% × accuracy ${(intercept.interceptHit * 100).toFixed(0)}%${clampText}`);
     } else {
-      $("interceptFormula").textContent = incomingInterceptable(weapon) ? "迎撃武器が選択されていません" : "この攻撃属性は迎撃対象外です";
+      $("interceptFormula").textContent = incomingInterceptable(weapon) ? L("迎撃武器が選択されていません", "No interception weapon selected") : L("この攻撃属性は迎撃対象外です", "This attack attribute is not interceptable");
     }
 
     const notes = [];
-    if (Number($("terrainDefense").value) > 0 && dMean.effectiveDefense === 0) notes.push("この武器/対象では地形防御をバイパス");
-    if (intercept.rate === 1) notes.push("完全迎撃: 実機では攻撃計算自体をスキップ");
-    if (tackleSelfDamage.destroyed) notes.push("迎撃反動で攻撃側撃破: 対象ダメージ0");
+    if (Number($("terrainDefense").value) > 0 && dMean.effectiveDefense === 0) notes.push(L("この武器/対象では地形防御をバイパス", "Terrain defense bypassed for this weapon/target"));
+    if (intercept.rate === 1) notes.push(L("完全迎撃: 実機では攻撃計算自体をスキップ", "Full interception: the game skips the attack calculation"));
+    if (tackleSelfDamage.destroyed) notes.push(L("迎撃反動で攻撃側撃破: 対象ダメージ0", "Interception recoil destroys attacker: target damage is 0"));
     $("formulaNote").textContent = notes.join(" / ");
     $("formulaNote").classList.toggle("warning", notes.length > 0);
   }
@@ -625,7 +681,38 @@
     updateInterceptWeapons();
   }
 
-  for (let i = 0; i <= 20; i++) $("targetType").append(option(String(i), typeNames[i]));
+  function fillTargetTypeNames() {
+    const previous = $("targetType").value;
+    $("targetType").replaceChildren();
+    const names = i18n.language === "ja" ? typeNames : typeNamesEn;
+    for (let i = 0; i <= 20; i++) $("targetType").append(option(String(i), names[i]));
+    if (previous) $("targetType").value = previous;
+  }
+
+  function changeLanguage(next) {
+    const attackerId = $("attacker").value;
+    const targetId = $("target").value;
+    const weaponId = $("weapon").value;
+    const interceptId = $("interceptWeapon").value;
+    i18n.setLanguage(next);
+    $("languageSelect").value = i18n.language;
+    fillTargetTypeNames();
+    visibleAttackers = filteredUnits($("attackerSearch").value, true);
+    visibleTargets = filteredUnits($("targetSearch").value, false);
+    fillUnitSelect($("attacker"), visibleAttackers, attackerId);
+    fillUnitSelect($("target"), visibleTargets, targetId);
+    lastAttackerId = attackerId;
+    updateWeapons();
+    if ([...$("weapon").options].some((item) => item.value === weaponId)) $("weapon").value = weaponId;
+    updateWeaponMeta();
+    updateTargetType();
+    if ([...$("interceptWeapon").options].some((item) => item.value === interceptId)) $("interceptWeapon").value = interceptId;
+    updateEvadeFocusStatus();
+    calculate();
+  }
+
+  $("languageSelect").value = i18n.language;
+  fillTargetTypeNames();
   visibleAttackers = filteredUnits("", true);
   fillUnitSelect($("attacker"), visibleAttackers, "UNIT_ID.E_R9A");
   fillUnitSelect($("target"), visibleTargets, "UNIT_ID.B_B1DA");
@@ -667,6 +754,7 @@
   $("knowledgeDialog").addEventListener("click", (event) => {
     if (event.target === $("knowledgeDialog")) closeKnowledge();
   });
+  $("languageSelect").addEventListener("change", (event) => changeLanguage(event.target.value));
 
   document.querySelectorAll("input, select").forEach((element) => {
     element.addEventListener("input", scheduleCalculate);

@@ -25,6 +25,12 @@
         <h1>R-TYPE TACTICS<br><span>戦闘シミュレータ</span></h1>
       </div>
       <div class="hero-actions">
+        <label class="language-control" for="languageSelect"><span>LANGUAGE</span>
+          <select id="languageSelect" aria-label="表示言語">
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+          </select>
+        </label>
         <button id="knowledgeOpen" class="knowledge-open" type="button"><span aria-hidden="true">i</span> 解析知見</button>
       </div>
     </header>
@@ -187,7 +193,7 @@
           </div>
         </div>
         <div class="probability">
-          <p>回避（地形ブロック）率</p>
+          <p>回避（地形ブロック）率 <span id="guaranteedHitBadge" class="condition-badge guaranteed-hit-badge" hidden>必中</span></p>
           <strong><span id="avoidResult">0.0</span><small>%</small></strong>
           <div class="bar"><i id="avoidBar"></i></div>
           <span id="hitResult">命中率 100.0%</span>
@@ -292,6 +298,13 @@
             </div>
             <div class="formula-box"><code>実効回避 = 対象回避 + [回避専念時: 対象回避 × 0.5 / 占有HEX数] + 地形回避 − 武器命中</code></div>
             <p>0～100%に制限後、24bit一様乱数を1回比較します。回避に専念すると、基礎回避率の <code>0.5 / 占有HEX数</code> 倍を加算します。反撃・迎撃時はこのボーナスを受けません。</p>
+            <h4 class="knowledge-subtitle">必中バイパス</h4>
+            <div class="formula-box"><code>必中バイパス設定あり → 回避率 0% / 命中率 100%</code></div>
+            <p>この設定を持つ攻撃は、対象回避・地形回避・武器命中による通常の回避計算を通りません。表示命中値100%や粒子属性そのものが直接の条件ではありません。</p>
+            <ul class="knowledge-list">
+              <li>収録中の<b>チャージ武器131定義はすべて必中バイパス設定済み</b>です。チャージ武器以外の一部の特殊攻撃も含まれます。</li>
+              <li><b>表示命中値が100%未満でも必中です。</b>アイビーロッドは表示75%ですが、必中バイパス対象のため実戦では回避計算を通りません。</li>
+            </ul>
           </section>
 
           <section id="knowledgeAffinity">
@@ -443,6 +456,7 @@
             </div>
             <ul class="knowledge-list">
               <li><b>波動砲などのチャージ武器</b>は、チャージ・範囲選択・専用演出に特殊分岐がありますが、命中後のHPダメージは基本的に表記APから同じ系統へ合流します。</li>
+              <li>命中判定では、収録中のチャージ武器はすべて上記の<b>必中バイパス</b>が適用され、対象や地形の回避率を無視します。</li>
             </ul>
           </section>
 
@@ -451,6 +465,7 @@
     </div>
   </dialog>
   <script src="data.js"></script>
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
 </body>
 

@@ -45,6 +45,8 @@ input[type=number] { font-family: var(--mono) }
 .hero h1 { font-size: clamp(25px, 3vw, 43px); line-height: .9; letter-spacing: .03em; margin: 0 }
 .hero h1 span { font-size: .54em; color: var(--ink-soft); letter-spacing: .14em }
 .hero-actions { display: flex; align-items: center; gap: 9px }
+.language-control { display: flex; align-items: center; gap: 8px; color: var(--muted); font: 600 11px/1 "IBM Plex Mono", monospace; letter-spacing: .08em }
+.language-control select { min-width: 112px; height: 38px; padding: 0 30px 0 10px }
 .knowledge-open { height: 38px; border: 1px solid #32636a; background: #0b2025; color: var(--ink-strong); padding: 0 13px; font-size: 13px; letter-spacing: .08em; cursor: pointer }
 .knowledge-open:hover, .knowledge-open:focus-visible { border-color: var(--cyan); color: var(--cyan); outline: none }
 .knowledge-open span { display: inline-grid; place-items: center; width: 18px; height: 18px; margin-right: 6px; border: 1px solid currentColor; border-radius: 50%; font-family: Georgia, serif; font-size: 12px; font-weight: 700 }
@@ -81,6 +83,7 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .checks label.available-control { color: var(--ink-strong) }
 .fixed-badge { display: inline-block; margin-left: 6px; padding: 1px 5px; border: 1px solid #68767a; background: #30383b; color: #d4dcdd; font-size: 12px; letter-spacing: .08em; vertical-align: 1px }
 .condition-badge { display: inline-block; margin-left: 3px; padding: 2px 6px; border: 1px solid #34545d; background: #10242a; color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: .02em; white-space: nowrap }
+.guaranteed-hit-badge { border-color: #a76f31; background: #332112; color: #ffd28b; font-weight: 700 }
 .checks label.available-control .condition-badge { border-color: #7d6033; background: #2a2115; color: #f0b965 }
 .reaction-checks { margin-top: 14px; padding: 10px 12px; border: 1px solid #294b52; background: #0a191e }
 .reaction-checks label { margin-top: 0; color: var(--ink-soft) }
