@@ -710,7 +710,6 @@
     $("damageLine").hidden = false;
     $("targetMaxHp").textContent = "--";
     $("hpDamagePercent").textContent = "--";
-    $("expectedHpPercent").textContent = "--";
     $("formationLossRow").hidden = true;
     $("formationRule").hidden = true;
     $("affinityLabel").textContent = L("属性相性", "Affinity");
@@ -723,8 +722,6 @@
     $("interceptModifier").textContent = "±0%";
     setModifierBadgeState($("interceptBadge"), 0);
     $("interceptRateDisplay").textContent = "--";
-    $("interceptRateResult").textContent = "--";
-    $("interceptPass").textContent = "--";
     $("interceptFormula").textContent = "";
     $("tackleSelfCard").hidden = true;
     $("formulaNote").textContent = L("攻撃ユニット・武器・対象ユニットを選択してください。", "Select an attacking unit, weapon, and target unit.");
@@ -847,7 +844,6 @@
     renderDamageSegments(min, max, maxHp, formationMax, dMean.damage);
     $("targetMaxHp").textContent = maxHp.toFixed(0);
     $("hpDamagePercent").textContent = `${percent(dMean.damage).toFixed(1)}% (${percent(min).toFixed(1)}–${percent(max).toFixed(1)}%)`;
-    $("expectedHpPercent").textContent = `${percent(dMean.damage * hit).toFixed(1)}%`;
     $("formationLoss").textContent = L(`平均 ${lossMean}機（${lossMin}～${lossMax}機）`, `Mean ${lossMean} unit${lossMean === 1 ? "" : "s"} (${lossMin}–${lossMax})`);
     $("formationLossRow").hidden = formationMax !== 5;
     $("formationRule").hidden = formationMax !== 5;
@@ -865,8 +861,6 @@
     $("interceptModifier").textContent = intercept.rate > 0 ? `-${(intercept.rate * 100).toFixed(1)}%` : "±0%";
     setModifierBadgeState($("interceptBadge"), -intercept.rate);
     $("interceptRateDisplay").textContent = `${(intercept.rate * 100).toFixed(1)}%`;
-    $("interceptRateResult").textContent = `${(intercept.rate * 100).toFixed(1)}%`;
-    $("interceptPass").textContent = `${((1 - intercept.rate) * 100).toFixed(1)}%`;
     $("tackleSelfCard").hidden = !tackleSelfDamage.active;
     if (tackleSelfDamage.active) {
       const maxHpPercent = tackleSelfDamage.maxHp > 0 ? tackleSelfDamage.damage / tackleSelfDamage.maxHp * 100 : 0;

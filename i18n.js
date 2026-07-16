@@ -96,9 +96,7 @@
     "result.avoidFormulaTitle": "Hit-rate formula",
     "result.targetMaxHp": "Target maximum HP (full)",
     "result.hpLossOnHit": "HP loss on hit",
-    "result.expectedHpLoss": "Expected HP loss",
     "result.formationLoss": "Formation loss (from full HP)",
-    "result.interceptPass": "Post-interception pass rate",
     "result.formationRule": "A five-unit formation loses one unit each time HP loss exceeds another 20% threshold.",
 
     "notes.title": "Damage System Analysis",

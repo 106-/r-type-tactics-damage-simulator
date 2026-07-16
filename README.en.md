@@ -18,7 +18,7 @@ The "Analysis Notes" button in the header shows the reconstructed combat flow, e
 - Expected damage including evasion
 - HP loss ratios (on hit and evasion-weighted) against the target's maximum HP
 - Units lost when attacking a full five-unit formation
-- Affinity, effective terrain defense, interception damage reduction, and pass rate
+- Affinity, effective terrain defense, and interception damage reduction
 - Interception weapon selection tied to the attack attribute and the target's weapons (reflecting power, accuracy, veterancy, and both sides' current HP ratios)
 - Normal/counterattack modes, unit-specific formation size (1/5) with loss ratios, knockback collision, and the 50%-damage flag
 - Target unit type and occupied hexes are set automatically from the selected unit
