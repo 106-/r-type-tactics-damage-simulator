@@ -151,6 +151,18 @@
     return `${name}${parentLabel}${variantLabel}${acceleration}${warp}${decoy}`;
   }
 
+  function setUnitTitle(element, unit) {
+    element.replaceChildren();
+    if (!unit) {
+      element.textContent = "--";
+      return;
+    }
+    const unitId = document.createElement("span");
+    unitId.className = "unit-id-suffix";
+    unitId.textContent = String(unit.id || "").replace(/^UNIT_ID\./, "");
+    element.append(document.createTextNode(unitLabel(unit)), unitId);
+  }
+
   function skillName(unit, role) {
     const skill = unit?.skill;
     const name = (i18n.language === "ja" ? skillNames : skillNamesEn).get(skill) || `${L("不明", "Unknown")} (${skill ?? "-"})`;
@@ -242,7 +254,7 @@
     const value = $(`${role}PickerValue`);
     const meta = $(`${role}PickerMeta`);
     if (!value || !meta) return;
-    value.textContent = unit ? unitLabel(unit) : "--";
+    setUnitTitle(value, unit);
     meta.textContent = unit ? unitPickerMeta(unit) : "--";
   }
 
@@ -277,7 +289,7 @@
       button.setAttribute("aria-selected", String(unit.id === selectedId));
 
       const title = document.createElement("strong");
-      title.textContent = unitLabel(unit);
+      setUnitTitle(title, unit);
       const badges = document.createElement("span");
       badges.className = "unit-picker-item-badges";
       const faction = unitFaction(unit);

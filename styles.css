@@ -84,6 +84,7 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .unit-picker-trigger>span { min-width: 0 }
 .unit-picker-trigger strong, .unit-picker-trigger small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
 .unit-picker-trigger strong { color: var(--text); font-size: 16px; letter-spacing: .03em }
+.unit-id-suffix { margin-left: .7em; color: #60747b; font-family: var(--mono); font-size: .72em; font-weight: 400; letter-spacing: .02em; opacity: .78 }
 .unit-picker-trigger small { margin-top: 3px; color: var(--faint); font-family: var(--mono); font-size: 11px }
 .unit-picker-trigger>b { flex: 0 0 auto; padding: 4px 9px; border: 1px solid #37646b; color: var(--cyan); font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .08em }
 .checks { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 10px }
