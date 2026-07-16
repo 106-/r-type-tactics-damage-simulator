@@ -647,31 +647,41 @@
   function renderDamageSegments(min, max, maxHp, formationMax, mean) {
     const segments = $("damageSegments");
     const marker = $("damageMeanMarker");
-    const show = formationMax === 5 && maxHp > 0 && max > 0;
+    const show = maxHp > 0 && max > 0;
     segments.hidden = !show;
     marker.hidden = !show;
     $("damageLine").hidden = show;
     segments.replaceChildren();
     if (!show) return;
+    const isFormation = formationMax === 5;
+    const bands = 5;
     const span = max - min;
-    const lossMin = formationLoss(min, maxHp, formationMax);
-    const lossMax = formationLoss(max, maxHp, formationMax);
-    for (let loss = lossMin; loss <= lossMax; loss++) {
-      const lo = loss === 0 ? -Infinity : maxHp * .2 * loss;
-      const hi = loss === formationMax ? Infinity : maxHp * .2 * (loss + 1);
+    const bandMin = formationLoss(min, maxHp, bands);
+    const bandMax = formationLoss(max, maxHp, bands);
+    for (let band = bandMin; band <= bandMax; band++) {
+      const lo = band === 0 ? -Infinity : maxHp * .2 * band;
+      const hi = band === bands ? Infinity : maxHp * .2 * (band + 1);
       const fraction = span > 0 ? Math.max(0, (Math.min(max, hi) - Math.max(min, lo)) / span) : 1;
       if (fraction <= 0) continue;
       const seg = document.createElement("div");
       seg.className = "range-seg";
-      if (fraction < .16) seg.classList.add("is-narrow");
+      if (fraction < (isFormation ? .16 : .26)) seg.classList.add("is-narrow");
       seg.style.flexGrow = String(fraction);
       seg.style.flexShrink = "1";
       seg.style.flexBasis = "0";
-      seg.style.background = lossSegmentColors[Math.min(loss, lossSegmentColors.length - 1)];
+      seg.style.background = lossSegmentColors[Math.min(band, lossSegmentColors.length - 1)];
       const pct = (fraction * 100).toFixed(0);
-      seg.title = L(`乱数幅のうち${pct}%で${loss}機減`, `${loss} unit${loss === 1 ? "" : "s"} lost across ${pct}% of the damage range`);
       const label = document.createElement("span");
-      label.textContent = L(`−${loss}機 ${pct}%`, `−${loss} (${pct}%)`);
+      if (isFormation) {
+        seg.title = L(`乱数幅のうち${pct}%で${band}機減`, `${band} unit${band === 1 ? "" : "s"} lost across ${pct}% of the damage range`);
+        label.textContent = L(`−${band}機 ${pct}%`, `−${band} (${pct}%)`);
+      } else if (band === bands) {
+        seg.title = L(`乱数幅のうち${pct}%で撃破（HP損耗100%）`, `Destroyed (100% HP lost) across ${pct}% of the damage range`);
+        label.textContent = L(`撃破 ${pct}%`, `KO ${pct}%`);
+      } else {
+        seg.title = L(`乱数幅のうち${pct}%でHP損耗${band * 20}〜${(band + 1) * 20}%`, `${band * 20}–${(band + 1) * 20}% HP lost across ${pct}% of the damage range`);
+        label.textContent = `${band * 20}–${(band + 1) * 20}%: ${pct}%`;
+      }
       seg.append(label);
       segments.append(seg);
     }
