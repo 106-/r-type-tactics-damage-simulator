@@ -86,7 +86,7 @@
     "terrain.defenseOpt50": "50% (waterfall, underwater, etc.)",
     "terrain.hint": "The parentheses show representative terrain found in the extracted data. Maps may apply different modifiers to similarly named terrain.",
 
-    "result.damageTitle": "Damage on hit",
+    "result.damageTitle": "Average damage on hit",
     "result.min": "Minimum",
     "result.max": "Maximum",
     "result.tackleRecoil": "Recoil to attacker",
@@ -122,7 +122,7 @@
     "notes.flow.step5": "Post-processing",
     "notes.flow.step5Desc": "Update knockback collision, formation count, and presentation values",
     "notes.flow.formula": "Damage ≈ Weapon power × Formation ratio × (1−Interception) × Damage RNG × (1−Effective terrain defense) × Affinity",
-    "notes.flow.rng": "The random modifier lowers normal-attack damage, while it raises counterattack damage.",
+    "notes.flow.rng": "The damage modifier is uniformly distributed within each range shown below. It lowers normal-attack damage, while it raises counterattack damage.",
     "notes.flow.normalRng": "Normal attack RNG",
     "notes.flow.normalRngRange": "57.5–100%",
     "notes.flow.normalRngMean": "Mean 78.75%",

@@ -833,7 +833,7 @@
     if (eff !== 0) {
       damageRows.push({ op: "×", label: L(`属性相性（${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%）`, `Affinity (${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%)`), value: (1 + eff).toFixed(2) });
     }
-    damageRows.push({ op: "=", label: L("命中時ダメージ（平均乱数）", "Damage on hit (mean RNG)"), value: dMean.damage.toFixed(1), result: true });
+    damageRows.push({ op: "=", label: L("命中時平均ダメージ", "Average damage on hit"), value: dMean.damage.toFixed(1), result: true });
     renderFormula("damageFormulaBox", "damageFormula", damageRows);
     $("damageExpected").textContent = dMean.damage.toFixed(1);
     $("damageContext").textContent = formationMax === 5

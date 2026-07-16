@@ -39,7 +39,7 @@ The "Analysis Notes" button in the header shows the reconstructed combat flow, e
 Damage ≈ Weapon power × Formation ratio × (1−Interception) × Damage RNG × (1−Effective terrain defense) × Affinity
 ```
 
-The random modifier lowers normal-attack damage, while it raises counterattack damage.
+The damage modifier is uniformly distributed within each range shown below. It lowers normal-attack damage, while it raises counterattack damage.
 
 | Damage RNG | Range | Mean |
 | --- | --- | --- |

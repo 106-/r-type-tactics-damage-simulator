@@ -194,7 +194,7 @@
       <aside class="results">
         <div class="result-head"><span>CALCULATION RESULT</span><i></i></div>
         <div class="damage-card">
-          <p data-i18n="result.damageTitle">命中時ダメージ</p>
+          <p data-i18n="result.damageTitle">命中時平均ダメージ</p>
           <strong id="damageExpected">0.0</strong>
           <span id="damageContext"></span>
           <div class="range"><b id="damageMin">0.0</b>
@@ -359,7 +359,7 @@
             </ol>
             <div class="formula-box"><code
                 data-i18n="notes.flow.formula">ダメージ ≈ 武器威力 × 編隊率 × (1−迎撃率) × 威力乱数 × (1−実効地形防御) × 属性相性</code></div>
-            <p data-i18n="notes.flow.rng">乱数要素として、通常攻撃ではダメージが下振れ、一方反撃ではダメージが上振れるように乗ります。</p>
+            <p data-i18n="notes.flow.rng">ダメージの威力乱数は、下記の各範囲内から一様に選ばれます。通常攻撃ではダメージが下振れ、一方反撃ではダメージが上振れるように乗ります。</p>
             <div class="knowledge-cards two">
               <div><b data-i18n="notes.flow.normalRng">通常攻撃RNG</b><strong
                   data-i18n="notes.flow.normalRngRange">57.5～100%</strong><span
