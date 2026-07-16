@@ -630,6 +630,44 @@
     return formationMax - remainingFormation;
   }
 
+  const lossSegmentColors = ["#6f99a1", "#39e5d2", "#e8d05e", "#f0aa4b", "#f7825a", "#ff6b5e"];
+
+  function renderDamageSegments(min, max, maxHp, formationMax, mean) {
+    const segments = $("damageSegments");
+    const marker = $("damageMeanMarker");
+    const show = formationMax === 5 && maxHp > 0 && max > 0;
+    segments.hidden = !show;
+    marker.hidden = !show;
+    $("damageLine").hidden = show;
+    segments.replaceChildren();
+    if (!show) return;
+    const span = max - min;
+    const lossMin = formationLoss(min, maxHp, formationMax);
+    const lossMax = formationLoss(max, maxHp, formationMax);
+    for (let loss = lossMin; loss <= lossMax; loss++) {
+      const lo = loss === 0 ? -Infinity : maxHp * .2 * loss;
+      const hi = loss === formationMax ? Infinity : maxHp * .2 * (loss + 1);
+      const fraction = span > 0 ? Math.max(0, (Math.min(max, hi) - Math.max(min, lo)) / span) : 1;
+      if (fraction <= 0) continue;
+      const seg = document.createElement("div");
+      seg.className = "range-seg";
+      if (fraction < .16) seg.classList.add("is-narrow");
+      seg.style.flexGrow = String(fraction);
+      seg.style.flexShrink = "1";
+      seg.style.flexBasis = "0";
+      seg.style.background = lossSegmentColors[Math.min(loss, lossSegmentColors.length - 1)];
+      const pct = (fraction * 100).toFixed(0);
+      seg.title = L(`乱数幅のうち${pct}%で${loss}機減`, `${loss} unit${loss === 1 ? "" : "s"} lost across ${pct}% of the damage range`);
+      const label = document.createElement("span");
+      label.textContent = L(`−${loss}機 ${pct}%`, `−${loss} (${pct}%)`);
+      seg.append(label);
+      segments.append(seg);
+    }
+    const pos = span > 0 ? Math.min(1, Math.max(0, (mean - min) / span)) : .5;
+    marker.style.left = `${pos * 100}%`;
+    marker.title = L(`平均ダメージ ${mean.toFixed(1)}`, `Mean damage ${mean.toFixed(1)}`);
+  }
+
   function resetResults() {
     $("avoidResult").textContent = "--";
     $("avoidBar").style.width = "0%";
@@ -641,6 +679,10 @@
     $("damageContext").textContent = "";
     $("damageMin").textContent = "--";
     $("damageMax").textContent = "--";
+    $("damageSegments").hidden = true;
+    $("damageSegments").replaceChildren();
+    $("damageMeanMarker").hidden = true;
+    $("damageLine").hidden = false;
     $("targetMaxHp").textContent = "--";
     $("hpDamagePercent").textContent = "--";
     $("expectedHpPercent").textContent = "--";
@@ -777,6 +819,7 @@
       : L(`HP ${percent(dMean.damage).toFixed(1)}%減`, `${percent(dMean.damage).toFixed(1)}% HP lost`);
     $("damageMin").textContent = min.toFixed(1);
     $("damageMax").textContent = max.toFixed(1);
+    renderDamageSegments(min, max, maxHp, formationMax, dMean.damage);
     $("targetMaxHp").textContent = maxHp.toFixed(0);
     $("hpDamagePercent").textContent = `${percent(dMean.damage).toFixed(1)}% (${percent(min).toFixed(1)}–${percent(max).toFixed(1)}%)`;
     $("expectedHpPercent").textContent = `${percent(dMean.damage * hit).toFixed(1)}%`;

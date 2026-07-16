@@ -197,7 +197,12 @@
           <p data-i18n="result.damageTitle">命中時ダメージ</p>
           <strong id="damageExpected">0.0</strong>
           <span id="damageContext"></span>
-          <div class="range"><b id="damageMin">0.0</b><i></i><b id="damageMax">0.0</b></div>
+          <div class="range"><b id="damageMin">0.0</b>
+            <div class="range-track"><i id="damageLine"></i>
+              <div id="damageSegments" class="range-segments" hidden></div>
+              <span id="damageMeanMarker" class="range-mean" hidden>▼</span>
+            </div><b id="damageMax">0.0</b>
+          </div>
           <div class="range-label"><span data-i18n="result.min">最小</span><span data-i18n="result.max">最大</span></div>
         </div>
         <div id="tackleSelfCard" class="tackle-self-card" hidden>
