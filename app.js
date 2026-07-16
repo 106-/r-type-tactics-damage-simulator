@@ -679,8 +679,11 @@
         seg.title = L(`乱数幅のうち${pct}%で撃破（HP損耗100%）`, `Destroyed (100% HP lost) across ${pct}% of the damage range`);
         label.textContent = L(`撃破 ${pct}%`, `KO ${pct}%`);
       } else {
-        seg.title = L(`乱数幅のうち${pct}%でHP損耗${band * 20}〜${(band + 1) * 20}%`, `${band * 20}–${(band + 1) * 20}% HP lost across ${pct}% of the damage range`);
-        label.textContent = `${band * 20}–${(band + 1) * 20}%: ${pct}%`;
+        const loPct = Math.round(Math.max(lo, min) / maxHp * 100);
+        const hiPct = Math.round(Math.min(hi, max) / maxHp * 100);
+        const range = loPct === hiPct ? `${loPct}` : `${loPct}–${hiPct}`;
+        seg.title = L(`乱数幅のうち${pct}%でHP損耗${loPct === hiPct ? loPct : `${loPct}〜${hiPct}`}%`, `${range}% HP lost across ${pct}% of the damage range`);
+        label.textContent = `${range}%: ${pct}%`;
       }
       seg.append(label);
       segments.append(seg);
