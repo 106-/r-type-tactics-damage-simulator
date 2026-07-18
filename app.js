@@ -11,7 +11,6 @@
   const materialNamesEn = ["Optical", "Mechanical", "Biological", "Particle", "Flame", "Mental", "Ice", "Acid"];
   const typeNames = ["機械ユニット", "機械艦", "機械艦パーツ", "艦船", "潜行機械", "機械壁", "機械床", "生物ユニット", "生物艦", "生物艦パーツ", "水中生物", "非水中生物", "潜行生物", "浮遊生物", "生体壁", "生体床", "宇宙水棲生物", "岩石", "氷", "異文明ユニット", "異文明艦パーツ"];
   const typeNamesEn = ["Mechanical unit", "Mechanical ship", "Mechanical ship part", "Ship", "Submerged mechanical unit", "Mechanical wall", "Mechanical floor", "Biological unit", "Biological ship", "Biological ship part", "Aquatic lifeform", "Non-aquatic lifeform", "Submerged lifeform", "Floating lifeform", "Biological wall", "Biological floor", "Space aquatic lifeform", "Rock", "Ice", "Alien-civilization unit", "Alien-civilization ship part"];
-  const attachedPartUnitTypes = new Set([2, 9, 20]);
   const skillNames = new Map([
     [0, "HP"],
     [1, "回避率"],
@@ -26,64 +25,6 @@
     && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
   const unitsById = new Map(data.units.map((unit) => [unit.id, unit]));
   const weapons = new Map(data.weapons.map((weapon) => [weapon.id, weapon]));
-  const unitWeaponOverrides = new Map([
-    ["UNIT_ID.ED_R9AD", ["WEAPON_ID.E_WAV_DECOY1", "WEAPON_ID.E_DB_REFUEL"]],
-    ["UNIT_ID.ED_R9AD2", ["WEAPON_ID.E_WAV_DECOY2", "WEAPON_ID.E_DB_REFUEL"]],
-    ["UNIT_ID.ED_R9AD3", ["WEAPON_ID.E_WAV_DECOY3", "WEAPON_ID.E_DB_REFUEL"]],
-  ]);
-  const attackRangeOverrides = new Map([
-    ["WEAPON_ID.B_FINE_ATTACK", { min: 2, max: 2, note: "特殊体当たり距離" }],
-  ]);
-  const triggeredAttackWeaponIds = new Set([
-    "WEAPON_ID.E_MINE2_BOMB",
-    "WEAPON_ID.B_JEL_ATTACK",
-  ]);
-  const bridgeParentNames = new Map([
-    ["UNIT_ID.BS_BRIDGE", "ヘイムダル級"],
-    ["UNIT_ID.EW_BS_BRIDGE", "ヘイムダル級"],
-    ["UNIT_ID.E_BS2_BRIDGE", "テュール級"],
-    ["UNIT_ID.EW_BS2_BRIDGE", "テュール級"],
-    ["UNIT_ID.E_BSAE1_BRIDGE", "ヨトゥンヘイム級"],
-    ["UNIT_ID.EW_BSAE1_BRIDGE", "ヨトゥンヘイム級"],
-    ["UNIT_ID.E_BSAE2_BRIDGE", "ムスペルヘイム級"],
-    ["UNIT_ID.EW_BSAE2_BRIDGE", "ムスペルヘイム級"],
-    ["UNIT_ID.E_BS_LAST_BRIDGE", "ニヴルヘイム級"],
-    ["UNIT_ID.EW_BS_LAST_BRIDGE", "ニヴルヘイム級"],
-    ["UNIT_ID.E_CR_BRIDGE", "ヴァナルガンド級"],
-    ["UNIT_ID.EW_CR_BRIDGE", "ヴァナルガンド級"],
-    ["UNIT_ID.E_CR2_BRIDGE", "ガルム級"],
-    ["UNIT_ID.EW_CR2_BRIDGE", "ガルム級"],
-    ["UNIT_ID.E_CR3_BRIDGE", "マーナガルム級"],
-    ["UNIT_ID.EW_CR3_BRIDGE", "マーナガルム級"],
-  ]);
-  const bridgeParentNamesEn = new Map([
-    ["UNIT_ID.BS_BRIDGE", "Heimdall-class"], ["UNIT_ID.EW_BS_BRIDGE", "Heimdall-class"],
-    ["UNIT_ID.E_BS2_BRIDGE", "Tyr-class"], ["UNIT_ID.EW_BS2_BRIDGE", "Tyr-class"],
-    ["UNIT_ID.E_BSAE1_BRIDGE", "Jotunheim-class"], ["UNIT_ID.EW_BSAE1_BRIDGE", "Jotunheim-class"],
-    ["UNIT_ID.E_BSAE2_BRIDGE", "Muspelheim-class"], ["UNIT_ID.EW_BSAE2_BRIDGE", "Muspelheim-class"],
-    ["UNIT_ID.E_BS_LAST_BRIDGE", "Niflheim-class"], ["UNIT_ID.EW_BS_LAST_BRIDGE", "Niflheim-class"],
-    ["UNIT_ID.E_CR_BRIDGE", "Vanargand-class"], ["UNIT_ID.EW_CR_BRIDGE", "Vanargand-class"],
-    ["UNIT_ID.E_CR2_BRIDGE", "Garm-class"], ["UNIT_ID.EW_CR2_BRIDGE", "Garm-class"],
-    ["UNIT_ID.E_CR3_BRIDGE", "Managarm-class"], ["UNIT_ID.EW_CR3_BRIDGE", "Managarm-class"],
-  ]);
-  const unitVariantLabels = new Map([
-    ["UNIT_ID.E_L_DANCER_A", "ウェーブ・マスター系"],
-    ["UNIT_ID.E_L_DANCER_B", "コンサート・マスター系"],
-    ["UNIT_ID.E_L_DANCER_C", "カロン系"],
-    ["UNIT_ID.E_L_DANCER_D", "ワイズ・マン系"],
-  ]);
-  const unitVariantLabelsEn = new Map([
-    ["UNIT_ID.E_L_DANCER_A", "Wave Master line"], ["UNIT_ID.E_L_DANCER_B", "Concert Master line"],
-    ["UNIT_ID.E_L_DANCER_C", "Charon line"], ["UNIT_ID.E_L_DANCER_D", "Wise Man line"],
-  ]);
-  const acceleratedUnitIds = new Set([
-    "UNIT_ID.E_TXT_BOOST",
-    "UNIT_ID.E_TXT2_BOOST",
-    "UNIT_ID.E_TXT3_BOOST",
-    "UNIT_ID.B_SCANT_4_BOOST",
-  ]);
-  const shipUnitTypes = new Set([2, 3, 8, 9, 20]);
-  const shipTypeKeyPattern = /(^utyp_ship$|battle_ship|cruiser|carrier|destroyer|cargo|landing_ship|^utyp_bs_|^utyp_cr_|^utyp_weapon$|^utyp_super_bs$|^utyp_b_last_)/;
   let visibleAttackers = data.units;
   let visibleTargets = data.units;
   let interceptContextKey = "";
@@ -120,49 +61,32 @@
   }
 
   function unitWeaponIds(unit) {
-    return unitWeaponOverrides.get(unit?.id) || unit?.weapons || [];
+    return unit?.weapons || [];
   }
 
   function isDecoyUnit(unit) {
-    return unitWeaponIds(unit).some((id) => weapons.get(id)?.nameJa === "デコイ爆破");
+    return unit?.variantKind === "decoy";
   }
 
   function isWarpStateUnit(unit) {
-    return /^UNIT_ID\.[EB]W_/.test(unit?.id || "")
-      && ["utyp_battle_ship", "utyp_b_battle_ship", "utyp_cruiser", "utyp_b_cruiser", "utyp_carrier"].includes(unit?.typeKey);
-  }
-
-  function hasNormalAttack(unit) {
-    return unitWeaponIds(unit).some((id) => weapons.get(id)?.attack);
+    return unit?.variantKind === "warp";
   }
 
   function isSelectableAttackWeapon(weapon) {
-    return Boolean(weapon && (
-      weapon.attack
-      || weapon.akuukanBuster
-      || weapon.nameJa === "デコイ爆破"
-      || triggeredAttackWeaponIds.has(weapon.id)
-    ));
-  }
-
-  function hasSelectableAttack(unit) {
-    return unitWeaponIds(unit).some((id) => isSelectableAttackWeapon(weapons.get(id)));
+    return Boolean(weapon?.selectableAttack);
   }
 
   function unitLabel(unit) {
-    const accelerated = acceleratedUnitIds.has(unit?.id);
+    const accelerated = unit?.variantKind === "boost";
     const baseName = displayName(unit);
     const name = accelerated ? baseName.replace(/[\(\uff08]加速時[\)\uff09]$/, "") : baseName;
     const parentNames = [...new Set((unit?.partParents || [])
       .map((parentId) => unitsById.get(parentId))
       .filter(Boolean)
       .map(displayName))];
-    const fallbackParent = (i18n.language === "ja" ? bridgeParentNames : bridgeParentNamesEn).get(unit?.id);
-    const parentLabel = parentNames.length
-      ? ` [${parentNames.join(" / ")}]`
-      : fallbackParent ? ` [${fallbackParent}]` : "";
-    const variant = (i18n.language === "ja" ? unitVariantLabels : unitVariantLabelsEn).get(unit?.id);
-    const variantLabel = variant ? ` [${variant}]` : "";
+    const parentLabel = parentNames.length ? ` [${parentNames.join(" / ")}]` : "";
+    const qualifier = unit?.labelQualifier?.[i18n.language] || unit?.labelQualifier?.en;
+    const variantLabel = qualifier ? ` [${qualifier}]` : "";
     const acceleration = accelerated ? L(" [加速時]", " [Boosted]") : "";
     const warp = isWarpStateUnit(unit) ? L(" [ワープ時]", " [Warping]") : "";
     const decoy = isDecoyUnit(unit) ? L(" [デコイ]", " [Decoy]") : "";
@@ -207,10 +131,7 @@
   function filteredUnits(query, requireWeapon) {
     const needle = query.trim().toLocaleLowerCase(i18n.language);
     return data.units.filter((unit) => {
-      if (unit.id.endsWith("_SHARE")) return false;
-      const hasNormal = hasNormalAttack(unit);
-      if (!requireWeapon && isDecoyUnit(unit) && !hasNormal) return false;
-      if (requireWeapon && !hasSelectableAttack(unit)) return false;
+      if (requireWeapon ? !unit.selectableAsAttacker : !unit.selectableAsTarget) return false;
       const names = `${unitLabel(unit)} ${unit.nameJa || ""} ${unit.nameEn || ""}`.toLocaleLowerCase(i18n.language);
       return !needle || names.includes(needle) || unit.id.toLowerCase().includes(needle);
     });
@@ -220,51 +141,17 @@
     return unit?.faction || "other";
   }
 
-  function isForceUnit(unit) {
-    const id = (unit?.id || "").replace(/^UNIT_ID\./, "");
-    return /(^F_|^FB_)/.test(id) || String(unit?.typeKey || "").includes("force");
-  }
-
-  function isShipUnit(unit) {
-    if (typeof unit?.flagship === "boolean") return unit.flagship;
-    return shipUnitTypes.has(unit?.type) || shipTypeKeyPattern.test(String(unit?.typeKey || ""));
-  }
-
-  function isAttachedPartUnit(unit) {
-    if (typeof unit?.attachedPart === "boolean") return unit.attachedPart;
-    const id = String(unit?.id || "");
-    const subordinateWeaponPart = unit?.typeKey === "utyp_red_pod" || /^UNIT_ID\.B_MICHAEL_BIT\d*$/.test(id);
-    return (attachedPartUnitTypes.has(unit?.type) && !isShipUnit(unit)) || subordinateWeaponPart;
-  }
-
   function matchesUnitCategory(unit, category) {
-    if (category === "all") return true;
-    if (category === "force") return isForceUnit(unit);
-    if (category === "ship") return isShipUnit(unit);
-    if (category === "part") return isAttachedPartUnit(unit);
-    // Keep single-HP non-ships such as Daedalus and Gains in this category,
-    // while making the four picker categories mutually exclusive.
-    if (category === "formation") return !isShipUnit(unit) && !isForceUnit(unit) && !isAttachedPartUnit(unit);
-    return true;
+    return category === "all" || unit?.category === category;
   }
 
   function matchesUnitPlayability(unit, playability) {
     if (playability === "all") return true;
-    if (isPlayabilityFilterExcluded(unit)) return false;
-    return playability === "playable" ? Boolean(unit?.playable) : !unit?.playable;
-  }
-
-  function isPlayabilityFilterExcluded(unit) {
-    const japaneseName = String(unit?.nameJa || unit?.name || "");
-    const fortressPart = japaneseName.startsWith("要塞：") || japaneseName.startsWith("バイド要塞：");
-    return fortressPart;
+    return unit?.playabilityStatus === playability;
   }
 
   function unitCategory(unit) {
-    if (isAttachedPartUnit(unit)) return "part";
-    if (isForceUnit(unit)) return "force";
-    if (isShipUnit(unit)) return "ship";
-    return "formation";
+    return unit?.category || "formation";
   }
 
   function factionLabel(faction) {
@@ -420,7 +307,7 @@
       return;
     }
     const attackRange = effectiveAttackRange(weapon);
-    const range = attackRange.min === -1 ? L("専用範囲", "Special range") : `${attackRange.min ?? "?"}–${attackRange.max ?? "?"} HEX${attackRange.note ? ` (${L(attackRange.note, "special tackle range")})` : ""}`;
+    const range = attackRange.min === -1 ? L("専用範囲", "Special range") : `${attackRange.min ?? "?"}–${attackRange.max ?? "?"} HEX${attackRange.note ? ` (${attackRange.note})` : ""}`;
     const charge = weapon.charge ? ` / ${L("チャージ", "Charge")} ${weapon.charge}T` : "";
     const guaranteed = bypassesEvasion(weapon);
     const guaranteedLabel = guaranteed ? L(" / 必中（回避計算をバイパス）", " / Guaranteed hit (evasion calculation bypassed)") : "";
@@ -430,8 +317,10 @@
   }
 
   function effectiveAttackRange(weapon) {
-    const override = attackRangeOverrides.get(weapon?.id);
-    return override || { min: weapon?.rangeMin, max: weapon?.rangeMax, note: "" };
+    const note = weapon?.rangeNote === "fineTackle"
+      ? L("特殊体当たり距離", "special tackle range")
+      : "";
+    return { min: weapon?.rangeMin, max: weapon?.rangeMax, note };
   }
 
   function sharedInterceptRange(attackWeapon, interceptWeapon) {

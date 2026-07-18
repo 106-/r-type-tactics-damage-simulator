@@ -20,7 +20,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_YORKGONE2_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_YORKGONE2_TAIL",
@@ -42,7 +49,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_YORKGONE2_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GONDORAN_CORE",
@@ -62,7 +76,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GONDORAN_HOUDAI",
@@ -86,7 +107,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GONDORAN_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GONDORAN_HOUDAI_HEAD",
@@ -108,7 +136,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GAUPER",
@@ -130,7 +165,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GAUPER_2",
@@ -153,7 +195,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BALUDORU",
@@ -175,7 +224,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_DOP",
@@ -195,7 +251,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BILASHINSU",
@@ -217,7 +280,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BILA_ROOT",
@@ -241,7 +311,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BILASHINSU"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_RD",
@@ -263,7 +340,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_LD",
@@ -285,7 +369,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_RU",
@@ -307,7 +398,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_LU",
@@ -329,7 +427,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA",
@@ -349,7 +454,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_DR",
@@ -369,7 +481,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UL",
@@ -389,7 +508,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UR",
@@ -409,7 +535,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RIBOT",
@@ -431,7 +564,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RIBOT2",
@@ -453,7 +593,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CANCER",
@@ -476,7 +623,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_PISTAF",
@@ -498,7 +652,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BATARIAN",
@@ -520,7 +681,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BELMEIT_MINI",
@@ -542,7 +710,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_NIKU_HEN",
@@ -564,7 +739,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_ZOIDO",
@@ -586,7 +768,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LADY",
@@ -608,7 +797,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_U_ROCH_L",
@@ -631,7 +827,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_U_ROCH_M",
@@ -654,7 +857,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_NASURUELU",
@@ -676,7 +886,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_NASURUELU2",
@@ -698,7 +915,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GITA",
@@ -721,7 +945,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MID",
@@ -744,7 +975,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SUTOROBARUTO",
@@ -766,7 +1004,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_STR_BOMBER",
@@ -788,7 +1033,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_NYUTO_V",
@@ -810,7 +1062,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_NYUTO_H",
@@ -832,7 +1091,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BAMERA",
@@ -854,7 +1120,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LASER",
@@ -876,7 +1149,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MIS_3SHOT_R",
@@ -898,7 +1178,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MIS_3SHOT_L",
@@ -920,7 +1207,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BREAKABLE_WALL_A",
@@ -940,7 +1234,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_0601_WALL",
@@ -960,7 +1261,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_0601_WALL_2",
@@ -980,7 +1288,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_3002_BILL",
@@ -1000,7 +1315,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BUILDING_AFTER",
@@ -1020,7 +1342,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_JUPITER_DEBRIS",
@@ -1040,7 +1369,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_LAST_SPACE_DEBRIS",
@@ -1060,7 +1396,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BASE_WALL_GRITONIL",
@@ -1080,7 +1423,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_MARS_ROCK",
@@ -1100,7 +1450,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_MOON_ROCK",
@@ -1120,7 +1477,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_ROCK",
@@ -1140,7 +1504,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_ICE_S",
@@ -1160,7 +1531,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_ICE_S_NARUKI",
@@ -1180,7 +1558,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_ICE_M",
@@ -1200,7 +1585,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DRYICE",
@@ -1220,7 +1612,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE",
@@ -1240,7 +1639,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_G",
@@ -1260,7 +1666,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_Y",
@@ -1280,7 +1693,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_R",
@@ -1300,7 +1720,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_ICICLE_1",
@@ -1320,7 +1747,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_ICICLE_2",
@@ -1340,7 +1774,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HOUDAI",
@@ -1362,7 +1803,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HOUDAI_D",
@@ -1384,7 +1832,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HOUDAI_L",
@@ -1406,7 +1861,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HOUDAI_R",
@@ -1428,7 +1890,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_MINE",
@@ -1448,7 +1917,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_MINE2",
@@ -1470,7 +1946,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_CORE",
@@ -1490,7 +1973,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_DOCK1",
@@ -1510,7 +2000,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_DOCK2",
@@ -1530,7 +2027,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_RADAR1",
@@ -1550,7 +2054,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_RADAR2",
@@ -1572,7 +2083,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_MIS1",
@@ -1594,7 +2112,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_MIS2",
@@ -1616,7 +2141,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_LASER1",
@@ -1638,7 +2170,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_LASER2",
@@ -1660,7 +2199,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_RU",
@@ -1682,7 +2228,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_R",
@@ -1704,7 +2257,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_RD",
@@ -1726,7 +2286,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_LU",
@@ -1748,7 +2315,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_L",
@@ -1770,7 +2344,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_LD",
@@ -1792,7 +2373,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_RU",
@@ -1814,7 +2402,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_R",
@@ -1836,7 +2431,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_RD",
@@ -1858,7 +2460,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_LU",
@@ -1880,7 +2489,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_L",
@@ -1902,7 +2518,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_LD",
@@ -1924,7 +2547,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_BUILD",
@@ -1944,7 +2574,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_BASE_PIPE",
@@ -1964,7 +2601,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_CORE",
@@ -1984,7 +2628,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_DOCK1",
@@ -2004,7 +2655,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_DOCK2",
@@ -2024,7 +2682,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_RADAR1",
@@ -2044,7 +2709,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_RADAR2",
@@ -2066,7 +2738,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_MIS1",
@@ -2088,7 +2767,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_MIS2",
@@ -2110,7 +2796,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_LASER1",
@@ -2132,7 +2825,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_LASER2",
@@ -2154,7 +2854,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_RU",
@@ -2176,7 +2883,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_R",
@@ -2198,7 +2912,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_RD",
@@ -2220,7 +2941,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_LU",
@@ -2242,7 +2970,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_L",
@@ -2264,7 +2999,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_LD",
@@ -2286,7 +3028,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_RU",
@@ -2308,7 +3057,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_R",
@@ -2330,7 +3086,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_RD",
@@ -2352,7 +3115,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_LU",
@@ -2374,7 +3144,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_L",
@@ -2396,7 +3173,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_LD",
@@ -2418,7 +3202,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_BUILD",
@@ -2438,7 +3229,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.NB_BASE_PIPE",
@@ -2458,7 +3256,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "excluded",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_REFUEL",
@@ -2480,7 +3285,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_REFUEL",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_TP2H",
@@ -2502,7 +3314,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_TP2H",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_TP2S",
@@ -2524,7 +3343,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_TP2S",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BD_REFUEL",
@@ -2546,7 +3372,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.B_REFUEL",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_CARGO",
@@ -2568,7 +3401,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_CARGO_SHIP",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_CARGO_SHIP_C",
@@ -2590,7 +3430,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_CARGO_SHIP_C",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BD_CARGO",
@@ -2612,7 +3459,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.B_CARGO",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_NARUCISSUS",
@@ -2634,7 +3488,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_NARUCISSUS",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BD_NASURUELU",
@@ -2656,7 +3517,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.B_NASURUELU",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BD_NASURUELU2",
@@ -2678,7 +3546,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.B_NASURUELU2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_R9AD",
@@ -2692,7 +3567,7 @@ window.RTYPE_SIM_DATA = {
             "skill": 0,
             "avoidSkill": 0,
             "weapons": [
-                "WEAPON_ID.E_WAV_NORMAL",
+                "WEAPON_ID.E_WAV_DECOY1",
                 "WEAPON_ID.E_DB_REFUEL"
             ],
             "nameJa": "エスコート・タイム",
@@ -2701,7 +3576,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_R9AD",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_R9AD2",
@@ -2715,7 +3597,7 @@ window.RTYPE_SIM_DATA = {
             "skill": 0,
             "avoidSkill": 0,
             "weapons": [
-                "WEAPON_ID.E_WAV_NORMAL_2",
+                "WEAPON_ID.E_WAV_DECOY2",
                 "WEAPON_ID.E_DB_REFUEL"
             ],
             "nameJa": "プリンスダム",
@@ -2724,7 +3606,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_R9AD2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.ED_R9AD3",
@@ -2738,7 +3627,7 @@ window.RTYPE_SIM_DATA = {
             "skill": 0,
             "avoidSkill": 0,
             "weapons": [
-                "WEAPON_ID.E_WAV_NORMAL3",
+                "WEAPON_ID.E_WAV_DECOY3",
                 "WEAPON_ID.E_DB_REFUEL"
             ],
             "nameJa": "キングス・マインド",
@@ -2747,7 +3636,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.E_R9AD3",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SEXYGEL_1",
@@ -2770,7 +3666,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.B_B3C1",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SEXYGEL_2",
@@ -2793,7 +3696,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "decoy",
+            "variantSource": "UNIT_ID.B_B3C2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_4",
@@ -2813,7 +3723,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_6",
@@ -2833,7 +3750,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_3_UE",
@@ -2853,7 +3777,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA",
@@ -2873,7 +3804,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_6",
@@ -2893,7 +3831,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_1",
@@ -2913,7 +3858,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_8",
@@ -2933,7 +3885,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA_G",
@@ -2953,7 +3912,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_DEGI_6_Y",
@@ -2973,7 +3939,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_YOUGAN_01",
@@ -2993,7 +3966,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_YOUGAN_02",
@@ -3013,7 +3993,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_YOUGAN_03",
@@ -3033,7 +4020,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_YOUGAN_04",
@@ -3053,7 +4047,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_YOUGAN_05",
@@ -3073,7 +4074,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.YOUGAN_A",
@@ -3093,7 +4101,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.YOUGAN_B",
@@ -3113,7 +4128,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.YOUGAN_C",
@@ -3133,7 +4155,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.YOUGAN_D",
@@ -3153,7 +4182,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A",
@@ -3173,7 +4209,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_01",
@@ -3193,7 +4236,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_02",
@@ -3213,7 +4263,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B",
@@ -3233,7 +4290,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_01",
@@ -3253,7 +4317,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_02",
@@ -3273,7 +4344,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_03",
@@ -3293,7 +4371,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_04",
@@ -3313,7 +4398,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C",
@@ -3333,7 +4425,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_01",
@@ -3353,7 +4452,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_02",
@@ -3373,7 +4479,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D",
@@ -3393,7 +4506,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_01",
@@ -3413,7 +4533,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_02",
@@ -3433,7 +4560,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_03",
@@ -3453,7 +4587,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_04",
@@ -3473,7 +4614,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_METEOR_A",
@@ -3493,7 +4641,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_METEOR_B",
@@ -3513,7 +4668,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_YOUKAI_EKI",
@@ -3533,7 +4695,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_A",
@@ -3553,7 +4722,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_B",
@@ -3573,7 +4749,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_C",
@@ -3593,7 +4776,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_D",
@@ -3613,7 +4803,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R902",
@@ -3640,7 +4837,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_CYCLONE",
@@ -3663,7 +4867,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BIGGEST_BS",
@@ -3683,7 +4894,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_ENGINE",
@@ -3707,7 +4925,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL",
@@ -3731,7 +4956,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_02",
@@ -3755,7 +4987,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_03",
@@ -3779,7 +5018,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_04",
@@ -3803,7 +5049,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_05",
@@ -3827,7 +5080,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_06",
@@ -3851,7 +5111,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_07",
@@ -3875,7 +5142,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR",
@@ -3899,7 +5173,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_02",
@@ -3923,7 +5204,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_03",
@@ -3947,7 +5235,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_04",
@@ -3971,7 +5266,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_05",
@@ -3995,7 +5297,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_06",
@@ -4019,7 +5328,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL",
@@ -4043,7 +5359,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_02",
@@ -4067,7 +5390,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_03",
@@ -4091,7 +5421,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_04",
@@ -4115,7 +5452,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_05",
@@ -4139,7 +5483,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DR",
@@ -4163,7 +5514,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_UL",
@@ -4187,7 +5545,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_UR",
@@ -4211,7 +5576,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_DL",
@@ -4235,7 +5607,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE",
@@ -4259,7 +5638,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_02",
@@ -4283,7 +5669,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_03",
@@ -4307,7 +5700,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_04",
@@ -4331,7 +5731,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RU",
@@ -4355,7 +5762,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_R",
@@ -4379,7 +5793,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_R_02",
@@ -4403,7 +5824,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RD",
@@ -4427,7 +5855,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RD_02",
@@ -4451,7 +5886,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_D",
@@ -4475,7 +5917,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_SBS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SBS_CORE",
@@ -4497,7 +5946,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS_CORE",
@@ -4519,7 +5975,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS_LAUNCHER",
@@ -4541,7 +6004,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS",
@@ -4561,7 +6031,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_CORE",
@@ -4583,7 +6060,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_FACE",
@@ -4607,7 +6091,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_LEO_PLANT_BOSS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_HEAD",
@@ -4631,7 +6122,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_LEO_PLANT_BOSS_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_CORE",
@@ -4653,7 +6151,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_SATELLITE",
@@ -4675,7 +6180,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_SATELLITE_D",
@@ -4697,7 +6209,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_WALL",
@@ -4717,7 +6236,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI",
@@ -4739,7 +6265,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_LD",
@@ -4761,7 +6294,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_RU",
@@ -4783,7 +6323,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_RD",
@@ -4805,7 +6352,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SUCADER",
@@ -4827,7 +6381,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BREAMS",
@@ -4849,7 +6410,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_FIGHTER_A",
@@ -4876,7 +6444,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_FIGHTER_B",
@@ -4900,7 +6475,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_CORE",
@@ -4922,7 +6504,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_NOZZLE_A",
@@ -4944,7 +6533,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_NOZZLE_B",
@@ -4966,7 +6562,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_WP_A",
@@ -4988,7 +6591,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_WP_B",
@@ -5010,7 +6620,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_CORE",
@@ -5032,7 +6649,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_A",
@@ -5056,7 +6680,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BOSS_SUN_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_B",
@@ -5080,7 +6711,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BOSS_SUN_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_C",
@@ -5104,7 +6742,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BOSS_SUN_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_D",
@@ -5128,7 +6773,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BOSS_SUN_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_E",
@@ -5150,7 +6802,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_F",
@@ -5172,7 +6831,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_PLUTO",
@@ -5192,7 +6858,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_NEPTUNUS",
@@ -5212,7 +6885,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_URANUS",
@@ -5232,7 +6912,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_SATURN",
@@ -5252,7 +6939,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_JUPITER",
@@ -5272,7 +6966,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_MARS",
@@ -5292,7 +6993,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_EARTH",
@@ -5312,7 +7020,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_VENUS",
@@ -5332,7 +7047,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_MERCURY",
@@ -5352,7 +7074,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.N_MOON",
@@ -5372,7 +7101,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_DOP_CHILD",
@@ -5394,7 +7130,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_HOUDAI",
@@ -5416,7 +7159,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A_NEW",
@@ -5443,7 +7193,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A_NEW_G",
@@ -5470,7 +7227,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_STANDARD_G",
@@ -5493,7 +7257,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BATTLE_SHIP",
@@ -5515,7 +7286,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BATTLE_SHIP",
@@ -5537,7 +7315,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_BATTLE_SHIP",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BATTLE_SHIP_2",
@@ -5559,7 +7344,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BATTLE_SHIP_2",
@@ -5581,7 +7373,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_BATTLE_SHIP_2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE1",
@@ -5603,7 +7402,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE1",
@@ -5625,7 +7431,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_BSAE1",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE2",
@@ -5647,7 +7460,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE2",
@@ -5669,7 +7489,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_BSAE2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BS_LAST",
@@ -5691,7 +7518,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS_LAST",
@@ -5713,7 +7547,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_BS_LAST",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP",
@@ -5735,7 +7576,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_BATTLE_SHIP",
@@ -5757,7 +7605,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.B_BATTLE_SHIP",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP2",
@@ -5779,7 +7634,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_BATTLE_SHIP2",
@@ -5801,7 +7663,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.B_BATTLE_SHIP2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP3",
@@ -5823,7 +7692,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_BATTLE_SHIP",
@@ -5845,7 +7721,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_HYPER_BATTLE_SHIP",
@@ -5867,7 +7750,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BS_POSIT",
@@ -5891,7 +7781,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS_POSIT",
@@ -5915,7 +7812,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BS2_POSIT",
@@ -5939,7 +7843,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BATTLE_SHIP_2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS2_POSIT",
@@ -5963,7 +7874,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BATTLE_SHIP_2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE1_POSIT",
@@ -5987,7 +7905,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BSAE1"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE1_POSIT",
@@ -6011,7 +7936,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BSAE1"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE2_POSIT",
@@ -6035,7 +7967,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BSAE2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE2_POSIT",
@@ -6059,7 +7998,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BSAE2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BS_LAST_FINAL",
@@ -6083,7 +8029,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BS_LAST"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_FINAL",
@@ -6107,7 +8060,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BS_LAST"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS_POSIT",
@@ -6131,7 +8091,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_BS_POSIT",
@@ -6155,7 +8122,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS2_POSIT",
@@ -6179,7 +8153,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_BS2_POSIT",
@@ -6203,7 +8184,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_BATTLE_SHIP2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_RU",
@@ -6227,7 +8215,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_R",
@@ -6251,7 +8246,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_D",
@@ -6275,7 +8277,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_LD",
@@ -6299,7 +8308,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_L",
@@ -6323,7 +8339,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_LU",
@@ -6347,7 +8370,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_BS_POSIT",
@@ -6371,7 +8401,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EX_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_HBS_POSIT",
@@ -6395,7 +8432,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EX_HYPER_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BS_MIS",
@@ -6419,7 +8463,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS_MIS",
@@ -6443,7 +8494,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BS2_MIS",
@@ -6467,7 +8525,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BATTLE_SHIP_2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS2_MIS",
@@ -6491,7 +8556,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BATTLE_SHIP_2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE1_MIS",
@@ -6515,7 +8587,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BSAE1"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE1_MIS",
@@ -6539,7 +8618,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BSAE1"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE2_MIS",
@@ -6563,7 +8649,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BSAE2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE2_MIS",
@@ -6587,7 +8680,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BSAE2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BS_LAST_MIS",
@@ -6611,7 +8711,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BS_LAST"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_MIS",
@@ -6635,7 +8742,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BS_LAST"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS_MIS",
@@ -6659,7 +8773,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_BS_MIS",
@@ -6683,7 +8804,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS2_MIS",
@@ -6707,7 +8835,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_BS2_MIS",
@@ -6731,7 +8866,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_BATTLE_SHIP2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_RU",
@@ -6755,7 +8897,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_R",
@@ -6779,7 +8928,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_RD",
@@ -6803,7 +8959,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_LD",
@@ -6827,7 +8990,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BS3_LASER",
@@ -6851,7 +9021,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BATTLE_SHIP3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BS_BRIDGE",
@@ -6875,7 +9052,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS_BRIDGE",
@@ -6899,7 +9083,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BS2_BRIDGE",
@@ -6923,7 +9114,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BATTLE_SHIP_2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS2_BRIDGE",
@@ -6947,7 +9145,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BATTLE_SHIP_2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE1_BRIDGE",
@@ -6971,7 +9176,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BSAE1"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE1_BRIDGE",
@@ -6995,7 +9207,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BSAE1"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BSAE2_BRIDGE",
@@ -7019,7 +9238,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BSAE2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BSAE2_BRIDGE",
@@ -7043,7 +9269,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BSAE2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BS_LAST_BRIDGE",
@@ -7067,7 +9300,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_BS_LAST"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_BRIDGE",
@@ -7091,7 +9331,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_BS_LAST"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_BS_BRIDGE",
@@ -7115,7 +9362,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EX_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_HBS_BRIDGE_A",
@@ -7139,7 +9393,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EX_HYPER_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_HBS_BRIDGE_B",
@@ -7163,7 +9424,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EX_HYPER_BATTLE_SHIP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CRUISER",
@@ -7185,7 +9453,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CRUISER",
@@ -7207,7 +9482,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_CRUISER",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CRUISER2",
@@ -7229,7 +9511,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CRUISER2",
@@ -7251,7 +9540,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_CRUISER2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CRUISER3",
@@ -7273,7 +9569,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CRUISER3",
@@ -7295,7 +9598,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_CRUISER3",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CRUISER",
@@ -7317,7 +9627,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CRUISER",
@@ -7339,7 +9656,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.B_CRUISER",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CRUISER2",
@@ -7361,7 +9685,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CRUISER2",
@@ -7383,7 +9714,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.B_CRUISER2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CRUISER3",
@@ -7405,7 +9743,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CRUISER3",
@@ -7427,7 +9772,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.B_CRUISER3",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_CRUISER",
@@ -7449,7 +9801,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CR_POSIT",
@@ -7473,7 +9832,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CR_POSIT",
@@ -7497,7 +9863,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CR2_POSIT",
@@ -7521,7 +9894,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CR2_POSIT",
@@ -7545,7 +9925,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CR3_POSIT",
@@ -7569,7 +9956,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CR3_POSIT",
@@ -7593,7 +9987,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CR_POSIT",
@@ -7617,7 +10018,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CR_POSIT",
@@ -7641,7 +10049,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CR2_POSIT",
@@ -7665,7 +10080,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CR2_POSIT",
@@ -7689,7 +10111,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CR3_POSIT",
@@ -7713,7 +10142,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CR3_POSIT",
@@ -7737,7 +10173,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_CR_POSIT",
@@ -7761,7 +10204,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EX_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CR_BRIDGE",
@@ -7785,7 +10235,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CR_BRIDGE",
@@ -7809,7 +10266,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CR2_BRIDGE",
@@ -7833,7 +10297,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CR2_BRIDGE",
@@ -7857,7 +10328,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CR3_BRIDGE",
@@ -7881,7 +10359,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CR3_BRIDGE",
@@ -7905,7 +10390,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EW_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EX_CR_BRIDGE",
@@ -7929,7 +10421,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.EX_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CR_MIS",
@@ -7953,7 +10452,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CR_MIS",
@@ -7977,7 +10483,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_CRUISER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CR2_MIS",
@@ -8001,7 +10514,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CR2_MIS",
@@ -8025,7 +10545,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_CRUISER2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CR3_MIS",
@@ -8049,7 +10576,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.BW_CR3_MIS",
@@ -8073,7 +10607,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.BW_CRUISER3"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CARRIER1",
@@ -8095,7 +10636,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CARRIER1",
@@ -8117,7 +10665,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_CARRIER1",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CARRIER2",
@@ -8139,7 +10694,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.EW_CARRIER2",
@@ -8161,7 +10723,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "warp",
+            "variantSource": "UNIT_ID.E_CARRIER2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CARRIER2_BOOSTER",
@@ -8183,7 +10752,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_SHIP",
@@ -8206,7 +10782,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_SHIP_2",
@@ -8230,7 +10813,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_SHIP_3",
@@ -8255,7 +10845,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_DESTROYER",
@@ -8280,7 +10877,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_DESTROYER2",
@@ -8305,7 +10909,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_DESTROYER3",
@@ -8330,7 +10941,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CARGO_SHIP",
@@ -8352,7 +10970,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_CARGO_SHIP_C",
@@ -8374,7 +10999,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_LANDING_SHIP",
@@ -8396,7 +11028,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_LANDING_SHIP_C",
@@ -8418,7 +11057,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CARGO",
@@ -8440,7 +11086,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LANDING_SHIP",
@@ -8462,7 +11115,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOPUKERA",
@@ -8484,7 +11144,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_WARP",
@@ -8506,7 +11173,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_WATER",
@@ -8528,7 +11202,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN",
@@ -8550,7 +11231,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE",
@@ -8574,7 +11262,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_ROT",
@@ -8596,7 +11291,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_MECHA",
@@ -8616,7 +11318,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_O_SHARE",
@@ -8639,7 +11348,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.DOP_HEAD",
@@ -8663,7 +11379,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BOPUKERA"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_WARP_HEAD",
@@ -8687,7 +11410,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_WARP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_WATER_HEAD",
@@ -8711,7 +11441,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_WATER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN_HEAD",
@@ -8735,7 +11472,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_B1_HUMAN"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE_HEAD",
@@ -8759,7 +11503,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_ORIGINE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_ROT_HEAD",
@@ -8783,7 +11534,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_ROT"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_MECHA_HEAD",
@@ -8807,7 +11565,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_MECHA"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_O_HEAD_SHARE",
@@ -8829,7 +11594,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_O_SHARE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.DOP_BREAST",
@@ -8853,7 +11625,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BOPUKERA"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_WARP_BREAST",
@@ -8877,7 +11656,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_WARP"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_WATER_BREAST",
@@ -8901,7 +11687,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_WATER"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN_BREAST",
@@ -8925,7 +11718,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_B1_HUMAN"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE_BREAST",
@@ -8949,7 +11749,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_ORIGINE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_ROT_BREAST",
@@ -8973,7 +11780,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_ROT"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_MECHA_BREAST",
@@ -8997,7 +11811,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_MECHA"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1_O_BREAST_SHARE",
@@ -9019,7 +11840,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_B1_O_SHARE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LAST_CORE",
@@ -9041,7 +11869,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_U",
@@ -9065,7 +11900,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_LAST_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_D",
@@ -9089,7 +11931,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_LAST_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LAST_WP_1",
@@ -9113,7 +11962,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_LAST_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LAST_WP_2",
@@ -9137,7 +11993,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_LAST_CORE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GOMANDA",
@@ -9159,7 +12022,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BELMEIT",
@@ -9182,7 +12052,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BELMEIT2",
@@ -9205,7 +12082,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_LD",
@@ -9229,7 +12113,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BELMEIT2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_LU",
@@ -9253,7 +12144,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BELMEIT2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_RD",
@@ -9277,7 +12175,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BELMEIT2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_RU",
@@ -9301,7 +12206,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BELMEIT2"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GASTERNED",
@@ -9323,7 +12235,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GASTERNED2",
@@ -9346,7 +12265,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FINEMOTION",
@@ -9370,7 +12296,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_FINEMOTION2",
@@ -9394,7 +12327,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_RED",
@@ -9416,7 +12356,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_R_LU",
@@ -9440,7 +12387,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_RED"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_R_RU",
@@ -9464,7 +12418,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_RED"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_R_LD",
@@ -9488,7 +12449,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_RED"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_R_RD",
@@ -9512,7 +12480,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_RED"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_BLUE",
@@ -9534,7 +12509,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_B_LU",
@@ -9558,7 +12540,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_BLUE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_B_RU",
@@ -9582,7 +12571,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_BLUE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_B_LD",
@@ -9606,7 +12602,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_BLUE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_GR_B_RD",
@@ -9630,7 +12633,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_GR_BLUE"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.XELF_CORE",
@@ -9653,7 +12663,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MICHAEL",
@@ -9675,7 +12692,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT",
@@ -9699,7 +12723,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MICHAEL"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT2",
@@ -9723,7 +12754,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MICHAEL"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT3",
@@ -9747,7 +12785,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MICHAEL"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT4",
@@ -9771,7 +12816,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MICHAEL"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT5",
@@ -9795,7 +12847,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MICHAEL"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT6",
@@ -9820,7 +12879,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MICHAEL"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BARAKASU",
@@ -9842,7 +12908,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BARA_LASER_L",
@@ -9866,7 +12939,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BARAKASU"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BARA_LASER_R",
@@ -9890,7 +12970,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BARAKASU"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BARA_ICE_L",
@@ -9914,7 +13001,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BARAKASU"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BARA_ICE_R",
@@ -9938,7 +13032,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_BARAKASU"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R2ST3_CORE",
@@ -9960,7 +13061,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUBUTSU",
@@ -9982,7 +13090,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUBUTSU_L",
@@ -10004,7 +13119,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUDAI",
@@ -10026,7 +13148,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUDAI_L",
@@ -10048,7 +13177,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R2ST3_WALL",
@@ -10068,7 +13204,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_SOLAR_SYS",
@@ -10090,7 +13233,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_SOLAR_SYS_D",
@@ -10112,7 +13262,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_MIRROR",
@@ -10132,7 +13289,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_DEF_STARS",
@@ -10155,7 +13319,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_PLANET_CORE",
@@ -10175,7 +13346,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R3",
@@ -10197,7 +13375,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R3_2",
@@ -10219,7 +13404,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R3_3",
@@ -10241,7 +13433,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R3",
@@ -10263,7 +13462,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R3_2",
@@ -10285,7 +13491,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_R3_3",
@@ -10307,7 +13520,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_REFUEL",
@@ -10329,7 +13549,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_REFUEL",
@@ -10351,7 +13578,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TP2H",
@@ -10373,7 +13607,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TP2S",
@@ -10395,7 +13636,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9E",
@@ -10417,7 +13665,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9E_BK",
@@ -10439,7 +13694,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9E2",
@@ -10462,7 +13724,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9E3",
@@ -10485,7 +13754,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9ER",
@@ -10507,7 +13783,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9ER2",
@@ -10529,7 +13812,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TP1",
@@ -10552,7 +13842,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A",
@@ -10579,7 +13876,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A2",
@@ -10606,7 +13910,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A3",
@@ -10633,7 +13944,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A4",
@@ -10660,7 +13978,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A_BLACK",
@@ -10687,7 +14012,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A_RD",
@@ -10714,7 +14046,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9A_GRN",
@@ -10741,7 +14080,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9C",
@@ -10768,7 +14114,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9K",
@@ -10795,7 +14148,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9S",
@@ -10823,7 +14183,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R90",
@@ -10850,7 +14217,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9AX",
@@ -10877,7 +14251,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9W",
@@ -10904,7 +14285,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9WB",
@@ -10931,7 +14319,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9D",
@@ -10957,7 +14352,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9D2",
@@ -10983,7 +14385,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9DH",
@@ -11009,7 +14418,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9DH_SHARE",
@@ -11032,7 +14448,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9DH2",
@@ -11058,7 +14481,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9DH3",
@@ -11084,7 +14514,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_RX10",
@@ -11111,7 +14548,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_RX10_SHARE",
@@ -11135,7 +14579,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": false,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_RX12",
@@ -11161,7 +14612,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R13A",
@@ -11188,7 +14646,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R13A2",
@@ -11215,7 +14680,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R13B",
@@ -11242,7 +14714,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9SK",
@@ -11269,7 +14748,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9SK2",
@@ -11296,7 +14782,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_BXT",
@@ -11323,7 +14816,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_L_DANCER_A",
@@ -11350,7 +14850,17 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": {
+                "ja": "ウェーブ・マスター系",
+                "en": "Wave Master line"
+            }
         },
         {
             "id": "UNIT_ID.E_L_DANCER_B",
@@ -11377,7 +14887,17 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": {
+                "ja": "コンサート・マスター系",
+                "en": "Concert Master line"
+            }
         },
         {
             "id": "UNIT_ID.E_L_DANCER_C",
@@ -11404,7 +14924,17 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": {
+                "ja": "カロン系",
+                "en": "Charon line"
+            }
         },
         {
             "id": "UNIT_ID.E_L_DANCER_D",
@@ -11431,7 +14961,17 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": {
+                "ja": "ワイズ・マン系",
+                "en": "Wise Man line"
+            }
         },
         {
             "id": "UNIT_ID.B_B1DA",
@@ -11458,7 +14998,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1DB",
@@ -11485,7 +15032,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1DC",
@@ -11512,7 +15066,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1C",
@@ -11539,7 +15100,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1C2",
@@ -11566,7 +15134,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1C3",
@@ -11593,7 +15168,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1A",
@@ -11619,7 +15201,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1A2",
@@ -11645,7 +15234,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B1A3",
@@ -11671,7 +15267,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST",
@@ -11698,7 +15301,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST2",
@@ -11725,7 +15335,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST3",
@@ -11752,7 +15369,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B3C1",
@@ -11778,7 +15402,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B3C2",
@@ -11804,7 +15435,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B3A1",
@@ -11830,7 +15468,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_B3A2",
@@ -11856,7 +15501,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_ARVANCHE",
@@ -11883,7 +15535,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_CRAW_CRAW",
@@ -11910,7 +15569,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9B",
@@ -11935,7 +15601,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9B_BK",
@@ -11960,7 +15633,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9B2",
@@ -11985,7 +15665,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9B3",
@@ -12010,7 +15697,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9DP1",
@@ -12035,7 +15729,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9DP2",
@@ -12060,7 +15761,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9DP3",
@@ -12085,7 +15793,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R11A",
@@ -12110,7 +15825,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R11B",
@@ -12135,7 +15857,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R11S",
@@ -12160,7 +15889,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R11S2",
@@ -12185,7 +15921,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TXT",
@@ -12210,7 +15953,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TXT_BOOST",
@@ -12235,7 +15985,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "boost",
+            "variantSource": "UNIT_ID.E_TXT",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TXT2",
@@ -12260,7 +16017,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TXT2_BOOST",
@@ -12285,7 +16049,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "boost",
+            "variantSource": "UNIT_ID.E_TXT2",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TXT3",
@@ -12310,7 +16081,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TXT3_BOOST",
@@ -12335,7 +16113,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "boost",
+            "variantSource": "UNIT_ID.E_TXT3",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9AD",
@@ -12359,7 +16144,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9AD2",
@@ -12383,7 +16175,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9AD3",
@@ -12407,7 +16206,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_OF01",
@@ -12434,7 +16240,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_OF03",
@@ -12461,7 +16274,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_OF05",
@@ -12488,7 +16308,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_RED_POD",
@@ -12512,7 +16339,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_OF01"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT",
@@ -12536,7 +16370,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_OF01"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_RED_POD_OF3",
@@ -12560,7 +16401,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_OF03"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT_OF3",
@@ -12584,7 +16432,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_OF03"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_LD",
@@ -12609,7 +16464,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_OF05"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_RU",
@@ -12634,7 +16496,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_OF05"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_R9LEO",
@@ -12659,7 +16528,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_PSYBIT_U",
@@ -12685,7 +16561,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_R9LEO"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_PSYBIT_D",
@@ -12711,7 +16594,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.E_R9LEO"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_FROGMAN",
@@ -12734,7 +16624,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_FROGMAN2",
@@ -12758,7 +16655,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_GRANBIA_F",
@@ -12783,7 +16687,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_GRANBIA_M",
@@ -12808,7 +16719,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LIQUID_METAL",
@@ -12830,7 +16748,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_LIQUID_METAL_HALF",
@@ -12852,7 +16777,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_TABROC",
@@ -12875,7 +16807,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_TABROC_2",
@@ -12898,7 +16837,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_TABROC_3",
@@ -12921,7 +16867,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SCANT",
@@ -12944,7 +16897,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SCANT_2",
@@ -12967,7 +16927,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SCANT_3",
@@ -12991,7 +16958,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SCANT_4",
@@ -13015,7 +16989,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SCANT_4_BOOST",
@@ -13039,7 +17020,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "boost",
+            "variantSource": "UNIT_ID.B_SCANT_4",
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_SCANT_5",
@@ -13062,7 +17050,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_SERVANT",
@@ -13086,7 +17081,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2A",
@@ -13110,7 +17112,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2AT_PLANE",
@@ -13135,7 +17144,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2AT_HUMAN",
@@ -13159,7 +17175,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2AT2_PLANE",
@@ -13184,7 +17207,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2AT2_HUMAN",
@@ -13209,7 +17239,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2A2",
@@ -13233,7 +17270,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2B",
@@ -13257,7 +17301,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TL2B2",
@@ -13280,7 +17331,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_NARUCISSUS",
@@ -13305,7 +17363,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_NARUCISSUS_X",
@@ -13330,7 +17395,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_HEKTOR",
@@ -13354,7 +17426,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_HEKTOR_PLANE",
@@ -13376,7 +17455,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TANK1",
@@ -13399,7 +17485,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TANK2",
@@ -13422,7 +17515,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TANK2_S",
@@ -13445,7 +17545,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": true,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "ship",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TW2",
@@ -13470,7 +17577,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TW3",
@@ -13495,7 +17609,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TW4",
@@ -13520,7 +17641,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TW5",
@@ -13545,7 +17673,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.E_TW6",
@@ -13570,7 +17705,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_STANDARD",
@@ -13593,7 +17735,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_STANDARD_KAI",
@@ -13616,7 +17765,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_STANDARD2",
@@ -13639,7 +17795,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_K",
@@ -13662,7 +17825,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_STDH",
@@ -13685,7 +17855,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_DEFENSIVE",
@@ -13708,7 +17885,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_DEFENSIVE_KAI",
@@ -13731,7 +17915,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_TENTACLE",
@@ -13754,7 +17945,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_FLX",
@@ -13777,7 +17975,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_SHADOW",
@@ -13799,7 +18004,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_GALLOP",
@@ -13822,7 +18034,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_FIRE",
@@ -13845,7 +18064,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_FRAME",
@@ -13868,7 +18094,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_ANCHOR",
@@ -13891,7 +18124,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_ANCHOR_2",
@@ -13914,7 +18154,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.F_LIFE",
@@ -13937,7 +18184,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_BYDO",
@@ -13960,7 +18214,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_BEAST",
@@ -13983,7 +18244,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_SEXY",
@@ -14006,7 +18274,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_MIST",
@@ -14029,7 +18304,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_SCALE",
@@ -14052,7 +18334,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_CRAW",
@@ -14075,7 +18364,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_FLOWER",
@@ -14097,7 +18393,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.FB_IVY",
@@ -14119,7 +18422,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "force",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_INS_HEAD",
@@ -14141,7 +18451,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_INS_BODY",
@@ -14165,7 +18482,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_INS_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_INS_TAIL",
@@ -14187,7 +18511,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_INS_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MUURA_HEAD",
@@ -14209,7 +18540,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": true,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "playable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MUURA_BODY",
@@ -14231,7 +18569,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MUURA_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MUURA_TAIL",
@@ -14253,7 +18598,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MUURA_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MUURA2_HEAD",
@@ -14275,7 +18627,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MUURA2_BODY",
@@ -14297,7 +18656,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MUURA2_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_MUURA2_TAIL",
@@ -14319,7 +18685,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_MUURA2_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_YORKGONE_HEAD",
@@ -14341,7 +18714,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_YORKGONE_BODY",
@@ -14363,7 +18743,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_YORKGONE_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_YORKGONE_TAIL",
@@ -14385,7 +18772,14 @@ window.RTYPE_SIM_DATA = {
             "attachedPart": true,
             "partParents": [
                 "UNIT_ID.B_YORKGONE_HEAD"
-            ]
+            ],
+            "category": "part",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": false,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         },
         {
             "id": "UNIT_ID.B_YORKGONE2_HEAD",
@@ -14407,7 +18801,14 @@ window.RTYPE_SIM_DATA = {
             "flagship": false,
             "playable": false,
             "attachedPart": false,
-            "partParents": []
+            "partParents": [],
+            "category": "formation",
+            "variantKind": "normal",
+            "variantSource": null,
+            "playabilityStatus": "nonplayable",
+            "selectableAsAttacker": true,
+            "selectableAsTarget": true,
+            "labelQualifier": null
         }
     ],
     "weapons": [
@@ -14431,7 +18832,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "陽電子砲",
             "nameEn": "POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BS2_POSIT",
@@ -14453,7 +18856,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "陽電子砲Ⅱ",
             "nameEn": "POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_POSIT_D",
@@ -14475,7 +18880,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲ⅢS",
             "nameEn": "FRAGARACH CANNON III S",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SHOCK_WAVE_2",
@@ -14497,7 +18904,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "衝撃波Ⅱ",
             "nameEn": "SONIC BOOM Ⅱ",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LAST_HEART",
@@ -14519,7 +18928,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "思念波",
             "nameEn": "PSY-STORM",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_KOHAKU_HEART_2",
@@ -14541,7 +18952,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "思念波Ⅱ",
             "nameEn": "PSY-STORM Ⅱ",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LAST_NZL_U",
@@ -14563,7 +18976,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "推進装置の噴射",
             "nameEn": "THRUSTER",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LAST_NZL_D",
@@ -14585,7 +19000,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "推進装置の噴射",
             "nameEn": "THRUSTER",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_KOHAKU_NZL_A",
@@ -14607,7 +19024,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "放射エネルギー",
             "nameEn": "NRG DISCHRG",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_KOHAKU_NZL_B",
@@ -14629,7 +19048,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "放射エネルギー",
             "nameEn": "NRG DISCHRG",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LAST_WP_1",
@@ -14651,7 +19072,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "艦首波動砲？",
             "nameEn": "BOW WAVE CANNON?",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LAST_WP_2",
@@ -14673,7 +19096,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "艦首波動砲？",
             "nameEn": "BOW WAVE CANNON?",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_SUNFLASH",
@@ -14695,7 +19120,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "破滅への開門",
             "nameEn": "DEATH'S DOOR",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_POSIT_LD",
@@ -14717,7 +19144,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲ⅢSW",
             "nameEn": "FRAGARACH CANNON III SW",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_KOHAKU_MIS",
@@ -14739,7 +19168,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "怪光線",
             "nameEn": "EERIE LIGHT",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.SUN_NZL_A",
@@ -14761,7 +19192,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "業火",
             "nameEn": "HELLFIRE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.SUN_NZL_B",
@@ -14783,7 +19216,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "業火",
             "nameEn": "HELLFIRE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.SUN_NZL_C",
@@ -14805,7 +19240,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "業火",
             "nameEn": "HELLFIRE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.SUN_NZL_D",
@@ -14827,7 +19264,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "業火",
             "nameEn": "HELLFIRE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_NORMAL",
@@ -14849,7 +19288,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スタンダード波動砲",
             "nameEn": "STANDARD WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_DECOY1",
@@ -14871,7 +19312,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デコイ波動砲",
             "nameEn": "デコイ波動砲",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_NORMAL_2",
@@ -14893,7 +19336,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スタンダード波動砲Ⅱ",
             "nameEn": "STANDARD WAVE CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_DECOY2",
@@ -14915,7 +19360,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デコイ波動砲Ⅱ",
             "nameEn": "デコイ波動砲Ⅱ",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_NORMAL3",
@@ -14937,7 +19384,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スタンダード波動砲Ⅲ",
             "nameEn": "STANDARD WAVE CANNON III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_POSIT_L",
@@ -14959,7 +19408,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲ⅢW",
             "nameEn": "FRAGARACH CANNON III W",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_DECOY3",
@@ -14981,7 +19432,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デコイ波動砲Ⅲ",
             "nameEn": "デコイ波動砲Ⅲ",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_NANO",
@@ -15003,7 +19456,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "誘導式波動砲",
             "nameEn": "GUIDED WAVE CANNON",
             "motion": 6,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_BUNRETSU",
@@ -15025,7 +19480,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "分裂波動砲",
             "nameEn": "SPLIT W. C.",
             "motion": 5,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_DIFFUSE",
@@ -15047,7 +19504,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "拡散波動砲",
             "nameEn": "SPLIT WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_DIFFUSE_P",
@@ -15069,7 +19528,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "拡散波動砲試作型",
             "nameEn": "SPLIT WAVE CANNON PROTOTYPE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LONG",
@@ -15091,7 +19552,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "圧縮波動砲",
             "nameEn": "RANGE WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LONG_2",
@@ -15113,7 +19576,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "圧縮波動砲Ⅱ",
             "nameEn": "RANGE WAVE CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_MEGA",
@@ -15135,7 +19600,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "メガ波動砲",
             "nameEn": "MEGA WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_CHOUZETSU",
@@ -15157,7 +19624,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "超絶波動砲",
             "nameEn": "TRANSCENDENTAL WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_SUPERSONIC",
@@ -15179,7 +19648,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "超音波魚雷",
             "nameEn": "ULTRASONIC TORPEDO",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_POSIT_LU",
@@ -15201,7 +19672,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲ⅢNW",
             "nameEn": "FRAGARACH CANNON III NW",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LONG_LONG",
@@ -15223,7 +19696,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "持続式圧縮波動砲",
             "nameEn": "DENSE WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LONG_LONG2",
@@ -15245,7 +19720,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "持続式圧縮波動砲Ⅱ",
             "nameEn": "DENSE WAVE CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LONG_LONG3",
@@ -15267,7 +19744,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "持続式圧縮波動砲Ⅲ",
             "nameEn": "DENSE WAVE CANNON III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_SPILIT",
@@ -15289,7 +19768,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスピリット砲",
             "nameEn": "BYDO SPIRIT CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_SPILIT2",
@@ -15311,7 +19792,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスピリット砲Ⅱ",
             "nameEn": "BYDO SPIRIT CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_SPILIT3",
@@ -15333,7 +19816,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスピリット砲Ⅲ",
             "nameEn": "BYDO SPIRIT CANNON III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_BYDE_SEED",
@@ -15355,7 +19840,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドシード砲",
             "nameEn": "BYDO SEED GUN",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_BYDE_SEED2",
@@ -15377,7 +19864,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドシード砲Ⅱ",
             "nameEn": "BYDO SEED GUN II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_BYDE_SEED3",
@@ -15399,7 +19888,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドシード砲Ⅲ",
             "nameEn": "BYDO SEED GUN III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_DEVIL_WV",
@@ -15421,7 +19912,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デビルウェーブ砲",
             "nameEn": "DEVIL WAVE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_BS_POSIT",
@@ -15443,7 +19936,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "百式艦首砲",
             "nameEn": "T100 BOW GUN",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_DEVIL_WV2",
@@ -15465,7 +19960,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デビルウェーブ砲Ⅱ",
             "nameEn": "DEVIL WAVE II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_DEVIL_WV3",
@@ -15487,7 +19984,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デビルウェーブ砲Ⅲ",
             "nameEn": "DEVIL WAVE III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_NORMAL",
@@ -15509,7 +20008,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "凝縮波動砲",
             "nameEn": "QUICK WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SCANT2_POSIT",
@@ -15531,7 +20032,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "携行型陽電子砲",
             "nameEn": "PORTABLE POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SCANT2_POSIT2",
@@ -15553,7 +20056,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "携行型陽電子砲Ⅱ",
             "nameEn": "PORTABLE POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_SHOCK",
@@ -15575,7 +20080,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "衝撃波動砲",
             "nameEn": "IMPACT WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_SHOCK2",
@@ -15597,7 +20104,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "衝撃波動砲Ⅱ",
             "nameEn": "IMPACT WAVE CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_SHOCK3",
@@ -15619,7 +20128,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "衝撃波動砲Ⅲ",
             "nameEn": "IMPACT WAVE CANNON III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_MN_BURST",
@@ -15641,7 +20152,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "圧縮炸裂波動砲",
             "nameEn": "MINI BURST WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LIGHTNING",
@@ -15663,7 +20176,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ライトニング波動砲",
             "nameEn": "SHOCK WAVE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_HBS_POSIT",
@@ -15685,7 +20200,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "決戦艦首砲",
             "nameEn": "FINAL P. G.",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LIGHTNING_2",
@@ -15707,7 +20224,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "Bライトニング波動砲",
             "nameEn": "SPARK WAVE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_LIGHTNING_S",
@@ -15729,7 +20248,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "短射程ライトニング波動砲",
             "nameEn": "PULSE WAVE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_FRAME",
@@ -15751,7 +20272,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "灼熱波動砲",
             "nameEn": "HEAT WAVE CANNON ",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_FRAME2",
@@ -15773,7 +20296,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "灼熱波動砲Ⅱ",
             "nameEn": "HEAT WAVE CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.WAV_DANTALION",
@@ -15795,7 +20320,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ダンタリオンの笛",
             "nameEn": "DANTALION's FLUTE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_SOLAR_BEAM",
@@ -15817,7 +20344,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ソーラービーム",
             "nameEn": "SOLAR BEAM",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_SOLAR_BEAM_D",
@@ -15839,7 +20368,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ソーラービーム",
             "nameEn": "SOLAR BEAM",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_CRAW",
@@ -15861,7 +20392,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "クロー波動砲",
             "nameEn": "CLAW WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_HYPER",
@@ -15883,7 +20416,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ハイパー波動砲",
             "nameEn": "HYPER WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_IVY",
@@ -15905,7 +20440,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "アイビーロッド",
             "nameEn": "IVY ROD",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BS_MIS",
@@ -15927,7 +20464,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "大型誘導ミサイル",
             "nameEn": "LARGE GUIDED MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_IVY2",
@@ -15949,7 +20488,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スパイクアイビー",
             "nameEn": "SPIKED IVY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_IVY3",
@@ -15971,7 +20512,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "プリンセスアイビー",
             "nameEn": "PRINCESS IVY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAVE_SEXY1",
@@ -15993,7 +20536,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "セクシー波動砲",
             "nameEn": "SEXY WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAVE_SEXY2",
@@ -16015,7 +20560,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "セクシー波動砲Ⅱ",
             "nameEn": "SEXY WAVE CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_ACID_SPRAY",
@@ -16037,7 +20584,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "アシッドスプレイ",
             "nameEn": "ACID SPRAY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_NITRO_SPRAY",
@@ -16059,7 +20608,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ニトロスプレイ",
             "nameEn": "NITRO SPRAY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_PILE1",
@@ -16081,7 +20632,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "パイルバンカー",
             "nameEn": "DEATH SPIKE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_PILE2",
@@ -16103,7 +20656,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "パイルバンカー帯電式",
             "nameEn": "ELEC. SPIKE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_PILE3",
@@ -16125,7 +20680,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "パイルバンカー帯電式H",
             "nameEn": "ELEC. SPIKE H",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_POD_SHOOT",
@@ -16147,7 +20704,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ポッドシュート",
             "nameEn": "POD SHOT",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BS2_MIS",
@@ -16169,7 +20728,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "大型誘導ミサイルⅡ",
             "nameEn": "LARGE GUIDED MISSILE II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_POD_SHOOT_LU",
@@ -16191,7 +20752,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ポッドシュート",
             "nameEn": "POD SHOT",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_POD_SHOOT_RD",
@@ -16213,7 +20776,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ポッドシュート",
             "nameEn": "POD SHOT",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_G_POD_SHOOT",
@@ -16235,7 +20800,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ポッドシュートG",
             "nameEn": "POD SHOT G",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_G_POD_SHOOT_LU",
@@ -16257,7 +20824,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ポッドシュートG",
             "nameEn": "POD SHOT G",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_G_POD_SHOOT_RD",
@@ -16279,7 +20848,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ポッドシュートG",
             "nameEn": "POD SHOT G",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PSYBIT_SHOOT",
@@ -16301,7 +20872,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サイビットシュート",
             "nameEn": "PSYBIT SHOT",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PSYBIT_SHOOT_U",
@@ -16323,7 +20896,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サイビットシュート",
             "nameEn": "PSYBIT SHOT",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PSYBIT_SHOOT_D",
@@ -16345,7 +20920,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サイビットシュート",
             "nameEn": "PSYBIT SHOT",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_BIG_CANNON",
@@ -16367,7 +20944,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "大砲",
             "nameEn": "ARTILLERY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_BIG_CANNON2",
@@ -16389,7 +20968,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "大砲Ⅱ",
             "nameEn": "ARTILLERY Ⅱ",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE1_MIS",
@@ -16411,7 +20992,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "大型誘導ミサイルHX",
             "nameEn": "LARGE GUIDED MISSILE HX",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_FORCE_SHOOT",
@@ -16433,7 +21016,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フォースシュート",
             "nameEn": "FORCE RAM",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BYDO_ATTACK",
@@ -16455,7 +21040,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "体当たりB",
             "nameEn": "RAM B",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BYDO_ATTACK2",
@@ -16477,7 +21064,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "体当たりBHⅡ",
             "nameEn": "RAM BH II",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MACHA_ATTACK",
@@ -16499,7 +21088,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "体当たり",
             "nameEn": "RAM",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_ATTACK_DP1",
@@ -16521,7 +21112,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "突撃ハクサン",
             "nameEn": "HAKUSAN CHARGE",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_ATTACK_DP2",
@@ -16543,7 +21136,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "突撃アサノガワ",
             "nameEn": "ASANOGAWA CHARGE",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_ATTACK_DP3",
@@ -16565,7 +21160,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "突撃ケンロクエン",
             "nameEn": "KENROKUEN CHARGE",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_FINE_ATTACK",
@@ -16575,8 +21172,8 @@ window.RTYPE_SIM_DATA = {
             "type": 6,
             "material": 1,
             "bulletNum": 99,
-            "rangeMin": 1,
-            "rangeMax": 1,
+            "rangeMin": 2,
+            "rangeMax": 2,
             "charge": 0,
             "attack": true,
             "counter": false,
@@ -16587,7 +21184,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファインアタック",
             "nameEn": "FINE RUSH",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": "fineTackle",
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_FORCE_SHOOT_T",
@@ -16609,7 +21208,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フォースシュートT",
             "nameEn": "FORCE RAM T",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CROW_ATTACK",
@@ -16631,7 +21232,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "アンカーアタック",
             "nameEn": "ANCHOR RAM",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE2_MIS",
@@ -16653,7 +21256,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "大型誘導ミサイルHXⅡ",
             "nameEn": "LARGE GUIDED MISSILE HX II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MECHA_ATTACK_ST",
@@ -16675,7 +21280,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "体当たりH",
             "nameEn": "RAM Ｈ",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_TABROC3_ATTACK",
@@ -16697,7 +21304,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "体当たりH",
             "nameEn": "RAM Ｈ",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BYDO_ATTACK_ST",
@@ -16719,7 +21328,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "体当たりBH",
             "nameEn": "RAM BH",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_GAUP_ATTACK",
@@ -16741,7 +21352,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ガウパーアタック",
             "nameEn": "GAUPERUSH",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_GAUPER2_ATTACK",
@@ -16763,7 +21376,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ガウパーアタックⅡ",
             "nameEn": "GAUPERUSH Ⅱ",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.SUN_ATTACK",
@@ -16785,7 +21400,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "激突",
             "nameEn": "SMASH",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_CRAW_YELLOW",
@@ -16807,7 +21424,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "レーザークロー",
             "nameEn": "LASER CLAW",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_SWORD_RED",
@@ -16829,7 +21448,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームソード・紅蓮",
             "nameEn": "BEAM SWORD RED",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_SWORD_BLUE",
@@ -16851,7 +21472,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームソード・群青",
             "nameEn": "BEAM SWORD BLUE",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_HEATROD_ATTACK",
@@ -16873,7 +21496,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームラッシュ・必然制裁",
             "nameEn": "BR CONTROL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE1_POSIT",
@@ -16895,7 +21520,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "陽電子砲HX",
             "nameEn": "POSITRON CANNON HX",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAEL_MIS",
@@ -16917,7 +21544,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "大型誘導ミサイルHXⅢ",
             "nameEn": "LARGE GUIDED MISSILE HX III",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_HEATROD_INTERCEPT",
@@ -16939,7 +21568,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームラッシュ・徹底拒絶",
             "nameEn": "BR REJECT",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.E_HEATROD_ATTACK_SHORT",
@@ -16961,7 +21592,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームラッシュ・神聖制裁",
             "nameEn": "BR PSYCHIC",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_HEATROD_INTERCEPT_SHORT",
@@ -16983,7 +21616,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームラッシュ・絶対拒絶",
             "nameEn": "BR REJECT",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.E_HAWK_YELLOW",
@@ -17005,7 +21640,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ヒートホーク・黄昏",
             "nameEn": "HEAT AXE",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_HAWK_GREEN",
@@ -17027,7 +21664,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ヒートホーク・萌木",
             "nameEn": "HEAT CHOP",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SCANT3_AT_A",
@@ -17049,7 +21688,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ゲインズクロー",
             "nameEn": "GAINS CLAW",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SCANT3_AT_B",
@@ -17071,7 +21712,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "エクスカリバー",
             "nameEn": "EXCALIBUR",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BEAM_W_CRAW",
@@ -17093,7 +21736,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームWクロー",
             "nameEn": "BEAM DOUBLE CLAW",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_CRAW_RED",
@@ -17115,7 +21760,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スクリューランサー",
             "nameEn": "SCREW LANCER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_IVY_BLUE",
@@ -17137,7 +21784,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ウォールレーザー",
             "nameEn": "WALL LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS_MIS",
@@ -17159,7 +21808,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファットミサイルH",
             "nameEn": "FAT MISSILE H",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BEAM_SWORD",
@@ -17181,7 +21832,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビームソード",
             "nameEn": "BEAM SWORD",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_HANA_TSUTA",
@@ -17203,7 +21856,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ダリアヴァイン",
             "nameEn": "DAHLIA VINE",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_VULCAN",
@@ -17225,7 +21880,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バルカン",
             "nameEn": "VULCAN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_VULCAN_2",
@@ -17247,7 +21904,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バルカンtype2",
             "nameEn": "VULCAN MK2",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_ANT_AIR_GUN",
@@ -17269,7 +21928,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "高射機関砲",
             "nameEn": "AA GUN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PTN_VULCAN",
@@ -17291,7 +21952,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "光子バルカン",
             "nameEn": "PHOTON VULCAN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BYDO_VULCAN",
@@ -17313,7 +21976,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド粒子弾",
             "nameEn": "BYDO SHOT",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIDAREUCHI",
@@ -17335,7 +22000,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド弾乱れ撃ち",
             "nameEn": "BYDO VOLLEY",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BYDO_FLUID",
@@ -17357,7 +22024,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体液",
             "nameEn": "BYDO FLUID",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_HOUDAI_TAMA",
@@ -17379,7 +22048,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "砲弾",
             "nameEn": "SHELL",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS2_MIS",
@@ -17401,7 +22072,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファットミサイルHⅡ",
             "nameEn": "FAT MISSILE H II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_HOMING",
@@ -17423,7 +22096,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ミサイル",
             "nameEn": "HOMING MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_HOMING_KAI",
@@ -17445,7 +22120,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ミサイル改",
             "nameEn": "HOMING MISSILE+",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_HOMING_T2",
@@ -17467,7 +22144,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ミサイルⅡ",
             "nameEn": "HOMING MISSILE II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_SPREAD",
@@ -17489,7 +22168,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "誘爆ミサイル",
             "nameEn": "CONTACT MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_BOMB",
@@ -17511,7 +22192,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "爆雷",
             "nameEn": "DEPTH CHARGE",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_EYE",
@@ -17533,7 +22216,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "目玉追尾ミサイル",
             "nameEn": "OCULOIDS",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_EYE2",
@@ -17555,7 +22240,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "目玉追尾ミサイル改",
             "nameEn": "OCULOIDS+",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_SAM",
@@ -17577,7 +22264,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "地対空ミサイル",
             "nameEn": "SURFACE-TO-AIR MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_SAM2",
@@ -17599,7 +22288,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "地対空ミサイルⅡ",
             "nameEn": "SURFACE-TO-AIR MISSILE II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_ABM",
@@ -17621,7 +22312,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "弾道弾迎撃ミサイル",
             "nameEn": "A.B.M.",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_MIS",
@@ -17643,7 +22336,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファットミサイルHⅢ",
             "nameEn": "FAT MISSILE H III",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_STRONG",
@@ -17665,7 +22360,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バルムンク試作型",
             "nameEn": "BALMUNG PROTOTYPE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_STRONG2",
@@ -17687,7 +22384,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バルムンク",
             "nameEn": "BALMUNG",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_HOMING_S",
@@ -17709,7 +22408,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "誘導ミサイル",
             "nameEn": "GUIDED MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PTN_TORPEDO",
@@ -17731,7 +22432,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "光子魚雷",
             "nameEn": "PHOTONPEDO",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_SEA_ANTI_AIR",
@@ -17753,7 +22456,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "潜対空ミサイル",
             "nameEn": "UNDERWATER-TO-AIR MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_SEA_ANTI_AIR2",
@@ -17775,7 +22480,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "潜対空ミサイルⅡ",
             "nameEn": "UNDERWATER-TO-AIR MISSILE II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_TORPEDO",
@@ -17797,7 +22504,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "魚雷",
             "nameEn": "TORPEDOES",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_TORPEDO_H",
@@ -17819,7 +22528,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "魚雷H",
             "nameEn": "TORPEDOES H",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_AB_WATER",
@@ -17841,7 +22552,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "艦対空ミサイル",
             "nameEn": "SHIP-TO-AIR MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_ICE_BALL",
@@ -17863,7 +22576,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "高速氷弾",
             "nameEn": "ICE SHARDS",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BS_BEAM",
@@ -17885,7 +22600,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームH",
             "nameEn": "TRACE LASER H",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_ICE_BALL2",
@@ -17907,7 +22624,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "高速氷弾Ⅱ",
             "nameEn": "ICE SHARDS Ⅱ",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SEED",
@@ -17929,7 +22648,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビラシード弾",
             "nameEn": "BELASEED",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BUBBLE",
@@ -17951,7 +22672,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビラバブル弾",
             "nameEn": "BELAFOAM",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WICKY",
@@ -17973,7 +22696,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ウッキー弾",
             "nameEn": "UKKI SHOT",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DUST_BYDO",
@@ -17995,7 +22720,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド汚染物質",
             "nameEn": "BYDO WASTE",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_WARP",
@@ -18017,7 +22744,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "STミサイル",
             "nameEn": "ST MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_INS_NIKU",
@@ -18039,7 +22768,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド炸裂弾",
             "nameEn": "BYDO SHELL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_HOMING_MIS_U",
@@ -18061,7 +22792,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ミサイルU",
             "nameEn": "HOMING MISSILE U",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_HOMING",
@@ -18083,7 +22816,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "中型ミサイル",
             "nameEn": "FLOOD MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MIS_LAUNCHER",
@@ -18105,7 +22840,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ミサイルランチャー",
             "nameEn": "TITAN ARMS",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BS2_BEAM",
@@ -18127,7 +22864,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームHⅡ",
             "nameEn": "TRACE LASER H II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_TABROC_MIS_ST",
@@ -18149,7 +22888,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "中型ミサイルH",
             "nameEn": "FLOOD MISSILE H",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MIS_6WAY",
@@ -18171,7 +22912,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "6WAYミサイル",
             "nameEn": "6-WAY MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PLANET_MIS",
@@ -18193,7 +22936,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "アイギスミサイル",
             "nameEn": "AEGIS MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_OF1_HOMING",
@@ -18215,7 +22960,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ホーミングミサイル",
             "nameEn": "HOMING MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_TXT_LASER",
@@ -18237,7 +22984,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "XPSレーザー",
             "nameEn": "XPS LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_TXT_LASER2",
@@ -18259,7 +23008,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "XPSレーザーⅡ",
             "nameEn": "XPS LASER Ⅱ",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_TXT_LASER3",
@@ -18281,7 +23032,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "XPSレーザーⅢ",
             "nameEn": "XPS LASER III",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WIPE_LASER",
@@ -18303,7 +23056,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ワイプレーザー",
             "nameEn": "WIPE LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PLAZMA_FRAME",
@@ -18325,7 +23080,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "プラズマフレイム",
             "nameEn": "PLASMA FLAME",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_GRAVITY_BOM",
@@ -18347,7 +23104,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "グラビティーボム",
             "nameEn": "GRAVITY BOMB",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE1_BEAM",
@@ -18369,7 +23128,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームHX",
             "nameEn": "TRACE LASER HX",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_7WAY_VULCAN",
@@ -18391,7 +23152,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "7WAYバルカン",
             "nameEn": "7-WAY VULCAN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ANTI_A",
@@ -18413,7 +23176,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "対空レーザー",
             "nameEn": "ANTI-AIR LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ANTI_A_2",
@@ -18435,7 +23200,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "対空レーザー改",
             "nameEn": "ANTI-AIR LASER+",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ANTI_A_H",
@@ -18457,7 +23224,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "対空レーザーH",
             "nameEn": "ANTI-AIR LASER H",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_REFLECT",
@@ -18479,7 +23248,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "反射レーザー",
             "nameEn": "REFLEX LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_REFLECT_2",
@@ -18501,7 +23272,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "反射レーザー改",
             "nameEn": "REFLEX LASER+",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_REFLECT_H",
@@ -18523,7 +23296,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サーチレーザーH",
             "nameEn": "SEARCH LASER H",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ANTI_G",
@@ -18545,7 +23320,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サーチレーザーV",
             "nameEn": "SEARCH LASER V",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ANTI_G_2",
@@ -18567,7 +23344,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サーチレーザーV改",
             "nameEn": "SEARCH LASER V+",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_VERTICAL_H",
@@ -18589,7 +23368,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バーティカルレーザーH",
             "nameEn": "VERTICAL LASER H",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE2_BEAM",
@@ -18611,7 +23392,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームHXⅡ",
             "nameEn": "TRACE LASER HX II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_SHOT_GUN",
@@ -18633,7 +23416,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ショットガンレーザー",
             "nameEn": "SPREAD LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_SEARCH_L45",
@@ -18655,7 +23440,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サーチレーザーL45",
             "nameEn": "SEARCH LASER L45",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_TWIN",
@@ -18677,7 +23464,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ツインレーザー",
             "nameEn": "TWIN LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_TWIN_2",
@@ -18699,7 +23488,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ツインレーザーW",
             "nameEn": "TWIN LASER W",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_CHAKUDAN_BUN",
@@ -18721,7 +23512,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "着弾分散レーザー",
             "nameEn": "FISSION LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_CHAKUDAN_BUN_2",
@@ -18743,7 +23536,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "着弾再分散レーザー",
             "nameEn": "CHOBUM LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_DEFENSE",
@@ -18765,7 +23560,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ディフェンスレーザー",
             "nameEn": "SHIELD LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.E_L_DEFENSE_2",
@@ -18787,7 +23584,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ディフェンスレーザーW",
             "nameEn": "SHIELD LASER W",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.B_L_ANTI_A_B",
@@ -18809,7 +23608,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドソウルR",
             "nameEn": "BYDO SOUL R",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_REFLECT_B",
@@ -18831,7 +23632,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドソウルB",
             "nameEn": "BYDO SOUL B",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAEL_BEAM",
@@ -18853,7 +23656,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームHXⅢ",
             "nameEn": "TRACE LASER HX III",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_ANTI_G_B",
@@ -18875,7 +23680,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドソウルY",
             "nameEn": "BYDO SOUL Y",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_GONDORAN",
@@ -18897,7 +23704,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ゴンドランレーザー",
             "nameEn": "GONDOLAN LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_GAUPER",
@@ -18919,7 +23728,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ガウパーレーザー",
             "nameEn": "GAUPER LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_NORTHERLY",
@@ -18941,7 +23752,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ノーザリーレーザー",
             "nameEn": "NOZARI LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_RAY_RED",
@@ -18963,7 +23776,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スティング・RAY",
             "nameEn": "STING RAY",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_RAY_BLUE",
@@ -18985,7 +23800,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ハウンド・RAY",
             "nameEn": "HOUND RAY",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_RAY_YELLOW",
@@ -19007,7 +23824,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スネイル・RAY",
             "nameEn": "SNAIL RAY",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_CHAIN_FIRE",
@@ -19029,7 +23848,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "チェーンファイア",
             "nameEn": "HELIX FIRE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_CHAIN_FIRE2",
@@ -19051,7 +23872,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "チェインフレイム",
             "nameEn": "CHAIN FLAME",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_FIRE_BOMB",
@@ -19073,7 +23896,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファイヤーボム",
             "nameEn": "FIREBOMB",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS_BEAM",
@@ -19095,7 +23920,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームCB",
             "nameEn": "TRACE LASER CB ",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_FIRE_BOMB2",
@@ -19117,7 +23944,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フレイムスロワー",
             "nameEn": "FLAME THROWER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_FIRE_BARRIER",
@@ -19139,7 +23968,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファイヤーバリア",
             "nameEn": "FIREWALL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.E_L_FIRE_BARRIER2",
@@ -19161,7 +23992,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フレイムウォール",
             "nameEn": "FLAME WALL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.SUN_SARV_BEAM_1",
@@ -19183,7 +24016,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ホライゾンレーザー",
             "nameEn": "HORIZON LSR",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.SUN_SARV_BEAM_2",
@@ -19205,7 +24040,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドーンレーザー",
             "nameEn": "DAWN LSR",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_SCALE_RED",
@@ -19227,7 +24064,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スケイルシュート",
             "nameEn": "SCALESHOT",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_SCALE_BLUE",
@@ -19249,7 +24088,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スケイルブラスター",
             "nameEn": "SCALE BLASTER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_SCALE_YELLOW",
@@ -19271,7 +24112,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スケイルランサー",
             "nameEn": "SCALE LANCER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_CRAW_BLUE",
@@ -19293,7 +24136,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "アークレーザー",
             "nameEn": "ARC LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ALPHA",
@@ -19315,7 +24160,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "シェード・α",
             "nameEn": "SHADE α",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE2_POSIT",
@@ -19337,7 +24184,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "陽電子砲HXⅡ",
             "nameEn": "POSITRON CANNON HX II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS2_BEAM",
@@ -19359,7 +24208,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームCBⅡ",
             "nameEn": "TRACE LASER CB II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_BETA",
@@ -19381,7 +24232,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サーチ・β",
             "nameEn": "SEARCH β",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_GAMMA",
@@ -19403,7 +24256,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ターミネイト・γ",
             "nameEn": "TERMINATE γ",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ALPHA_2",
@@ -19425,7 +24280,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "シェード・α＋",
             "nameEn": "SHADE α+",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_BETA_2",
@@ -19447,7 +24304,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サーチ・β＋",
             "nameEn": "SEARCH β+",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_GAMMA_2",
@@ -19469,7 +24328,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ターミネイト・γ＋",
             "nameEn": "TERMINATE γ+",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_S_INAZUMA",
@@ -19491,7 +24352,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "触手イナズマレーザー",
             "nameEn": "LIGHTNING TENTACLE LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_JOINT",
@@ -19513,7 +24376,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ジョイントレーザー",
             "nameEn": "JOINT LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_W_SNALE",
@@ -19535,7 +24400,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ダブルスネイルレーザー",
             "nameEn": "DOUBLE SNAIL LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.E_L_BLOOD",
@@ -19557,7 +24424,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ブラッドレーザー",
             "nameEn": "BLOOD LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_SPURT",
@@ -19579,7 +24448,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スパートレーザー",
             "nameEn": "GUSH LSR",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_BEAM",
@@ -19601,7 +24472,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームCBⅢ",
             "nameEn": "TRACE LASER CB III",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_NEURON",
@@ -19623,7 +24496,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ニューロンレーザー",
             "nameEn": "NEURON LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.B_L_IVY_RED",
@@ -19645,7 +24520,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ヴァインレーザー",
             "nameEn": "VINE LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_IVY_YELLOW",
@@ -19667,7 +24544,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ウィップレーザー",
             "nameEn": "WHIP LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_OF1_DRILL",
@@ -19689,7 +24568,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドリルレーザー",
             "nameEn": "DRILL LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_OF1_RING",
@@ -19711,7 +24592,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "リングレーザー",
             "nameEn": "RING LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_LIPSTICK",
@@ -19733,7 +24616,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "リップスティックRay",
             "nameEn": "LIPSTICK RAY",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_EYESHADOW",
@@ -19755,7 +24640,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "アイシャドウRay",
             "nameEn": "EYESHDW RAY",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_MASCARA",
@@ -19777,7 +24664,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "マスカラRay",
             "nameEn": "MASCARA RAY",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.B_L_SUNSHINE",
@@ -19799,7 +24688,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビーム・日光",
             "nameEn": "BEAM: SUN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_RAIN",
@@ -19821,7 +24712,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビーム・降雨",
             "nameEn": "BEAM: RAIN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_CORE_BEAM",
@@ -19843,7 +24736,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハシャワー",
             "nameEn": "FRAGARACH RAIN",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_THUNDER",
@@ -19865,7 +24760,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ビーム・落雷",
             "nameEn": "BEAM: LIGHTNING",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_ION",
@@ -19887,7 +24784,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "イオン砲",
             "nameEn": "ION GUN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_RING_LAY_U",
@@ -19909,7 +24808,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "リングレーザーU",
             "nameEn": "RING LASER U",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LASER",
@@ -19931,7 +24832,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドレーザー",
             "nameEn": "BYDO LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LASER2",
@@ -19953,7 +24856,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドレーザーⅡ",
             "nameEn": "BYDO LASER II",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LASER_G",
@@ -19975,7 +24880,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドレーザーGT",
             "nameEn": "BYDO LASER GT　",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PLANET_LAY",
@@ -19997,7 +24904,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "アイギスレーザー",
             "nameEn": "AEGIS LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_DB_REFUEL",
@@ -20019,7 +24928,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デコイ爆破",
             "nameEn": "DETONATE DECOY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_DB_CARGO",
@@ -20041,7 +24952,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デコイ爆破",
             "nameEn": "DETONATE DECOY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DB_REFUEL",
@@ -20063,7 +24976,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デコイ爆破",
             "nameEn": "DETONATE DECOY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_BS_BEAM",
@@ -20085,7 +25000,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ホーミングレーザー",
             "nameEn": "HOMING LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DB_CARGO",
@@ -20107,7 +25024,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デコイ爆破",
             "nameEn": "DETONATE DECOY",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_JEL_ATTACK",
@@ -20129,7 +25048,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "攻撃性消滅",
             "nameEn": "GEL BOMB",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_MINE2_BOMB",
@@ -20151,7 +25072,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "機雷爆破",
             "nameEn": "MINE BLAST",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WARP_BASTER",
@@ -20173,7 +25096,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "亜空間バスター",
             "nameEn": "DESYNCH SHOT",
             "motion": 2,
-            "akuukanBuster": true
+            "akuukanBuster": true,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WARP_BASTER2",
@@ -20195,7 +25120,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "亜空間バスターⅡ",
             "nameEn": "DESYNCH SHOT II",
             "motion": 4,
-            "akuukanBuster": true
+            "akuukanBuster": true,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WARP_BASTER",
@@ -20217,7 +25144,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "亜空間バスター",
             "nameEn": "DESYNCH SHOT",
             "motion": 2,
-            "akuukanBuster": true
+            "akuukanBuster": true,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WARP_BASTER_2",
@@ -20239,7 +25168,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "亜空間バスターⅡ",
             "nameEn": "DESYNCH SHOT II",
             "motion": 4,
-            "akuukanBuster": true
+            "akuukanBuster": true,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_HBS_BEAM",
@@ -20261,7 +25192,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "強化迎撃レーザー",
             "nameEn": "BLOCK LASER X",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_WAV_BARRIER",
@@ -20283,7 +25216,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バリア弾",
             "nameEn": "BARRIER ROUNDS",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.E_WAV_BARRIER2",
@@ -20305,7 +25240,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バリア弾Ⅱ",
             "nameEn": "BARRIER ROUNDS II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.B_WAV_BARRIER",
@@ -20327,7 +25264,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドバリア弾",
             "nameEn": "BYDO BARRIER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.B_DEF_SCALE",
@@ -20349,7 +25288,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スケイルディフェンス弾",
             "nameEn": "SCALEGUARD",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": false
         },
         {
             "id": "WEAPON_ID.E_LOCK_BEAM",
@@ -20371,7 +25312,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ロックオンビーム",
             "nameEn": "CLAMP LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CATCH",
@@ -20393,7 +25336,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "捕獲弾",
             "nameEn": "HARVESTER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CATCH_BYDO",
@@ -20415,7 +25360,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "捕獲弾",
             "nameEn": "HARVESTER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CAPTURE",
@@ -20437,7 +25384,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "鹵獲弾",
             "nameEn": "CAPTRAP",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CAPTURE",
@@ -20459,7 +25408,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "鹵獲弾",
             "nameEn": "CAPTRAP",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BS_BRIDGE",
@@ -20481,7 +25432,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲H",
             "nameEn": "BRIDGE GUN H",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_MIS1",
@@ -20503,7 +25456,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞ミサイル",
             "nameEn": "BASE MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_MIS2",
@@ -20525,7 +25480,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞ミサイルⅡ",
             "nameEn": "BASE MISSILE II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_LASER1",
@@ -20547,7 +25504,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞レーザー砲",
             "nameEn": "BASE LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_LASER2",
@@ -20569,7 +25528,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞レーザー砲",
             "nameEn": "BASE LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT1_RU",
@@ -20591,7 +25552,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲",
             "nameEn": "BASE POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT1_R",
@@ -20613,7 +25576,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲",
             "nameEn": "BASE POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT1_RD",
@@ -20635,7 +25600,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲",
             "nameEn": "BASE POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT1_LU",
@@ -20657,7 +25624,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲",
             "nameEn": "BASE POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT1_L",
@@ -20679,7 +25648,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲",
             "nameEn": "BASE POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT1_LD",
@@ -20701,7 +25672,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲",
             "nameEn": "BASE POSITRON CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BS2_BRIDGE",
@@ -20723,7 +25696,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲HⅡ",
             "nameEn": "BRIDGE GUN H II",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT2_RU",
@@ -20745,7 +25720,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲Ⅱ",
             "nameEn": "BASE POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT2_R",
@@ -20767,7 +25744,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲Ⅱ",
             "nameEn": "BASE POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT2_RD",
@@ -20789,7 +25768,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲Ⅱ",
             "nameEn": "BASE POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT2_LU",
@@ -20811,7 +25792,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲Ⅱ",
             "nameEn": "BASE POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT2_L",
@@ -20833,7 +25816,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲Ⅱ",
             "nameEn": "BASE POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.N_BASE_POSIT2_LD",
@@ -20855,7 +25840,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "要塞陽電子砲Ⅱ",
             "nameEn": "BASE POSITRON CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_K_SHOT_GUN",
@@ -20877,7 +25864,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ショットガンレーザー2",
             "nameEn": "SPREAD LSR Ⅱ",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_K_SPREAD",
@@ -20899,7 +25888,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スプレッドレーザー",
             "nameEn": "SCATTER LSR",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_PSY_CROSS",
@@ -20921,7 +25912,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "クロスレーザー",
             "nameEn": "CROSS LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_PSY_REFLECT",
@@ -20943,7 +25936,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "リフレクトレーザー",
             "nameEn": "REFLECT LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE1_BRIDGE",
@@ -20965,7 +25960,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲HX",
             "nameEn": "BRIDGE GUN HX",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_PSY_SEARCH_LRG",
@@ -20987,7 +25984,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サーチレーザーLRG",
             "nameEn": "SEARCH LASER LRG",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_REVERSE",
@@ -21009,7 +26008,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "リバースレーザー",
             "nameEn": "REVERSE LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_ALLRANGE",
@@ -21031,7 +26032,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "オールレンジレーザー",
             "nameEn": "ALL RANGE LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_GUIDE",
@@ -21053,7 +26056,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ガイドレーザー",
             "nameEn": "GUIDE LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_THROUGH",
@@ -21075,7 +26080,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スルーレーザー",
             "nameEn": "スルーレーザー",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_SPLASH",
@@ -21097,7 +26104,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スプラッシュレーザー",
             "nameEn": "スプラッシュレーザー",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_L_CAPSULE",
@@ -21119,7 +26128,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "カプセルレーザー",
             "nameEn": "カプセルレーザー",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_PTN_VULCAN_W",
@@ -21141,7 +26152,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ツイン光子バルカン",
             "nameEn": "TWIN PHOTON VULCAN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_G_POD_TWIN_VULCAN",
@@ -21163,7 +26176,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ツイン光子バルカンL",
             "nameEn": "TWIN PHOTON VULCAN L",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SEED_CANNON",
@@ -21185,7 +26200,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "シードキャノン",
             "nameEn": "SEED CANNON",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAE2_BRIDGE",
@@ -21207,7 +26224,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲HXⅡ",
             "nameEn": "BRIDGE GUN HX II",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SPIKE_LAZER",
@@ -21229,7 +26248,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "スパイクレーザー",
             "nameEn": "SPIKE LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_FLOWER_SWING",
@@ -21251,7 +26272,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラワースイング",
             "nameEn": "FLOWER SWING",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LEO_PLANT_BOSS_CORE",
@@ -21273,7 +26296,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フォレスビーム",
             "nameEn": "SYLVAN BEAM",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LEO_PLANT_BOSS_LASER",
@@ -21295,7 +26320,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フォレス誘導レーザー",
             "nameEn": "SYLVAN LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_LEO_PLANT_BOSS_3WAY",
@@ -21317,7 +26344,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フォレス光弾",
             "nameEn": "SYLVAN LIGHT",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_HUNSHA",
@@ -21339,7 +26368,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "メインエンジンの噴射",
             "nameEn": "ENGINE JET",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_TAMA_U",
@@ -21361,7 +26392,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "対空砲弾",
             "nameEn": "AA SHELL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_TAMA_D",
@@ -21383,7 +26416,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "対地砲弾",
             "nameEn": "AS SHELL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_TAHOUTOU_U",
@@ -21405,7 +26440,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "連射式対空砲弾",
             "nameEn": "RPD AA SHELL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_TAHOUTOU_D",
@@ -21427,7 +26464,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "連射式対地砲弾",
             "nameEn": "RPD AS SHELL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAEL_BRIDGE",
@@ -21449,7 +26488,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲HXⅢ",
             "nameEn": "BRIDGE GUN HX III",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_NOZZLE",
@@ -21471,7 +26512,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "上昇ノズルの噴射",
             "nameEn": "NOZZLE JET",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_SHUHOU",
@@ -21493,7 +26536,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲弾",
             "nameEn": "D-GUN SHELL",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SBS_CARE_TAMA",
@@ -21515,7 +26560,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "戦艦コア防衛弾",
             "nameEn": "CORE GUARD",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_IF_BAMERA_STICK",
@@ -21537,7 +26584,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "掘削ヒートスティック",
             "nameEn": "HEAT STICK",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_IF_LASER",
@@ -21559,7 +26608,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "砲台レーザー",
             "nameEn": "TURRET LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_IF_MIS_3SHOT",
@@ -21581,7 +26632,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "砲台三連ミサイル",
             "nameEn": "TURRET M. x3",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BYDO_VULCAN2",
@@ -21603,7 +26656,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド粒子弾Ⅱ",
             "nameEn": "BYDO SHOT Ⅱ",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BYDO_WATER",
@@ -21625,7 +26680,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "水中バイド弾",
             "nameEn": "AQUA B. SHOT",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MICHAEL_LASER",
@@ -21647,7 +26704,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "屈折式掘削レーザー",
             "nameEn": "MINING LASER",
             "motion": 7,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MICHAEL_BIT_LASER_1",
@@ -21669,7 +26728,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "屈折式掘削レーザー",
             "nameEn": "MINING LASER",
             "motion": 8,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_BSAEL_POSIT",
@@ -21691,7 +26752,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "陽電子砲HXⅢ",
             "nameEn": "POSITRON CANNON HX III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_BS_BRIDGE",
@@ -21713,7 +26776,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "千式対空レーザー",
             "nameEn": "T1000 ANTI-AIR LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MICHAEL_BIT_LASER_2",
@@ -21735,7 +26800,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "屈折式掘削レーザー",
             "nameEn": "MINING LASER",
             "motion": 8,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MICHAEL_BIT_LASER_3",
@@ -21757,7 +26824,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "屈折式掘削レーザー",
             "nameEn": "MINING LASER",
             "motion": 8,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MICHAEL_BIT_LASER_4",
@@ -21779,7 +26848,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "屈折式掘削レーザー",
             "nameEn": "MINING LASER",
             "motion": 8,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MICHAEL_BIT_LASER_5",
@@ -21801,7 +26872,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "屈折式掘削レーザー",
             "nameEn": "MINING LASER",
             "motion": 8,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_MICHAEL_BIT_LASER_6",
@@ -21823,7 +26896,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "屈折式掘削レーザー",
             "nameEn": "MINING LASER",
             "motion": 8,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BARA_LASER",
@@ -21845,7 +26920,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "高出力放電エネルギー",
             "nameEn": "EXPLOS. NRG",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BREM_ATTACK",
@@ -21867,7 +26944,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "加速激突",
             "nameEn": "SPEED SMASH",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_WAV_FIGHTER_A",
@@ -21889,7 +26968,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "圧縮開放キャノン",
             "nameEn": "PRESSURE C.",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_FIGHTER_A_LAZER",
@@ -21911,7 +26992,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "壱式破壊レーザー",
             "nameEn": "T1 ATTACK LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_FIGHTER_A_ATTACK",
@@ -21933,7 +27016,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ハードアタック",
             "nameEn": "HARD ATTACK",
             "motion": 3,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_HBS_BRIDGE_A",
@@ -21955,7 +27040,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "強化対地レーザーS",
             "nameEn": "AS LSR S+",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_WAV_FIGHTER_B",
@@ -21977,7 +27064,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "圧縮開放キャノン改",
             "nameEn": "PRESSURE C.+",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_FIGHTER_B_LAZER1",
@@ -21999,7 +27088,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "壱式破壊レーザー改",
             "nameEn": "T1 ATTACK LASER+",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_FIGHTER_B_LAZER2",
@@ -22021,7 +27112,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "弐式破壊レーザー",
             "nameEn": "T2 ATTACK LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_COMBO_ANTI_A",
@@ -22043,7 +27136,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "壱式強化破壊レーザー",
             "nameEn": "T1 ATTACK LASER X",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_COMBO_REFLECT",
@@ -22065,7 +27160,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "弐式強化破壊レーザー",
             "nameEn": "T2 ATTACK LASER X",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_COMBO_ANTI_G",
@@ -22087,7 +27184,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "参式強化破壊レーザー",
             "nameEn": "T3 ATTACK LASER X",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_RIKUJIO_LASER",
@@ -22109,7 +27208,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "サテライトレーザー",
             "nameEn": "SATELLITE LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_RIKUJIO_CORE",
@@ -22131,7 +27232,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "デストロイドレーザー",
             "nameEn": "DSTRYR LSR",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_VULCAN_BYDE_MIDDLE",
@@ -22153,7 +27256,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "中距離バイド弾",
             "nameEn": "MID-RANGE BYDO SHOT",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_GAUPER2_BOMB",
@@ -22175,7 +27280,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "高濃度バイド体液",
             "nameEn": "BYDO FLUID+",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_HBS_BRIDGE_B",
@@ -22197,7 +27304,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "強化対空レーザーH",
             "nameEn": "AA LSR H+",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_R3ST3_3WAY_LASER",
@@ -22219,7 +27328,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "三連光弾",
             "nameEn": "3-WAY LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR_POSIT",
@@ -22241,7 +27352,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "艦首波動砲",
             "nameEn": "BOW WAVE CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR2_POSIT",
@@ -22263,7 +27376,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "艦首波動砲Ⅱ",
             "nameEn": "BOW WAVE CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR3_POSIT",
@@ -22285,7 +27400,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "艦首波動砲Ⅲ",
             "nameEn": "BOW WAVE CANNON Ⅲ",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR_POSIT",
@@ -22307,7 +27424,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "カラドボルグ砲",
             "nameEn": "CALADBOLG CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR2_POSIT",
@@ -22329,7 +27448,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "カラドボルグ砲Ⅱ",
             "nameEn": "CALADBOLG CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR3_POSIT",
@@ -22351,7 +27472,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "カラドボルグ砲Ⅲ",
             "nameEn": "CALADBOLG CANNON III",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_CR_POSIT",
@@ -22373,7 +27496,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "零式艦首砲",
             "nameEn": "T0 BOW GUN",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CARRIER2_BOOSTER",
@@ -22395,7 +27520,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ブースターの噴射",
             "nameEn": "BOOSTER JET",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR_BEAM",
@@ -22417,7 +27544,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビーム",
             "nameEn": "TRACE LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR2_BEAM",
@@ -22439,7 +27568,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームⅡ",
             "nameEn": "TRACE LASER II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR3_BEAM",
@@ -22461,7 +27592,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "追尾ビームⅢ",
             "nameEn": "TRACE LASER III",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR_BEAM",
@@ -22483,7 +27616,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ボルドビーム",
             "nameEn": "BOLDO LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR2_BEAM",
@@ -22505,7 +27640,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ボルドビームⅡ",
             "nameEn": "BOLDO LSR Ⅱ",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR3_BEAM",
@@ -22527,7 +27664,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ボルドビームⅢ",
             "nameEn": "BOLDO LSR Ⅲ",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_CR_BEAM",
@@ -22549,7 +27688,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "迎撃レーザー",
             "nameEn": "BLOCKING LASER",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR_BRIDGE",
@@ -22571,7 +27712,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲",
             "nameEn": "BRIDGE GUN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR2_BRIDGE",
@@ -22593,7 +27736,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲Ⅱ",
             "nameEn": "BRIDGE GUN Ⅱ",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.E_CR3_BRIDGE",
@@ -22615,7 +27760,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "主砲Ⅲ",
             "nameEn": "BRIDGE GUN Ⅲ",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS_POSIT",
@@ -22637,7 +27784,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲",
             "nameEn": "FRAGARACH CANNON",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.EX_CR_BRIDGE",
@@ -22659,7 +27808,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "十式対空レーザー",
             "nameEn": "T10 ANTI-AIR LASER",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR_MIS",
@@ -22681,7 +27832,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファットミサイル",
             "nameEn": "FAT MISSILE",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR2_MIS",
@@ -22703,7 +27856,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファットミサイルⅡ",
             "nameEn": "FAT MISSILE II",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_CR3_MIS",
@@ -22725,7 +27880,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファットミサイルⅢ",
             "nameEn": "FAT MISSILE III",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_HEAD",
@@ -22747,7 +27904,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスプレイU",
             "nameEn": "BYDO ACID U",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP2_HEAD",
@@ -22769,7 +27928,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスプレイV",
             "nameEn": "BYDO ACID V",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP3_HEAD",
@@ -22791,7 +27952,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスプレイD",
             "nameEn": "BYDO ACID D",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP4_HEAD",
@@ -22813,7 +27976,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスプレイG",
             "nameEn": "BYDO ACID G",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_O_HEAD",
@@ -22835,7 +28000,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスプレイO",
             "nameEn": "BYDO ACID O",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_R_HEAD",
@@ -22857,7 +28024,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスプレイR",
             "nameEn": "BYDO ACID R",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS2_POSIT",
@@ -22879,7 +28048,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲Ⅱ",
             "nameEn": "FRAGARACH CANNON II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_M_HEAD",
@@ -22901,7 +28072,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイドスプレイM",
             "nameEn": "BYDO ACID M",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_MINI",
@@ -22923,7 +28096,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体U胞子",
             "nameEn": "BYDO SPORE U",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP2_MINI",
@@ -22945,7 +28120,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体V胞子",
             "nameEn": "BYDO SPORE V",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP3_MINI",
@@ -22967,7 +28144,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体D胞子",
             "nameEn": "BYDO SPORE D",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP4_MINI",
@@ -22989,7 +28168,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体G胞子",
             "nameEn": "BYDO SPORE G",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_O_MINI",
@@ -23011,7 +28192,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体O胞子",
             "nameEn": "BYDO SPORE O",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_R_MINI",
@@ -23033,7 +28216,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体R胞子",
             "nameEn": "BYDO SPORE R",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_M_MINI",
@@ -23055,7 +28240,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "バイド体M胞子",
             "nameEn": "BYDO SPORE M",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_BODY",
@@ -23077,7 +28264,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドプルゲンMAX・U",
             "nameEn": "DOBKEGEN MAX U",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP2_BODY",
@@ -23099,7 +28288,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドプルゲンMAX・V",
             "nameEn": "DOBKEGEN MAX V",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_POSIT_RU",
@@ -23121,7 +28312,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲ⅢNE",
             "nameEn": "FRAGARACH CANNON III NE",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP3_BODY",
@@ -23143,7 +28336,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドプルゲンMAX・D",
             "nameEn": "DOBKEGEN MAX D",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP4_BODY",
@@ -23165,7 +28360,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドプルゲンMAX・G",
             "nameEn": "DOBKEGEN MAX G",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_O_BODY",
@@ -23187,7 +28384,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドプルゲンMAX・O",
             "nameEn": "DOBKEGEN MAX. O",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_R_BODY",
@@ -23209,7 +28408,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドプルゲンMAX・R",
             "nameEn": "DOBKEGEN MAX R",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOP_M_BODY",
@@ -23231,7 +28432,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ドプルゲンMAX・M",
             "nameEn": "DOBKEGEN MAX M",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_XELF_BEAM",
@@ -23253,7 +28456,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "Xelfハイビーム",
             "nameEn": "XELF HI-BEAM",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_XELF_NEEDLE",
@@ -23275,7 +28480,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "Xelfタローン",
             "nameEn": "XELF TALON",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_RT3ST2_BOSS_OTAMA",
@@ -23297,7 +28504,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "巨大生物弾",
             "nameEn": "BEHEMOTH BMB",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_RT3ST2_BOSS_MEDAMA",
@@ -23319,7 +28528,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "生体光球",
             "nameEn": "ORGANIC PHTN",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_FINE",
@@ -23341,7 +28552,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファインレーザー",
             "nameEn": "FINE LASER",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BS3_POSIT_R",
@@ -23363,7 +28576,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "フラガラッハ砲ⅢE",
             "nameEn": "FRAGARACH CANNON III E",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_WAV_FINE2",
@@ -23385,7 +28600,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ファインレーザーⅡ",
             "nameEn": "FINE LASER II",
             "motion": 2,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DARIS",
@@ -23407,7 +28624,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ダリス弾",
             "nameEn": "DHARIS BULLETS",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_L_DAAMA",
@@ -23429,7 +28648,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ダーマレーザー",
             "nameEn": "DEITY RAY",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_G_FIELD",
@@ -23451,7 +28672,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "重力フィールド",
             "nameEn": "G-FIELD",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_R2ST3_BOSS_CORE",
@@ -23473,7 +28696,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "コルベルト・ブラスター",
             "nameEn": "CORBETT BLST",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_R2ST3_BOSS_HOUBUTSU",
@@ -23495,7 +28720,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "炸裂弾",
             "nameEn": "EXPLOS. SHOT",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_R2ST3_LIGHTNING",
@@ -23517,7 +28744,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "高速光弾",
             "nameEn": "LTSPD SHOT",
             "motion": 0,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_BELMAIT2_LEAF",
@@ -23539,7 +28768,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "共鳴増大波",
             "nameEn": "RESONANCE W.",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_DOMANDA",
@@ -23561,7 +28792,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "ゴマンダーの体液",
             "nameEn": "ACID BURST",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         },
         {
             "id": "WEAPON_ID.B_SHOCK_WAVE",
@@ -23583,7 +28816,9 @@ window.RTYPE_SIM_DATA = {
             "nameJa": "衝撃波",
             "nameEn": "SONIC BOOM",
             "motion": 1,
-            "akuukanBuster": false
+            "akuukanBuster": false,
+            "rangeNote": null,
+            "selectableAttack": true
         }
     ]
 };
