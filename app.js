@@ -280,7 +280,7 @@
   function categoryLabel(category) {
     return {
       ship: L("旗艦設定", "Flagship eligible"),
-      formation: L("編隊ユニット", "Formation unit"),
+      formation: L("ユニット", "Unit"),
       force: L("フォース", "Force"),
       part: L("他ユニットのパーツ", "Attached part"),
       single: L("単体・施設", "Single unit / object"),

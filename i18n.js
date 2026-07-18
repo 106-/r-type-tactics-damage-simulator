@@ -33,7 +33,7 @@
     "unitPicker.bydo": "Bydo",
     "unitPicker.other": "Other",
     "unitPicker.ship": "Flagship eligible",
-    "unitPicker.formation": "Formation unit",
+    "unitPicker.formation": "Unit",
     "unitPicker.force": "Force",
     "unitPicker.part": "Attached parts",
     "unitPicker.playability": "Availability",
