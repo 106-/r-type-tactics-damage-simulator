@@ -215,15 +215,17 @@
     if (category === "all") return true;
     if (category === "force") return isForceUnit(unit);
     if (category === "ship") return isShipUnit(unit);
-    if (category === "formation") return unit?.formationMax === 5;
+    // Treat the picker pair as ship vs non-ship, independently of whether the
+    // unit uses the five-unit formation HP model. Daedalus and Gains are
+    // single-HP units, but still belong on the non-ship side.
+    if (category === "formation") return !isShipUnit(unit);
     return true;
   }
 
   function unitCategory(unit) {
     if (isForceUnit(unit)) return "force";
     if (isShipUnit(unit)) return "ship";
-    if (unit?.formationMax === 5) return "formation";
-    return "single";
+    return "formation";
   }
 
   function factionLabel(faction) {
