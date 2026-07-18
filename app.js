@@ -642,6 +642,13 @@
     return formationMax - remainingFormation;
   }
 
+  function minimumRngKillCount(minDamage, maxHp) {
+    if (!(minDamage > 0) || !(maxHp > 0)) return null;
+    // Avoid an extra hit when floating-point noise puts an exact ratio just
+    // above an integer (for example 100 HP / 10 damage).
+    return Math.max(1, Math.ceil(maxHp / minDamage - 1e-12));
+  }
+
   const lossSegmentColors = ["#6f99a1", "#39e5d2", "#e8d05e", "#f0aa4b", "#f7825a", "#ff6b5e"];
 
   function renderDamageSegments(min, max, maxHp, formationMax, mean) {
@@ -710,6 +717,7 @@
     $("damageLine").hidden = false;
     $("targetMaxHp").textContent = "--";
     $("hpDamagePercent").textContent = "--";
+    $("minimumRngKill").textContent = "--";
     $("formationLossRow").hidden = true;
     $("formationRule").hidden = true;
     $("affinityLabel").textContent = L("属性相性", "Affinity");
@@ -766,6 +774,7 @@
     const lossMin = formationLoss(min, maxHp, formationMax);
     const lossMean = formationLoss(dMean.damage, maxHp, formationMax);
     const lossMax = formationLoss(max, maxHp, formationMax);
+    const minimumKillCount = minimumRngKillCount(min, maxHp);
 
     $("avoidResult").textContent = (effectiveAvoid * 100).toFixed(1);
     $("avoidBar").style.width = `${effectiveAvoid * 100}%`;
@@ -844,6 +853,9 @@
     renderDamageSegments(min, max, maxHp, formationMax, dMean.damage);
     $("targetMaxHp").textContent = maxHp.toFixed(0);
     $("hpDamagePercent").textContent = `${percent(dMean.damage).toFixed(1)}% (${percent(min).toFixed(1)}–${percent(max).toFixed(1)}%)`;
+    $("minimumRngKill").textContent = minimumKillCount == null
+      ? L("撃破不能", "Cannot defeat")
+      : L(`${minimumKillCount}回命中`, `${minimumKillCount} hit${minimumKillCount === 1 ? "" : "s"}`);
     $("formationLoss").textContent = L(`平均 ${lossMean}機（${lossMin}～${lossMax}機）`, `Mean ${lossMean} unit${lossMean === 1 ? "" : "s"} (${lossMin}–${lossMax})`);
     $("formationLossRow").hidden = formationMax !== 5;
     $("formationRule").hidden = formationMax !== 5;

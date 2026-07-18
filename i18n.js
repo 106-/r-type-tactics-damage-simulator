@@ -96,6 +96,7 @@
     "result.avoidFormulaTitle": "Hit-rate formula",
     "result.targetMaxHp": "Target maximum HP (full)",
     "result.hpLossOnHit": "HP loss on hit",
+    "result.minimumRngKill": "Hits to defeat at minimum damage (full HP)",
     "result.formationLoss": "Formation loss (from full HP)",
     "result.formationRule": "A five-unit formation loses one unit each time HP loss exceeds another 20% threshold.",
 
