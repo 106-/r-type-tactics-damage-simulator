@@ -2478,7 +2478,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "POW-ARMOR",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2500,7 +2500,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "POW-ARMOR+",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2522,7 +2522,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "CYBER NOVA",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2544,7 +2544,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "ROTTEN POW-ARMOR",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2566,7 +2566,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "JORMUNGANDR",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2588,7 +2588,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "JORMUNGANDR+",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2610,7 +2610,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "NOZARI",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2632,7 +2632,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "NARCISSUS",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2654,7 +2654,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "NASR EL",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2676,7 +2676,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "NASR EL NASR",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2699,7 +2699,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "ESCORT TIME",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2722,7 +2722,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "PRINCEDOM",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2745,7 +2745,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "KING'S MIND",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2768,7 +2768,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "SEXY GEL I",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -2791,7 +2791,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "SEXY GEL II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -12233,7 +12233,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "ECLIPSE PROTOTYPE",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -12283,7 +12283,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "ECLIPSE",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },
@@ -12333,7 +12333,7 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "ENHANCED ECLIPSE",
             "faction": "human",
             "flagship": false,
-            "playable": false,
+            "playable": true,
             "attachedPart": false,
             "partParents": []
         },

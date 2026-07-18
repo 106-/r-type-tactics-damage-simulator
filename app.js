@@ -82,10 +82,6 @@
     "UNIT_ID.E_TXT3_BOOST",
     "UNIT_ID.B_SCANT_4_BOOST",
   ]);
-  const playabilityHiddenUnitIds = new Set([
-    "UNIT_ID.B_SEXYGEL_1",
-    "UNIT_ID.B_SEXYGEL_2",
-  ]);
   const shipUnitTypes = new Set([2, 3, 8, 9, 20]);
   const shipTypeKeyPattern = /(^utyp_ship$|battle_ship|cruiser|carrier|destroyer|cargo|landing_ship|^utyp_bs_|^utyp_cr_|^utyp_weapon$|^utyp_super_bs$|^utyp_b_last_)/;
   let visibleAttackers = data.units;
@@ -261,11 +257,7 @@
   function isPlayabilityFilterExcluded(unit) {
     const japaneseName = String(unit?.nameJa || unit?.name || "");
     const fortressPart = japaneseName.startsWith("要塞：") || japaneseName.startsWith("バイド要塞：");
-    return isDecoyUnit(unit)
-      || acceleratedUnitIds.has(unit?.id)
-      || isWarpStateUnit(unit)
-      || playabilityHiddenUnitIds.has(unit?.id)
-      || fortressPart;
+    return fortressPart;
   }
 
   function unitCategory(unit) {
