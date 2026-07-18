@@ -24,6 +24,7 @@
   const materialName = (index) => (i18n.language === "ja" ? materialNames : materialNamesEn)[index] || L("不明", "Unknown");
   const bypassesEvasion = (weapon) => Boolean(weapon
     && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
+  const unitsById = new Map(data.units.map((unit) => [unit.id, unit]));
   const weapons = new Map(data.weapons.map((weapon) => [weapon.id, weapon]));
   const unitWeaponOverrides = new Map([
     ["UNIT_ID.ED_R9AD", ["WEAPON_ID.E_WAV_DECOY1", "WEAPON_ID.E_DB_REFUEL"]],
@@ -156,8 +157,14 @@
     const accelerated = acceleratedUnitIds.has(unit?.id);
     const baseName = displayName(unit);
     const name = accelerated ? baseName.replace(/[\(\uff08]加速時[\)\uff09]$/, "") : baseName;
-    const parent = (i18n.language === "ja" ? bridgeParentNames : bridgeParentNamesEn).get(unit?.id);
-    const parentLabel = parent ? ` [${parent}]` : "";
+    const parentNames = [...new Set((unit?.partParents || [])
+      .map((parentId) => unitsById.get(parentId))
+      .filter(Boolean)
+      .map(displayName))];
+    const fallbackParent = (i18n.language === "ja" ? bridgeParentNames : bridgeParentNamesEn).get(unit?.id);
+    const parentLabel = parentNames.length
+      ? ` [${parentNames.join(" / ")}]`
+      : fallbackParent ? ` [${fallbackParent}]` : "";
     const variant = (i18n.language === "ja" ? unitVariantLabels : unitVariantLabelsEn).get(unit?.id);
     const variantLabel = variant ? ` [${variant}]` : "";
     const acceleration = accelerated ? L(" [加速時]", " [Boosted]") : "";
@@ -257,7 +264,6 @@
     return isDecoyUnit(unit)
       || acceleratedUnitIds.has(unit?.id)
       || isWarpStateUnit(unit)
-      || isAttachedPartUnit(unit)
       || playabilityHiddenUnitIds.has(unit?.id)
       || fortressPart;
   }

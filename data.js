@@ -17,7 +17,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_YORKGONE2_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_YORKGONE2_TAIL",
@@ -36,7 +39,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_YORKGONE2_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_GONDORAN_CORE",
@@ -55,7 +61,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GONDORAN_HOUDAI",
@@ -76,7 +83,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GONDORAN_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_GONDORAN_HOUDAI_HEAD",
@@ -97,7 +107,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GAUPER",
@@ -118,7 +129,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GAUPER_2",
@@ -140,7 +152,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BALUDORU",
@@ -161,7 +174,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_DOP",
@@ -180,7 +194,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BILASHINSU",
@@ -201,7 +216,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BILA_ROOT",
@@ -222,7 +238,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BILASHINSU"
+            ]
         },
         {
             "id": "UNIT_ID.B_FLOWER_RD",
@@ -243,7 +262,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FLOWER_LD",
@@ -264,7 +284,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FLOWER_RU",
@@ -285,7 +306,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FLOWER_LU",
@@ -306,7 +328,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA",
@@ -325,7 +348,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_DR",
@@ -344,7 +368,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UL",
@@ -363,7 +388,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UR",
@@ -382,7 +408,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RIBOT",
@@ -403,7 +430,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RIBOT2",
@@ -424,7 +452,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_CANCER",
@@ -446,7 +475,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_PISTAF",
@@ -467,7 +497,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BATARIAN",
@@ -488,7 +519,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BELMEIT_MINI",
@@ -509,7 +541,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_NIKU_HEN",
@@ -530,7 +563,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_ZOIDO",
@@ -551,7 +585,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LADY",
@@ -572,7 +607,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_U_ROCH_L",
@@ -594,7 +630,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_U_ROCH_M",
@@ -616,7 +653,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_NASURUELU",
@@ -637,7 +675,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_NASURUELU2",
@@ -658,7 +697,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GITA",
@@ -680,7 +720,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MID",
@@ -702,7 +743,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SUTOROBARUTO",
@@ -723,7 +765,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_STR_BOMBER",
@@ -744,7 +787,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_NYUTO_V",
@@ -765,7 +809,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_NYUTO_H",
@@ -786,7 +831,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BAMERA",
@@ -807,7 +853,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LASER",
@@ -828,7 +875,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MIS_3SHOT_R",
@@ -849,7 +897,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MIS_3SHOT_L",
@@ -870,7 +919,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BREAKABLE_WALL_A",
@@ -889,7 +939,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_0601_WALL",
@@ -908,7 +959,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_0601_WALL_2",
@@ -927,7 +979,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_3002_BILL",
@@ -946,7 +999,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BUILDING_AFTER",
@@ -965,7 +1019,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_JUPITER_DEBRIS",
@@ -984,7 +1039,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_LAST_SPACE_DEBRIS",
@@ -1003,7 +1059,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BASE_WALL_GRITONIL",
@@ -1022,7 +1079,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_MARS_ROCK",
@@ -1041,7 +1099,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_MOON_ROCK",
@@ -1060,7 +1119,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_ROCK",
@@ -1079,7 +1139,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_ICE_S",
@@ -1098,7 +1159,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_ICE_S_NARUKI",
@@ -1117,7 +1179,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_ICE_M",
@@ -1136,7 +1199,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DRYICE",
@@ -1155,7 +1219,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE",
@@ -1174,7 +1239,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_G",
@@ -1193,7 +1259,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_Y",
@@ -1212,7 +1279,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_R",
@@ -1231,7 +1299,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_ICICLE_1",
@@ -1250,7 +1319,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_ICICLE_2",
@@ -1269,7 +1339,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HOUDAI",
@@ -1290,7 +1361,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HOUDAI_D",
@@ -1311,7 +1383,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HOUDAI_L",
@@ -1332,7 +1405,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HOUDAI_R",
@@ -1353,7 +1427,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_MINE",
@@ -1372,7 +1447,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_MINE2",
@@ -1393,7 +1469,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_CORE",
@@ -1412,7 +1489,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_DOCK1",
@@ -1431,7 +1509,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_DOCK2",
@@ -1450,7 +1529,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_RADAR1",
@@ -1469,7 +1549,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_RADAR2",
@@ -1490,7 +1571,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_MIS1",
@@ -1511,7 +1593,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_MIS2",
@@ -1532,7 +1615,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_LASER1",
@@ -1553,7 +1637,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_LASER2",
@@ -1574,7 +1659,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_RU",
@@ -1595,7 +1681,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_R",
@@ -1616,7 +1703,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_RD",
@@ -1637,7 +1725,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_LU",
@@ -1658,7 +1747,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_L",
@@ -1679,7 +1769,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_LD",
@@ -1700,7 +1791,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_RU",
@@ -1721,7 +1813,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_R",
@@ -1742,7 +1835,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_RD",
@@ -1763,7 +1857,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_LU",
@@ -1784,7 +1879,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_L",
@@ -1805,7 +1901,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_LD",
@@ -1826,7 +1923,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_BUILD",
@@ -1845,7 +1943,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_BASE_PIPE",
@@ -1864,7 +1963,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_CORE",
@@ -1883,7 +1983,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_DOCK1",
@@ -1902,7 +2003,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_DOCK2",
@@ -1921,7 +2023,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_RADAR1",
@@ -1940,7 +2043,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_RADAR2",
@@ -1961,7 +2065,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_MIS1",
@@ -1982,7 +2087,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_MIS2",
@@ -2003,7 +2109,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_LASER1",
@@ -2024,7 +2131,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_LASER2",
@@ -2045,7 +2153,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_RU",
@@ -2066,7 +2175,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_R",
@@ -2087,7 +2197,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_RD",
@@ -2108,7 +2219,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_LU",
@@ -2129,7 +2241,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_L",
@@ -2150,7 +2263,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_LD",
@@ -2171,7 +2285,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_RU",
@@ -2192,7 +2307,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_R",
@@ -2213,7 +2329,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_RD",
@@ -2234,7 +2351,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_LU",
@@ -2255,7 +2373,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_L",
@@ -2276,7 +2395,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_LD",
@@ -2297,7 +2417,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_BUILD",
@@ -2316,7 +2437,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.NB_BASE_PIPE",
@@ -2335,7 +2457,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_REFUEL",
@@ -2356,7 +2479,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_TP2H",
@@ -2377,7 +2501,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_TP2S",
@@ -2398,7 +2523,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BD_REFUEL",
@@ -2419,7 +2545,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_CARGO",
@@ -2440,7 +2567,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_CARGO_SHIP_C",
@@ -2461,7 +2589,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BD_CARGO",
@@ -2482,7 +2611,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_NARUCISSUS",
@@ -2503,7 +2633,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BD_NASURUELU",
@@ -2524,7 +2655,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BD_NASURUELU2",
@@ -2545,7 +2677,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_R9AD",
@@ -2567,7 +2700,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_R9AD2",
@@ -2589,7 +2723,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.ED_R9AD3",
@@ -2611,7 +2746,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SEXYGEL_1",
@@ -2633,7 +2769,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SEXYGEL_2",
@@ -2655,7 +2792,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_4",
@@ -2674,7 +2812,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_6",
@@ -2693,7 +2832,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_3_UE",
@@ -2712,7 +2852,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA",
@@ -2731,7 +2872,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_6",
@@ -2750,7 +2892,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_1",
@@ -2769,7 +2912,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_8",
@@ -2788,7 +2932,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA_G",
@@ -2807,7 +2952,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_DEGI_6_Y",
@@ -2826,7 +2972,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_YOUGAN_01",
@@ -2845,7 +2992,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_YOUGAN_02",
@@ -2864,7 +3012,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_YOUGAN_03",
@@ -2883,7 +3032,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_YOUGAN_04",
@@ -2902,7 +3052,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_YOUGAN_05",
@@ -2921,7 +3072,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.YOUGAN_A",
@@ -2940,7 +3092,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.YOUGAN_B",
@@ -2959,7 +3112,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.YOUGAN_C",
@@ -2978,7 +3132,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.YOUGAN_D",
@@ -2997,7 +3152,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A",
@@ -3016,7 +3172,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_01",
@@ -3035,7 +3192,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_02",
@@ -3054,7 +3212,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B",
@@ -3073,7 +3232,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_01",
@@ -3092,7 +3252,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_02",
@@ -3111,7 +3272,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_03",
@@ -3130,7 +3292,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_04",
@@ -3149,7 +3312,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C",
@@ -3168,7 +3332,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_01",
@@ -3187,7 +3352,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_02",
@@ -3206,7 +3372,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D",
@@ -3225,7 +3392,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_01",
@@ -3244,7 +3412,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_02",
@@ -3263,7 +3432,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_03",
@@ -3282,7 +3452,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_04",
@@ -3301,7 +3472,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_METEOR_A",
@@ -3320,7 +3492,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_METEOR_B",
@@ -3339,7 +3512,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_YOUKAI_EKI",
@@ -3358,7 +3532,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_A",
@@ -3377,7 +3552,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_B",
@@ -3396,7 +3572,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_C",
@@ -3415,7 +3592,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_D",
@@ -3434,7 +3612,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R902",
@@ -3460,7 +3639,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_CYCLONE",
@@ -3482,7 +3662,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BIGGEST_BS",
@@ -3501,7 +3682,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SBS_ENGINE",
@@ -3522,7 +3704,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL",
@@ -3543,7 +3728,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_02",
@@ -3564,7 +3752,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_03",
@@ -3585,7 +3776,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_04",
@@ -3606,7 +3800,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_05",
@@ -3627,7 +3824,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_06",
@@ -3648,7 +3848,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_07",
@@ -3669,7 +3872,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR",
@@ -3690,7 +3896,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_02",
@@ -3711,7 +3920,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_03",
@@ -3732,7 +3944,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_04",
@@ -3753,7 +3968,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_05",
@@ -3774,7 +3992,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_06",
@@ -3795,7 +4016,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL",
@@ -3816,7 +4040,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_02",
@@ -3837,7 +4064,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_03",
@@ -3858,7 +4088,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_04",
@@ -3879,7 +4112,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_05",
@@ -3900,7 +4136,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DR",
@@ -3921,7 +4160,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_UL",
@@ -3942,7 +4184,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_UR",
@@ -3963,7 +4208,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_DL",
@@ -3984,7 +4232,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE",
@@ -4005,7 +4256,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_02",
@@ -4026,7 +4280,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_03",
@@ -4047,7 +4304,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_04",
@@ -4068,7 +4328,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RU",
@@ -4089,7 +4352,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_R",
@@ -4110,7 +4376,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_R_02",
@@ -4131,7 +4400,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RD",
@@ -4152,7 +4424,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RD_02",
@@ -4173,7 +4448,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_D",
@@ -4194,7 +4472,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_SBS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_SBS_CORE",
@@ -4215,7 +4496,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS_CORE",
@@ -4236,7 +4518,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS_LAUNCHER",
@@ -4257,7 +4540,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS",
@@ -4276,7 +4560,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_CORE",
@@ -4297,7 +4582,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_FACE",
@@ -4318,7 +4604,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_LEO_PLANT_BOSS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_HEAD",
@@ -4339,7 +4628,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_LEO_PLANT_BOSS_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_CORE",
@@ -4360,7 +4652,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_SATELLITE",
@@ -4381,7 +4674,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_SATELLITE_D",
@@ -4402,7 +4696,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_WALL",
@@ -4421,7 +4716,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI",
@@ -4442,7 +4738,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_LD",
@@ -4463,7 +4760,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_RU",
@@ -4484,7 +4782,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_RD",
@@ -4505,7 +4804,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SUCADER",
@@ -4526,7 +4826,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BREAMS",
@@ -4547,7 +4848,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EX_FIGHTER_A",
@@ -4573,7 +4875,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EX_FIGHTER_B",
@@ -4596,7 +4899,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_CORE",
@@ -4617,7 +4921,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_NOZZLE_A",
@@ -4638,7 +4943,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_NOZZLE_B",
@@ -4659,7 +4965,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_WP_A",
@@ -4680,7 +4987,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_WP_B",
@@ -4701,7 +5009,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_CORE",
@@ -4722,7 +5031,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_A",
@@ -4743,7 +5053,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BOSS_SUN_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_B",
@@ -4764,7 +5077,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BOSS_SUN_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_C",
@@ -4785,7 +5101,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BOSS_SUN_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_D",
@@ -4806,7 +5125,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BOSS_SUN_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_E",
@@ -4827,7 +5149,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_F",
@@ -4848,7 +5171,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_PLUTO",
@@ -4867,7 +5191,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_NEPTUNUS",
@@ -4886,7 +5211,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_URANUS",
@@ -4905,7 +5231,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_SATURN",
@@ -4924,7 +5251,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_JUPITER",
@@ -4943,7 +5271,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_MARS",
@@ -4962,7 +5291,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_EARTH",
@@ -4981,7 +5311,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_VENUS",
@@ -5000,7 +5331,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_MERCURY",
@@ -5019,7 +5351,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.N_MOON",
@@ -5038,7 +5371,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_DOP_CHILD",
@@ -5059,7 +5393,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_HOUDAI",
@@ -5080,7 +5415,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A_NEW",
@@ -5106,7 +5442,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A_NEW_G",
@@ -5132,7 +5469,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_STANDARD_G",
@@ -5154,7 +5492,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_BATTLE_SHIP",
@@ -5175,7 +5514,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_BATTLE_SHIP",
@@ -5195,8 +5535,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "HEIMDALL",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_BATTLE_SHIP_2",
@@ -5217,7 +5558,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_BATTLE_SHIP_2",
@@ -5238,7 +5580,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_BSAE1",
@@ -5259,7 +5602,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_BSAE1",
@@ -5279,8 +5623,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "JOTUNHEIM",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_BSAE2",
@@ -5301,7 +5646,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_BSAE2",
@@ -5321,8 +5667,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "MUSPELLHEIM",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_BS_LAST",
@@ -5343,7 +5690,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_BS_LAST",
@@ -5363,8 +5711,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "NIFLHEIM",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP",
@@ -5385,7 +5734,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BW_BATTLE_SHIP",
@@ -5405,8 +5755,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "KOMBILER",
             "faction": "bydo",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP2",
@@ -5427,7 +5778,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BW_BATTLE_SHIP2",
@@ -5447,8 +5799,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "KOMBILER BELLA",
             "faction": "bydo",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP3",
@@ -5469,7 +5822,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EX_BATTLE_SHIP",
@@ -5490,7 +5844,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EX_HYPER_BATTLE_SHIP",
@@ -5511,7 +5866,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BS_POSIT",
@@ -5531,8 +5887,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BURTGANG CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS_POSIT",
@@ -5552,8 +5911,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BURTGANG CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.E_BS2_POSIT",
@@ -5573,8 +5935,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GLEIPNIR CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BATTLE_SHIP_2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS2_POSIT",
@@ -5594,8 +5959,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GLEIPNIR CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BATTLE_SHIP_2"
+            ]
         },
         {
             "id": "UNIT_ID.E_BSAE1_POSIT",
@@ -5615,8 +5983,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "IVING CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BSAE1"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BSAE1_POSIT",
@@ -5636,8 +6007,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "IVING CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BSAE1"
+            ]
         },
         {
             "id": "UNIT_ID.E_BSAE2_POSIT",
@@ -5657,8 +6031,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "MUSPELL CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BSAE2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BSAE2_POSIT",
@@ -5678,8 +6055,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "MUSPELL CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BSAE2"
+            ]
         },
         {
             "id": "UNIT_ID.E_BS_LAST_FINAL",
@@ -5699,8 +6079,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GINNUNGAGAP CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BS_LAST"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_FINAL",
@@ -5720,8 +6103,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GINNUNGAGAP CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BS_LAST"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS_POSIT",
@@ -5741,8 +6127,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FRAGARACH CANNON",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.BW_BS_POSIT",
@@ -5762,8 +6151,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FRAGARACH CANNON",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS2_POSIT",
@@ -5783,8 +6175,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FRAGARACH CANNON II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP2"
+            ]
         },
         {
             "id": "UNIT_ID.BW_BS2_POSIT",
@@ -5804,8 +6199,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FRAGARACH CANNON II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_BATTLE_SHIP2"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_RU",
@@ -5826,7 +6224,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_R",
@@ -5847,7 +6248,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_D",
@@ -5868,7 +6272,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_LD",
@@ -5889,7 +6296,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_L",
@@ -5910,7 +6320,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_LU",
@@ -5931,7 +6344,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.EX_BS_POSIT",
@@ -5952,7 +6368,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EX_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.EX_HBS_POSIT",
@@ -5973,7 +6392,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EX_HYPER_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.BS_MIS",
@@ -5993,8 +6415,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GJALLARHORN CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS_MIS",
@@ -6014,8 +6439,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GJALLARHORN CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.E_BS2_MIS",
@@ -6035,8 +6463,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GJALLARHORN CANNON II",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BATTLE_SHIP_2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS2_MIS",
@@ -6056,8 +6487,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GJALLARHORN CANNON II",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BATTLE_SHIP_2"
+            ]
         },
         {
             "id": "UNIT_ID.E_BSAE1_MIS",
@@ -6077,8 +6511,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BIFROST CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BSAE1"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BSAE1_MIS",
@@ -6098,8 +6535,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BIFROST CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BSAE1"
+            ]
         },
         {
             "id": "UNIT_ID.E_BSAE2_MIS",
@@ -6119,8 +6559,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BIFROST CANNON II",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BSAE2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BSAE2_MIS",
@@ -6140,8 +6583,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BIFROST CANNON II",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BSAE2"
+            ]
         },
         {
             "id": "UNIT_ID.E_BS_LAST_MIS",
@@ -6161,8 +6607,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BIFROST CANNON III",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BS_LAST"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_MIS",
@@ -6182,8 +6631,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BIFROST CANNON III",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BS_LAST"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS_MIS",
@@ -6203,8 +6655,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER H",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.BW_BS_MIS",
@@ -6224,8 +6679,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER H",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS2_MIS",
@@ -6245,8 +6703,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER H II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP2"
+            ]
         },
         {
             "id": "UNIT_ID.BW_BS2_MIS",
@@ -6266,8 +6727,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER H II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_BATTLE_SHIP2"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_RU",
@@ -6288,7 +6752,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_R",
@@ -6309,7 +6776,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_RD",
@@ -6330,7 +6800,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_LD",
@@ -6351,7 +6824,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.B_BS3_LASER",
@@ -6372,7 +6848,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BATTLE_SHIP3"
+            ]
         },
         {
             "id": "UNIT_ID.BS_BRIDGE",
@@ -6392,8 +6871,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS_BRIDGE",
@@ -6413,8 +6895,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.E_BS2_BRIDGE",
@@ -6434,8 +6919,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BATTLE_SHIP_2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS2_BRIDGE",
@@ -6455,8 +6943,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BATTLE_SHIP_2"
+            ]
         },
         {
             "id": "UNIT_ID.E_BSAE1_BRIDGE",
@@ -6476,8 +6967,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BSAE1"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BSAE1_BRIDGE",
@@ -6497,8 +6991,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BSAE1"
+            ]
         },
         {
             "id": "UNIT_ID.E_BSAE2_BRIDGE",
@@ -6518,8 +7015,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BSAE2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BSAE2_BRIDGE",
@@ -6539,8 +7039,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BSAE2"
+            ]
         },
         {
             "id": "UNIT_ID.E_BS_LAST_BRIDGE",
@@ -6560,8 +7063,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_BS_LAST"
+            ]
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_BRIDGE",
@@ -6581,8 +7087,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_BS_LAST"
+            ]
         },
         {
             "id": "UNIT_ID.EX_BS_BRIDGE",
@@ -6603,7 +7112,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EX_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.EX_HBS_BRIDGE_A",
@@ -6624,7 +7136,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EX_HYPER_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.EX_HBS_BRIDGE_B",
@@ -6645,7 +7160,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EX_HYPER_BATTLE_SHIP"
+            ]
         },
         {
             "id": "UNIT_ID.E_CRUISER",
@@ -6666,7 +7184,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_CRUISER",
@@ -6686,8 +7205,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "VANARGAND",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_CRUISER2",
@@ -6708,7 +7228,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_CRUISER2",
@@ -6728,8 +7249,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GARMR",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_CRUISER3",
@@ -6750,7 +7272,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_CRUISER3",
@@ -6770,8 +7293,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "MANAGARMR",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_CRUISER",
@@ -6792,7 +7316,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BW_CRUISER",
@@ -6812,8 +7337,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BOLDO",
             "faction": "bydo",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_CRUISER2",
@@ -6834,7 +7360,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BW_CRUISER2",
@@ -6854,8 +7381,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BOLDGANGR",
             "faction": "bydo",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_CRUISER3",
@@ -6876,7 +7404,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.BW_CRUISER3",
@@ -6896,8 +7425,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BOLDOBOLDOGELDO",
             "faction": "bydo",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EX_CRUISER",
@@ -6918,7 +7448,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_CR_POSIT",
@@ -6938,8 +7469,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "VAEN CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.EW_CR_POSIT",
@@ -6959,8 +7493,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "VAEN CANNON",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.E_CR2_POSIT",
@@ -6980,8 +7517,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "VAEN CANNON II",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_CR2_POSIT",
@@ -7001,8 +7541,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "VAEN CANNON II",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.E_CR3_POSIT",
@@ -7022,8 +7565,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "VAEN CANNON III",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.EW_CR3_POSIT",
@@ -7043,8 +7589,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "VAEN CANNON III",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.B_CR_POSIT",
@@ -7064,8 +7613,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "CALADBOLG CANNON",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.BW_CR_POSIT",
@@ -7085,8 +7637,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "CALADBOLG CANNON",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.B_CR2_POSIT",
@@ -7106,8 +7661,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "CALADBOLG CANNON II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.BW_CR2_POSIT",
@@ -7127,8 +7685,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "CALADBOLG CANNON II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.B_CR3_POSIT",
@@ -7148,8 +7709,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "CALADBOLG CANNON III",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.BW_CR3_POSIT",
@@ -7169,8 +7733,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "CALADBOLG CANNON III",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.EX_CR_POSIT",
@@ -7191,7 +7758,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EX_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.E_CR_BRIDGE",
@@ -7211,8 +7781,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.EW_CR_BRIDGE",
@@ -7232,8 +7805,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.E_CR2_BRIDGE",
@@ -7253,8 +7829,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.EW_CR2_BRIDGE",
@@ -7274,8 +7853,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.E_CR3_BRIDGE",
@@ -7295,8 +7877,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.EW_CR3_BRIDGE",
@@ -7316,8 +7901,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BRIDGE SECTION",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EW_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.EX_CR_BRIDGE",
@@ -7338,7 +7926,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.EX_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.B_CR_MIS",
@@ -7358,8 +7949,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.BW_CR_MIS",
@@ -7379,8 +7973,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_CRUISER"
+            ]
         },
         {
             "id": "UNIT_ID.B_CR2_MIS",
@@ -7400,8 +7997,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.BW_CR2_MIS",
@@ -7421,8 +8021,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER II",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_CRUISER2"
+            ]
         },
         {
             "id": "UNIT_ID.B_CR3_MIS",
@@ -7442,8 +8045,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER III",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.BW_CR3_MIS",
@@ -7463,8 +8069,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "FAT MISSILE LAUNCHER III",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.BW_CRUISER3"
+            ]
         },
         {
             "id": "UNIT_ID.E_CARRIER1",
@@ -7485,7 +8094,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_CARRIER1",
@@ -7505,8 +8115,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "JARNSAXA",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_CARRIER2",
@@ -7527,7 +8138,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.EW_CARRIER2",
@@ -7547,8 +8159,9 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "ANGRBODA",
             "faction": "human",
             "flagship": true,
-            "playable": false,
-            "attachedPart": false
+            "playable": true,
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_CARRIER2_BOOSTER",
@@ -7569,7 +8182,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_SHIP",
@@ -7591,7 +8205,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_SHIP_2",
@@ -7614,7 +8229,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_SHIP_3",
@@ -7638,7 +8254,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_DESTROYER",
@@ -7662,7 +8279,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_DESTROYER2",
@@ -7686,7 +8304,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_DESTROYER3",
@@ -7710,7 +8329,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_CARGO_SHIP",
@@ -7731,7 +8351,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_CARGO_SHIP_C",
@@ -7752,7 +8373,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_LANDING_SHIP",
@@ -7773,7 +8395,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_LANDING_SHIP_C",
@@ -7794,7 +8417,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_CARGO",
@@ -7815,7 +8439,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LANDING_SHIP",
@@ -7836,7 +8461,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOPUKERA",
@@ -7857,7 +8483,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1_WARP",
@@ -7878,7 +8505,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1_WATER",
@@ -7899,7 +8527,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN",
@@ -7920,7 +8549,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE",
@@ -7943,7 +8573,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1_ROT",
@@ -7964,7 +8595,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1_MECHA",
@@ -7983,7 +8615,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1_O_SHARE",
@@ -8005,7 +8638,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.DOP_HEAD",
@@ -8026,7 +8660,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BOPUKERA"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_WARP_HEAD",
@@ -8047,7 +8684,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_WARP"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_WATER_HEAD",
@@ -8068,7 +8708,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_WATER"
+            ]
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN_HEAD",
@@ -8089,7 +8732,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_B1_HUMAN"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE_HEAD",
@@ -8110,7 +8756,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_ORIGINE"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_ROT_HEAD",
@@ -8131,7 +8780,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_ROT"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_MECHA_HEAD",
@@ -8152,7 +8804,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_MECHA"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_O_HEAD_SHARE",
@@ -8171,7 +8826,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_O_SHARE"
+            ]
         },
         {
             "id": "UNIT_ID.DOP_BREAST",
@@ -8192,7 +8850,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BOPUKERA"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_WARP_BREAST",
@@ -8213,7 +8874,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_WARP"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_WATER_BREAST",
@@ -8234,7 +8898,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_WATER"
+            ]
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN_BREAST",
@@ -8255,7 +8922,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_B1_HUMAN"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE_BREAST",
@@ -8276,7 +8946,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_ORIGINE"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_ROT_BREAST",
@@ -8297,7 +8970,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_ROT"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_MECHA_BREAST",
@@ -8318,7 +8994,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_MECHA"
+            ]
         },
         {
             "id": "UNIT_ID.B_B1_O_BREAST_SHARE",
@@ -8337,7 +9016,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_B1_O_SHARE"
+            ]
         },
         {
             "id": "UNIT_ID.B_LAST_CORE",
@@ -8358,7 +9040,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_U",
@@ -8379,7 +9062,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_LAST_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_D",
@@ -8400,7 +9086,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_LAST_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_LAST_WP_1",
@@ -8421,7 +9110,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_LAST_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_LAST_WP_2",
@@ -8442,7 +9134,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_LAST_CORE"
+            ]
         },
         {
             "id": "UNIT_ID.B_GOMANDA",
@@ -8463,7 +9158,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BELMEIT",
@@ -8485,7 +9181,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BELMEIT2",
@@ -8507,7 +9204,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_LD",
@@ -8527,8 +9225,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BERMATE BERYL LEAF",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BELMEIT2"
+            ]
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_LU",
@@ -8548,8 +9249,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BERMATE BERYL LEAF",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BELMEIT2"
+            ]
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_RD",
@@ -8569,8 +9273,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BERMATE BERYL LEAF",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BELMEIT2"
+            ]
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_RU",
@@ -8590,8 +9297,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "BERMATE BERYL LEAF",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BELMEIT2"
+            ]
         },
         {
             "id": "UNIT_ID.B_GASTERNED",
@@ -8612,7 +9322,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GASTERNED2",
@@ -8634,7 +9345,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FINEMOTION",
@@ -8657,7 +9369,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_FINEMOTION2",
@@ -8680,7 +9393,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GR_RED",
@@ -8701,7 +9415,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GR_R_LU",
@@ -8721,8 +9436,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_RED"
+            ]
         },
         {
             "id": "UNIT_ID.B_GR_R_RU",
@@ -8742,8 +9460,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_RED"
+            ]
         },
         {
             "id": "UNIT_ID.B_GR_R_LD",
@@ -8763,8 +9484,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_RED"
+            ]
         },
         {
             "id": "UNIT_ID.B_GR_R_RD",
@@ -8784,8 +9508,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_RED"
+            ]
         },
         {
             "id": "UNIT_ID.B_GR_BLUE",
@@ -8806,7 +9533,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_GR_B_LU",
@@ -8826,8 +9554,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_BLUE"
+            ]
         },
         {
             "id": "UNIT_ID.B_GR_B_RU",
@@ -8847,8 +9578,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_BLUE"
+            ]
         },
         {
             "id": "UNIT_ID.B_GR_B_LD",
@@ -8868,8 +9602,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_BLUE"
+            ]
         },
         {
             "id": "UNIT_ID.B_GR_B_RD",
@@ -8889,8 +9626,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GRIDLOCK EYE",
             "faction": "bydo",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_GR_BLUE"
+            ]
         },
         {
             "id": "UNIT_ID.XELF_CORE",
@@ -8912,7 +9652,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MICHAEL",
@@ -8933,7 +9674,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT",
@@ -8954,7 +9696,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MICHAEL"
+            ]
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT2",
@@ -8975,7 +9720,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MICHAEL"
+            ]
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT3",
@@ -8996,7 +9744,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MICHAEL"
+            ]
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT4",
@@ -9017,7 +9768,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MICHAEL"
+            ]
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT5",
@@ -9038,7 +9792,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MICHAEL"
+            ]
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT6",
@@ -9060,7 +9817,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MICHAEL"
+            ]
         },
         {
             "id": "UNIT_ID.B_BARAKASU",
@@ -9081,7 +9841,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BARA_LASER_L",
@@ -9102,7 +9863,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BARAKASU"
+            ]
         },
         {
             "id": "UNIT_ID.B_BARA_LASER_R",
@@ -9123,7 +9887,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BARAKASU"
+            ]
         },
         {
             "id": "UNIT_ID.B_BARA_ICE_L",
@@ -9144,7 +9911,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BARAKASU"
+            ]
         },
         {
             "id": "UNIT_ID.B_BARA_ICE_R",
@@ -9165,7 +9935,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_BARAKASU"
+            ]
         },
         {
             "id": "UNIT_ID.B_R2ST3_CORE",
@@ -9186,7 +9959,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUBUTSU",
@@ -9207,7 +9981,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUBUTSU_L",
@@ -9228,7 +10003,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUDAI",
@@ -9249,7 +10025,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUDAI_L",
@@ -9270,7 +10047,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R2ST3_WALL",
@@ -9289,7 +10067,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_SOLAR_SYS",
@@ -9310,7 +10089,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_SOLAR_SYS_D",
@@ -9331,7 +10111,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_MIRROR",
@@ -9350,7 +10131,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_DEF_STARS",
@@ -9372,7 +10154,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_PLANET_CORE",
@@ -9391,7 +10174,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R3",
@@ -9412,7 +10196,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R3_2",
@@ -9433,7 +10218,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R3_3",
@@ -9454,7 +10240,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R3",
@@ -9475,7 +10262,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R3_2",
@@ -9496,7 +10284,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_R3_3",
@@ -9517,7 +10306,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_REFUEL",
@@ -9538,7 +10328,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_REFUEL",
@@ -9559,7 +10350,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TP2H",
@@ -9580,7 +10372,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TP2S",
@@ -9601,7 +10394,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9E",
@@ -9622,7 +10416,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9E_BK",
@@ -9643,7 +10438,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9E2",
@@ -9665,7 +10461,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9E3",
@@ -9687,7 +10484,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9ER",
@@ -9708,7 +10506,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9ER2",
@@ -9729,7 +10528,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TP1",
@@ -9751,7 +10551,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A",
@@ -9777,7 +10578,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A2",
@@ -9803,7 +10605,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A3",
@@ -9829,7 +10632,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A4",
@@ -9855,7 +10659,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A_BLACK",
@@ -9881,7 +10686,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A_RD",
@@ -9907,7 +10713,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9A_GRN",
@@ -9933,7 +10740,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9C",
@@ -9959,7 +10767,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9K",
@@ -9985,7 +10794,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9S",
@@ -10012,7 +10822,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R90",
@@ -10038,7 +10849,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9AX",
@@ -10064,7 +10876,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9W",
@@ -10090,7 +10903,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9WB",
@@ -10116,7 +10930,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9D",
@@ -10141,7 +10956,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9D2",
@@ -10166,7 +10982,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9DH",
@@ -10191,7 +11008,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9DH_SHARE",
@@ -10213,7 +11031,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9DH2",
@@ -10238,7 +11057,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9DH3",
@@ -10263,7 +11083,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_RX10",
@@ -10289,7 +11110,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_RX10_SHARE",
@@ -10312,7 +11134,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_RX12",
@@ -10337,7 +11160,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R13A",
@@ -10363,7 +11187,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R13A2",
@@ -10389,7 +11214,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R13B",
@@ -10415,7 +11241,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9SK",
@@ -10441,7 +11268,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9SK2",
@@ -10467,7 +11295,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_BXT",
@@ -10493,7 +11322,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_L_DANCER_A",
@@ -10519,7 +11349,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_L_DANCER_B",
@@ -10545,7 +11376,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_L_DANCER_C",
@@ -10571,7 +11403,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_L_DANCER_D",
@@ -10597,7 +11430,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1DA",
@@ -10623,7 +11457,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1DB",
@@ -10649,7 +11484,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1DC",
@@ -10675,7 +11511,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1C",
@@ -10701,7 +11538,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1C2",
@@ -10727,7 +11565,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1C3",
@@ -10753,7 +11592,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1A",
@@ -10778,7 +11618,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1A2",
@@ -10803,7 +11644,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B1A3",
@@ -10828,7 +11670,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST",
@@ -10854,7 +11697,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST2",
@@ -10880,7 +11724,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST3",
@@ -10906,7 +11751,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B3C1",
@@ -10931,7 +11777,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B3C2",
@@ -10956,7 +11803,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B3A1",
@@ -10981,7 +11829,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_B3A2",
@@ -11006,7 +11855,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_ARVANCHE",
@@ -11032,7 +11882,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_CRAW_CRAW",
@@ -11058,7 +11909,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9B",
@@ -11082,7 +11934,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9B_BK",
@@ -11106,7 +11959,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9B2",
@@ -11130,7 +11984,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9B3",
@@ -11154,7 +12009,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9DP1",
@@ -11178,7 +12034,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9DP2",
@@ -11202,7 +12059,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9DP3",
@@ -11226,7 +12084,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R11A",
@@ -11250,7 +12109,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R11B",
@@ -11274,7 +12134,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R11S",
@@ -11298,7 +12159,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R11S2",
@@ -11322,7 +12184,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TXT",
@@ -11346,7 +12209,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TXT_BOOST",
@@ -11370,7 +12234,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TXT2",
@@ -11394,7 +12259,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TXT2_BOOST",
@@ -11418,7 +12284,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TXT3",
@@ -11442,7 +12309,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TXT3_BOOST",
@@ -11466,7 +12334,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9AD",
@@ -11489,7 +12358,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9AD2",
@@ -11512,7 +12382,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_R9AD3",
@@ -11535,7 +12406,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_OF01",
@@ -11561,7 +12433,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_OF03",
@@ -11587,7 +12460,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_OF05",
@@ -11613,7 +12487,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_RED_POD",
@@ -11633,8 +12508,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "RED POD",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_OF01"
+            ]
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT",
@@ -11654,8 +12532,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "RED POD",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_OF01"
+            ]
         },
         {
             "id": "UNIT_ID.E_RED_POD_OF3",
@@ -11675,8 +12556,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "RED POD",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_OF03"
+            ]
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT_OF3",
@@ -11696,8 +12580,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "RED POD",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_OF03"
+            ]
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_LD",
@@ -11718,8 +12605,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GREEN POD",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_OF05"
+            ]
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_RU",
@@ -11740,8 +12630,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "GREEN POD",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_OF05"
+            ]
         },
         {
             "id": "UNIT_ID.E_R9LEO",
@@ -11765,7 +12658,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_PSYBIT_U",
@@ -11787,8 +12681,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "PSY BIT",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_R9LEO"
+            ]
         },
         {
             "id": "UNIT_ID.E_PSYBIT_D",
@@ -11810,8 +12707,11 @@ window.RTYPE_SIM_DATA = {
             "nameEn": "PSY BIT",
             "faction": "human",
             "flagship": false,
-            "playable": false,
-            "attachedPart": true
+            "playable": true,
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.E_R9LEO"
+            ]
         },
         {
             "id": "UNIT_ID.E_FROGMAN",
@@ -11833,7 +12733,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_FROGMAN2",
@@ -11856,7 +12757,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_GRANBIA_F",
@@ -11880,7 +12782,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_GRANBIA_M",
@@ -11904,7 +12807,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LIQUID_METAL",
@@ -11925,7 +12829,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_LIQUID_METAL_HALF",
@@ -11946,7 +12851,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_TABROC",
@@ -11968,7 +12874,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_TABROC_2",
@@ -11990,7 +12897,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_TABROC_3",
@@ -12012,7 +12920,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SCANT",
@@ -12034,7 +12943,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SCANT_2",
@@ -12056,7 +12966,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SCANT_3",
@@ -12079,7 +12990,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SCANT_4",
@@ -12102,7 +13014,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SCANT_4_BOOST",
@@ -12125,7 +13038,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_SCANT_5",
@@ -12147,7 +13061,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_SERVANT",
@@ -12170,7 +13085,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2A",
@@ -12193,7 +13109,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2AT_PLANE",
@@ -12217,7 +13134,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2AT_HUMAN",
@@ -12240,7 +13158,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2AT2_PLANE",
@@ -12264,7 +13183,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2AT2_HUMAN",
@@ -12288,7 +13208,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2A2",
@@ -12311,7 +13232,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2B",
@@ -12334,7 +13256,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TL2B2",
@@ -12356,7 +13279,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_NARUCISSUS",
@@ -12380,7 +13304,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_NARUCISSUS_X",
@@ -12404,7 +13329,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_HEKTOR",
@@ -12427,7 +13353,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_HEKTOR_PLANE",
@@ -12448,7 +13375,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TANK1",
@@ -12470,7 +13398,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TANK2",
@@ -12492,7 +13421,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TANK2_S",
@@ -12514,7 +13444,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": true,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TW2",
@@ -12538,7 +13469,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TW3",
@@ -12562,7 +13494,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TW4",
@@ -12586,7 +13519,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TW5",
@@ -12610,7 +13544,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.E_TW6",
@@ -12634,7 +13569,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_STANDARD",
@@ -12656,7 +13592,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_STANDARD_KAI",
@@ -12678,7 +13615,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_STANDARD2",
@@ -12700,7 +13638,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_K",
@@ -12722,7 +13661,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_STDH",
@@ -12744,7 +13684,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_DEFENSIVE",
@@ -12766,7 +13707,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_DEFENSIVE_KAI",
@@ -12788,7 +13730,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_TENTACLE",
@@ -12810,7 +13753,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_FLX",
@@ -12832,7 +13776,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_SHADOW",
@@ -12853,7 +13798,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_GALLOP",
@@ -12875,7 +13821,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "other",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_FIRE",
@@ -12897,7 +13844,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_FRAME",
@@ -12919,7 +13867,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_ANCHOR",
@@ -12941,7 +13890,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_ANCHOR_2",
@@ -12963,7 +13913,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.F_LIFE",
@@ -12985,7 +13936,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "human",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_BYDO",
@@ -13007,7 +13959,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_BEAST",
@@ -13029,7 +13982,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_SEXY",
@@ -13051,7 +14005,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_MIST",
@@ -13073,7 +14028,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_SCALE",
@@ -13095,7 +14051,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_CRAW",
@@ -13117,7 +14074,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_FLOWER",
@@ -13138,7 +14096,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.FB_IVY",
@@ -13159,7 +14118,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_INS_HEAD",
@@ -13180,7 +14140,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_INS_BODY",
@@ -13201,7 +14162,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_INS_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_INS_TAIL",
@@ -13220,7 +14184,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_INS_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_MUURA_HEAD",
@@ -13241,7 +14208,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": true,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MUURA_BODY",
@@ -13260,7 +14228,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MUURA_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_MUURA_TAIL",
@@ -13279,7 +14250,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MUURA_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_MUURA2_HEAD",
@@ -13300,7 +14274,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_MUURA2_BODY",
@@ -13319,7 +14294,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MUURA2_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_MUURA2_TAIL",
@@ -13338,7 +14316,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_MUURA2_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_YORKGONE_HEAD",
@@ -13359,7 +14340,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         },
         {
             "id": "UNIT_ID.B_YORKGONE_BODY",
@@ -13378,7 +14360,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_YORKGONE_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_YORKGONE_TAIL",
@@ -13397,7 +14382,10 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": true
+            "attachedPart": true,
+            "partParents": [
+                "UNIT_ID.B_YORKGONE_HEAD"
+            ]
         },
         {
             "id": "UNIT_ID.B_YORKGONE2_HEAD",
@@ -13418,7 +14406,8 @@ window.RTYPE_SIM_DATA = {
             "faction": "bydo",
             "flagship": false,
             "playable": false,
-            "attachedPart": false
+            "attachedPart": false,
+            "partParents": []
         }
     ],
     "weapons": [
