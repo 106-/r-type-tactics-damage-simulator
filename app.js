@@ -32,6 +32,10 @@
   const attackRangeOverrides = new Map([
     ["WEAPON_ID.B_FINE_ATTACK", { min: 2, max: 2, note: "特殊体当たり距離" }],
   ]);
+  const triggeredAttackWeaponIds = new Set([
+    "WEAPON_ID.E_MINE2_BOMB",
+    "WEAPON_ID.B_JEL_ATTACK",
+  ]);
   const bridgeParentNames = new Map([
     ["UNIT_ID.BS_BRIDGE", "ヘイムダル級"],
     ["UNIT_ID.EW_BS_BRIDGE", "ヘイムダル級"],
@@ -130,7 +134,12 @@
   }
 
   function isSelectableAttackWeapon(weapon) {
-    return Boolean(weapon && (weapon.attack || weapon.akuukanBuster || weapon.nameJa === "デコイ爆破"));
+    return Boolean(weapon && (
+      weapon.attack
+      || weapon.akuukanBuster
+      || weapon.nameJa === "デコイ爆破"
+      || triggeredAttackWeaponIds.has(weapon.id)
+    ));
   }
 
   function hasSelectableAttack(unit) {
@@ -208,6 +217,7 @@
   }
 
   function isShipUnit(unit) {
+    if (typeof unit?.flagship === "boolean") return unit.flagship;
     return shipUnitTypes.has(unit?.type) || shipTypeKeyPattern.test(String(unit?.typeKey || ""));
   }
 

@@ -14,7 +14,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ヨークゴーン新種",
             "nameEn": "NEW YOKEGON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_YORKGONE2_TAIL",
@@ -30,7 +31,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ヨークゴーン新種",
             "nameEn": "NEW YOKEGON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GONDORAN_CORE",
@@ -46,7 +48,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ゴンドランのコア",
             "nameEn": "GONDRIN CORE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_GONDORAN_HOUDAI",
@@ -64,7 +67,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゴンドランの砲台",
             "nameEn": "GONDRIN BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GONDORAN_HOUDAI_HEAD",
@@ -82,7 +86,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゴンドランの砲台",
             "nameEn": "GONDRIN BATTERY",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GAUPER",
@@ -100,7 +105,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ガウパー",
             "nameEn": "GAUPER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GAUPER_2",
@@ -119,7 +125,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ガウパー２",
             "nameEn": "GAUPER II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BALUDORU",
@@ -137,7 +144,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バルドル",
             "nameEn": "BALDUR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_DOP",
@@ -153,7 +161,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ドップ",
             "nameEn": "DOPP",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BILASHINSU",
@@ -171,7 +180,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビラシンス",
             "nameEn": "BELACINTH",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BILA_ROOT",
@@ -189,7 +199,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビラシンスの根",
             "nameEn": "BELACINTH ROOT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_RD",
@@ -207,7 +218,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ダリア",
             "nameEn": "DAHLIA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_LD",
@@ -225,7 +237,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ダリア",
             "nameEn": "DAHLIA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_RU",
@@ -243,7 +256,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ダリア",
             "nameEn": "DAHLIA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_LU",
@@ -261,7 +275,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ダリア",
             "nameEn": "DAHLIA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA",
@@ -277,7 +292,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ダリアの蔦",
             "nameEn": "DAHLIA IVY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_DR",
@@ -293,7 +309,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ダリアの蔦",
             "nameEn": "DAHLIA IVY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UL",
@@ -309,7 +326,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ダリアの蔦",
             "nameEn": "DAHLIA IVY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UR",
@@ -325,7 +343,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ダリアの蔦",
             "nameEn": "DAHLIA IVY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_RIBOT",
@@ -343,7 +362,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "リボー",
             "nameEn": "REBO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_RIBOT2",
@@ -361,7 +381,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "リボールン",
             "nameEn": "RIBORUM",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CANCER",
@@ -380,7 +401,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "キャンサー",
             "nameEn": "CANCER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_PISTAF",
@@ -398,7 +420,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ピスタフ",
             "nameEn": "PISTAPH",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BATARIAN",
@@ -416,7 +439,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バタリアン",
             "nameEn": "BATTALION",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BELMEIT_MINI",
@@ -434,7 +458,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベルメイト肉塊",
             "nameEn": "BERMATE POD",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_NIKU_HEN",
@@ -452,7 +477,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド肉塊",
             "nameEn": "BYDO FLESH",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_ZOIDO",
@@ -470,7 +496,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゾイド",
             "nameEn": "ZOYDO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LADY",
@@ -488,7 +515,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "レディ",
             "nameEn": "LEIDI",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_U_ROCH_L",
@@ -507,7 +535,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "Uロッチ・リングレーザー",
             "nameEn": "U-LOTCH FORM R",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_U_ROCH_M",
@@ -526,7 +555,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "Uロッチ・ミサイル",
             "nameEn": "U-LOTCH FORM M",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_NASURUELU",
@@ -544,7 +574,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナスルエル",
             "nameEn": "NASR EL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_NASURUELU2",
@@ -562,7 +593,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナスルエル・ナスル",
             "nameEn": "NASR EL NASR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GITA",
@@ -581,7 +613,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ジータ",
             "nameEn": "GEETA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MID",
@@ -600,7 +633,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ミッド",
             "nameEn": "MIDDO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SUTOROBARUTO",
@@ -618,7 +652,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ストロバルト",
             "nameEn": "STROBALT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_STR_BOMBER",
@@ -636,7 +671,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ストロバルトボマー",
             "nameEn": "STROBALT BOMBER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_NYUTO_V",
@@ -654,7 +690,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ニュート",
             "nameEn": "NEWT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_NYUTO_H",
@@ -672,7 +709,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ニュート",
             "nameEn": "NEWT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BAMERA",
@@ -690,7 +728,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "パメラ",
             "nameEn": "PAMELA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LASER",
@@ -708,7 +747,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "レーザー砲台",
             "nameEn": "LASER BATTERY",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MIS_3SHOT_R",
@@ -726,7 +766,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "三連ミサイル砲台",
             "nameEn": "3-MISSILE BATTERY",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MIS_3SHOT_L",
@@ -744,7 +785,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "三連ミサイル砲台",
             "nameEn": "3-MISSILE BATTERY",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BREAKABLE_WALL_A",
@@ -760,7 +802,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "壊れそうな壁",
             "nameEn": "FRAGILE WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_0601_WALL",
@@ -776,7 +819,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "壊れそうな壁",
             "nameEn": "FRAGILE WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_0601_WALL_2",
@@ -792,7 +836,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "壊れそうな壁",
             "nameEn": "FRAGILE WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_3002_BILL",
@@ -808,7 +853,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "高層ビル",
             "nameEn": "SKYSCRAPER",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BUILDING_AFTER",
@@ -824,7 +870,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "崩壊しつつある建造物",
             "nameEn": "CRUMBLING BUILDING",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_JUPITER_DEBRIS",
@@ -840,7 +887,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "艦船の残骸",
             "nameEn": "SHIP'S WRECKAGE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_LAST_SPACE_DEBRIS",
@@ -856,7 +904,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "正体不明の障壁",
             "nameEn": "UNIDENTIFIED BARRIER",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BASE_WALL_GRITONIL",
@@ -872,7 +921,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "グリトニルの開閉ゲート",
             "nameEn": "GLITNIR GATES",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_MARS_ROCK",
@@ -888,7 +938,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "火星の岩盤",
             "nameEn": "MARS ROCK",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_MOON_ROCK",
@@ -904,7 +955,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "月の岩盤",
             "nameEn": "MOON ROCK",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_ROCK",
@@ -920,7 +972,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "岩",
             "nameEn": "ROCKS",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_ICE_S",
@@ -936,7 +989,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "氷塊・小",
             "nameEn": "SMALL ICE FLOE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_ICE_S_NARUKI",
@@ -952,7 +1006,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "氷塊・小",
             "nameEn": "SMALL ICE FLOE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_ICE_M",
@@ -968,7 +1023,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "氷塊・中",
             "nameEn": "ICE FLOE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DRYICE",
@@ -984,7 +1040,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "水面浮遊氷",
             "nameEn": "ICEBERG",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE",
@@ -1000,7 +1057,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "レーザー衛星",
             "nameEn": "LASER SATELLITE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_G",
@@ -1016,7 +1074,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "レーザー衛星",
             "nameEn": "LASER SATELLITE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_Y",
@@ -1032,7 +1091,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "レーザー衛星",
             "nameEn": "LASER SATELLITE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_LASER_SATELLITE_R",
@@ -1048,7 +1108,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "レーザー衛星",
             "nameEn": "LASER SATELLITE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_ICICLE_1",
@@ -1064,7 +1125,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "氷柱",
             "nameEn": "ICE PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_ICICLE_2",
@@ -1080,7 +1142,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "氷柱",
             "nameEn": "ICE PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HOUDAI",
@@ -1098,7 +1161,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビーム砲台",
             "nameEn": "BEAM BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HOUDAI_D",
@@ -1116,7 +1180,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビーム砲台",
             "nameEn": "BEAM BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HOUDAI_L",
@@ -1134,7 +1199,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビーム砲台",
             "nameEn": "BEAM BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HOUDAI_R",
@@ -1152,7 +1218,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビーム砲台",
             "nameEn": "BEAM BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_MINE",
@@ -1168,7 +1235,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "マイン01",
             "nameEn": "MINE 01",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_MINE2",
@@ -1186,7 +1254,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "マイン02",
             "nameEn": "MINE 02",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_CORE",
@@ -1202,7 +1271,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：コアユニット",
             "nameEn": "BASE: CORE UNIT",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_DOCK1",
@@ -1218,7 +1288,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：ドックブロック１",
             "nameEn": "BASE: DOCK SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_DOCK2",
@@ -1234,7 +1305,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：ドックブロック２",
             "nameEn": "BASE: DOCK SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_RADAR1",
@@ -1250,7 +1322,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：レーダーブロック１",
             "nameEn": "BASE: RADAR SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_RADAR2",
@@ -1268,7 +1341,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：レーダーブロック２",
             "nameEn": "BASE: RADAR SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_MIS1",
@@ -1286,7 +1360,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：ミサイルブロック１",
             "nameEn": "BASE: MISSILE SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_MIS2",
@@ -1304,7 +1379,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：ミサイルブロック２",
             "nameEn": "BASE: MISSILE SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_LASER1",
@@ -1322,7 +1398,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：レーザー砲ブロック１",
             "nameEn": "BASE: LASER GUN SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_LASER2",
@@ -1340,7 +1417,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：レーザー砲ブロック２",
             "nameEn": "BASE: LASER GUN SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_RU",
@@ -1358,7 +1436,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック１",
             "nameEn": "BASE: CANNON SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_R",
@@ -1376,7 +1455,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック１",
             "nameEn": "BASE: CANNON SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_RD",
@@ -1394,7 +1474,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック１",
             "nameEn": "BASE: CANNON SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_LU",
@@ -1412,7 +1493,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック１",
             "nameEn": "BASE: CANNON SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_L",
@@ -1430,7 +1512,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック１",
             "nameEn": "BASE: CANNON SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT1_LD",
@@ -1448,7 +1531,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック１",
             "nameEn": "BASE: CANNON SECTOR 1",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_RU",
@@ -1466,7 +1550,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック２",
             "nameEn": "BASE: CANNON SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_R",
@@ -1484,7 +1569,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック２",
             "nameEn": "BASE: CANNON SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_RD",
@@ -1502,7 +1588,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック２",
             "nameEn": "BASE: CANNON SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_LU",
@@ -1520,7 +1607,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック２",
             "nameEn": "BASE: CANNON SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_L",
@@ -1538,7 +1626,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック２",
             "nameEn": "BASE: CANNON SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_POSIT2_LD",
@@ -1556,7 +1645,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "要塞：陽電子砲ブロック２",
             "nameEn": "BASE: CANNON SECTOR 2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_BUILD",
@@ -1572,7 +1662,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：建設中の建造物",
             "nameEn": "BASE: BUILDING SITE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_BASE_PIPE",
@@ -1588,7 +1679,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：基地連結設備",
             "nameEn": "BASE: CONNECTOR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_CORE",
@@ -1604,7 +1696,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "バイド要塞：コアユニット",
             "nameEn": "BYDO BASE: CORE UNIT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_DOCK1",
@@ -1620,7 +1713,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "バイド要塞：ドックブロック１",
             "nameEn": "BYDO BASE: DOCK SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_DOCK2",
@@ -1636,7 +1730,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "バイド要塞：ドックブロック２",
             "nameEn": "BYDO BASE: DOCK SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_RADAR1",
@@ -1652,7 +1747,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "バイド要塞：レーダーブロック１",
             "nameEn": "BYDO BASE: RADAR SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_RADAR2",
@@ -1670,7 +1766,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：レーダーブロック２",
             "nameEn": "BYDO BASE: RADAR SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_MIS1",
@@ -1688,7 +1785,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：ミサイルブロック１",
             "nameEn": "BYDO BASE: MISSILE SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_MIS2",
@@ -1706,7 +1804,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：ミサイルブロック２",
             "nameEn": "BYDO BASE: MISSILE SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_LASER1",
@@ -1724,7 +1823,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：レーザー砲ブロック１",
             "nameEn": "BYDO BASE: LASER GUN SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_LASER2",
@@ -1742,7 +1842,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：レーザー砲ブロック２",
             "nameEn": "BYDO BASE: LASER GUN SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_RU",
@@ -1760,7 +1861,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック１",
             "nameEn": "BYDO BASE: CANNON SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_R",
@@ -1778,7 +1880,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック１",
             "nameEn": "BYDO BASE: CANNON SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_RD",
@@ -1796,7 +1899,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック１",
             "nameEn": "BYDO BASE: CANNON SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_LU",
@@ -1814,7 +1918,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック１",
             "nameEn": "BYDO BASE: CANNON SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_L",
@@ -1832,7 +1937,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック１",
             "nameEn": "BYDO BASE: CANNON SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT1_LD",
@@ -1850,7 +1956,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック１",
             "nameEn": "BYDO BASE: CANNON SECTOR 1",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_RU",
@@ -1868,7 +1975,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック２",
             "nameEn": "BYDO BASE: CANNON SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_R",
@@ -1886,7 +1994,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック２",
             "nameEn": "BYDO BASE: CANNON SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_RD",
@@ -1904,7 +2013,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック２",
             "nameEn": "BYDO BASE: CANNON SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_LU",
@@ -1922,7 +2032,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック２",
             "nameEn": "BYDO BASE: CANNON SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_L",
@@ -1940,7 +2051,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック２",
             "nameEn": "BYDO BASE: CANNON SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_POSIT2_LD",
@@ -1958,7 +2070,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド要塞：陽電子砲ブロック２",
             "nameEn": "BYDO BASE: CANNON SECTOR 2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_BUILD",
@@ -1974,7 +2087,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：建設中の建造物",
             "nameEn": "BASE: BUILDING SITE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.NB_BASE_PIPE",
@@ -1990,7 +2104,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "要塞：基地連結設備",
             "nameEn": "BASE: CONNECTOR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_REFUEL",
@@ -2008,7 +2123,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "POWアーマー",
             "nameEn": "POW-ARMOR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_TP2H",
@@ -2026,7 +2142,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "POWアーマー改",
             "nameEn": "POW-ARMOR+",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_TP2S",
@@ -2044,7 +2161,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "サイバー・ノヴァ",
             "nameEn": "CYBER NOVA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BD_REFUEL",
@@ -2062,7 +2180,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "腐れPOWアーマー",
             "nameEn": "ROTTEN POW-ARMOR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_CARGO",
@@ -2080,7 +2199,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨルムンガンド級",
             "nameEn": "JORMUNGANDR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_CARGO_SHIP_C",
@@ -2098,7 +2218,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨルムンガンド級・改",
             "nameEn": "JORMUNGANDR+",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BD_CARGO",
@@ -2116,7 +2237,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ノーザリー",
             "nameEn": "NOZARI",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_NARUCISSUS",
@@ -2134,7 +2256,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナルキッソス",
             "nameEn": "NARCISSUS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BD_NASURUELU",
@@ -2152,7 +2275,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナスルエル",
             "nameEn": "NASR EL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BD_NASURUELU2",
@@ -2170,7 +2294,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナスルエル・ナスル",
             "nameEn": "NASR EL NASR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_R9AD",
@@ -2189,7 +2314,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エスコート・タイム",
             "nameEn": "ESCORT TIME",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_R9AD2",
@@ -2208,7 +2334,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "プリンスダム",
             "nameEn": "PRINCEDOM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.ED_R9AD3",
@@ -2227,7 +2354,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "キングス・マインド",
             "nameEn": "KING'S MIND",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SEXYGEL_1",
@@ -2246,7 +2374,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "セクシージェルⅠ",
             "nameEn": "SEXY GEL I",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SEXYGEL_2",
@@ -2265,7 +2394,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "セクシージェルⅡ",
             "nameEn": "SEXY GEL II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_4",
@@ -2281,7 +2411,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_6",
@@ -2297,7 +2428,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_3_UE",
@@ -2313,7 +2445,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA",
@@ -2329,7 +2462,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_6",
@@ -2345,7 +2479,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_1",
@@ -2361,7 +2496,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_8",
@@ -2377,7 +2513,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA_G",
@@ -2393,7 +2530,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_DEGI_6_Y",
@@ -2409,7 +2547,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "デジタルウォール",
             "nameEn": "DIGITAL WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_YOUGAN_01",
@@ -2425,7 +2564,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_YOUGAN_02",
@@ -2441,7 +2581,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_YOUGAN_03",
@@ -2457,7 +2598,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_YOUGAN_04",
@@ -2473,7 +2615,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_YOUGAN_05",
@@ -2489,7 +2632,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.YOUGAN_A",
@@ -2505,7 +2649,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.YOUGAN_B",
@@ -2521,7 +2666,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.YOUGAN_C",
@@ -2537,7 +2683,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.YOUGAN_D",
@@ -2553,7 +2700,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶岩",
             "nameEn": "LAVA",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A",
@@ -2569,7 +2717,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_01",
@@ -2585,7 +2734,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_02",
@@ -2601,7 +2751,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B",
@@ -2617,7 +2768,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_01",
@@ -2633,7 +2785,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_02",
@@ -2649,7 +2802,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_03",
@@ -2665,7 +2819,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_04",
@@ -2681,7 +2836,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C",
@@ -2697,7 +2853,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_01",
@@ -2713,7 +2870,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_02",
@@ -2729,7 +2887,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D",
@@ -2745,7 +2904,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_01",
@@ -2761,7 +2921,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_02",
@@ -2777,7 +2938,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_03",
@@ -2793,7 +2955,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_04",
@@ -2809,7 +2972,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "プロミネンス",
             "nameEn": "PROMINENCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_METEOR_A",
@@ -2825,7 +2989,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "流星",
             "nameEn": "METEOR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_METEOR_B",
@@ -2841,7 +3006,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "流星",
             "nameEn": "METEOR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_YOUKAI_EKI",
@@ -2857,7 +3023,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "溶解液（破壊不可）",
             "nameEn": "LYSATE (INDESTRUCTIBLE)",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_A",
@@ -2873,7 +3040,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "超高熱溶解金属",
             "nameEn": "MOLTEN METAL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_B",
@@ -2889,7 +3057,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "超高熱溶解金属",
             "nameEn": "MOLTEN METAL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_C",
@@ -2905,7 +3074,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "超高熱溶解金属",
             "nameEn": "MOLTEN METAL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_D",
@@ -2921,7 +3091,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "超高熱溶解金属",
             "nameEn": "MOLTEN METAL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R902",
@@ -2944,7 +3115,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ラグナロックⅡ",
             "nameEn": "RAGNAROK II",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_CYCLONE",
@@ -2963,7 +3135,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "サイクロン・フォース",
             "nameEn": "CYCLONE FORCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BIGGEST_BS",
@@ -2979,7 +3152,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "グリーン・インフェルノ",
             "nameEn": "GREEN INFERNO",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_ENGINE",
@@ -2997,7 +3171,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦のメインエンジン",
             "nameEn": "SUPERSHIP ENGINE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL",
@@ -3015,7 +3190,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_02",
@@ -3033,7 +3209,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_03",
@@ -3051,7 +3228,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_04",
@@ -3069,7 +3247,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_05",
@@ -3087,7 +3266,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_06",
@@ -3105,7 +3285,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UL_07",
@@ -3123,7 +3304,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR",
@@ -3141,7 +3323,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_02",
@@ -3159,7 +3342,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_03",
@@ -3177,7 +3361,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_04",
@@ -3195,7 +3380,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_05",
@@ -3213,7 +3399,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_UR_06",
@@ -3231,7 +3418,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL",
@@ -3249,7 +3437,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_02",
@@ -3267,7 +3456,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_03",
@@ -3285,7 +3475,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_04",
@@ -3303,7 +3494,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DL_05",
@@ -3321,7 +3513,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_HOUDAI_DR",
@@ -3339,7 +3532,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の砲塔",
             "nameEn": "SUPERSHIP TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_UL",
@@ -3357,7 +3551,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の多砲塔砲台",
             "nameEn": "SUPERSHIP BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_UR",
@@ -3375,7 +3570,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の多砲塔砲台",
             "nameEn": "SUPERSHIP BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_TAHOUTOU_DL",
@@ -3393,7 +3589,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の多砲塔砲台",
             "nameEn": "SUPERSHIP BATTERY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE",
@@ -3411,7 +3608,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の上昇用ノズル",
             "nameEn": "SUPERSHIP NOZZLE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_02",
@@ -3429,7 +3627,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の上昇用ノズル",
             "nameEn": "SUPERSHIP NOZZLE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_03",
@@ -3447,7 +3646,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の上昇用ノズル",
             "nameEn": "SUPERSHIP NOZZLE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_NOZZLE_04",
@@ -3465,7 +3665,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の上昇用ノズル",
             "nameEn": "SUPERSHIP NOZZLE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RU",
@@ -3483,7 +3684,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の主砲",
             "nameEn": "SUPERSHIP MAIN GUN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_R",
@@ -3501,7 +3703,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の主砲",
             "nameEn": "SUPERSHIP MAIN GUN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_R_02",
@@ -3519,7 +3722,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の主砲",
             "nameEn": "SUPERSHIP MAIN GUN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RD",
@@ -3537,7 +3741,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の主砲",
             "nameEn": "SUPERSHIP MAIN GUN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_RD_02",
@@ -3555,7 +3760,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の主砲",
             "nameEn": "SUPERSHIP MAIN GUN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_SHUHOU_D",
@@ -3573,7 +3779,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大戦艦の主砲",
             "nameEn": "SUPERSHIP MAIN GUN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SBS_CORE",
@@ -3591,7 +3798,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリーン・インフェルノ",
             "nameEn": "GREEN INFERNO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS_CORE",
@@ -3609,7 +3817,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ネクロゾウル・コア",
             "nameEn": "NECROSAUR CORE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS_LAUNCHER",
@@ -3627,7 +3836,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ネクロゾウルの口吻",
             "nameEn": "NECROSAUR MUZZLE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_RT3ST2_BOSS",
@@ -3643,7 +3853,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ネクロゾウル",
             "nameEn": "NECROSAUR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_CORE",
@@ -3661,7 +3872,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フォレス",
             "nameEn": "FOLLES",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_FACE",
@@ -3679,7 +3891,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フォレスの胸部？",
             "nameEn": "FOLLES CHEST?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_HEAD",
@@ -3697,7 +3910,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フォレスの頭部？",
             "nameEn": "FOLLES HEAD?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_CORE",
@@ -3715,7 +3929,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "リクジオネータ・コア",
             "nameEn": "RECOJUNATOR CORE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_SATELLITE",
@@ -3733,7 +3948,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "リクジオネータ・サテライト",
             "nameEn": "RECOJUNATOR SATELLITE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_SATELLITE_D",
@@ -3751,7 +3967,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "リクジオネータ・サテライト",
             "nameEn": "RECOJUNATOR SATELLITE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_RIKUJIO_WALL",
@@ -3767,7 +3984,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "リクジオネータ・防御壁",
             "nameEn": "RECOJUNATOR WALL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI",
@@ -3785,7 +4003,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "3WAY光弾砲台",
             "nameEn": "3-WAY LASER TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_LD",
@@ -3803,7 +4022,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "3WAY光弾砲台",
             "nameEn": "3-WAY LASER TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_RU",
@@ -3821,7 +4041,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "3WAY光弾砲台",
             "nameEn": "3-WAY LASER TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_3WAY_HOUDAI_RD",
@@ -3839,7 +4060,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "3WAY光弾砲台",
             "nameEn": "3-WAY LASER TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SUCADER",
@@ -3857,7 +4079,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スケーダー",
             "nameEn": "SKADER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BREAMS",
@@ -3875,7 +4098,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ブリームス",
             "nameEn": "BREAMS",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_FIGHTER_A",
@@ -3898,7 +4122,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "四十四型戦闘機",
             "nameEn": "TYPE 44 FIGHTER",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_FIGHTER_B",
@@ -3918,7 +4143,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "五十五型戦闘機",
             "nameEn": "TYPE 55 FIGHTER",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_CORE",
@@ -3936,7 +4162,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "琥珀色の瞳孔",
             "nameEn": "AMBER PUPIL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_NOZZLE_A",
@@ -3954,7 +4181,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "琥珀色の器官・陰",
             "nameEn": "AMBER ORGAN: YING",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_NOZZLE_B",
@@ -3972,7 +4200,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "琥珀色の器官・陰",
             "nameEn": "AMBER ORGAN: YING",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_WP_A",
@@ -3990,7 +4219,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "琥珀色の器官・陽",
             "nameEn": "AMBER ORGAN: YANG",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_KOHAKU_WP_B",
@@ -4008,7 +4238,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "琥珀色の器官・陽",
             "nameEn": "AMBER ORGAN: YANG",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_CORE",
@@ -4026,7 +4257,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者",
             "nameEn": "SOLAR ENVOY",
-            "faction": "other"
+            "faction": "other",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_A",
@@ -4044,7 +4276,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者ノ柱",
             "nameEn": "SOLAR ENVOY PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_B",
@@ -4062,7 +4295,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者ノ柱",
             "nameEn": "SOLAR ENVOY PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_C",
@@ -4080,7 +4314,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者ノ柱",
             "nameEn": "SOLAR ENVOY PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_D",
@@ -4098,7 +4333,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者ノ柱",
             "nameEn": "SOLAR ENVOY PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_E",
@@ -4116,7 +4352,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者ノ柱",
             "nameEn": "SOLAR ENVOY PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_NOZZULE_F",
@@ -4134,7 +4371,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者ノ柱",
             "nameEn": "SOLAR ENVOY PILLAR",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_PLUTO",
@@ -4150,7 +4388,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "二つの星",
             "nameEn": "TWO PLANETS",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_NEPTUNUS",
@@ -4166,7 +4405,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "青く激しい風が吹く星",
             "nameEn": "WINDY BLUE PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_URANUS",
@@ -4182,7 +4422,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "青白い氷の星",
             "nameEn": "ICY WHITE PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_SATURN",
@@ -4198,7 +4439,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "環を持った星",
             "nameEn": "RINGED PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_JUPITER",
@@ -4214,7 +4456,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "縞模様の大きな星",
             "nameEn": "BIG STRIPED PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_MARS",
@@ -4230,7 +4473,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "赤い星",
             "nameEn": "RED PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_EARTH",
@@ -4246,7 +4490,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "青く美しい星",
             "nameEn": "BLUE PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_VENUS",
@@ -4262,7 +4507,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "黄橙色の星",
             "nameEn": "YELLOW-ORANGE PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_MERCURY",
@@ -4278,7 +4524,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "小さく灰色がかった星",
             "nameEn": "LITTLE GREY PLANET",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.N_MOON",
@@ -4294,7 +4541,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "月",
             "nameEn": "MOON",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_DOP_CHILD",
@@ -4312,7 +4560,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプス幼体",
             "nameEn": "DOBKERATOPS JUVENILE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_HOUDAI",
@@ -4330,7 +4579,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビーム砲台",
             "nameEn": "BEAM BATTERY",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A_NEW",
@@ -4353,7 +4603,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アロー・ヘッド後期量産型",
             "nameEn": "ARROW-HEAD LATE MASS-PRODUCTION MODEL",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A_NEW_G",
@@ -4376,7 +4627,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アロー・ヘッドG",
             "nameEn": "ARROW-HEAD [GRA]",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_STANDARD_G",
@@ -4395,7 +4647,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スタンダード・フォースG",
             "nameEn": "STANDARD FORCE [GRA]",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BATTLE_SHIP",
@@ -4413,7 +4666,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヘイムダル級",
             "nameEn": "HEIMDALL",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_BATTLE_SHIP",
@@ -4431,7 +4685,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヘイムダル級",
             "nameEn": "HEIMDALL",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_BATTLE_SHIP_2",
@@ -4449,7 +4704,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "テュール級",
             "nameEn": "TYR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_BATTLE_SHIP_2",
@@ -4467,7 +4723,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "テュール級",
             "nameEn": "TYR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_BSAE1",
@@ -4485,7 +4742,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨトゥンヘイム級",
             "nameEn": "JOTUNHEIM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_BSAE1",
@@ -4503,7 +4761,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨトゥンヘイム級",
             "nameEn": "JOTUNHEIM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_BSAE2",
@@ -4521,7 +4780,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ムスペルヘイム級",
             "nameEn": "MUSPELLHEIM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_BSAE2",
@@ -4539,7 +4799,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ムスペルヘイム級",
             "nameEn": "MUSPELLHEIM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_BS_LAST",
@@ -4557,7 +4818,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ニヴルヘイム級",
             "nameEn": "NIFLHEIM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_BS_LAST",
@@ -4575,7 +4837,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ニヴルヘイム級",
             "nameEn": "NIFLHEIM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP",
@@ -4593,7 +4856,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コンバイラ",
             "nameEn": "KOMBILER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.BW_BATTLE_SHIP",
@@ -4611,7 +4875,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コンバイラ",
             "nameEn": "KOMBILER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP2",
@@ -4629,7 +4894,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コンバイラベーラ",
             "nameEn": "KOMBILER BELLA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.BW_BATTLE_SHIP2",
@@ -4647,7 +4913,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コンバイラベーラ",
             "nameEn": "KOMBILER BELLA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BATTLE_SHIP3",
@@ -4665,7 +4932,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コンバイラリリル",
             "nameEn": "KOMBILER LILIL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EX_BATTLE_SHIP",
@@ -4683,7 +4951,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "京級戦艦",
             "nameEn": "QUADRILLION-CLASS BATTLESHIP",
-            "faction": "other"
+            "faction": "other",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EX_HYPER_BATTLE_SHIP",
@@ -4701,7 +4970,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "兆京級合体戦艦",
             "nameEn": "TRILLION-QUADRILLION-CLASS BATTLESHIP",
-            "faction": "other"
+            "faction": "other",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.BS_POSIT",
@@ -4719,7 +4989,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ブルドガング砲",
             "nameEn": "BURTGANG CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS_POSIT",
@@ -4737,7 +5008,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ブルドガング砲",
             "nameEn": "BURTGANG CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BS2_POSIT",
@@ -4755,7 +5027,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グレイプニル砲",
             "nameEn": "GLEIPNIR CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS2_POSIT",
@@ -4773,7 +5046,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グレイプニル砲",
             "nameEn": "GLEIPNIR CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BSAE1_POSIT",
@@ -4791,7 +5065,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "イヴィング砲",
             "nameEn": "IVING CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BSAE1_POSIT",
@@ -4809,7 +5084,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "イヴィング砲",
             "nameEn": "IVING CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BSAE2_POSIT",
@@ -4827,7 +5103,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ムスペル砲",
             "nameEn": "MUSPELL CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BSAE2_POSIT",
@@ -4845,7 +5122,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ムスペル砲",
             "nameEn": "MUSPELL CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BS_LAST_FINAL",
@@ -4863,7 +5141,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ギンヌンガガプ砲",
             "nameEn": "GINNUNGAGAP CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_FINAL",
@@ -4881,7 +5160,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ギンヌンガガプ砲",
             "nameEn": "GINNUNGAGAP CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS_POSIT",
@@ -4899,7 +5179,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲",
             "nameEn": "FRAGARACH CANNON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_BS_POSIT",
@@ -4917,7 +5198,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲",
             "nameEn": "FRAGARACH CANNON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS2_POSIT",
@@ -4935,7 +5217,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲Ⅱ",
             "nameEn": "FRAGARACH CANNON II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_BS2_POSIT",
@@ -4953,7 +5236,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲Ⅱ",
             "nameEn": "FRAGARACH CANNON II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_RU",
@@ -4971,7 +5255,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲ⅢNE",
             "nameEn": "FRAGARACH CANNON III NE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_R",
@@ -4989,7 +5274,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲ⅢE",
             "nameEn": "FRAGARACH CANNON III E",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_D",
@@ -5007,7 +5293,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲ⅢS",
             "nameEn": "FRAGARACH CANNON III S",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_LD",
@@ -5025,7 +5312,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲ⅢSW",
             "nameEn": "FRAGARACH CANNON III SW",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_L",
@@ -5043,7 +5331,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲ⅢW",
             "nameEn": "FRAGARACH CANNON III W",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_POSIT_LU",
@@ -5061,7 +5350,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラガラッハ砲ⅢNW",
             "nameEn": "FRAGARACH CANNON III NW",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_BS_POSIT",
@@ -5079,7 +5369,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "京級戦艦・艦首",
             "nameEn": "QUADRILLION-CLASS BATTLESHIP/ BOW",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_HBS_POSIT",
@@ -5097,7 +5388,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "兆京級合体戦艦・艦首",
             "nameEn": "TRILLION-QUADRILLION-CLASS BATTLESHIP/ BOW",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BS_MIS",
@@ -5115,7 +5407,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ギャラルホルン砲",
             "nameEn": "GJALLARHORN CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS_MIS",
@@ -5133,7 +5426,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ギャラルホルン砲",
             "nameEn": "GJALLARHORN CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BS2_MIS",
@@ -5151,7 +5445,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ギャラルホルン砲Ⅱ型",
             "nameEn": "GJALLARHORN CANNON II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS2_MIS",
@@ -5169,7 +5464,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ギャラルホルン砲Ⅱ型",
             "nameEn": "GJALLARHORN CANNON II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BSAE1_MIS",
@@ -5187,7 +5483,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビフレスト砲",
             "nameEn": "BIFROST CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BSAE1_MIS",
@@ -5205,7 +5502,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビフレスト砲",
             "nameEn": "BIFROST CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BSAE2_MIS",
@@ -5223,7 +5521,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビフレスト砲Ⅱ型",
             "nameEn": "BIFROST CANNON II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BSAE2_MIS",
@@ -5241,7 +5540,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビフレスト砲Ⅱ型",
             "nameEn": "BIFROST CANNON II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BS_LAST_MIS",
@@ -5259,7 +5559,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビフレスト砲Ⅲ型",
             "nameEn": "BIFROST CANNON III",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_MIS",
@@ -5277,7 +5578,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビフレスト砲Ⅲ型",
             "nameEn": "BIFROST CANNON III",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS_MIS",
@@ -5295,7 +5597,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲H",
             "nameEn": "FAT MISSILE LAUNCHER H",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_BS_MIS",
@@ -5313,7 +5616,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲H",
             "nameEn": "FAT MISSILE LAUNCHER H",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS2_MIS",
@@ -5331,7 +5635,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲HⅡ",
             "nameEn": "FAT MISSILE LAUNCHER H II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_BS2_MIS",
@@ -5349,7 +5654,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲HⅡ",
             "nameEn": "FAT MISSILE LAUNCHER H II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_RU",
@@ -5367,7 +5673,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲HⅢ",
             "nameEn": "FAT MISSILE LAUNCHER H III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_R",
@@ -5385,7 +5692,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲HⅢ",
             "nameEn": "FAT MISSILE LAUNCHER H III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_RD",
@@ -5403,7 +5711,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲HⅢ",
             "nameEn": "FAT MISSILE LAUNCHER H III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_MIS_LD",
@@ -5421,7 +5730,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲HⅢ",
             "nameEn": "FAT MISSILE LAUNCHER H III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BS3_LASER",
@@ -5439,7 +5749,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コンバイラレーザー砲",
             "nameEn": "KOMBILER LASER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BS_BRIDGE",
@@ -5457,7 +5768,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS_BRIDGE",
@@ -5475,7 +5787,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BS2_BRIDGE",
@@ -5493,7 +5806,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS2_BRIDGE",
@@ -5511,7 +5825,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BSAE1_BRIDGE",
@@ -5529,7 +5844,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BSAE1_BRIDGE",
@@ -5547,7 +5863,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BSAE2_BRIDGE",
@@ -5565,7 +5882,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BSAE2_BRIDGE",
@@ -5583,7 +5901,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BS_LAST_BRIDGE",
@@ -5601,7 +5920,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_BS_LAST_BRIDGE",
@@ -5619,7 +5939,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_BS_BRIDGE",
@@ -5637,7 +5958,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "京級戦艦・艦橋",
             "nameEn": "QUADRILLION-CLASS BATTLESHIP/ BRIDGE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_HBS_BRIDGE_A",
@@ -5655,7 +5977,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "兆京級合体戦艦・艦橋：甲",
             "nameEn": "TRILLION-QUADRILLION-CLASS BATTLESHIP/ BRIDGE A",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_HBS_BRIDGE_B",
@@ -5673,7 +5996,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "兆京級合体戦艦・艦橋：乙",
             "nameEn": "TRILLION-QUADRILLION-CLASS BATTLESHIP/ BRIDGE B",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_CRUISER",
@@ -5691,7 +6015,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァナルガンド級",
             "nameEn": "VANARGAND",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_CRUISER",
@@ -5709,7 +6034,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァナルガンド級",
             "nameEn": "VANARGAND",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_CRUISER2",
@@ -5727,7 +6053,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ガルム級",
             "nameEn": "GARMR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_CRUISER2",
@@ -5745,7 +6072,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ガルム級",
             "nameEn": "GARMR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_CRUISER3",
@@ -5763,7 +6091,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "マーナガルム級",
             "nameEn": "MANAGARMR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_CRUISER3",
@@ -5781,7 +6110,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "マーナガルム級",
             "nameEn": "MANAGARMR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_CRUISER",
@@ -5799,7 +6129,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ボルド",
             "nameEn": "BOLDO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.BW_CRUISER",
@@ -5817,7 +6148,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ボルド",
             "nameEn": "BOLDO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_CRUISER2",
@@ -5835,7 +6167,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ボルドガング",
             "nameEn": "BOLDGANGR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.BW_CRUISER2",
@@ -5853,7 +6186,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ボルドガング",
             "nameEn": "BOLDGANGR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_CRUISER3",
@@ -5871,7 +6205,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ボルドボルドゲルド",
             "nameEn": "BOLDOBOLDOGELDO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.BW_CRUISER3",
@@ -5889,7 +6224,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ボルドボルドゲルド",
             "nameEn": "BOLDOBOLDOGELDO",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EX_CRUISER",
@@ -5907,7 +6243,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "兆級巡航艦",
             "nameEn": "TRILLION-CLASS CRUISER",
-            "faction": "other"
+            "faction": "other",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_CR_POSIT",
@@ -5925,7 +6262,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァーン砲",
             "nameEn": "VAEN CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_CR_POSIT",
@@ -5943,7 +6281,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァーン砲",
             "nameEn": "VAEN CANNON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_CR2_POSIT",
@@ -5961,7 +6300,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァーン砲Ⅱ型",
             "nameEn": "VAEN CANNON II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_CR2_POSIT",
@@ -5979,7 +6319,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァーン砲Ⅱ型",
             "nameEn": "VAEN CANNON II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_CR3_POSIT",
@@ -5997,7 +6338,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァーン砲Ⅲ型",
             "nameEn": "VAEN CANNON III",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_CR3_POSIT",
@@ -6015,7 +6357,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヴァーン砲Ⅲ型",
             "nameEn": "VAEN CANNON III",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CR_POSIT",
@@ -6033,7 +6376,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カラドボルグ砲",
             "nameEn": "CALADBOLG CANNON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_CR_POSIT",
@@ -6051,7 +6395,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カラドボルグ砲",
             "nameEn": "CALADBOLG CANNON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CR2_POSIT",
@@ -6069,7 +6414,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カラドボルグ砲Ⅱ",
             "nameEn": "CALADBOLG CANNON II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_CR2_POSIT",
@@ -6087,7 +6433,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カラドボルグ砲Ⅱ",
             "nameEn": "CALADBOLG CANNON II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CR3_POSIT",
@@ -6105,7 +6452,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カラドボルグ砲Ⅲ",
             "nameEn": "CALADBOLG CANNON III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_CR3_POSIT",
@@ -6123,7 +6471,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カラドボルグ砲Ⅲ",
             "nameEn": "CALADBOLG CANNON III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_CR_POSIT",
@@ -6141,7 +6490,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "兆級巡航艦・艦首",
             "nameEn": "TRILLION-CLASS CRUISER/ BOW",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_CR_BRIDGE",
@@ -6159,7 +6509,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_CR_BRIDGE",
@@ -6177,7 +6528,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_CR2_BRIDGE",
@@ -6195,7 +6547,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_CR2_BRIDGE",
@@ -6213,7 +6566,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_CR3_BRIDGE",
@@ -6231,7 +6585,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EW_CR3_BRIDGE",
@@ -6249,7 +6604,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦橋と主砲",
             "nameEn": "BRIDGE SECTION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.EX_CR_BRIDGE",
@@ -6267,7 +6623,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "兆級巡航艦・艦橋",
             "nameEn": "TRILLION-CLASS CRUISER/ BRIDGE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CR_MIS",
@@ -6285,7 +6642,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲",
             "nameEn": "FAT MISSILE LAUNCHER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_CR_MIS",
@@ -6303,7 +6661,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲",
             "nameEn": "FAT MISSILE LAUNCHER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CR2_MIS",
@@ -6321,7 +6680,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲Ⅱ",
             "nameEn": "FAT MISSILE LAUNCHER II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_CR2_MIS",
@@ -6339,7 +6699,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲Ⅱ",
             "nameEn": "FAT MISSILE LAUNCHER II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CR3_MIS",
@@ -6357,7 +6718,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲Ⅲ",
             "nameEn": "FAT MISSILE LAUNCHER III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.BW_CR3_MIS",
@@ -6375,7 +6737,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファットミサイル砲Ⅲ",
             "nameEn": "FAT MISSILE LAUNCHER III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_CARRIER1",
@@ -6393,7 +6756,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヤールンサクサ級",
             "nameEn": "JARNSAXA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_CARRIER1",
@@ -6411,7 +6775,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヤールンサクサ級",
             "nameEn": "JARNSAXA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_CARRIER2",
@@ -6429,7 +6794,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アングルボダ級",
             "nameEn": "ANGRBODA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.EW_CARRIER2",
@@ -6447,7 +6813,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アングルボダ級",
             "nameEn": "ANGRBODA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_CARRIER2_BOOSTER",
@@ -6465,7 +6832,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アングルボダ級ワープ仕様",
             "nameEn": "ANGRBODA BOOSTER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_SHIP",
@@ -6484,7 +6852,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エーギル級",
             "nameEn": "EGIR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_SHIP_2",
@@ -6504,7 +6873,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ラーン級",
             "nameEn": "RAHN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_SHIP_3",
@@ -6525,7 +6895,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヒミングレーヴァ級",
             "nameEn": "HIMINGLAVA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_DESTROYER",
@@ -6546,7 +6917,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ニーズヘッグ級",
             "nameEn": "NIDHOGGR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_DESTROYER2",
@@ -6567,7 +6939,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フレースヴェルグ級",
             "nameEn": "HRAESVELG",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_DESTROYER3",
@@ -6588,7 +6961,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナーストレンド級",
             "nameEn": "NASTROND",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_CARGO_SHIP",
@@ -6606,7 +6980,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨルムンガンド級",
             "nameEn": "JORMUNGANDR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_CARGO_SHIP_C",
@@ -6624,7 +6999,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨルムンガンド級・改",
             "nameEn": "JORMUNGANDR+",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_LANDING_SHIP",
@@ -6642,7 +7018,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヒルディスヴィーニ級",
             "nameEn": "HILDISVINI",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_LANDING_SHIP_C",
@@ -6660,7 +7037,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヒルディスヴィーニ級",
             "nameEn": "HILDISVINI",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_CARGO",
@@ -6678,7 +7056,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ノーザリー",
             "nameEn": "NOZARI",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_LANDING_SHIP",
@@ -6696,7 +7075,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ノーザリー強襲揚陸型",
             "nameEn": "NOZARI ASSAULT LANDER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BOPUKERA",
@@ -6714,7 +7094,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプス",
             "nameEn": "DOBKERATOPS",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_B1_WARP",
@@ -6732,7 +7113,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの屍？",
             "nameEn": "DOBKERATOPS CORPSE?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_B1_WATER",
@@ -6750,7 +7132,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプス水棲種",
             "nameEn": "AQUATIC DOBKERATOPS",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN",
@@ -6768,7 +7151,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプス試験体",
             "nameEn": "DOBKERATOPS TEST SPECIMEN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE",
@@ -6788,7 +7172,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプス",
             "nameEn": "DOBKERATOPS",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_B1_ROT",
@@ -6806,7 +7191,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの屍？",
             "nameEn": "DOBKERATOPS CORPSE?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_B1_MECHA",
@@ -6822,7 +7208,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ドプケラドプスの培養炉",
             "nameEn": "DOBKERATOPS KILN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_B1_O_SHARE",
@@ -6841,7 +7228,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプス",
             "nameEn": "DOBKERATOPS",
-            "faction": "other"
+            "faction": "other",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.DOP_HEAD",
@@ -6859,7 +7247,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_WARP_HEAD",
@@ -6877,7 +7266,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_WATER_HEAD",
@@ -6895,7 +7285,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN_HEAD",
@@ -6913,7 +7304,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE_HEAD",
@@ -6931,7 +7323,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_ROT_HEAD",
@@ -6949,7 +7342,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_MECHA_HEAD",
@@ -6967,7 +7361,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_O_HEAD_SHARE",
@@ -6983,7 +7378,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ドプケラドプスの頭部？",
             "nameEn": "DOBKERATOPS HEAD?",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.DOP_BREAST",
@@ -7001,7 +7397,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_WARP_BREAST",
@@ -7019,7 +7416,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_WATER_BREAST",
@@ -7037,7 +7435,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_B1_HUMAN_BREAST",
@@ -7055,7 +7454,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_ORIGINE_BREAST",
@@ -7073,7 +7473,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_ROT_BREAST",
@@ -7091,7 +7492,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_MECHA_BREAST",
@@ -7109,7 +7511,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1_O_BREAST_SHARE",
@@ -7125,7 +7528,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ドプケラドプスの胸部？",
             "nameEn": "DOBKERATOPS BODY?",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LAST_CORE",
@@ -7143,7 +7547,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "漆黒の瞳孔",
             "nameEn": "JET-BLACK PUPIL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_U",
@@ -7161,7 +7566,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大推進装置？",
             "nameEn": "A GIANT THRUSTER?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LAST_NOZZLE_D",
@@ -7179,7 +7585,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "巨大推進装置？",
             "nameEn": "A GIANT THRUSTER?",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LAST_WP_1",
@@ -7197,7 +7604,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦船の残骸",
             "nameEn": "SHIP'S WRECKAGE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LAST_WP_2",
@@ -7215,7 +7623,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "艦船の残骸",
             "nameEn": "SHIP'S WRECKAGE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GOMANDA",
@@ -7233,7 +7642,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゴマンダー",
             "nameEn": "GOMANDER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BELMEIT",
@@ -7252,7 +7662,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベルメイト本体",
             "nameEn": "BERMATE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BELMEIT2",
@@ -7271,7 +7682,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベルメイトベルル",
             "nameEn": "BERMATE BERYL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_LD",
@@ -7289,7 +7701,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベルメイトベルルの葉",
             "nameEn": "BERMATE BERYL LEAF",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_LU",
@@ -7307,7 +7720,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベルメイトベルルの葉",
             "nameEn": "BERMATE BERYL LEAF",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_RD",
@@ -7325,7 +7739,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベルメイトベルルの葉",
             "nameEn": "BERMATE BERYL LEAF",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BELMEIT2_LEAF_RU",
@@ -7343,7 +7758,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベルメイトベルルの葉",
             "nameEn": "BERMATE BERYL LEAF",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GASTERNED",
@@ -7361,7 +7777,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ガスダーネッド",
             "nameEn": "GUSTERNET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_GASTERNED2",
@@ -7380,7 +7797,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ガスダーネッド亜種",
             "nameEn": "GUSTERNET VARIANT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_FINEMOTION",
@@ -7400,7 +7818,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファインモーション",
             "nameEn": "FINE MOTION",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_FINEMOTION2",
@@ -7420,7 +7839,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファインモーションⅡ",
             "nameEn": "FINE MOTION II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_GR_RED",
@@ -7438,7 +7858,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロック・レッド",
             "nameEn": "RED GRIDLOCK",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_GR_R_LU",
@@ -7456,7 +7877,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GR_R_RU",
@@ -7474,7 +7896,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GR_R_LD",
@@ -7492,7 +7915,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GR_R_RD",
@@ -7510,7 +7934,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GR_BLUE",
@@ -7528,7 +7953,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロック・ブルー",
             "nameEn": "BLUE GRIDLOCK",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_GR_B_LU",
@@ -7546,7 +7972,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GR_B_RU",
@@ -7564,7 +7991,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GR_B_LD",
@@ -7582,7 +8010,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_GR_B_RD",
@@ -7600,7 +8029,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリッドロックの瞳",
             "nameEn": "GRIDLOCK EYE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.XELF_CORE",
@@ -7619,7 +8049,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "Xelf-24",
             "nameEn": "Xelf-24",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_MICHAEL",
@@ -7637,7 +8068,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ミヒャエル",
             "nameEn": "MICHAEL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT",
@@ -7655,7 +8087,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "補助掘削ビット",
             "nameEn": "SUPPORT BIT",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT2",
@@ -7673,7 +8106,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "補助掘削ビット",
             "nameEn": "SUPPORT BIT",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT3",
@@ -7691,7 +8125,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "補助掘削ビット",
             "nameEn": "SUPPORT BIT",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT4",
@@ -7709,7 +8144,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "補助掘削ビット",
             "nameEn": "SUPPORT BIT",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT5",
@@ -7727,7 +8163,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "補助掘削ビット",
             "nameEn": "SUPPORT BIT",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MICHAEL_BIT6",
@@ -7746,7 +8183,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "補助掘削ビット",
             "nameEn": "SUPPORT BIT",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BARAKASU",
@@ -7764,7 +8202,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バラカス",
             "nameEn": "BARACCUS",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_BARA_LASER_L",
@@ -7782,7 +8221,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "高出力エネルギー放電器",
             "nameEn": "HIGH-POWER ENERGY DISCHARGER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BARA_LASER_R",
@@ -7800,7 +8240,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "高出力エネルギー放電器",
             "nameEn": "HIGH-POWER ENERGY DISCHARGER",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BARA_ICE_L",
@@ -7818,7 +8259,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "氷弾発射口",
             "nameEn": "ICE EJECTOR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BARA_ICE_R",
@@ -7836,7 +8278,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "氷弾発射口",
             "nameEn": "ICE EJECTOR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_R2ST3_CORE",
@@ -7854,7 +8297,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コルベルト・コア",
             "nameEn": "CORBETT CORE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUBUTSU",
@@ -7872,7 +8316,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コルベルトの防衛砲台",
             "nameEn": "CORBETT DEFENSE TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUBUTSU_L",
@@ -7890,7 +8335,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コルベルトの防衛砲台",
             "nameEn": "CORBETT DEFENSE TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUDAI",
@@ -7908,7 +8354,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コルベルトの対空砲台",
             "nameEn": "CORBETT ANTI-AIR TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_R2ST3_HOUDAI_L",
@@ -7926,7 +8373,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コルベルトの対空砲台",
             "nameEn": "CORBETT ANTI-AIR TURRET",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.B_R2ST3_WALL",
@@ -7942,7 +8390,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "コルベルトの防御壁",
             "nameEn": "CORBETT WALL",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_SOLAR_SYS",
@@ -7960,7 +8409,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ウートガルザ・ロキ",
             "nameEn": "UTGARDA LOKI",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_SOLAR_SYS_D",
@@ -7978,7 +8428,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ウートガルザ・ロキ",
             "nameEn": "UTGARDA LOKI",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_MIRROR",
@@ -7994,7 +8445,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "集光ミラー",
             "nameEn": "FOCAL MIRROR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_DEF_STARS",
@@ -8013,7 +8465,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アイギス",
             "nameEn": "AEGIS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_PLANET_CORE",
@@ -8029,7 +8482,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "アテナイエ",
             "nameEn": "ATHENAE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R3",
@@ -8047,7 +8501,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "工作機",
             "nameEn": "SUPPORT UNIT",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R3_2",
@@ -8065,7 +8520,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "工作機２号機",
             "nameEn": "SUPPORT UNIT Mk2",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R3_3",
@@ -8083,7 +8539,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "工作機３号機",
             "nameEn": "SUPPORT UNIT Mk3",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_R3",
@@ -8101,7 +8558,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "腐れ工作機",
             "nameEn": "ROTTEN WORKER UNIT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_R3_2",
@@ -8119,7 +8577,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "腐れ工作機Ⅱ",
             "nameEn": "ROTTEN SUPPORT UNIT Mk2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_R3_3",
@@ -8137,7 +8596,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "腐れ工作機Ⅲ",
             "nameEn": "ROTTEN SUPPORT UNIT Mk3",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_REFUEL",
@@ -8155,7 +8615,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "POWアーマー",
             "nameEn": "POW-ARMOR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_REFUEL",
@@ -8173,7 +8634,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "腐れPOWアーマー",
             "nameEn": "ROTTEN POW-ARMOR",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TP2H",
@@ -8191,7 +8653,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "POWアーマー改",
             "nameEn": "POW-ARMOR+",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TP2S",
@@ -8209,7 +8672,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "サイバー・ノヴァ",
             "nameEn": "CYBER NOVA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9E",
@@ -8227,7 +8691,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ミッドナイト・アイ",
             "nameEn": "MIDNIGHT EYE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9E_BK",
@@ -8245,7 +8710,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ミッドナイト・アイBK",
             "nameEn": "MIDNIGHT EYE BK",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9E2",
@@ -8264,7 +8730,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アウル・ライト",
             "nameEn": "OWL LIGHT",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9E3",
@@ -8283,7 +8750,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スウィート・ルナ",
             "nameEn": "SWEET LUNA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9ER",
@@ -8301,7 +8769,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "パワード・サイレンス",
             "nameEn": "POWERED SILENCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9ER2",
@@ -8319,7 +8788,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アンチェインド・サイレンス",
             "nameEn": "UNCHAINED SILENCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TP1",
@@ -8338,7 +8808,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スコープ・ダック",
             "nameEn": "SCOPE DUCK",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A",
@@ -8361,7 +8832,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アロー・ヘッド",
             "nameEn": "ARROW-HEAD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A2",
@@ -8384,7 +8856,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "デルタ",
             "nameEn": "DELTA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A3",
@@ -8407,7 +8880,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "レディ・ラヴ",
             "nameEn": "LADY LOVE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A4",
@@ -8430,7 +8904,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ウェーブ・マスター",
             "nameEn": "WAVE MASTER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A_BLACK",
@@ -8453,7 +8928,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アロー・ヘッドBK",
             "nameEn": "ARROW-HEAD BK",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A_RD",
@@ -8476,7 +8952,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アロー・ヘッドRD",
             "nameEn": "ARROW-HEAD RD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9A_GRN",
@@ -8499,7 +8976,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アロー・ヘッドGR",
             "nameEn": "ARROW-HEAD GR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9C",
@@ -8522,7 +9000,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ウォー・ヘッド",
             "nameEn": "WAR HEAD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9K",
@@ -8545,7 +9024,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "サンデー・ストライク",
             "nameEn": "SUNDAY STRIKE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9S",
@@ -8569,7 +9049,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ストライク・ボマー",
             "nameEn": "STRIKE BOMBER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R90",
@@ -8592,7 +9073,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ラグナロック",
             "nameEn": "RAGNAROK",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9AX",
@@ -8615,7 +9097,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "デリカテッセン",
             "nameEn": "DELICATESSEN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9W",
@@ -8638,7 +9121,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ワイズ・マン",
             "nameEn": "WISE MAN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9WB",
@@ -8661,7 +9145,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ハッピー・デイズ",
             "nameEn": "HAPPY DAYS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9D",
@@ -8683,7 +9168,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "シューティング・スター",
             "nameEn": "SHOOTING STAR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9D2",
@@ -8705,7 +9191,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "モーニング・スター",
             "nameEn": "MORNING STAR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9DH",
@@ -8727,7 +9214,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グレース・ノート",
             "nameEn": "GRACE NOTE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9DH_SHARE",
@@ -8746,7 +9234,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グレース・ノート",
             "nameEn": "GRACE NOTE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9DH2",
@@ -8768,7 +9257,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ホット・コンダクター",
             "nameEn": "HOT CONDUCTOR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9DH3",
@@ -8790,7 +9280,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "コンサート・マスター",
             "nameEn": "CONCERTMASTER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_RX10",
@@ -8813,7 +9304,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アルバトロス",
             "nameEn": "ALBATROSS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_RX10_SHARE",
@@ -8833,7 +9325,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アルバトロス",
             "nameEn": "ALBATROSS",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_RX12",
@@ -8855,7 +9348,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "クロス・ザ・ルビコン",
             "nameEn": "CROSS THE RUBICON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R13A",
@@ -8878,7 +9372,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ケルベロス",
             "nameEn": "CERBEROS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R13A2",
@@ -8901,7 +9396,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ハーデス",
             "nameEn": "HADES",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R13B",
@@ -8924,7 +9420,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カロン",
             "nameEn": "CHARON",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9SK",
@@ -8947,7 +9444,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "プリンシパリティーズ",
             "nameEn": "PRINCIPALITIES",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9SK2",
@@ -8970,7 +9468,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ドミニオンズ",
             "nameEn": "DOMINIONS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_BXT",
@@ -8993,7 +9492,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ダンタリオン",
             "nameEn": "DANTALION",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_L_DANCER_A",
@@ -9016,7 +9516,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ラスト・ダンサー",
             "nameEn": "LAST DANCER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_L_DANCER_B",
@@ -9039,7 +9540,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ラスト・ダンサー",
             "nameEn": "LAST DANCER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_L_DANCER_C",
@@ -9062,7 +9564,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ラスト・ダンサー",
             "nameEn": "LAST DANCER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_L_DANCER_D",
@@ -9085,7 +9588,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ラスト・ダンサー",
             "nameEn": "LAST DANCER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1DA",
@@ -9108,7 +9612,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド・システムα",
             "nameEn": "BYDO SYSTEM α",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1DB",
@@ -9131,7 +9636,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド・システムβ",
             "nameEn": "BYDO SYSTEM β",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1DC",
@@ -9154,7 +9660,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド・システムγ",
             "nameEn": "BYDO SYSTEM γ",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1C",
@@ -9177,7 +9684,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アンフィビアン",
             "nameEn": "AMPHIBIAN",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1C2",
@@ -9200,7 +9708,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アンフィビアン２",
             "nameEn": "AMPHIBIAN II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1C3",
@@ -9223,7 +9732,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アンフィビアン３",
             "nameEn": "AMPHIBIAN III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1A",
@@ -9245,7 +9755,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ジギタリウス",
             "nameEn": "DIGITALIUS",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1A2",
@@ -9267,7 +9778,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ジギタリウス２",
             "nameEn": "DIGITALIUS II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B1A3",
@@ -9289,7 +9801,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ジギタリウス３",
             "nameEn": "DIGITALIUS III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST",
@@ -9312,7 +9825,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "マッド・フォレスト",
             "nameEn": "MAD FOREST",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST2",
@@ -9335,7 +9849,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "マッド・フォレスト２",
             "nameEn": "MAD FOREST II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MAD_FOREST3",
@@ -9358,7 +9873,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "マッド・フォレスト３",
             "nameEn": "MAD FOREST III",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B3C1",
@@ -9380,7 +9896,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "セクシーダイナマイト",
             "nameEn": "SEXY DYNAMITE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B3C2",
@@ -9402,7 +9919,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "セクシーダイナマイト２",
             "nameEn": "SEXY DYNAMITE II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B3A1",
@@ -9424,7 +9942,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ミスティー・レディ",
             "nameEn": "MISTY LADY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_B3A2",
@@ -9446,7 +9965,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ミスティー・レディ２",
             "nameEn": "MISTY LADY II",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_ARVANCHE",
@@ -9469,7 +9989,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アーヴァンク",
             "nameEn": "AVANC",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_CRAW_CRAW",
@@ -9492,7 +10013,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "クロー・クロー",
             "nameEn": "CLAW CLAW",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9B",
@@ -9513,7 +10035,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ストライダー",
             "nameEn": "STRIDER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9B_BK",
@@ -9534,7 +10057,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ストライダーBK",
             "nameEn": "STRIDER BK",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9B2",
@@ -9555,7 +10079,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ステイヤー",
             "nameEn": "STAYER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9B3",
@@ -9576,7 +10101,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スレイプニル",
             "nameEn": "SLEIPNIR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9DP1",
@@ -9597,7 +10123,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ハクサン",
             "nameEn": "HAKUSAN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9DP2",
@@ -9618,7 +10145,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アサノガワ",
             "nameEn": "ASANOGAWA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9DP3",
@@ -9639,7 +10167,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ケンロクエン",
             "nameEn": "KENROKUEN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R11A",
@@ -9660,7 +10189,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フューチャー・ワールド",
             "nameEn": "FUTURE WORLD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R11B",
@@ -9681,7 +10211,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ピース・メーカー",
             "nameEn": "PEACE MAKER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R11S",
@@ -9702,7 +10233,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "トロピカル・エンジェル",
             "nameEn": "TROPICAL ANGEL",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R11S2",
@@ -9723,7 +10255,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ノー・チェイサー",
             "nameEn": "NO CHASER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TXT",
@@ -9744,7 +10277,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エクリプス試作型",
             "nameEn": "ECLIPSE PROTOTYPE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TXT_BOOST",
@@ -9765,7 +10299,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エクリプス試作型(加速時)",
             "nameEn": "ECLIPSE PROTOTYPE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TXT2",
@@ -9786,7 +10321,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エクリプス実戦配備型",
             "nameEn": "ECLIPSE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TXT2_BOOST",
@@ -9807,7 +10343,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エクリプス実戦配備型(加速時)",
             "nameEn": "ECLIPSE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TXT3",
@@ -9828,7 +10365,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エクリプス強化仕様型",
             "nameEn": "ENHANCED ECLIPSE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TXT3_BOOST",
@@ -9849,7 +10387,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エクリプス強化仕様型(加速時)",
             "nameEn": "ENHANCED ECLIPSE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9AD",
@@ -9869,7 +10408,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "エスコート・タイム",
             "nameEn": "ESCORT TIME",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9AD2",
@@ -9889,7 +10429,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "プリンスダム",
             "nameEn": "PRINCEDOM",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9AD3",
@@ -9909,7 +10450,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "キングス・マインド",
             "nameEn": "KING'S MIND",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_OF01",
@@ -9932,7 +10474,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ダイダロス",
             "nameEn": "DAEDALUS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_OF03",
@@ -9955,7 +10498,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ガルーダ",
             "nameEn": "GARUDA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_OF05",
@@ -9978,7 +10522,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "カグヤ",
             "nameEn": "KAGUYA",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_RED_POD",
@@ -9996,7 +10541,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "レッド・ポッド",
             "nameEn": "RED POD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT",
@@ -10014,7 +10560,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "レッド・ポッド",
             "nameEn": "RED POD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_RED_POD_OF3",
@@ -10032,7 +10579,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "レッド・ポッド",
             "nameEn": "RED POD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_RED_POD_LEFT_OF3",
@@ -10050,7 +10598,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "レッド・ポッド",
             "nameEn": "RED POD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_LD",
@@ -10069,7 +10618,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリーン・ポッド",
             "nameEn": "GREEN POD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_GREEN_POD_RU",
@@ -10088,7 +10638,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グリーン・ポッド",
             "nameEn": "GREEN POD",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_R9LEO",
@@ -10109,7 +10660,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "Leo",
             "nameEn": "LEO",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_PSYBIT_U",
@@ -10129,7 +10681,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "サイビット",
             "nameEn": "PSY BIT",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_PSYBIT_D",
@@ -10149,7 +10702,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "サイビット",
             "nameEn": "PSY BIT",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_FROGMAN",
@@ -10168,7 +10722,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フロッグマン",
             "nameEn": "FROGMAN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_FROGMAN2",
@@ -10188,7 +10743,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "シー・タイガー",
             "nameEn": "SEA TIGER",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_GRANBIA_F",
@@ -10209,7 +10765,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グランビア・F",
             "nameEn": "GRANVIA F",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_GRANBIA_M",
@@ -10230,7 +10787,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "グランビア・M",
             "nameEn": "GRANVIA M",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LIQUID_METAL",
@@ -10248,7 +10806,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "メルトクラフト",
             "nameEn": "MELT CRAFT",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_LIQUID_METAL_HALF",
@@ -10266,7 +10825,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "メルトクラフト・幼体",
             "nameEn": "MELT CRAFT JUVENILE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_TABROC",
@@ -10285,7 +10845,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "タブロック",
             "nameEn": "TABLOCK",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_TABROC_2",
@@ -10304,7 +10865,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "タブロック２改良型",
             "nameEn": "TABLOCK Mk2+",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_TABROC_3",
@@ -10323,7 +10885,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "タブロック３高機動型",
             "nameEn": "TABLOCK Mk3 HV",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SCANT",
@@ -10342,7 +10905,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゲインズ",
             "nameEn": "GAINS",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SCANT_2",
@@ -10361,7 +10925,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゲインズ２陽電子砲型",
             "nameEn": "ION-ENABLED GAINS Mk2",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SCANT_3",
@@ -10381,7 +10946,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゲインズ３白兵戦型",
             "nameEn": "CQB GAINS Mk3",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SCANT_4",
@@ -10401,7 +10967,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゲインズ３白兵戦型・改",
             "nameEn": "CQB GAINS Mk3+",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SCANT_4_BOOST",
@@ -10421,7 +10988,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゲインズ３白兵戦型・改",
             "nameEn": "CQB GAINS Mk3+",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_SCANT_5",
@@ -10440,7 +11008,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ゲインズ２陽電子砲型・改",
             "nameEn": "ION-ENABLED GAINS Mk2+",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_BOSS_SUN_SERVANT",
@@ -10460,7 +11029,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "太陽ノ使者ノ衛兵",
             "nameEn": "SOLAR ENVOY GUARD",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2A",
@@ -10480,7 +11050,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アキレウス",
             "nameEn": "ACHILLES",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2AT_PLANE",
@@ -10501,7 +11072,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "パトロクロス飛行形態",
             "nameEn": "PATROCROSS AVIAN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2AT_HUMAN",
@@ -10521,7 +11093,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "パトロクロス人型形態",
             "nameEn": "PATROCROSS HUMANOID",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2AT2_PLANE",
@@ -10542,7 +11115,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "パトロクロスⅡ飛行形態",
             "nameEn": "PATROCROSS II AVIAN",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2AT2_HUMAN",
@@ -10563,7 +11137,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "パトロクロスⅡ人型形態",
             "nameEn": "PATROCROSS II HUMANOID",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2A2",
@@ -10583,7 +11158,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ネオプトレモス",
             "nameEn": "NEOPTLEMOS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2B",
@@ -10603,7 +11179,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヘラクレス",
             "nameEn": "HERCULES",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TL2B2",
@@ -10622,7 +11199,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヒュロス",
             "nameEn": "HYLLUS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_NARUCISSUS",
@@ -10643,7 +11221,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナルキッソス",
             "nameEn": "NARCISSUS",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_NARUCISSUS_X",
@@ -10664,7 +11243,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ナルキッソスⅡ",
             "nameEn": "NARCISSUS II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_HEKTOR",
@@ -10684,7 +11264,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヘクトール",
             "nameEn": "HECTOR",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_HEKTOR_PLANE",
@@ -10702,7 +11283,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヘクトール・飛行形態",
             "nameEn": "HECTOR (AVIAN)",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TANK1",
@@ -10721,7 +11303,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "汎用戦車",
             "nameEn": "ALL-PURPOSE TANK",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TANK2",
@@ -10740,7 +11323,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "汎用戦車Ⅱ",
             "nameEn": "ALL-PURPOSE TANK II",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TANK2_S",
@@ -10759,7 +11343,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "汎用戦車Ⅱ指揮官仕様",
             "nameEn": "ALL-PURPOSE TANK II COMMANDER-SPEC",
-            "faction": "human"
+            "faction": "human",
+            "flagship": true
         },
         {
             "id": "UNIT_ID.E_TW2",
@@ -10780,7 +11365,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "キウイ・ベリィ",
             "nameEn": "KIWI BERRY",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TW3",
@@ -10801,7 +11387,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "クラン・ベリィ",
             "nameEn": "CRAN BERRY",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TW4",
@@ -10822,7 +11409,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ブルー・ベリィ",
             "nameEn": "BLUE BERRY",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TW5",
@@ -10843,7 +11431,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ダーク・ベリィ",
             "nameEn": "DARK BERRY",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.E_TW6",
@@ -10864,7 +11453,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ベリィ・ベリィ",
             "nameEn": "BERRY BERRY",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_STANDARD",
@@ -10883,7 +11473,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スタンダード・フォース",
             "nameEn": "STANDARD FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_STANDARD_KAI",
@@ -10902,7 +11493,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スタンダード・フォース改",
             "nameEn": "STANDARD FORCE+",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_STANDARD2",
@@ -10921,7 +11513,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スタンダード・フォースC",
             "nameEn": "STANDARD FORCE C",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_K",
@@ -10940,7 +11533,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スタンダード・フォースK",
             "nameEn": "STANDARD FORCE K",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_STDH",
@@ -10959,7 +11553,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スタンダード・フォースH",
             "nameEn": "STANDARD FORCE H",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_DEFENSIVE",
@@ -10978,7 +11573,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ディフェンシヴ・フォース",
             "nameEn": "DEFENSIVE FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_DEFENSIVE_KAI",
@@ -10997,7 +11593,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ディフェンシヴ・フォース改",
             "nameEn": "DEFENSIVE FORCE+",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_TENTACLE",
@@ -11016,7 +11613,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "テンタクル・フォース",
             "nameEn": "TENTACLE FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_FLX",
@@ -11035,7 +11633,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フレキシブル・フォース",
             "nameEn": "FLEXIBLE FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_SHADOW",
@@ -11053,7 +11652,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "シャドウ・フォース",
             "nameEn": "SHADOW FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_GALLOP",
@@ -11072,7 +11672,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ギャロップ・フォース",
             "nameEn": "GALLOP FORCE",
-            "faction": "other"
+            "faction": "other",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_FIRE",
@@ -11091,7 +11692,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ファイヤ・フォース",
             "nameEn": "FIRE FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_FRAME",
@@ -11110,7 +11712,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フレイム・フォース",
             "nameEn": "FLAME FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_ANCHOR",
@@ -11129,7 +11732,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アンカー・フォース",
             "nameEn": "ANCHOR FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_ANCHOR_2",
@@ -11148,7 +11752,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アンカー・フォース改",
             "nameEn": "ANCHOR FORCE+",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.F_LIFE",
@@ -11167,7 +11772,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ライフ・フォース",
             "nameEn": "LIFE FORCE",
-            "faction": "human"
+            "faction": "human",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_BYDO",
@@ -11186,7 +11792,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "バイド・フォース",
             "nameEn": "BYDO FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_BEAST",
@@ -11205,7 +11812,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ビースト・フォース",
             "nameEn": "BEAST FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_SEXY",
@@ -11224,7 +11832,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "セクシー・フォース",
             "nameEn": "SEXY FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_MIST",
@@ -11243,7 +11852,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ミスト・フォース",
             "nameEn": "MIST FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_SCALE",
@@ -11262,7 +11872,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "スケイル・フォース",
             "nameEn": "SCALE FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_CRAW",
@@ -11281,7 +11892,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "クロー・フォース",
             "nameEn": "CLAW FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_FLOWER",
@@ -11299,7 +11911,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "フラワー・フォース",
             "nameEn": "FLOWER FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.FB_IVY",
@@ -11317,7 +11930,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "アイビー・フォース",
             "nameEn": "IVY FORCE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_INS_HEAD",
@@ -11335,7 +11949,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "インスルー",
             "nameEn": "ENTHREW",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_INS_BODY",
@@ -11353,7 +11968,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "インスルーの胴部",
             "nameEn": "ENTHREW BODY",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_INS_TAIL",
@@ -11369,7 +11985,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "インスルー尾部",
             "nameEn": "ENTHREW TAIL",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MUURA_HEAD",
@@ -11387,7 +12004,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ムーラ",
             "nameEn": "MOORA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MUURA_BODY",
@@ -11403,7 +12021,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ムーラ",
             "nameEn": "MOORA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MUURA_TAIL",
@@ -11419,7 +12038,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ムーラ",
             "nameEn": "MOORA",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MUURA2_HEAD",
@@ -11437,7 +12057,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ムーラ凶暴種",
             "nameEn": "MOORA BRUTE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MUURA2_BODY",
@@ -11453,7 +12074,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ムーラ凶暴種",
             "nameEn": "MOORA BRUTE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_MUURA2_TAIL",
@@ -11469,7 +12091,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ムーラ凶暴種",
             "nameEn": "MOORA BRUTE",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_YORKGONE_HEAD",
@@ -11487,7 +12110,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨークゴーン",
             "nameEn": "YOKEGON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_YORKGONE_BODY",
@@ -11503,7 +12127,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ヨークゴーン",
             "nameEn": "YOKEGON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_YORKGONE_TAIL",
@@ -11519,7 +12144,8 @@ window.RTYPE_SIM_DATA = {
             "weapons": [],
             "nameJa": "ヨークゴーン",
             "nameEn": "YOKEGON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         },
         {
             "id": "UNIT_ID.B_YORKGONE2_HEAD",
@@ -11537,7 +12163,8 @@ window.RTYPE_SIM_DATA = {
             ],
             "nameJa": "ヨークゴーン新種",
             "nameEn": "NEW YOKEGON",
-            "faction": "bydo"
+            "faction": "bydo",
+            "flagship": false
         }
     ],
     "weapons": [
