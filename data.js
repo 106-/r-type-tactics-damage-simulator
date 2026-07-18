@@ -790,7 +790,7 @@ window.RTYPE_SIM_DATA = {
         },
         {
             "id": "UNIT_ID.B_BAMERA",
-            "name": "パメラ",
+            "name": "バメラ",
             "type": 1,
             "typeKey": "utyp_b_michael",
             "formationMax": 1,
@@ -802,7 +802,7 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.B_IF_BAMERA_STICK"
             ],
-            "nameJa": "パメラ",
+            "nameJa": "バメラ",
             "nameEn": "PAMELA",
             "faction": "other",
             "flagship": false,
