@@ -196,11 +196,11 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .unit-picker-head div>span { margin-left: 10px; padding: 3px 7px; border: 1px solid #3d676c; color: var(--cyan); font-family: var(--mono); font-size: 11px }
 .unit-picker-head>button { width: 38px; height: 38px; border: 1px solid #38535b; background: #0b171c; color: var(--ink-soft); font-size: 24px; line-height: 1; cursor: pointer }
 .unit-picker-head>button:hover, .unit-picker-head>button:focus-visible { border-color: var(--cyan); color: var(--cyan); outline: none }
-.unit-picker-tools { display: grid; grid-template-columns: minmax(210px, 1fr) minmax(0, 1.25fr); gap: 12px 18px; padding: 16px 22px; border-bottom: 1px solid var(--line); background: #08151a }
-.unit-picker-tools>label { grid-row: 1 / span 2; margin: 0 }
+.unit-picker-tools { display: grid; grid-template-columns: minmax(180px, .75fr) minmax(0, 1.5fr); gap: 12px 18px; padding: 16px 22px; border-bottom: 1px solid var(--line); background: #08151a }
+.unit-picker-tools>label { grid-row: 1 / span 3; margin: 0 }
 .unit-picker-tools input { height: 44px }
-.unit-filter-group { display: grid; grid-template-columns: 55px minmax(0, 1fr); align-items: center; gap: 9px }
-.unit-filter-group>span { color: var(--faint); font-family: var(--mono); font-size: 11px; letter-spacing: .08em }
+.unit-filter-group { display: grid; grid-template-columns: 64px minmax(0, 1fr); align-items: center; gap: 9px }
+.unit-filter-group>span { color: var(--faint); font-family: var(--mono); font-size: 11px; letter-spacing: .08em; white-space: nowrap }
 .unit-filter-group>div { display: flex; min-width: 0; gap: 6px; flex-wrap: nowrap; overflow-x: auto }
 .unit-filter-group button { padding: 6px 10px; border: 1px solid #304c55; background: #0a171c; color: var(--muted); font-size: 12px; white-space: nowrap; cursor: pointer }
 .unit-filter-group button:hover { border-color: #4b7a80; color: var(--ink-strong) }

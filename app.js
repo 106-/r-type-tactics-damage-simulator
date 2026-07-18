@@ -81,6 +81,10 @@
     "UNIT_ID.E_TXT3_BOOST",
     "UNIT_ID.B_SCANT_4_BOOST",
   ]);
+  const playabilityHiddenUnitIds = new Set([
+    "UNIT_ID.B_SEXYGEL_1",
+    "UNIT_ID.B_SEXYGEL_2",
+  ]);
   const shipUnitTypes = new Set([2, 3, 8, 9, 20]);
   const shipTypeKeyPattern = /(^utyp_ship$|battle_ship|cruiser|carrier|destroyer|cargo|landing_ship|^utyp_bs_|^utyp_cr_|^utyp_weapon$|^utyp_super_bs$|^utyp_b_last_)/;
   let visibleAttackers = data.units;
@@ -91,6 +95,7 @@
   let unitPickerRole = "attacker";
   let unitPickerFaction = "all";
   let unitPickerCategory = "all";
+  let unitPickerPlayability = "all";
 
   // 1操作で複数の更新経路からcalculateが呼ばれるため、1フレームに1回へまとめる
   function scheduleCalculate() {
@@ -223,6 +228,7 @@
   }
 
   function isAttachedPartUnit(unit) {
+    if (typeof unit?.attachedPart === "boolean") return unit.attachedPart;
     const id = String(unit?.id || "");
     const subordinateWeaponPart = unit?.typeKey === "utyp_red_pod" || /^UNIT_ID\.B_MICHAEL_BIT\d*$/.test(id);
     return (attachedPartUnitTypes.has(unit?.type) && !isShipUnit(unit)) || subordinateWeaponPart;
@@ -237,6 +243,23 @@
     // while making the four picker categories mutually exclusive.
     if (category === "formation") return !isShipUnit(unit) && !isForceUnit(unit) && !isAttachedPartUnit(unit);
     return true;
+  }
+
+  function matchesUnitPlayability(unit, playability) {
+    if (playability === "all") return true;
+    if (isPlayabilityFilterExcluded(unit)) return false;
+    return playability === "playable" ? Boolean(unit?.playable) : !unit?.playable;
+  }
+
+  function isPlayabilityFilterExcluded(unit) {
+    const japaneseName = String(unit?.nameJa || unit?.name || "");
+    const fortressPart = japaneseName.startsWith("要塞：") || japaneseName.startsWith("バイド要塞：");
+    return isDecoyUnit(unit)
+      || acceleratedUnitIds.has(unit?.id)
+      || isWarpStateUnit(unit)
+      || isAttachedPartUnit(unit)
+      || playabilityHiddenUnitIds.has(unit?.id)
+      || fortressPart;
   }
 
   function unitCategory(unit) {
@@ -281,7 +304,12 @@
 
   function updateUnitPickerFilterButtons() {
     document.querySelectorAll("[data-unit-filter]").forEach((button) => {
-      const active = button.dataset.value === (button.dataset.unitFilter === "faction" ? unitPickerFaction : unitPickerCategory);
+      const selected = {
+        faction: unitPickerFaction,
+        category: unitPickerCategory,
+        playability: unitPickerPlayability,
+      }[button.dataset.unitFilter];
+      const active = button.dataset.value === selected;
       button.setAttribute("aria-pressed", String(active));
     });
   }
@@ -293,6 +321,7 @@
     const candidates = filteredUnits(query, requireWeapon)
       .filter((unit) => unitPickerFaction === "all" || unitFaction(unit) === unitPickerFaction)
       .filter((unit) => matchesUnitCategory(unit, unitPickerCategory))
+      .filter((unit) => matchesUnitPlayability(unit, unitPickerPlayability))
       .sort((a, b) => unitLabel(a).localeCompare(unitLabel(b), i18n.language === "ja" ? "ja" : "en"));
 
     $("unitPickerCount").textContent = L(`${candidates.length}件`, `${candidates.length} result${candidates.length === 1 ? "" : "s"}`);
@@ -332,6 +361,7 @@
     unitPickerRole = role;
     unitPickerFaction = "all";
     unitPickerCategory = "all";
+    unitPickerPlayability = "all";
     $("unitPickerSearch").value = "";
     $("unitPickerContext").textContent = role === "attacker" ? L("攻撃側", "Attacker") : L("対象側", "Target");
     updateUnitPickerFilterButtons();
@@ -992,7 +1022,8 @@
   document.querySelectorAll("[data-unit-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       if (button.dataset.unitFilter === "faction") unitPickerFaction = button.dataset.value;
-      else unitPickerCategory = button.dataset.value;
+      else if (button.dataset.unitFilter === "category") unitPickerCategory = button.dataset.value;
+      else unitPickerPlayability = button.dataset.value;
       updateUnitPickerFilterButtons();
       renderUnitPicker();
     });
