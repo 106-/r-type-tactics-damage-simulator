@@ -201,8 +201,8 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .unit-picker-tools input { height: 44px }
 .unit-filter-group { display: grid; grid-template-columns: 55px minmax(0, 1fr); align-items: center; gap: 9px }
 .unit-filter-group>span { color: var(--faint); font-family: var(--mono); font-size: 11px; letter-spacing: .08em }
-.unit-filter-group>div { display: flex; gap: 6px; flex-wrap: wrap }
-.unit-filter-group button { padding: 6px 10px; border: 1px solid #304c55; background: #0a171c; color: var(--muted); font-size: 12px; cursor: pointer }
+.unit-filter-group>div { display: flex; min-width: 0; gap: 6px; flex-wrap: nowrap; overflow-x: auto }
+.unit-filter-group button { padding: 6px 10px; border: 1px solid #304c55; background: #0a171c; color: var(--muted); font-size: 12px; white-space: nowrap; cursor: pointer }
 .unit-filter-group button:hover { border-color: #4b7a80; color: var(--ink-strong) }
 .unit-filter-group button[aria-pressed="true"] { border-color: var(--cyan); background: #0b292a; color: var(--cyan) }
 .unit-picker-result-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 22px; border-bottom: 1px solid #172f38; color: var(--faint); font-size: 12px }

@@ -11,6 +11,7 @@
   const materialNamesEn = ["Optical", "Mechanical", "Biological", "Particle", "Flame", "Mental", "Ice", "Acid"];
   const typeNames = ["機械ユニット", "機械艦", "機械艦パーツ", "艦船", "潜行機械", "機械壁", "機械床", "生物ユニット", "生物艦", "生物艦パーツ", "水中生物", "非水中生物", "潜行生物", "浮遊生物", "生体壁", "生体床", "宇宙水棲生物", "岩石", "氷", "異文明ユニット", "異文明艦パーツ"];
   const typeNamesEn = ["Mechanical unit", "Mechanical ship", "Mechanical ship part", "Ship", "Submerged mechanical unit", "Mechanical wall", "Mechanical floor", "Biological unit", "Biological ship", "Biological ship part", "Aquatic lifeform", "Non-aquatic lifeform", "Submerged lifeform", "Floating lifeform", "Biological wall", "Biological floor", "Space aquatic lifeform", "Rock", "Ice", "Alien-civilization unit", "Alien-civilization ship part"];
+  const attachedPartUnitTypes = new Set([2, 9, 20]);
   const skillNames = new Map([
     [0, "HP"],
     [1, "回避率"],
@@ -221,18 +222,25 @@
     return shipUnitTypes.has(unit?.type) || shipTypeKeyPattern.test(String(unit?.typeKey || ""));
   }
 
+  function isAttachedPartUnit(unit) {
+    const id = String(unit?.id || "");
+    const subordinateWeaponPart = unit?.typeKey === "utyp_red_pod" || /^UNIT_ID\.B_MICHAEL_BIT\d*$/.test(id);
+    return (attachedPartUnitTypes.has(unit?.type) && !isShipUnit(unit)) || subordinateWeaponPart;
+  }
+
   function matchesUnitCategory(unit, category) {
     if (category === "all") return true;
     if (category === "force") return isForceUnit(unit);
     if (category === "ship") return isShipUnit(unit);
-    // Treat the picker pair as ship vs non-ship, independently of whether the
-    // unit uses the five-unit formation HP model. Daedalus and Gains are
-    // single-HP units, but still belong on the non-ship side.
-    if (category === "formation") return !isShipUnit(unit);
+    if (category === "part") return isAttachedPartUnit(unit);
+    // Keep single-HP non-ships such as Daedalus and Gains in this category,
+    // while making the four picker categories mutually exclusive.
+    if (category === "formation") return !isShipUnit(unit) && !isForceUnit(unit) && !isAttachedPartUnit(unit);
     return true;
   }
 
   function unitCategory(unit) {
+    if (isAttachedPartUnit(unit)) return "part";
     if (isForceUnit(unit)) return "force";
     if (isShipUnit(unit)) return "ship";
     return "formation";
@@ -248,9 +256,10 @@
 
   function categoryLabel(category) {
     return {
-      ship: L("艦船", "Ship"),
+      ship: L("旗艦設定", "Flagship eligible"),
       formation: L("編隊ユニット", "Formation unit"),
       force: L("フォース", "Force"),
+      part: L("他ユニットのパーツ", "Attached part"),
       single: L("単体・施設", "Single unit / object"),
     }[category] || L("単体・施設", "Single unit / object");
   }
