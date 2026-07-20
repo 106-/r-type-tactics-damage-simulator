@@ -287,10 +287,7 @@
 
   function openUnitPicker(role) {
     unitPickerRole = role;
-    unitPickerFaction = "all";
-    unitPickerCategory = "all";
-    unitPickerPlayability = "all";
-    $("unitPickerSearch").value = "";
+    // 検索・フィルター条件はセッション中は保持する（ページ再読込でリセット）
     $("unitFilterToggle").setAttribute("aria-expanded", "false");
     $("unitPickerContext").textContent = role === "attacker" ? L("攻撃側", "Attacker") : L("対象側", "Target");
     updateUnitPickerFilterButtons();
@@ -928,6 +925,7 @@
 
   $("languageSelect").value = i18n.language;
   fillTargetTypeNames();
+  $("unitPickerSearch").value = ""; // ブラウザのフォーム復元対策（再読込時は検索条件を持ち越さない）
   visibleAttackers = filteredUnits("", true);
   fillUnitSelect($("attacker"), visibleAttackers, "UNIT_ID.E_R9A");
   fillUnitSelect($("target"), visibleTargets, "UNIT_ID.B_B1DA");
