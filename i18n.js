@@ -26,6 +26,7 @@
     "unitPicker.choose": "Choose",
     "unitPicker.search": "Search by unit name",
     "unitPicker.searchPlaceholder": "Enter a name",
+    "unitPicker.filters": "Filters",
     "unitPicker.faction": "Faction",
     "unitPicker.category": "Category",
     "unitPicker.all": "All",

@@ -297,6 +297,10 @@
         <label><span data-i18n="unitPicker.search">ユニット名で検索</span>
           <input id="unitPickerSearch" type="search" placeholder="名前を入力" data-i18n-placeholder="unitPicker.searchPlaceholder"
             autocomplete="off"></label>
+        <button id="unitFilterToggle" class="unit-filter-toggle" type="button" aria-expanded="false"
+          aria-controls="unitFilterGroups"><span data-i18n="unitPicker.filters">絞り込み</span><b
+            id="unitFilterSummary"></b><i aria-hidden="true">▾</i></button>
+        <div id="unitFilterGroups" class="unit-filter-groups">
         <div class="unit-filter-group" role="group" aria-label="陣営" data-i18n-aria-label="unitPicker.faction">
           <span data-i18n="unitPicker.faction">陣営</span>
           <div>
@@ -323,6 +327,7 @@
             <button type="button" data-unit-filter="playability" data-value="playable" aria-pressed="false" data-i18n="unitPicker.playable">プレイアブル</button>
             <button type="button" data-unit-filter="playability" data-value="nonplayable" aria-pressed="false" data-i18n="unitPicker.nonPlayable">非プレイアブル</button>
           </div>
+        </div>
         </div>
       </div>
       <div class="unit-picker-result-head">

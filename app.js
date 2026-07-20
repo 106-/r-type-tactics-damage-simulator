@@ -197,6 +197,11 @@
       const active = button.dataset.value === selected;
       button.setAttribute("aria-pressed", String(active));
     });
+    const activeLabels = ["faction", "category", "playability"]
+      .map((kind) => document.querySelector(`[data-unit-filter="${kind}"][aria-pressed="true"]`))
+      .filter((button) => button && button.dataset.value !== "all")
+      .map((button) => button.textContent);
+    $("unitFilterSummary").textContent = activeLabels.length ? activeLabels.join(" / ") : L("すべて", "All");
   }
 
   function renderUnitPicker() {
@@ -248,6 +253,7 @@
     unitPickerCategory = "all";
     unitPickerPlayability = "all";
     $("unitPickerSearch").value = "";
+    $("unitFilterToggle").setAttribute("aria-expanded", "false");
     $("unitPickerContext").textContent = role === "attacker" ? L("攻撃側", "Attacker") : L("対象側", "Target");
     updateUnitPickerFilterButtons();
     renderUnitPicker();
@@ -876,6 +882,7 @@
     updateEvadeFocusStatus();
     if ($("unitPickerDialog").open) {
       $("unitPickerContext").textContent = unitPickerRole === "attacker" ? L("攻撃側", "Attacker") : L("対象側", "Target");
+      updateUnitPickerFilterButtons();
       renderUnitPicker();
     }
     calculate();
@@ -902,6 +909,10 @@
     if (event.target === $("unitPickerDialog")) $("unitPickerDialog").close();
   });
   $("unitPickerSearch").addEventListener("input", renderUnitPicker);
+  $("unitFilterToggle").addEventListener("click", () => {
+    const expanded = $("unitFilterToggle").getAttribute("aria-expanded") === "true";
+    $("unitFilterToggle").setAttribute("aria-expanded", String(!expanded));
+  });
   $("unitPickerList").addEventListener("click", (event) => {
     const item = event.target.closest("[data-unit-id]");
     if (item) chooseUnitFromPicker(item.dataset.unitId);
