@@ -59,6 +59,8 @@
     "attacker.partialCoverHint": "Partial cover occurs when one of the two intermediate paths of a range-2 attack is blocked by terrain or an obstacle unit. Eligible weapons deal 50% damage.",
 
     "target.title": "Target",
+    "target.swapLabel": "Swap sides",
+    "target.swapTitle": "Swap attacker and target",
     "target.searchExample": "e.g. GAUPER",
     "target.unit": "Target unit",
     "target.type": "Unit type",

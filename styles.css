@@ -55,13 +55,20 @@ input[type=number] { font-family: var(--mono) }
 .disclaimer { font-size: 13px; color: var(--muted); line-height: 1.55; margin: -12px 0 18px }
 
 .workspace { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(350px, .7fr); gap: 20px }
+.workspace > * { min-width: 0 }
 .inputs { display: grid; gap: 14px }
+.inputs > * { min-width: 0 }
 .panel, .results { background: linear-gradient(145deg, rgba(13, 29, 36, .97), rgba(8, 19, 24, .97)); border: 1px solid var(--line); box-shadow: 0 18px 60px #0005 }
 .panel { padding: 18px 20px }
 .panel-title { display: flex; gap: 12px; align-items: center; margin-bottom: 15px }
 .panel-title b { color: var(--cyan); font-family: var(--mono); font-size: 14px }
 .panel-title h2 { font-size: 17px; letter-spacing: .1em; margin: 0 }
+.swap-units { margin-left: auto; padding: 6px 11px; border: 1px solid #32636a; background: #0b2025; color: var(--ink-strong); font-size: 12px; letter-spacing: .06em; cursor: pointer }
+.swap-units:hover:not(:disabled), .swap-units:focus-visible { border-color: var(--cyan); color: var(--cyan); outline: none }
+.swap-units:disabled { border-color: #2a3b41; color: var(--faint); cursor: not-allowed }
+.swap-units i { font-style: normal; margin-right: 4px }
 .grid { display: grid; gap: 12px; align-items: end }
+.grid > * { min-width: 0 }
 .grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)) }
 .grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)) }
 .grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)) }
@@ -318,6 +325,7 @@ input[type=text]:read-only { color: var(--ink-soft) }
   .hero-actions { justify-content: space-between }
   .knowledge-open { height: 38px; padding: 0 12px }
   .checks { display: block }
+  .condition-badge { white-space: normal }
   .results { padding: 17px }
   .damage-card>strong { font-size: 50px }
   .damage-card>span { font-size: 17px; margin-left: 8px }

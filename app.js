@@ -177,6 +177,43 @@
     return `${factionLabel(unitFaction(unit))} / ${categoryLabel(unitCategory(unit))} / HP ${unit?.hp || 0} / ${formation} / ${unit?.occupiedHex || 1} HEX`;
   }
 
+  function updateSwapButton() {
+    const attacker = data.units.find((unit) => unit.id === $("attacker").value);
+    const target = data.units.find((unit) => unit.id === $("target").value);
+    const canSwap = Boolean(target?.selectableAsAttacker && attacker?.selectableAsTarget);
+    const button = $("swapUnits");
+    button.disabled = !canSwap;
+    button.title = canSwap
+      ? L("攻撃側と対象を入れ替え", "Swap attacker and target")
+      : L("入れ替え不可（対象を攻撃側として選択できません）", "Cannot swap (the target cannot be selected as an attacker)");
+  }
+
+  const lastWeaponByUnit = new Map();
+
+  function swapUnits() {
+    const attackerId = $("attacker").value;
+    const targetId = $("target").value;
+    const newAttacker = data.units.find((unit) => unit.id === targetId);
+    const newTarget = data.units.find((unit) => unit.id === attackerId);
+    if (!newAttacker?.selectableAsAttacker || !newTarget?.selectableAsTarget) return;
+    if (attackerId) lastWeaponByUnit.set(attackerId, $("weapon").value);
+    $("attacker").value = targetId;
+    $("target").value = attackerId;
+    const rank = $("rank").value;
+    $("rank").value = $("targetRank").value;
+    $("targetRank").value = rank;
+    updateUnitPickerTrigger("attacker");
+    updateUnitPickerTrigger("target");
+    updateWeapons();
+    const remembered = lastWeaponByUnit.get(targetId);
+    if (remembered && [...$("weapon").options].some((item) => item.value === remembered)) {
+      $("weapon").value = remembered;
+      updateWeaponMeta();
+    }
+    updateTargetType();
+    calculate();
+  }
+
   function updateUnitPickerTrigger(role) {
     const select = $(role);
     const unit = data.units.find((item) => item.id === select?.value);
@@ -185,6 +222,7 @@
     if (!value || !meta) return;
     setUnitTitle(value, unit);
     meta.textContent = unit ? unitPickerMeta(unit) : "--";
+    updateSwapButton();
   }
 
   function updateUnitPickerFilterButtons() {
@@ -898,6 +936,7 @@
   updateWeaponMeta();
   updateTargetType();
 
+  $("swapUnits").addEventListener("click", swapUnits);
   $("attackerPicker").addEventListener("click", () => openUnitPicker("attacker"));
   $("targetPicker").addEventListener("click", () => openUnitPicker("target"));
   $("unitPickerClose").addEventListener("click", () => $("unitPickerDialog").close());
