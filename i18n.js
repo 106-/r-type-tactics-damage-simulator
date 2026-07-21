@@ -141,6 +141,8 @@
     "notes.avoid.title": "Evasion & accuracy",
     "notes.avoid.formula": "Effective evasion = Target evasion + [Focus: target evasion × 0.5 / occupied hexes] + Terrain evasion − Weapon accuracy",
     "notes.avoid.body": "After clamping to 0–100%, one 24-bit uniform random value is compared. Focusing on evasion adds <code>0.5 / occupied hexes</code> times base evasion. This bonus is not received while counterattacking or intercepting.",
+    "notes.avoid.displayMismatch": "<b>In-game UI discrepancy:</b> The displayed ‘Evasion +25%’ is neither the actual bonus nor the unit's base evasion. The focus button never updates its numeric text field, leaving the Widget Designer placeholder <code>+25%</code> visible for every unit. The real focus bonus is calculated separately from base evasion and occupied hexes. No damage reduction corresponding to ‘Defense’ was found.",
+    "notes.avoid.multiHexTerrain": "<b>Multi-hex units and terrain:</b> Terrain evasion checks only the terrain under the unit's reference hex, not every occupied hex. Terrain under an edge hex contributes nothing; terrain under the reference hex is added once at full value without division by occupied hexes.",
     "notes.avoid.bypassTitle": "Guaranteed-hit bypass",
     "notes.avoid.bypassFormula": "Guaranteed-hit bypass enabled → 0% evasion / 100% hit rate",
     "notes.avoid.bypassBody": "Attacks with this setting bypass the normal calculation using target evasion, terrain evasion, and weapon accuracy. A displayed accuracy of 100% or the Particle attribute itself is not the direct condition.",

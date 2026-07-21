@@ -399,6 +399,8 @@
                 data-i18n="notes.avoid.formula">実効回避 = 対象回避 + [回避専念時: 対象回避 × 0.5 / 占有HEX数] + 地形回避 − 武器命中</code></div>
             <p data-i18n-html="notes.avoid.body">0～100%に制限後、24bit一様乱数を1回比較します。回避に専念すると、基礎回避率の <code>0.5 /
                 占有HEX数</code> 倍を加算します。反撃・迎撃時はこのボーナスを受けません。</p>
+            <p data-i18n-html="notes.avoid.displayMismatch"><b>ゲーム内UIの表示について:</b> 「回避・防御に専念する」は常に「回避率 +25%」として表示されますが、これは実際の回避率補正ではありません。専念ボタンの数値欄が更新されず、初期値 <code>+25%</code> が残る表示バグのようです。実際の専念ボーナスは基礎回避率と占有HEX数から別途計算されます。</p>
+            <p data-i18n-html="notes.avoid.multiHexTerrain"><b>複数HEXと地形:</b> 大型艦船などの複数HEXを持つユニットの地形回避は占有HEX全体ではなく、ユニットの基準HEXにある地形だけ(マークがあるHEX)を参照します。</p>
             <h4 class="knowledge-subtitle" data-i18n="notes.avoid.bypassTitle">必中バイパス</h4>
             <div class="formula-box"><code data-i18n="notes.avoid.bypassFormula">必中バイパス設定あり → 回避率 0% / 命中率 100%</code>
             </div>

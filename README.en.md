@@ -54,6 +54,8 @@ Effective evasion = Target evasion + [Focus: target evasion × 0.5 / occupied he
 
 After clamping to 0–100%, one 24-bit uniform random value is compared. "Focus on evasion" adds `0.5 / occupied hexes` times base evasion. This bonus is not received while counterattacking or intercepting. The simulator treats evasion focus and interception weapons as mutually exclusive.
 
+> **In-game UI discrepancy:** The displayed `Evasion +25%` is neither the actual bonus nor the unit's base evasion. The focus button never updates its numeric text field, leaving the Widget Designer placeholder `+25%` visible for every unit. The real focus bonus is calculated separately from base evasion and occupied hexes. No damage reduction corresponding to “Defense” was found.
+
 #### Guaranteed-hit bypass
 
 ```
