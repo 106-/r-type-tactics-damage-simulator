@@ -133,6 +133,15 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .probability p, .damage-card p { font-size: 14px; color: var(--muted); margin: 0 }
 .damage-card>strong { display: inline-block; margin-top: 8px; font-family: var(--mono); font-size: 58px; line-height: 1; color: #ffc066 }
 .damage-card>span { display: inline-block; margin-left: 12px; font-size: 19px; font-weight: 700; color: var(--amber); vertical-align: 5px; letter-spacing: .02em }
+.battle-modifier { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 2px 12px; width: fit-content; margin-top: 14px; padding: 8px 12px; border-left: 3px solid var(--faint); background: #0a171c }
+.battle-modifier>span { color: var(--muted); font-size: 11px; letter-spacing: .08em }
+.battle-modifier>b { grid-row: 1 / span 2; grid-column: 1; min-width: 58px; font-size: 22px; line-height: 1; letter-spacing: -.15em; text-align: center }
+.battle-modifier>small { color: var(--faint); font-size: 11px; line-height: 1.35 }
+.battle-modifier.is-positive { border-left-color: var(--cyan); background: #0c2425 }
+.battle-modifier.is-positive>b { color: var(--cyan) }
+.battle-modifier.is-negative { border-left-color: var(--red); background: #251718 }
+.battle-modifier.is-negative>b { color: #ff998e }
+.battle-modifier.is-neutral>b { color: var(--muted) }
 .range { display: flex; align-items: center; gap: 10px; margin-top: 16px; font-family: var(--mono) }
 .range-track { position: relative; flex: 1 }
 .range-track > i { display: block; height: 2px; background: linear-gradient(90deg, var(--cyan), var(--amber)) }

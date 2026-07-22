@@ -608,6 +608,65 @@
     return { damage, effectiveDefense, intercept, effectiveAp, tackleSelfDamage };
   }
 
+  // The battle scene compares the final damage with a second calculation that
+  // keeps common factors (power, formation, interception and the same RNG) but
+  // omits terrain/status reductions, conditional additions and type affinity.
+  function comparisonDamage(weapon, randomValue, attacker, target) {
+    const rank = Number($("rank").value);
+    const effectiveAp = effectiveWeaponAp(weapon, attacker, rank);
+    const formation = Math.min(1, Math.max(0, Number($("formationCurrent").value) / Math.max(1, Number($("formationMax").value))));
+    const intercept = interceptDetails(weapon, attacker, target).rate;
+    const isCounter = $("attackMode").value === "counter";
+    const randomMod = isCounter ? 1 + randomValue * .425 : 1 - randomValue * .425;
+    return effectiveAp * formation * (1 - intercept) * randomMod;
+  }
+
+  function battleModifierAt(weapon, randomValue, attacker, target) {
+    const actual = baseBeforeRandom(weapon, randomValue, attacker, target);
+    const comparison = comparisonDamage(weapon, randomValue, attacker, target);
+    if (actual.tackleSelfDamage.destroyed || !(comparison > .0001)) return { rate: 0, grade: 0, arrows: "—" };
+
+    // divss/subss in the game operate on float32. Keeping the ratio in float32
+    // also preserves boundary behaviour around the 10% and 20% tiers.
+    const quotient = Math.fround(Math.fround(actual.damage) / Math.fround(comparison));
+    const rate = Math.fround(1 - quotient);
+    const magnitude = Math.abs(rate);
+    const grade = magnitude < .0001 ? 0 : magnitude < .1 ? 1 : magnitude < .2 ? 2 : 3;
+    return {
+      rate,
+      grade,
+      arrows: grade === 0 ? "—" : (rate > 0 ? "🔼" : "🔽").repeat(grade),
+    };
+  }
+
+  function renderBattleModifier(weapon, attacker, target) {
+    const mean = battleModifierAt(weapon, .5, attacker, target);
+    const endpoints = [battleModifierAt(weapon, 0, attacker, target), battleModifierAt(weapon, 1, attacker, target)];
+    const element = $("battleModifier");
+    $("battleModifierArrows").textContent = mean.arrows;
+    element.classList.toggle("is-positive", mean.rate > 0 && mean.grade > 0);
+    element.classList.toggle("is-negative", mean.rate < 0 && mean.grade > 0);
+    element.classList.toggle("is-neutral", mean.grade === 0);
+
+    const percent = Math.abs(mean.rate) * 100;
+    const meaning = mean.grade === 0
+      ? L("補正なし（矢印表示なし）", "No modifier (no arrows)")
+      : mean.rate > 0
+      ? L(`被ダメージ抑制 ${percent.toFixed(1)}%`, `Damage reduction ${percent.toFixed(1)}%`)
+      : L(`与ダメージ増加 ${percent.toFixed(1)}%`, `Damage increase ${percent.toFixed(1)}%`);
+    const endpointArrows = [...new Set(endpoints.map((value) => value.arrows))];
+    $("battleModifierDetail").textContent = endpointArrows.length > 1
+      ? L(
+        `中央乱数時 ${mean.arrows}（${meaning}） / 乱数幅 ${endpointArrows.join("～")}`,
+        `Midpoint RNG ${mean.arrows} (${meaning}) / RNG range ${endpointArrows.join("–")}`,
+      )
+      : meaning;
+    element.title = L(
+      "実ダメージと、相性・地形防御・条件補正を外した同一乱数の比較用ダメージから算出",
+      "Calculated from actual damage and same-RNG comparison damage without affinity, terrain defense, or conditional modifiers",
+    );
+  }
+
   function targetMaxHp(target) {
     return unitMaxHp(target, Number($("targetRank").value));
   }
@@ -688,6 +747,9 @@
     renderFormula("damageFormulaBox", "damageFormula", []);
     $("damageExpected").textContent = "--";
     $("damageContext").textContent = "";
+    $("battleModifierArrows").textContent = "—";
+    $("battleModifierDetail").textContent = L("補正なし（矢印表示なし）", "No modifier (no arrows)");
+    $("battleModifier").className = "battle-modifier is-neutral";
     $("damageMin").textContent = "--";
     $("damageMax").textContent = "--";
     $("damageSegments").hidden = true;
@@ -827,6 +889,7 @@
     $("damageContext").textContent = formationMax === 5
       ? L(`${lossMean}機減`, `${lossMean} unit${lossMean === 1 ? "" : "s"} lost`)
       : L(`HP ${percent(dMean.damage).toFixed(1)}%減`, `${percent(dMean.damage).toFixed(1)}% HP lost`);
+    renderBattleModifier(weapon, attacker, target);
     $("damageMin").textContent = min.toFixed(1);
     $("damageMax").textContent = max.toFixed(1);
     renderDamageSegments(min, max, maxHp, formationMax, dMean.damage);

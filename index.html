@@ -249,6 +249,11 @@
             <p class="formula-box-title" data-i18n="result.avoidFormulaTitle">命中率の式</p>
             <div id="avoidFormula" class="formula-rows"></div>
           </div>
+          <div id="battleModifier" class="battle-modifier is-neutral">
+            <span data-i18n="result.battleModifier">戦闘アニメーション矢印表示</span>
+            <b id="battleModifierArrows">—</b>
+            <small id="battleModifierDetail">補正なし</small>
+          </div>
           <dl class="summary">
             <div>
               <dt data-i18n="result.targetMaxHp">対象最大HP（満タン）</dt>
@@ -389,6 +394,15 @@
                   data-i18n="notes.flow.counterRngRange">100～142.5%</strong><span
                   data-i18n="notes.flow.counterRngMean">平均121.25%</span></div>
             </div>
+            <p data-i18n-html="notes.flow.battleModifier"><b>戦闘アニメーションの補正矢印アイコン:</b>
+              算出済みの実ダメージと、地形防御・属性相性・条件補正などを外し、同じ威力乱数で再計算した比較用ダメージとの比率を、🔼/🔽の1～3個で表示します。矢印方向は防御側基準のようで、🔼はダメージ減少、🔽はダメージ増加を示します。</p>
+            <ul class="knowledge-list">
+              <li data-i18n-html="notes.flow.battleModifierNone"><b>表示なし:</b> 補正率の絶対値が0.01%未満</li>
+              <li data-i18n-html="notes.flow.battleModifierOne"><b>🔼 / 🔽:</b> 0.01%以上、10%未満</li>
+              <li data-i18n-html="notes.flow.battleModifierTwo"><b>🔼🔼 / 🔽🔽:</b> 10%以上、20%未満</li>
+              <li data-i18n-html="notes.flow.battleModifierThree"><b>🔼🔼🔼 / 🔽🔽🔽:</b> 20%以上</li>
+            </ul>
+            <p class="hint" data-i18n="notes.flow.battleModifierThresholdNote">閾値は画面用に丸めた百分率ではなく、内部の単精度浮動小数点値で判定されます。そのため、表示上20.0%でも内部値がわずかに20%未満なら矢印2個になる場合があります。</p>
           </section>
 
           <section id="knowledgeAvoid">

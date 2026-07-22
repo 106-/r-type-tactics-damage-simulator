@@ -94,6 +94,7 @@
     "terrain.hint": "The parentheses show representative terrain found in the extracted data. Maps may apply different modifiers to similarly named terrain.",
 
     "result.damageTitle": "Average damage on hit",
+    "result.battleModifier": "Combat-animation arrows",
     "result.min": "Minimum",
     "result.max": "Maximum",
     "result.tackleRecoil": "Recoil to attacker",
@@ -137,6 +138,12 @@
     "notes.flow.counterRng": "Counterattack RNG",
     "notes.flow.counterRngRange": "100–142.5%",
     "notes.flow.counterRngMean": "Mean 121.25%",
+    "notes.flow.battleModifier": "<b>Combat-animation modifier arrows:</b> The game calculates actual damage, then recalculates comparison damage with the same damage RNG but without terrain defense, affinity, conditional modifiers, and similar effects. It displays their ratio using one to three 🔼/🔽 icons. Arrow direction is defense-oriented: 🔼 means reduced damage, while 🔽 means increased damage.",
+    "notes.flow.battleModifierNone": "<b>No icon:</b> absolute modifier below 0.01%",
+    "notes.flow.battleModifierOne": "<b>🔼 / 🔽:</b> at least 0.01% but below 10%",
+    "notes.flow.battleModifierTwo": "<b>🔼🔼 / 🔽🔽:</b> at least 10% but below 20%",
+    "notes.flow.battleModifierThree": "<b>🔼🔼🔼 / 🔽🔽🔽:</b> 20% or more",
+    "notes.flow.battleModifierThresholdNote": "Thresholds use the internal single-precision floating-point value rather than the percentage rounded for display. A value shown as 20.0% can therefore produce two icons if its internal value is slightly below 20%.",
 
     "notes.avoid.title": "Evasion & accuracy",
     "notes.avoid.formula": "Effective evasion = Target evasion + [Focus: target evasion × 0.5 / occupied hexes] + Terrain evasion − Weapon accuracy",
