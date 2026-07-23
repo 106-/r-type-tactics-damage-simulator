@@ -84,7 +84,7 @@
               <span data-i18n="attacker.partialCover">部分遮蔽</span> <span id="partialCoverStatus"
                 class="condition-badge">--</span></label>
           </div>
-          <p class="hint" data-i18n="attacker.partialCoverHint">部分遮蔽は、距離2の攻撃で2つある中間経路の片方だけが地形・障害物ユニットに遮られた状態です。対象武器ではダメージが50%になります。</p>
+          <p class="hint" data-i18n="attacker.partialCoverHint">部分遮蔽は、最大距離2の攻撃・直線射撃方式・非機械属性の攻撃で2つある中間経路の片方だけが地形・障害物ユニットに遮られた状態です。</p>
         </section>
 
         <section class="panel">
@@ -141,7 +141,7 @@
                 <span data-i18n="intercept.relaxRange">迎撃距離制限の緩和</span>
                 <span id="relaxInterceptRangeStatus" class="condition-badge">OFF</span></label>
             </div>
-            <p class="hint" data-i18n="intercept.relaxRangeHint">ONにすると、ユニットの形状によって迎撃できる状況を再現するため、迎撃武器の距離制限を無視します。</p>
+            <p class="hint" data-i18n="intercept.relaxRangeHint">ONにすると迎撃武器の距離制限を無視します。距離1攻撃を距離2武器で迎撃できる場合など、 HEX形状の都合上あり得るパターンを再現する際に使います。</p>
             <div class="grid three">
               <label><span data-i18n="intercept.weapon">迎撃武器</span>
                 <select id="interceptWeapon" disabled>
@@ -520,7 +520,7 @@
               <li data-i18n-html="notes.terrain.defense"><b>地形防御</b>は命中後のダメージ減衰です。現在確認できた実HP式では光学属性に適用され、機械属性ミサイルなどはバイパスします。
               </li>
               <li data-i18n-html="notes.terrain.walls"><b>機械壁・生体壁</b>は地形回避と光学地形防御の特例対象です。</li>
-              <li data-i18n-html="notes.terrain.partialCover"><b>部分遮蔽</b>は最大射程2で中間経路の片方だけが塞がる状態。機械属性以外のダメージを50%にします。
+              <li data-i18n-html="notes.terrain.partialCover"><b>部分遮蔽</b>は距離2で複数ある射線候補の一部だけが地形・障害物ユニットに塞がる状態です。通常の直線射撃方式・最大射程2・非機械属性の武器に限り、ダメージを50%にします。偏向光学、射程1、最大射程3以上の武器は対象外です。
               </li>
             </ul>
           </section>

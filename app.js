@@ -382,7 +382,10 @@
   }
 
   function partialCoverEligible(weapon) {
-    return Boolean(weapon && effectiveAttackRange(weapon).max === 2 && weapon.material !== 1);
+    return Boolean(weapon
+      && weapon.motion === 0
+      && effectiveAttackRange(weapon).max === 2
+      && weapon.material !== 1);
   }
 
   function updatePartialCoverControl(weapon) {
@@ -401,9 +404,12 @@
     } else if (weapon.material === 1) {
       status.textContent = L("機械属性は無視", "Ignored by mechanical");
       label.title = L("機械属性は部分遮蔽による50%減衰を受けません", "Mechanical attacks are not reduced by partial cover");
+    } else if (weapon.motion !== 0) {
+      status.textContent = L("直線射撃のみ", "Direct-fire only");
+      label.title = L("部分遮蔽による50%減衰は通常の直線射撃方式にのみ適用されます", "Partial cover's 50% reduction applies only to normal direct-fire attacks");
     } else if (effectiveAttackRange(weapon).max !== 2) {
       status.textContent = L("最大射程2のみ", "Maximum range 2 only");
-      label.title = L("部分遮蔽フラグは最大射程2の攻撃でのみ生成されます", "Partial cover is generated only for attacks with maximum range 2");
+      label.title = L("部分遮蔽による50%減衰は最大射程2の攻撃にのみ適用されます", "Partial cover's 50% reduction applies only to attacks with maximum range 2");
     } else {
       status.textContent = L("有効時 −50%", "−50% when enabled");
       label.title = L("中間経路の片方だけが遮られている場合に選択します", "Enable when only one intermediate path is blocked");

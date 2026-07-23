@@ -56,7 +56,7 @@
     "attacker.formationHint": "The veterancy-improved stat and maximum formation are set by the selected unit. Only five-unit formations can change their current unit count.",
     "attacker.knockback": "Knockback destination is blocked",
     "attacker.partialCover": "Partial cover",
-    "attacker.partialCoverHint": "Partial cover occurs when one of the two intermediate paths of a range-2 attack is blocked by terrain or an obstacle unit. Eligible weapons deal 50% damage.",
+    "attacker.partialCoverHint": "Partial cover occurs when one of the two intermediate paths of a range-2 attack is blocked by terrain or an obstacle unit. Only normal direct-fire, maximum-range-2, non-mechanical weapons deal 50% damage.",
 
     "target.title": "Target",
     "target.swapLabel": "Swap sides",
@@ -176,7 +176,7 @@
     "notes.terrain.avoid": "<b>Terrain evasion</b> is added directly to the block rate used by the hit check.",
     "notes.terrain.defense": "<b>Terrain defense</b> reduces damage after a hit. In the verified HP formula it applies to optical attacks, while mechanical missiles and similar weapons bypass it.",
     "notes.terrain.walls": "<b>Mechanical and biological walls</b> are special cases for terrain evasion and optical terrain defense.",
-    "notes.terrain.partialCover": "<b>Partial cover</b> occurs at maximum range 2 when only one intermediate path is blocked. It reduces non-mechanical damage to 50%.",
+    "notes.terrain.partialCover": "<b>Partial cover</b> occurs at range 2 when some, but not all, line-of-fire paths are blocked by terrain or obstacle units. It reduces damage to 50% only for normal direct-fire, maximum-range-2, non-mechanical weapons. Deflected optical attacks, range-1 weapons, and weapons with a maximum range of 3 or more are excluded.",
 
     "notes.intercept.title": "Interception is proportional weapon-vs-weapon reduction",
     "notes.intercept.intro": "The target's interception weapons are candidates against mechanical, biological, and ice attacks.",
