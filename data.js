@@ -460,8 +460,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_DR",
@@ -487,8 +488,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UL",
@@ -514,8 +516,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.B_FLOWER_TSUTA_UR",
@@ -541,8 +544,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.B_RIBOT",
@@ -3729,8 +3733,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_YOKO_6",
@@ -3756,8 +3761,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_3_UE",
@@ -3783,8 +3789,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA",
@@ -3810,8 +3817,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_6",
@@ -3837,8 +3845,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_1",
@@ -3864,8 +3873,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_8",
@@ -3891,8 +3901,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_3_SHITA_G",
@@ -3918,8 +3929,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_DEGI_6_Y",
@@ -3945,8 +3957,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_YOUGAN_01",
@@ -3972,8 +3985,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_YOUGAN_02",
@@ -3999,8 +4013,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_YOUGAN_03",
@@ -4026,8 +4041,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_YOUGAN_04",
@@ -4053,8 +4069,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_YOUGAN_05",
@@ -4080,8 +4097,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.YOUGAN_A",
@@ -4107,8 +4125,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.YOUGAN_B",
@@ -4134,8 +4153,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.YOUGAN_C",
@@ -4161,8 +4181,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.YOUGAN_D",
@@ -4188,8 +4209,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A",
@@ -4215,8 +4237,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_01",
@@ -4242,8 +4265,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_A_02",
@@ -4269,8 +4293,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B",
@@ -4296,8 +4321,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_01",
@@ -4323,8 +4349,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_02",
@@ -4350,8 +4377,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_03",
@@ -4377,8 +4405,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_B_04",
@@ -4404,8 +4433,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C",
@@ -4431,8 +4461,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_01",
@@ -4458,8 +4489,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_C_02",
@@ -4485,8 +4517,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D",
@@ -4512,8 +4545,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_01",
@@ -4539,8 +4573,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_02",
@@ -4566,8 +4601,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_03",
@@ -4593,8 +4629,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_PROMINENCE_D_04",
@@ -4620,8 +4657,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_METEOR_A",
@@ -4647,8 +4685,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_METEOR_B",
@@ -4674,8 +4713,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.B_YOUKAI_EKI",
@@ -4701,8 +4741,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_A",
@@ -4728,8 +4769,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_B",
@@ -4755,8 +4797,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_C",
@@ -4782,8 +4825,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.N_HEAT_METAL_D",
@@ -4809,8 +4853,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.E_R902",
@@ -6037,8 +6082,9 @@ window.RTYPE_SIM_DATA = {
             "variantSource": null,
             "playabilityStatus": "nonplayable",
             "selectableAsAttacker": false,
-            "selectableAsTarget": true,
-            "labelQualifier": null
+            "selectableAsTarget": false,
+            "labelQualifier": null,
+            "indestructible": true
         },
         {
             "id": "UNIT_ID.B_LEO_PLANT_BOSS_CORE",
