@@ -14,7 +14,7 @@
   const en = {
     "hero.languageLabel": "Display language",
     "hero.subtitle": "Combat Simulator",
-    "hero.notesButton": "Analysis Notes",
+    "hero.notesButton": "Damage System Details",
     "app.disclaimer": "This is an unofficial tool based on reverse engineering. Results may differ from the actual game.",
 
     "common.unitSearch": "Search units",
@@ -108,7 +108,7 @@
     "result.formationLoss": "Formation loss from full HP",
     "result.formationRule": "A five-unit formation loses one unit each time HP loss exceeds another 20% threshold.",
 
-    "notes.title": "Damage System Analysis",
+    "notes.title": "Damage System Details",
     "notes.close": "Close",
     "notes.toc": "Analysis notes contents",
     "notes.nav.flow": "01 Combat flow",
@@ -152,7 +152,7 @@
     "notes.avoid.bypassTitle": "Guaranteed hit",
     "notes.avoid.bypassFormula": "Guaranteed-hit setting enabled → 0% evasion / 100% hit rate",
     "notes.avoid.bypassBody": "Attacks with guaranteed-hit setting, primarily charge weapons, bypass the normal calculation using target evasion, terrain evasion, and weapon accuracy.",
-    "notes.avoid.bypassDisplay": "<b>Displayed accuracy below 100% can still be a guaranteed hit.</b> Ivy Rod displays 75%, but its guaranteed-hit bypass skips the evasion calculation in battle.",
+    "notes.avoid.bypassDisplay": "<b>Displayed accuracy below 100% can still be a guaranteed hit.</b> Ivy Rod displays 75%, but its guaranteed-hit setting skips the evasion calculation in battle.",
 
     "notes.affinity.title": "Attribute affinity",
     "notes.affinity.intro": "Weapons and units each have attributes. There are 8 weapon attributes and 5 unit attributes. Their combination determines damage amplification and reduction.",

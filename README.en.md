@@ -2,7 +2,7 @@
 
 [日本語版 README はこちら](README.md)
 
-Simulates attack, interception, and counterattack damage as well as evasion rates for the weapons in R-TYPE TACTICS. Built on reverse-engineered game data.
+Simulates attack, interception, and counterattack damage as well as evasion rates for the weapons in [R-Type Tactics I•II Cosmos](https://rtypetactics.com/). Built on reverse-engineered game data.
 
 Try it here:
 
@@ -57,7 +57,7 @@ Guaranteed-hit setting enabled → 0% evasion / 100% hit rate
 
 Attacks with guaranteed-hit setting, primarily charge weapons, bypass the normal calculation using target evasion, terrain evasion, and weapon accuracy.
 
-- **Displayed accuracy below 100% can still be a guaranteed hit.** Ivy Rod displays 75%, but its guaranteed-hit bypass skips the evasion calculation in battle.
+- **Displayed accuracy below 100% can still be a guaranteed hit.** Ivy Rod displays 75%, but its guaranteed-hit setting skips the evasion calculation in battle.
 
 ### 03 Attribute affinity
 
