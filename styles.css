@@ -48,6 +48,7 @@ input[type=number] { font-family: var(--mono) }
 .language-control { display: flex; align-items: center; gap: 8px; margin-top: 0; color: var(--muted); font: 600 11px/1 "IBM Plex Mono", monospace; letter-spacing: .08em }
 .language-control select { min-width: 112px; height: 38px; margin-top: 0; padding: 0 30px 0 10px }
 .knowledge-open { height: 38px; border: 1px solid #32636a; background: #0b2025; color: var(--ink-strong); padding: 0 13px; font-size: 13px; letter-spacing: .08em; cursor: pointer }
+.knowledge-open.tool-link { display: inline-flex; align-items: center; text-decoration: none }
 .knowledge-open:hover, .knowledge-open:focus-visible { border-color: var(--cyan); color: var(--cyan); outline: none }
 .knowledge-open span[aria-hidden] { display: inline-grid; place-items: center; width: 18px; height: 18px; margin-right: 6px; border: 1px solid currentColor; border-radius: 50%; font-family: Georgia, serif; font-size: 12px; font-weight: 700 }
 

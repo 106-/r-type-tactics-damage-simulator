@@ -6,8 +6,8 @@
   let language = LANGUAGES.includes(paramLang)
     ? paramLang
     : LANGUAGES.includes(stored)
-    ? stored
-    : String(navigator.language || "").toLowerCase().startsWith("ja") ? "ja" : "en";
+      ? stored
+      : String(navigator.language || "").toLowerCase().startsWith("ja") ? "ja" : "en";
 
   // 英訳辞書。日本語の原文はHTML側だけが持つ（data-i18n / data-i18n-html / data-i18n-* 属性で紐付け）。
   // data-i18n はtextContent、data-i18n-html はinnerHTMLを差し替える。
@@ -15,7 +15,78 @@
     "hero.languageLabel": "Display language",
     "hero.subtitle": "Combat Simulator",
     "hero.notesButton": "Damage System Details",
+    "hero.rngButton": "RNG State Predictor",
     "app.disclaimer": "This is an unofficial tool based on reverse engineering. Results may differ from the actual game.",
+
+    "rng.hero.subtitle": "RNG State Predictor",
+    "rng.hero.simulator": "Damage Simulator",
+    "rng.guide.summary": "How to use — identify the RNG seed and predict the next attack",
+    "rng.guide.intro": "This tool identifies the RNG seed used by R-TYPE TACTICS. Once narrowed down, it can deterministically calculate whether the next attack event will hit and how much damage it will deal.",
+    "rng.guide.step1": "Start the game. As soon as the legal notice screen appears—within about three seconds—press “Reset inputs” on this page. The PC's current time is entered in the startup-time field.",
+    "rng.guide.step2": "Deploy on any map and enter combat results in order, including damage dealt to enemies and damage received from them.",
+    "rng.guide.step3": "After entering several logs, press “Run analysis.” Seeds inconsistent with the observations are rejected and the remaining candidates are displayed.",
+    "rng.guide.step4": "Once one seed remains, press “Enter prediction mode with this seed.” Predict an attack, then add it to the simplified log only after performing it in the game. You can then keep predicting subsequent hits, evasions, and damage.",
+    "rng.guide.tipTitle": "How to narrow candidates faster",
+    "rng.guide.tip": "Displayed HP before → after on an HP-based unit contains more information than unit losses in a formation, so it usually reduces the candidate set faster.",
+    "rng.guide.recommend": "TAC2 Part 1, No.17 “Ice Planet — Uranus” (the English title may differ) is recommended. A medium ice block, an HP-based object, is close to the starting position. Attack it repeatedly with a Vulcan or similar weapon and record each HP change.",
+    "rng.guide.persistence": "Aborting a mission does not reset the RNG consumption state already advanced within that game process. Without closing the game, you can select another mission and continue predicting its RNG outcomes.",
+    "rng.guide.titleRngWarning": "Clearing a stage consumes the RNG multiple times to determine your title—once for each title candidate—so subsequent outcomes can no longer be predicted reliably. To prevent this and continue using the tool after clearing a stage, open General Information → Commander Profile and set Title Update Settings to No Updates.",
+    "rng.disclaimer": "Prototype for a clean game restart followed by an existing save, without online play or first-time gift generation.",
+    "rng.status.candidates": "Remaining candidates",
+    "rng.status.logs": "Applied logs",
+    "rng.status.state": "Status",
+    "rng.status.notRun": "Not analyzed",
+    "rng.mode.active": "Seed identified — prediction mode",
+    "rng.mode.hint": "After performing a predicted attack, add it to the simplified log to advance to the next RNG state.",
+    "rng.mode.leave": "Restart investigation",
+    "rng.mode.enter": "Enter prediction mode with this seed",
+    "rng.seed.title": "Startup time",
+    "rng.seed.noticeTime": "Local time when the notice screen appeared",
+    "rng.seed.tolerance": "Tolerance before/after",
+    "rng.seed.offset": "Search-center offset",
+    "rng.seed.now": "Use current time",
+    "rng.seed.reset": "Reset inputs",
+    "rng.seed.hint": "The tool enumerates every millisecond within the tolerance. Seeding occurs before the notice screen; if no candidate survives, move the center offset earlier.",
+    "rng.roster.title": "Battle participants",
+    "rng.roster.search": "Search units",
+    "rng.roster.side": "Side",
+    "rng.roster.ally": "Ally",
+    "rng.roster.enemy": "Enemy",
+    "rng.roster.unit": "Unit",
+    "rng.roster.name": "Instance name",
+    "rng.roster.namePlaceholder": "Set automatically",
+    "rng.roster.add": "Add",
+    "rng.roster.empty": "Add at least two units participating in the battle.",
+    "rng.picker.title": "Select a unit",
+    "rng.picker.close": "Close",
+    "rng.picker.searchPlaceholder": "Name or unit ID",
+    "rng.picker.empty": "No matching units.",
+    "rng.logs.title": "Combat log",
+    "rng.logs.empty": "Add attack results in the order they occurred.",
+    "rng.logs.add": "Add attack log",
+    "rng.logs.end": "Add battle end",
+    "rng.logs.hint": "Add a counterattack as a separate log in counter mode after the initiating attack. Tracking stops at battle end before title/result evaluation.",
+    "rng.analyze.title": "Narrow candidates from the log",
+    "rng.analyze.dirty": "Replay after changing any input.",
+    "rng.analyze.run": "Run analysis",
+    "rng.results.title": "Candidates",
+    "rng.results.unique": "RNG state uniquely identified",
+    "rng.results.notRun": "Analysis has not been run yet.",
+    "rng.results.showTimes": "Show candidate times",
+    "rng.predict.title": "Predict next attack",
+    "rng.predict.run": "Predict this attack",
+    "rng.predict.notReady": "Run analysis, then specify the next attack.",
+    "rng.predictionLog.title": "Simplified combat log",
+    "rng.predictionLog.attack": "Attack performed / received",
+    "rng.predictionLog.charged": "Charged attack performed / received",
+    "rng.predictionLog.stageClear": "Stage cleared",
+    "rng.notes.title": "Input notes",
+    "rng.notes.restart": "Measurements assume the game was fully closed and restarted.",
+    "rng.notes.fullHp": "HP-based units start at maximum HP. For five-unit formations, enter the formation count visible at battle start.",
+    "rng.notes.hpDisplay": "Enter visible losses as before → after. Surviving HP is at least 1, while 0 means destroyed. A later log's before value is filled from the preceding result.",
+    "rng.notes.damagedFormation": "Starting below five units leaves the surviving unit's internal HP unknown, so recording every attack from battle start is more reliable.",
+    "rng.notes.unsupported": "Capture, multi-target area attacks, fuel absorption, and post-battle title evaluation are outside this prototype.",
+    "rng.notes.zero": "If no candidate survives, check the time window, missing events, counterattack order, and transcribed display values.",
 
     "common.unitSearch": "Search units",
     "common.rank": "Veterancy rank",
@@ -221,11 +292,20 @@
 
   function translateStatic() {
     document.documentElement.lang = language;
-    document.title = language === "ja" ? "R-TYPE TACTICS 戦闘シミュレータ" : "R-TYPE TACTICS Combat Simulator";
+    const rngPage = document.body?.dataset.app === "rng";
+    document.title = rngPage
+      ? language === "ja" ? "R-TYPE TACTICS 乱数状態推定器" : "R-TYPE TACTICS Random State Predictor"
+      : language === "ja" ? "R-TYPE TACTICS 戦闘シミュレータ" : "R-TYPE TACTICS Combat Simulator";
     const description = document.querySelector('meta[name="description"]');
-    if (description) description.content = language === "ja"
-      ? "R-TYPE TACTICSの攻撃・迎撃・反撃ダメージと回避率を解析データに基づいて計算するシミュレータ。"
-      : "A simulator for R-TYPE TACTICS attack, interception, counterattack damage, and evasion based on reverse-engineered data.";
+    if (description) {
+      description.content = rngPage
+        ? language === "ja"
+          ? "R-TYPE TACTICSの戦闘ログから乱数シードを推定し、未来の攻撃結果を予測する試作ツール。"
+          : "A prototype that narrows the R-TYPE TACTICS random seed from combat logs and predicts the future attack."
+        : language === "ja"
+          ? "R-TYPE TACTICSの攻撃・迎撃・反撃ダメージと回避率を解析データに基づいて計算するシミュレータ。"
+          : "A simulator for R-TYPE TACTICS attack, interception, counterattack damage, and evasion based on reverse-engineered data.";
+    }
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       if (!originalText.has(element)) originalText.set(element, element.textContent);
       if (language === "ja") {

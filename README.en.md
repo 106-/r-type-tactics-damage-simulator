@@ -1,8 +1,13 @@
-# R-TYPE TACTICS Damage Simulator
+# R-TYPE TACTICS Damage Simulator & RNG State Estimator
 
 [日本語版 README はこちら](README.md)
 
-Simulates attack, interception, and counterattack damage as well as evasion rates for the weapons in [R-Type Tactics I•II Cosmos](https://rtypetactics.com/). Built on reverse-engineered game data.
+Tools for [R-Type Tactics I•II Cosmos](https://rtypetactics.com/) that:
+
+- Simulate attack, interception, and counterattack damage and evasion rates for the weapons (`index.html`)
+- Estimate the RNG seed and deterministically predict the next attack result (`rng.html`)
+
+Built on reverse-engineered game data.
 
 Try it here:
 
@@ -17,6 +22,8 @@ Try it here:
     - Recoil damage to the attacker for tackle attacks
 - Evasion rate calculation based on unit settings
     - Veterancy and terrain modifiers
+- Estimate the RNG seed from the game startup time and the random values observed during actual play
+    - After the seed is estimated, deterministically predict the result of the next attack
 
 ## Damage System Details
 
@@ -48,6 +55,8 @@ Effective evasion = Target evasion + [Focus: target evasion × 0.5 / occupied he
 After clamping to 0–100%, a uniform random value is compared. “Focus on evasion” adds `base evasion × 0.5 / occupied hexes`. This bonus is not received while counterattacking or intercepting.
 
 > **In-game UI note:** “Focus on evasion/defense” always displays “Evasion +25%”, but this appears to be a display bug. The actual focus bonus is calculated separately from base evasion and occupied hexes.
+
+Terrain evasion for multi-hex units references **only the terrain of the unit's reference hex (the marked hex)**, not all occupied hexes.
 
 #### Guaranteed hit
 

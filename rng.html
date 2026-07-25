@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="R-TYPE TACTICSの戦闘ログから乱数の状態を絞り込み、次の攻撃結果を予測するツール。">
+  <meta name="theme-color" content="#071015">
+  <title>R-TYPE TACTICS 乱数状態推定器</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Crect%20width='16'%20height='16'%20fill='%23071015'/%3E%3Ctext%20x='8'%20y='12.5'%20font-family='monospace'%20font-size='11'%20font-weight='bold'%20fill='%2339e5d2'%20text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="rng.css">
+</head>
+
+<body data-app="rng">
+  <main class="shell rng-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">RANDOM STATE ANALYSIS</p>
+        <h1>R-TYPE TACTICS<br><span data-i18n="rng.hero.subtitle">乱数状態推定器</span></h1>
+      </div>
+      <div class="hero-actions">
+        <a class="rng-nav-link" href="index.html" data-i18n="rng.hero.simulator">ダメージシミュレータ</a>
+        <label class="language-control" for="languageSelect"><span>LANGUAGE</span>
+          <select id="languageSelect" aria-label="表示言語" data-i18n-aria-label="hero.languageLabel" data-i18n-ignore>
+            <option value="ja">日本語</option>
+            <option value="en">English</option>
+          </select>
+        </label>
+      </div>
+    </header>
+
+    <details class="rng-guide">
+      <summary data-i18n="rng.guide.summary">使い方 — 乱数シードの特定から次の攻撃予測まで</summary>
+      <div class="rng-guide-body">
+        <p data-i18n="rng.guide.intro">
+          このツールはR-Type Tactics I•II
+          Cosmosで乱数シードを特定するためのものです。シードを特定し、次に起きる攻撃イベントが命中するか、そしてその際のダメージ量を確定的に算出できます。(Steam版で試しているので他プラットフォームで同様に動作できるかは未検証)
+        </p>
+        <ol>
+          <li data-i18n="rng.guide.step1">
+            ゲームを起動し、「ご注意」画面が表示されたら、すぐ（3秒以内）にこのページの「現在時刻を入力」ボタンを押します。PCの現在時刻が起動時刻欄に設定されます。
+          </li>
+          <li data-i18n="rng.guide.step2">
+            好きなマップへ出撃し、敵へ与えたダメージや敵から受けたダメージなど、発生した戦闘結果を順番に戦闘ログへ入力します。
+          </li>
+          <li data-i18n="rng.guide.step3">
+            ログを何件か入力したら「解析を実行」を押します。入力されたログと一致しない乱数シードを除外し、残った候補を表示します。
+          </li>
+          <li data-i18n="rng.guide.step4">
+            シードが1個になったら「このシードで予測モードへ移行」を押します。以後は攻撃を予測し、ゲーム内で実行したものだけを簡易ログへ追加すると、次の命中・回避とダメージを続けて予測できます。
+          </li>
+        </ol>
+        <aside class="rng-guide-tip">
+          <strong data-i18n="rng.guide.tipTitle">早く絞り込むコツ</strong>
+          <p data-i18n="rng.guide.tip">
+            編隊ユニットの損耗機数より、HP制ユニットの変更前→変更後HPを記録する方が一度に得られる情報量が多く、候補を早く減らせます。
+          </p>
+          <p data-i18n="rng.guide.recommend">
+            TAC2前編「No.17 氷の星－天王星」がおすすめです。開始地点の近くにHP制オブジェクト「氷塊・中」があるため、これをバルカンなどで攻撃し、削れていくHPを順次記録すると楽に絞り込めます。
+          </p>
+        </aside>
+        <p class="rng-guide-warning" data-i18n="rng.guide.persistence">
+          ミッションを中断しても、そのゲームプロセス内で進んだ乱数の消費状態はリセットされません。ゲームを終了せずに別のミッションを選び直せば、引き続きそのミッション中の乱数を予測できます。
+        </p>
+        <p class="rng-guide-warning" data-i18n="rng.guide.titleRngWarning">
+          ステージをクリアすると、称号を決定するために乱数が複数回（候補となる称号の数だけ）消費され、その後の予測ができなくなります。これを抑制し、ステージクリア後にも引き続き使えるようにするには、「総合情報」→「指揮官プロフィール」から「通り名更新設定」を「更新なし」にしてください。
+        </p>
+      </div>
+    </details>
+
+    <section class="rng-status-strip" aria-live="polite">
+      <div><span data-i18n="rng.status.candidates">残存候補</span><strong id="candidateCount">—</strong></div>
+      <div><span id="statusLogLabel" data-i18n="rng.status.logs">適用ログ</span><strong id="appliedLogCount">0</strong>
+      </div>
+      <div><span data-i18n="rng.status.state">状態</span><strong id="analysisStatus" class="status-idle"
+          data-i18n="rng.status.notRun">未解析</strong></div>
+    </section>
+
+    <section id="predictionModeBanner" class="prediction-mode-banner" hidden>
+      <div>
+        <p class="eyebrow">PREDICTION MODE</p>
+        <strong data-i18n="rng.mode.active">シード特定済み — 予測モード</strong>
+        <span data-i18n="rng.mode.hint">予測した攻撃を実行後、簡易ログへ追加すると次の乱数状態へ進みます。</span>
+      </div>
+      <button id="leavePredictionMode" type="button" class="danger-button"
+        data-i18n="rng.mode.leave">調査を最初からやり直す</button>
+    </section>
+
+    <section class="rng-layout">
+      <div class="rng-main">
+        <section id="analysisSeedPanel" class="panel rng-panel">
+          <div class="panel-title"><b>01</b>
+            <h2 data-i18n="rng.seed.title">起動時刻</h2>
+          </div>
+          <div class="rng-seed-grid">
+            <label>
+              <span data-i18n="rng.seed.noticeTime">「ご注意」画面が表示されたローカル時刻</span>
+              <input id="noticeTime" type="datetime-local" step="0.001">
+            </label>
+            <label>
+              <span data-i18n="rng.seed.tolerance">前後の許容誤差</span>
+              <span class="input-with-unit"><input id="timeTolerance" type="number" min="0" max="60000" step="100"
+                  value="3000"><i>ms</i></span>
+            </label>
+            <label>
+              <span data-i18n="rng.seed.offset">探索中心の補正</span>
+              <span class="input-with-unit"><input id="timeOffset" type="number" min="-60000" max="60000" step="100"
+                  value="0"><i>ms</i></span>
+            </label>
+          </div>
+          <div class="rng-inline-actions">
+            <button id="setNow" type="button" class="secondary-button" data-i18n="rng.seed.now">現在時刻を入力</button>
+            <button id="resetAll" type="button" class="danger-button" data-i18n="rng.seed.reset">入力を初期化</button>
+          </div>
+          <p class="hint" data-i18n="rng.seed.hint">入力した時刻±許容誤差を1ms刻みで列挙します。シード生成は「ご注意」画面より前なので、候補が0なら中心補正を負方向へ広げてください。
+          </p>
+        </section>
+
+        <section id="rosterPanel" class="panel rng-panel">
+          <div class="panel-title"><b>02</b>
+            <h2 id="rosterTitle" data-i18n="rng.roster.title">戦場ユニット</h2>
+          </div>
+          <div class="roster-adder">
+            <label id="rosterSideControl">
+              <span data-i18n="rng.roster.side">所属</span>
+              <select id="rosterSide">
+                <option value="ally" data-i18n="rng.roster.ally">味方</option>
+                <option value="enemy" data-i18n="rng.roster.enemy">敵</option>
+              </select>
+            </label>
+            <div class="roster-unit-choice">
+              <span data-i18n="rng.roster.unit">ユニット</span>
+              <button id="openRosterUnitPicker" type="button" class="unit-picker-trigger"></button>
+            </div>
+            <label>
+              <span data-i18n="rng.roster.name">個体名</span>
+              <input id="rosterName" type="text" placeholder="自動設定" data-i18n-placeholder="rng.roster.namePlaceholder">
+            </label>
+            <button id="addRoster" type="button" class="primary-button" data-i18n="rng.roster.add">追加</button>
+          </div>
+          <div id="rosterList" class="roster-list"></div>
+          <p id="rosterEmpty" class="empty-state" data-i18n="rng.roster.empty">攻撃に参加するユニットを2体以上追加してください。</p>
+        </section>
+
+        <section id="analysisLogsPanel" class="panel rng-panel">
+          <div class="panel-title"><b>03</b>
+            <h2 data-i18n="rng.logs.title">戦闘ログ</h2>
+          </div>
+          <div id="logList" class="combat-log-list"></div>
+          <p id="logEmpty" class="empty-state" data-i18n="rng.logs.empty">攻撃結果を発生順に追加します。</p>
+          <div class="rng-inline-actions">
+            <button id="addLog" type="button" class="primary-button" data-i18n="rng.logs.add">攻撃ログを追加</button>
+            <button id="markBattleEnd" type="button" class="secondary-button" data-i18n="rng.logs.end">戦闘終了を追加</button>
+          </div>
+          <p class="hint" data-i18n="rng.logs.hint">反撃は、通常攻撃の次に「反撃」モードの別ログとして追加します。称号判定が始まる戦闘終了以後は追跡しません。</p>
+        </section>
+
+        <section id="analysisRunPanel" class="panel rng-panel analyze-panel">
+          <div>
+            <p class="eyebrow">REPLAY & FILTER</p>
+            <h2 data-i18n="rng.analyze.title">ログから候補を絞り込む</h2>
+            <p id="dirtyMessage" class="hint" data-i18n="rng.analyze.dirty">入力を変更したら再解析してください。</p>
+          </div>
+          <button id="runAnalysis" type="button" class="analyze-button" data-i18n="rng.analyze.run">解析を実行</button>
+        </section>
+
+        <section id="predictionLogPanel" class="panel rng-panel prediction-log-panel" hidden>
+          <div class="panel-title"><b>LOG</b>
+            <h2 data-i18n="rng.predictionLog.title">簡易戦闘ログ</h2>
+          </div>
+          <div id="predictionLogSummary" class="prediction-log-summary"></div>
+          <ol id="predictionLogList" class="prediction-log-list"></ol>
+          <div class="prediction-log-composer">
+            <div class="prediction-log-actions">
+              <button type="button" class="primary-button" data-prediction-event="attack"
+                data-i18n="rng.predictionLog.attack">攻撃した／された</button>
+              <button type="button" class="secondary-button" data-prediction-event="charged-attack"
+                data-i18n="rng.predictionLog.charged">チャージ攻撃した／された</button>
+              <button type="button" class="secondary-button" data-prediction-event="stage-clear"
+                data-i18n="rng.predictionLog.stageClear">ステージクリアした</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <aside class="rng-side">
+        <section id="analysisResultPanel" class="panel rng-panel result-panel">
+          <div class="panel-title"><b>04</b>
+            <h2 id="resultPanelTitle" data-i18n="rng.results.title">候補</h2>
+          </div>
+          <div id="uniqueState" class="unique-state" hidden>
+            <span data-i18n="rng.results.unique">乱数状態を一意に特定</span>
+            <strong id="uniqueStateHex"></strong>
+            <small id="uniqueSeedTime"></small>
+            <button id="enterPredictionMode" type="button" class="primary-button wide-button"
+              data-i18n="rng.mode.enter">このシードで予測モードへ移行</button>
+          </div>
+          <div id="candidateSummary" class="candidate-summary">
+            <p data-i18n="rng.results.notRun">まだ解析していません。</p>
+          </div>
+          <ol id="filterSteps" class="filter-steps"></ol>
+          <details id="candidateDetails" class="candidate-details">
+            <summary data-i18n="rng.results.showTimes">候補時刻を表示</summary>
+            <div id="candidateTimes" class="candidate-times"></div>
+          </details>
+        </section>
+
+        <section class="panel rng-panel prediction-panel">
+          <div class="panel-title"><b>05</b>
+            <h2 data-i18n="rng.predict.title">次の攻撃を予測</h2>
+          </div>
+          <div id="predictionForm"></div>
+          <button id="runPrediction" type="button" class="primary-button wide-button"
+            data-i18n="rng.predict.run">この攻撃を予測</button>
+          <div id="predictionResult" class="prediction-result">
+            <p data-i18n="rng.predict.notReady">解析後に、次の攻撃条件を指定してください。</p>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <dialog id="rosterUnitPicker" class="rng-unit-picker">
+    <form method="dialog" class="rng-unit-picker-shell">
+      <div class="rng-unit-picker-head">
+        <div>
+          <p class="eyebrow">SELECT UNIT</p>
+          <h2 data-i18n="rng.picker.title">ユニットを選択</h2>
+        </div>
+        <button value="cancel" class="icon-button" aria-label="閉じる" data-i18n-aria-label="rng.picker.close">×</button>
+      </div>
+      <label class="rng-picker-search">
+        <span data-i18n="rng.roster.search">ユニット検索</span>
+        <input id="rosterPickerSearch" type="search" placeholder="名前・ユニットID"
+          data-i18n-placeholder="rng.picker.searchPlaceholder" autocomplete="off">
+      </label>
+      <div class="rng-picker-meta">
+        <span id="rosterPickerSide"></span>
+        <b id="rosterPickerCount"></b>
+      </div>
+      <div id="rosterPickerList" class="rng-picker-list"></div>
+      <p id="rosterPickerEmpty" class="empty-state" data-i18n="rng.picker.empty">一致するユニットがありません。</p>
+    </form>
+  </dialog>
+
+  <script src="i18n.js"></script>
+  <script src="data.js"></script>
+  <script src="rng-core.js"></script>
+  <script src="rng-app.js"></script>
+</body>
+
+</html>
