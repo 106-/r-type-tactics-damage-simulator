@@ -103,7 +103,7 @@ Raw interception = (Interceptor power / Attack power) × (Interceptor current HP
 
 Capture rounds are a special case with 0% interception. Interception is processed before terrain defense.
 
-#### Intercepting tackle attacks
+#### Intercepting and counterattacking tackle attacks
 
 When a tackle or Force Shoot is intercepted, the target takes reduced damage and the attacker takes recoil damage.
 
@@ -114,6 +114,8 @@ Recoil = Attacker current HP × Interception rate × 0.85 (minimum 25, maximum 1
 Tackles, Force Shoot, and similar attacks cause knockback. If terrain or a unit blocks the destination, they gain additional base damage of **+25**.
 
 Recoil is clamped to 25–115. If it destroys the attacker, tackle damage to the target becomes zero.
+
+Counterattacking a tackle, Force Shoot, or similar attack adds a fixed **+35** to counterattack damage. This depends on the initiating attack being a tackle, not on the counterattack weapon type, and is added before affinity is applied.
 
 ### 06 Capture
 

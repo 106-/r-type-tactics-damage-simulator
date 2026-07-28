@@ -341,6 +341,7 @@
     $("knockbackBlocked").disabled = !knockbackEnabled;
     $("knockbackLabel").classList.toggle("disabled-control", !knockbackEnabled);
     if (!knockbackEnabled) $("knockbackBlocked").checked = false;
+    updateTackleCounterControl();
     updatePartialCoverControl(weapon);
     if (!weapon) {
       $("weaponMeta").textContent = L("攻撃武器の関連付けがないユニットです。", "This unit has no linked attack weapon.");
@@ -355,6 +356,13 @@
     const interceptable = incomingInterceptable(weapon) ? L(" / 迎撃対象", " / Interceptable") : L(" / 迎撃対象外", " / Not interceptable");
     $("weaponMeta").textContent = `${materialName(weapon.material)} / ${L("命中値", "Accuracy")} ${(weapon.hit * 100).toFixed(0)}% / ${range}${charge}${guaranteedLabel}${weapon.tackle ? L(" / ノックバック", " / Knockback") : ""}${interceptable}`;
     updateInterceptWeapons();
+  }
+
+  function updateTackleCounterControl() {
+    const enabled = $("attackMode").value === "counter";
+    $("tackleCounter").disabled = !enabled;
+    $("tackleCounterLabel").classList.toggle("disabled-control", !enabled);
+    if (!enabled) $("tackleCounter").checked = false;
   }
 
   function effectiveAttackRange(weapon) {
@@ -609,6 +617,7 @@
     let damage = effectiveAp * (1 - effectiveDefense) * formation * (1 - intercept) * randomMod;
     if ($("partialCover").checked && partialCoverEligible(weapon)) damage *= .5;
     if ($("knockbackBlocked").checked && weapon.tackle) damage += 25;
+    if (isCounter && $("tackleCounter").checked) damage += 35;
     damage *= 1 + typeEffect(weapon.material, unitType);
     if (tackleSelfDamage.destroyed) damage = 0;
     return { damage, effectiveDefense, intercept, effectiveAp, tackleSelfDamage };
@@ -886,6 +895,9 @@
     if ($("knockbackBlocked").checked && weapon.tackle) {
       damageRows.push({ op: "+", label: L("ノックバック先が塞がっている", "Knockback destination is blocked"), value: "25" });
     }
+    if (isCounter && $("tackleCounter").checked) {
+      damageRows.push({ op: "+", label: L("体当たりへの反撃", "Counterattack against a tackle"), value: "35" });
+    }
     if (eff !== 0) {
       damageRows.push({ op: "×", label: L(`属性相性（${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%）`, `Affinity (${eff > 0 ? "+" : ""}${(eff * 100).toFixed(0)}%)`), value: (1 + eff).toFixed(2) });
     }
@@ -1037,6 +1049,7 @@
     updateWeapons();
   });
   $("weapon").addEventListener("change", updateWeaponMeta);
+  $("attackMode").addEventListener("change", updateTackleCounterControl);
   $("target").addEventListener("change", () => {
     updateUnitPickerTrigger("target");
     updateTargetType();

@@ -126,6 +126,7 @@
     "attacker.formationMax": "Max units",
     "attacker.formationHint": "The veterancy-improved stat is set by the selected unit. Five-unit formations can specify their current unit count.",
     "attacker.knockback": "Knockback destination is blocked",
+    "attacker.tackleCounter": "Counterattack against a tackle",
     "attacker.partialCover": "Partial cover",
     "attacker.partialCoverHint": "Partial cover occurs when one of the two intermediate paths of a range-2 attack is blocked by terrain or an obstacle unit. Only normal direct-fire, maximum-range-2, non-mechanical weapons deal 50% damage.",
 
@@ -256,11 +257,12 @@
     "notes.intercept.high": "90% or higher",
     "notes.intercept.highLabel": "Full interception",
     "notes.intercept.order": "Capture rounds are a special case with 0% interception. Interception is processed before terrain defense.",
-    "notes.intercept.tackleTitle": "Intercepting tackle attacks",
+    "notes.intercept.tackleTitle": "Intercepting and counterattacking tackle attacks",
     "notes.intercept.tackleIntro": "When a tackle or Force Shoot is intercepted, the target takes reduced damage and the attacker takes recoil damage.",
     "notes.intercept.knockback": "Tackles, Force Shoot, and similar attacks cause knockback. If terrain or a unit blocks the destination, they gain additional base damage of <b>+25</b>.",
     "notes.intercept.recoilFormula": "Recoil = Attacker current HP × Interception rate × 0.85 (minimum 25, maximum 115)",
     "notes.intercept.recoilNote": "Recoil is clamped to 25–115. If it destroys the attacker, tackle damage to the target becomes zero.",
+    "notes.intercept.counter": "Counterattacking a tackle, Force Shoot, or similar attack adds a fixed <b>+35</b> to counterattack damage. This depends on the initiating attack being a tackle, not on the counterattack weapon type, and is added before affinity is applied.",
 
     "notes.seize.title": "Capture",
     "notes.seize.intro": "Capture rounds use a dedicated check separate from normal weapon accuracy and target evasion.",

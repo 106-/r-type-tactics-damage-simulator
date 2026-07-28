@@ -46,6 +46,7 @@
       terrainDefense: 0,
       partialCover: false,
       knockbackBlocked: false,
+      tackleCounter: false,
       relaxInterceptRange: false,
       result: "hp-change",
       observedBefore: null,
@@ -261,6 +262,7 @@
       terrainDefense: Number(model.terrainDefense) || 0,
       partialCover: Boolean(model.partialCover),
       knockbackBlocked: Boolean(model.knockbackBlocked),
+      tackleCounter: Boolean(model.tackleCounter),
       relaxInterceptRange: Boolean(model.relaxInterceptRange),
     };
   }
@@ -791,6 +793,7 @@
     const checks = [
       ["partialCover", L("部分遮蔽", "Partial cover"), core.partialCoverEligible(weapon)],
       ["knockbackBlocked", L("ノックバック先が塞がっている", "Knockback blocked"), Boolean(weapon?.tackle)],
+      ["tackleCounter", L("体当たりへの反撃", "Counterattack against a tackle"), model.mode === "counter"],
       ["relaxInterceptRange", L("迎撃距離制限を緩和", "Relax interception range"), true],
     ];
     for (const [field, labelText, enabled] of checks) {
@@ -912,6 +915,7 @@
     const checks = [
       ["partialCover", L("部分遮蔽", "Partial cover"), core.partialCoverEligible(weapon)],
       ["knockbackBlocked", L("ノックバック先が塞がっている", "Knockback blocked"), Boolean(weapon?.tackle)],
+      ["tackleCounter", L("体当たりへの反撃", "Counterattack against a tackle"), model.mode === "counter"],
       ["relaxInterceptRange", L("迎撃距離制限を緩和", "Relax interception range"), true],
     ];
     for (const [field, labelText, enabled] of checks) {
@@ -1127,6 +1131,7 @@
       terrainDefense: Number(log.terrainDefense) || 0,
       partialCover: Boolean(log.partialCover),
       knockbackBlocked: Boolean(log.knockbackBlocked),
+      tackleCounter: Boolean(log.tackleCounter),
       relaxInterceptRange: Boolean(log.relaxInterceptRange),
       attackerIndex,
       targetIndex,

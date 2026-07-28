@@ -82,6 +82,8 @@
           <div class="checks">
             <label id="knockbackLabel" class="disabled-control"><input id="knockbackBlocked" type="checkbox" disabled>
               <span data-i18n="attacker.knockback">ノックバック先が塞がっている</span></label>
+            <label id="tackleCounterLabel" class="disabled-control"><input id="tackleCounter" type="checkbox" disabled>
+              <span data-i18n="attacker.tackleCounter">体当たりへの反撃</span></label>
             <label id="partialCoverLabel" class="disabled-control"><input id="partialCover" type="checkbox" disabled>
               <span data-i18n="attacker.partialCover">部分遮蔽</span> <span id="partialCoverStatus"
                 class="condition-badge">--</span></label>
@@ -533,7 +535,7 @@
                   data-i18n="notes.intercept.highLabel">完全迎撃</span></div>
             </div>
             <p data-i18n="notes.intercept.order">鹵獲弾は例外的に迎撃率0%です。迎撃は地形防御より前に処理されます。</p>
-            <h4 class="knowledge-subtitle" data-i18n="notes.intercept.tackleTitle">体当たりに対する迎撃</h4>
+            <h4 class="knowledge-subtitle" data-i18n="notes.intercept.tackleTitle">体当たりへの迎撃・反撃</h4>
             <p data-i18n="notes.intercept.tackleIntro">
               体当たり・フォースシュートを迎撃すると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
             <div class="formula-box"><code
@@ -542,6 +544,9 @@
               <b>+25</b> です。</p>
             <p data-i18n="notes.intercept.recoilNote">
               反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。
+            </p>
+            <p data-i18n-html="notes.intercept.counter">
+              体当たり・フォースシュートなどに対して反撃すると、反撃ダメージへ固定値 <b>+35</b> が加算されます。反撃武器の種類ではなく、反撃のきっかけになった攻撃が体当たりかどうかで決まり、属性相性を掛ける前に加算されます。
             </p>
           </section>
 

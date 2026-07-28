@@ -256,6 +256,7 @@
       mode = "normal",
       partialCover = false,
       knockbackBlocked = false,
+      tackleCounter = false,
     } = config;
     const effectiveAp = effectiveWeaponAp(weapon, attackerUnit, attackerRank);
     const formationMax = Math.max(1, Number(attackerUnit?.formationMax) || 1);
@@ -275,6 +276,7 @@
     damage = fmul(damage, randomMod);
     if (partialCover && partialCoverEligible(weapon)) damage = fmul(damage, 0.5);
     if (knockbackBlocked && weapon.tackle) damage = fadd(damage, 25);
+    if (mode === "counter" && tackleCounter) damage = fadd(damage, 35);
     damage = fmul(damage, fadd(1, typeEffect(weapon.material, unitType)));
     return {
       damage: Math.max(0, damage),
