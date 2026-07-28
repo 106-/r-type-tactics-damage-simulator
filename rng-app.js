@@ -116,6 +116,18 @@
     return (unit?.weapons || []).some((id) => weaponsById.get(id)?.tackle);
   }
 
+  function unitHasChargeAttack(unit) {
+    return (unit?.weapons || []).some((id) => {
+      const weapon = weaponsById.get(id);
+      return weapon?.selectableAttack && Boolean(weapon.charge);
+    });
+  }
+
+  function counterModeAllowed(weapon, targetUnit) {
+    return Boolean(weapon?.counter)
+      || (Boolean(weapon?.charge) && unitHasChargeAttack(targetUnit));
+  }
+
   function entryRank(entry) {
     return appMode === "analysis" && entry?.side === "enemy" ? 0 : Number(entry?.rank) || 0;
   }
@@ -154,7 +166,13 @@
     const attacker = rosterEntry(model.attackerId);
     const list = attackWeapons(attacker);
     if (!list.some((weapon) => weapon.id === model.weaponId)) model.weaponId = list[0]?.id || "";
-    return weaponsById.get(model.weaponId);
+    const weapon = weaponsById.get(model.weaponId);
+    const target = rosterUnit(rosterEntry(model.targetId));
+    if (!counterModeAllowed(weapon, target) && model.mode === "counter") {
+      model.mode = "normal";
+      model.tackleCounter = false;
+    }
+    return weapon;
   }
 
   function validParticipantsForModel(model) {
@@ -220,6 +238,11 @@
     const weapons = predictionAttackWeapons(model);
     if (!weapons.some((weapon) => weapon.id === model.weaponId)) {
       model.weaponId = weapons[0]?.id || "";
+    }
+    const weapon = weaponsById.get(model.weaponId);
+    if (!counterModeAllowed(weapon, predictionTargetUnit(model)) && model.mode === "counter") {
+      model.mode = "normal";
+      model.tackleCounter = false;
     }
     const intercepts = predictionInterceptWeapons(model);
     if (model.reaction === "intercept") {
@@ -755,6 +778,8 @@
       ["normal", L("通常攻撃", "Normal attack")],
       ["counter", L("反撃", "Counterattack")],
     ], model.mode));
+    mode.querySelector('option[value="counter"]').disabled
+      = !counterModeAllowed(weapon, predictionTargetUnit(model));
     const reaction = fieldControl(model, "reaction", basicSelect([
       ["focus", L("回避に専念", "Focus on evasion")],
       ["none", L("専念・迎撃なし", "No focus/interception")],
@@ -838,6 +863,8 @@
       ["normal", L("通常攻撃", "Normal attack")],
       ["counter", L("反撃", "Counterattack")],
     ], model.mode));
+    mode.querySelector('option[value="counter"]').disabled
+      = !counterModeAllowed(weapon, rosterUnit(rosterEntry(model.targetId)));
     const reaction = fieldControl(model, "reaction", basicSelect([
       ["focus", L("回避に専念", "Focus on evasion")],
       ["none", L("専念・迎撃なし", "No focus/interception")],

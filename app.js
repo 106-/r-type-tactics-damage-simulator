@@ -68,6 +68,13 @@
     return unitWeaponIds(unit).some((id) => weapons.get(id)?.tackle);
   }
 
+  function unitHasChargeAttack(unit) {
+    return unitWeaponIds(unit).some((id) => {
+      const weapon = weapons.get(id);
+      return weapon?.selectableAttack && Boolean(weapon.charge);
+    });
+  }
+
   function isDecoyUnit(unit) {
     return unit?.variantKind === "decoy";
   }
@@ -341,6 +348,7 @@
 
   function updateWeaponMeta() {
     const weapon = weapons.get($("weapon").value);
+    updateAttackModeControl(weapon);
     const knockbackEnabled = Boolean(weapon?.tackle);
     $("knockbackBlocked").disabled = !knockbackEnabled;
     $("knockbackLabel").classList.toggle("disabled-control", !knockbackEnabled);
@@ -358,8 +366,20 @@
     const guaranteed = bypassesEvasion(weapon);
     const guaranteedLabel = guaranteed ? L(" / 必中（回避計算をバイパス）", " / Guaranteed hit (evasion calculation bypassed)") : "";
     const interceptable = incomingInterceptable(weapon) ? L(" / 迎撃対象", " / Interceptable") : L(" / 迎撃対象外", " / Not interceptable");
-    $("weaponMeta").textContent = `${materialName(weapon.material)} / ${L("命中値", "Accuracy")} ${(weapon.hit * 100).toFixed(0)}% / ${range}${charge}${guaranteedLabel}${weapon.tackle ? L(" / ノックバック", " / Knockback") : ""}${interceptable}`;
+    const counterable = weapon.counter && !weapon.charge ? L(" / 反撃可能", " / Counterattack capable") : "";
+    $("weaponMeta").textContent = `${materialName(weapon.material)} / ${L("命中値", "Accuracy")} ${(weapon.hit * 100).toFixed(0)}% / ${range}${charge}${guaranteedLabel}${weapon.tackle ? L(" / ノックバック", " / Knockback") : ""}${interceptable}${counterable}`;
     updateInterceptWeapons();
+  }
+
+  function updateAttackModeControl(weapon) {
+    const counterOption = $("attackMode").querySelector('option[value="counter"]');
+    const target = selectedUnit("target", visibleTargets);
+    const enabled = Boolean(weapon?.counter)
+      || (Boolean(weapon?.charge) && unitHasChargeAttack(target));
+    counterOption.disabled = !enabled;
+    if (!enabled && $("attackMode").value === "counter") {
+      $("attackMode").value = "normal";
+    }
   }
 
   function updateTackleCounterControl() {
@@ -971,6 +991,7 @@
       $("targetAvoid").value = String(Math.round((target.avoid || 0) * 100));
       $("targetSkill").value = skillName(target, "target");
     }
+    updateAttackModeControl(weapons.get($("weapon").value));
     updateTackleCounterControl();
     updateInterceptWeapons();
   }
