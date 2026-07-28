@@ -112,6 +112,10 @@
     return unitsById.get(entry?.unitId);
   }
 
+  function unitHasTackleAttack(unit) {
+    return (unit?.weapons || []).some((id) => weaponsById.get(id)?.tackle);
+  }
+
   function entryRank(entry) {
     return appMode === "analysis" && entry?.side === "enemy" ? 0 : Number(entry?.rank) || 0;
   }
@@ -262,7 +266,9 @@
       terrainDefense: Number(model.terrainDefense) || 0,
       partialCover: Boolean(model.partialCover),
       knockbackBlocked: Boolean(model.knockbackBlocked),
-      tackleCounter: Boolean(model.tackleCounter),
+      tackleCounter: model.mode === "counter"
+        && unitHasTackleAttack(targetUnit)
+        && Boolean(model.tackleCounter),
       relaxInterceptRange: Boolean(model.relaxInterceptRange),
     };
   }
@@ -790,10 +796,13 @@
 
     const options = document.createElement("div");
     options.className = "combat-log-options";
+    const tackleCounterEnabled = model.mode === "counter"
+      && unitHasTackleAttack(predictionTargetUnit(model));
+    if (!tackleCounterEnabled) model.tackleCounter = false;
     const checks = [
       ["partialCover", L("部分遮蔽", "Partial cover"), core.partialCoverEligible(weapon)],
       ["knockbackBlocked", L("ノックバック先が塞がっている", "Knockback blocked"), Boolean(weapon?.tackle)],
-      ["tackleCounter", L("体当たりへの反撃", "Counterattack against a tackle"), model.mode === "counter"],
+      ["tackleCounter", L("体当たりへの反撃", "Counterattack against a tackle"), tackleCounterEnabled],
       ["relaxInterceptRange", L("迎撃距離制限を緩和", "Relax interception range"), true],
     ];
     for (const [field, labelText, enabled] of checks) {
@@ -912,10 +921,13 @@
 
     const options = document.createElement("div");
     options.className = "combat-log-options";
+    const tackleCounterEnabled = model.mode === "counter"
+      && unitHasTackleAttack(rosterUnit(rosterEntry(model.targetId)));
+    if (!tackleCounterEnabled) model.tackleCounter = false;
     const checks = [
       ["partialCover", L("部分遮蔽", "Partial cover"), core.partialCoverEligible(weapon)],
       ["knockbackBlocked", L("ノックバック先が塞がっている", "Knockback blocked"), Boolean(weapon?.tackle)],
-      ["tackleCounter", L("体当たりへの反撃", "Counterattack against a tackle"), model.mode === "counter"],
+      ["tackleCounter", L("体当たりへの反撃", "Counterattack against a tackle"), tackleCounterEnabled],
       ["relaxInterceptRange", L("迎撃距離制限を緩和", "Relax interception range"), true],
     ];
     for (const [field, labelText, enabled] of checks) {
@@ -1131,7 +1143,9 @@
       terrainDefense: Number(log.terrainDefense) || 0,
       partialCover: Boolean(log.partialCover),
       knockbackBlocked: Boolean(log.knockbackBlocked),
-      tackleCounter: Boolean(log.tackleCounter),
+      tackleCounter: log.mode === "counter"
+        && unitHasTackleAttack(rosterUnit(target))
+        && Boolean(log.tackleCounter),
       relaxInterceptRange: Boolean(log.relaxInterceptRange),
       attackerIndex,
       targetIndex,

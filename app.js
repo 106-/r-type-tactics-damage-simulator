@@ -64,6 +64,10 @@
     return unit?.weapons || [];
   }
 
+  function unitHasTackleAttack(unit) {
+    return unitWeaponIds(unit).some((id) => weapons.get(id)?.tackle);
+  }
+
   function isDecoyUnit(unit) {
     return unit?.variantKind === "decoy";
   }
@@ -359,7 +363,8 @@
   }
 
   function updateTackleCounterControl() {
-    const enabled = $("attackMode").value === "counter";
+    const target = selectedUnit("target", visibleTargets);
+    const enabled = $("attackMode").value === "counter" && unitHasTackleAttack(target);
     $("tackleCounter").disabled = !enabled;
     $("tackleCounterLabel").classList.toggle("disabled-control", !enabled);
     if (!enabled) $("tackleCounter").checked = false;
@@ -966,6 +971,7 @@
       $("targetAvoid").value = String(Math.round((target.avoid || 0) * 100));
       $("targetSkill").value = skillName(target, "target");
     }
+    updateTackleCounterControl();
     updateInterceptWeapons();
   }
 
