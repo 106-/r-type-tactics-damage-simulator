@@ -1118,7 +1118,7 @@ window.RTYPE_SIM_DATA = {
             "weapons": [
                 "WEAPON_ID.B_IF_BAMERA_STICK"
             ],
-            "nameJa": "バメラ",
+            "nameJa": "パメラ",
             "nameEn": "PAMELA",
             "faction": "other",
             "flagship": false,

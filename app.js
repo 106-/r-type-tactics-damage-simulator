@@ -25,6 +25,8 @@
     && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
   const unitsById = new Map(data.units.map((unit) => [unit.id, unit]));
   const weapons = new Map(data.weapons.map((weapon) => [weapon.id, weapon]));
+  // 表記ゆれ対策の検索用別名（「バメラ」でも引けるようにする）
+  const unitSearchAliases = new Map([["UNIT_ID.B_BAMERA", "バメラ"]]);
   let visibleAttackers = data.units;
   let visibleTargets = data.units;
   let interceptContextKey = "";
@@ -143,7 +145,8 @@
     const needle = query.trim().toLocaleLowerCase(i18n.language);
     return data.units.filter((unit) => {
       if (requireWeapon ? !unit.selectableAsAttacker : !unit.selectableAsTarget) return false;
-      const names = `${unitLabel(unit)} ${unit.nameJa || ""} ${unit.nameEn || ""}`.toLocaleLowerCase(i18n.language);
+      const alias = unitSearchAliases.get(unit.id) || "";
+      const names = `${unitLabel(unit)} ${unit.nameJa || ""} ${unit.nameEn || ""} ${alias}`.toLocaleLowerCase(i18n.language);
       return !needle || names.includes(needle) || unit.id.toLowerCase().includes(needle);
     });
   }
