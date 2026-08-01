@@ -9,6 +9,14 @@
       ? stored
       : String(navigator.language || "").toLowerCase().startsWith("ja") ? "ja" : "en";
 
+  // 検索キーの正規化。ひらがなで打ってもカタカナ名に一致させる（全角/半角・大文字小文字も統一）。
+  function searchKey(value) {
+    return String(value ?? "")
+      .normalize("NFKC") // 全角英数・半角カナを統一
+      .toLowerCase()
+      .replace(/[ぁ-ゖ]/gu, (kana) => String.fromCharCode(kana.charCodeAt(0) + 0x60)); // ひらがな→カタカナ
+  }
+
   // 英訳辞書。日本語の原文はHTML側だけが持つ（data-i18n / data-i18n-html / data-i18n-* 属性で紐付け）。
   // data-i18n はtextContent、data-i18n-html はinnerHTMLを差し替える。
   const en = {
@@ -371,6 +379,7 @@
     get language() { return language; },
     pick(ja, en) { return language === "ja" ? ja : en; },
     name(value) { return language === "ja" ? value?.nameJa || value?.name : value?.nameEn || value?.nameJa || value?.name; },
+    searchKey,
     translateStatic,
     setLanguage(next) {
       if (!LANGUAGES.includes(next)) return;

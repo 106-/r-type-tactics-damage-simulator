@@ -142,12 +142,12 @@
   }
 
   function filteredUnits(query, requireWeapon) {
-    const needle = query.trim().toLocaleLowerCase(i18n.language);
+    const needle = i18n.searchKey(query.trim());
     return data.units.filter((unit) => {
       if (requireWeapon ? !unit.selectableAsAttacker : !unit.selectableAsTarget) return false;
       const alias = unitSearchAliases.get(unit.id) || "";
-      const names = `${unitLabel(unit)} ${unit.nameJa || ""} ${unit.nameEn || ""} ${alias}`.toLocaleLowerCase(i18n.language);
-      return !needle || names.includes(needle) || unit.id.toLowerCase().includes(needle);
+      const names = i18n.searchKey(`${unitLabel(unit)} ${unit.nameJa || ""} ${unit.nameEn || ""} ${alias}`);
+      return !needle || names.includes(needle) || i18n.searchKey(unit.id).includes(needle);
     });
   }
 

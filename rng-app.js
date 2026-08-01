@@ -446,13 +446,12 @@
   }
 
   function rosterPickerCandidates() {
-    const needle = $("rosterPickerSearch").value.trim().toLocaleLowerCase(i18n.language);
+    const needle = i18n.searchKey($("rosterPickerSearch").value.trim());
     return data.units
       .filter((unit) => unit.selectableAsTarget || unit.selectableAsAttacker)
       .filter((unit) => {
         if (!needle) return true;
-        const haystack = `${unitLabel(unit)} ${unit.id} ${unit.nameJa || ""} ${unit.nameEn || ""}`
-          .toLocaleLowerCase(i18n.language);
+        const haystack = i18n.searchKey(`${unitLabel(unit)} ${unit.id} ${unit.nameJa || ""} ${unit.nameEn || ""}`);
         return haystack.includes(needle);
       })
       .sort((a, b) => unitLabel(a).localeCompare(unitLabel(b), i18n.language === "ja" ? "ja" : "en"));
