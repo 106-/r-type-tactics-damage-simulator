@@ -229,12 +229,17 @@
     return clamp(value, 0, 1);
   }
 
+  function tackleRecoilMultiplier(interceptWeapon) {
+    return Number(interceptWeapon?.rangeMin) > 1 ? 0.85 : 1.05;
+  }
+
   function tackleRecoil(config, intercept) {
     if (!config.weapon?.tackle || !intercept.active || !(intercept.rate > 0)) {
       return { active: false, damage: 0, attackerHpAfter: config.attackerHp, destroyed: false };
     }
     let raw = fmul(config.attackerHp, intercept.rate);
-    raw = fmul(raw, 0.85);
+    const multiplier = tackleRecoilMultiplier(config.interceptWeapon);
+    raw = fmul(raw, multiplier);
     const damage = clamp(raw, 25, 115);
     const attackerHpAfter = Math.max(0, fsub(config.attackerHp, damage));
     return {
@@ -243,6 +248,7 @@
       damage,
       attackerHpAfter,
       destroyed: !(attackerHpAfter > 0),
+      multiplier,
     };
   }
 
@@ -262,7 +268,8 @@
     const formationMax = Math.max(1, Number(attackerUnit?.formationMax) || 1);
     const formationRatio = clamp(attackerFormation / formationMax, 0, 1);
     const unitType = Number(targetUnit?.type) || 0;
-    const effectiveDefense = weapon.material === 0 && unitType !== 5 && unitType !== 14
+    const effectiveDefense = !weapon.akuukanBuster && weapon.material === 0
+      && unitType !== 5 && unitType !== 14
       ? clamp(Number(terrainDefense) || 0, 0, 1)
       : 0;
     const randomMod = mode === "counter"
@@ -413,6 +420,7 @@
     calculateIntercept,
     partialCoverEligible,
     effectiveAvoidRate,
+    tackleRecoilMultiplier,
     calculateDamage,
     simulateAttack,
     hex64,

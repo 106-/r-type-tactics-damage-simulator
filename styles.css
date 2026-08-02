@@ -101,6 +101,7 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .checks label.disabled-control { opacity: .4; cursor: not-allowed }
 .checks label.available-control { color: var(--ink-strong) }
 .fixed-badge { display: inline-block; margin-left: 6px; padding: 1px 5px; border: 1px solid #68767a; background: #30383b; color: #d4dcdd; font-size: 12px; letter-spacing: .08em; vertical-align: 1px }
+.fixed-badge.is-variable { border-color: #3a817d; background: #12312f; color: var(--cyan) }
 .condition-badge { display: inline-block; margin-left: 3px; padding: 2px 6px; border: 1px solid #34545d; background: #10242a; color: var(--muted); font-family: var(--mono); font-size: 12px; letter-spacing: .02em; white-space: nowrap }
 .guaranteed-hit-badge { border-color: #a76f31; background: #332112; color: #ffd28b; font-weight: 700 }
 .checks label.available-control .condition-badge { border-color: #7d6033; background: #2a2115; color: #f0b965 }
@@ -291,6 +292,8 @@ input[type=text]:read-only { color: var(--ink-soft) }
 .knowledge-content td.plus.hot { color: #ffbf68; background: #251d13 }
 .knowledge-content td.minus { color: #ff8176; background: #261617 }
 .skill-table td:nth-child(3) { text-align: left }
+.unit-type-table td { text-align: left }
+.unit-type-table td:nth-child(2) { min-width: 260px; white-space: normal }
 .knowledge-list { margin: 10px 0; padding-left: 19px }
 .knowledge-list li { margin: 7px 0 }
 .knowledge-list b { color: var(--ink-strong) }

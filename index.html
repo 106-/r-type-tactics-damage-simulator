@@ -107,7 +107,7 @@
             </button>
             <select id="target" class="unit-native-select" tabindex="-1" aria-hidden="true"></select>
           </div>
-          <div class="grid five">
+          <div class="grid three">
             <label><span data-i18n="common.rank">熟練ランク</span><select id="targetRank">
                 <option value="0">0 (100%)</option>
                 <option value="1">1 (101%)</option>
@@ -119,16 +119,13 @@
             <label><span data-i18n="common.veterancySkill">熟練で向上</span> <span class="fixed-badge"
                 data-i18n="common.fixedBadge">固定</span><input id="targetSkill" type="text" value=""
                 readonly></label>
-            <label><span data-i18n="target.type">ユニット種別</span> <span class="fixed-badge"
-                data-i18n="common.fixedBadge">固定</span><select id="targetType" disabled></select></label>
-            <label><span data-i18n="target.hexes">占有HEX数</span> <span class="fixed-badge"
-                data-i18n="common.fixedBadge">固定</span><input id="targetScaleDenom" type="number" min="1" max="999"
-                value="1" readonly></label>
-            <label><span data-i18n="target.avoid">基礎回避率（%）</span> <span class="fixed-badge"
-                data-i18n="common.fixedBadge">固定</span><input id="targetAvoid" type="number" min="0" max="100"
-                value="0" readonly></label>
+            <label><span data-i18n="target.hexes">占有HEX数</span> <span id="targetHexBadge"
+                class="fixed-badge">固定</span><select id="targetScaleDenom" disabled>
+                <option value="1">1 HEX</option>
+              </select></label>
           </div>
-          <p class="hint" data-i18n="target.fixedHint">ユニット種別、占有HEX数、基礎回避率、熟練で向上する能力はデフォルト値をそのまま設定しています。</p>
+          <select id="targetType" hidden></select>
+          <input id="targetAvoid" type="hidden" value="0">
           <div class="checks reaction-checks">
             <label id="evadeFocusLabel" class="available-control"><input id="evadeFocus" type="checkbox" checked>
               <span data-i18n="target.evadeFocus">回避に専念</span> <span id="evadeFocusStatus"
@@ -502,7 +499,39 @@
                 </tbody>
               </table>
             </div>
-            <p data-i18n="notes.affinity.otherNote">"異質"はグリッドロックや琥珀色の瞳孔などに振られています。</p>
+            <h4 class="knowledge-subtitle" data-i18n="notes.affinity.unitTypesTitle">ユニットタイプ</h4>
+            <p data-i18n="notes.affinity.unitTypesIntro">
+              属性に対応する17種のユニットタイプがあります。
+            </p>
+            <div class="table-scroll">
+              <table class="unit-type-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="notes.affinity.unitTypeDisplay">シミュレータ上の呼称</th>
+                    <th data-i18n="notes.affinity.unitTypeExamples">主なユニット</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td data-i18n="notes.affinity.unitTypeName1">機械ユニット・機械旗艦</td><td data-i18n="notes.affinity.unitTypeExamples1">アロー・ヘッド、ヘイムダル級、コンバイラ、ボルド</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName2">機械系パーツ類</td><td data-i18n="notes.affinity.unitTypeExamples2">艦橋と主砲、フラガラッハ砲、コンバイラレーザー砲</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName3">水上艦</td><td data-i18n="notes.affinity.unitTypeExamples3">エーギル級、ラーン級、ヒミングレーヴァ級</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName4">潜水機械ユニット</td><td data-i18n="notes.affinity.unitTypeExamples4">フロッグマン、シー・タイガー、グランビア・F／M</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName5">壁面機械ユニット</td><td data-i18n="notes.affinity.unitTypeExamples5">コルベルトの防衛砲台・対空砲台</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName6">地上機械ユニット</td><td data-i18n="notes.affinity.unitTypeExamples6">汎用戦車、ピスタフ、ベリィ系</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName7">生体ユニット</td><td data-i18n="notes.affinity.unitTypeExamples7">ガウパー、バイド戦闘機、フォース</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName8">生体大型ユニット・生体旗艦</td><td data-i18n="notes.affinity.unitTypeExamples8">ノーザリー、ドプケラドプス、ベルメイト本体</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName9">生体系パーツ類</td><td data-i18n="notes.affinity.unitTypeExamples9">ドプケラドプス各部、ベルメイトベルルの葉、ムーラ各部</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName10">水棲生物</td><td data-i18n="notes.affinity.unitTypeExamples10">レディ</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName13">浮遊生体類</td><td data-i18n="notes.affinity.unitTypeExamples13">ガスダーネッド、ガスダーネッド亜種、バラカス</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName14">壁面生体ユニット</td><td data-i18n="notes.affinity.unitTypeExamples14">ニュート</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName16">宇宙・水中両用生体</td><td data-i18n="notes.affinity.unitTypeExamples16">ブリームス</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName17">岩石・構造物</td><td data-i18n="notes.affinity.unitTypeExamples17">高層ビル、岩盤、艦船の残骸</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName18">氷</td><td data-i18n="notes.affinity.unitTypeExamples18">氷塊、浮遊氷、氷柱</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName19">異質存在</td><td data-i18n="notes.affinity.unitTypeExamples19">グリッドロック系、琥珀色の瞳孔、Xelf-24</td></tr>
+                  <tr><td data-i18n="notes.affinity.unitTypeName20">異質存在のパーツ類</td><td data-i18n="notes.affinity.unitTypeExamples20">グリッドロックの瞳</td></tr>
+                </tbody>
+              </table>
+            </div>
           </section>
 
           <section id="knowledgeTerrain">
@@ -539,11 +568,11 @@
             <p data-i18n="notes.intercept.tackleIntro">
               体当たり・フォースシュートを迎撃すると、対象側ダメージの減衰に加えて攻撃側に反動ダメージが入ります。</p>
             <div class="formula-box"><code
-              data-i18n="notes.intercept.recoilFormula">反動 = 攻撃側現在HP × 迎撃率 × 0.85（最低25・最大115）</code></div>
+              data-i18n="notes.intercept.recoilFormula">反動(最低25・最大115) = 攻撃側現在HP × 迎撃率 × 射程係数(1.05 or 0.85)</code></div>
             <p data-i18n-html="notes.intercept.knockback">体当たり・フォースシュートなどはノックバックを発生させます。移動先が地形またはユニットで塞がっていると追加基礎ダメージ
               <b>+25</b> です。</p>
             <p data-i18n="notes.intercept.recoilNote">
-              反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。
+              射程係数は迎撃武器の最低射程が1なら1.05、2以上なら0.85。反動は最低25、最大115。この反動で攻撃側が撃破される場合、対象側への体当たりダメージは0になります。
             </p>
             <p data-i18n-html="notes.intercept.counter">
               体当たり・フォースシュートなどに対して反撃すると、反撃ダメージへ固定値 <b>+35</b> が加算されます。反撃武器の種類ではなく、反撃のきっかけになった攻撃が体当たりかどうかで決まり、属性相性を掛ける前に加算されます。

@@ -9,8 +9,8 @@
   const rankBonus = [1, 1.01, 1.03, 1.06, 1.10, 1.18];
   const materialNames = ["光学", "機械", "生体", "粒子", "火炎", "精神", "氷", "酸"];
   const materialNamesEn = ["Optical", "Mechanical", "Biological", "Particle", "Flame", "Mental", "Ice", "Acid"];
-  const typeNames = ["機械ユニット", "機械艦", "機械艦パーツ", "艦船", "潜行機械", "機械壁", "機械床", "生物ユニット", "生物艦", "生物艦パーツ", "水中生物", "非水中生物", "潜行生物", "浮遊生物", "生体壁", "生体床", "宇宙水棲生物", "岩石", "氷", "異文明ユニット", "異文明艦パーツ"];
-  const typeNamesEn = ["Mechanical unit", "Mechanical ship", "Mechanical ship part", "Ship", "Submerged mechanical unit", "Mechanical wall", "Mechanical floor", "Biological unit", "Biological ship", "Biological ship part", "Aquatic lifeform", "Non-aquatic lifeform", "Submerged lifeform", "Floating lifeform", "Biological wall", "Biological floor", "Space aquatic lifeform", "Rock", "Ice", "Alien-civilization unit", "Alien-civilization ship part"];
+  const typeNames = ["機械(未使用)", "機械ユニット・機械旗艦", "機械系パーツ類", "水上艦", "潜水機械ユニット", "壁面機械ユニット", "地上機械ユニット", "生体ユニット", "生体大型ユニット・生体旗艦", "生体系パーツ類", "水棲生物", "非水中生体（未使用）", "潜水生体（未使用）", "浮遊生体類", "壁面生体ユニット", "地上生体ユニット（未使用）", "宇宙・水中両用生体", "岩石・構造物", "氷", "異質存在", "異質存在のパーツ類"];
+  const typeNamesEn = ["Mechanical (unused)", "Mechanical units and flagships", "Mechanical parts", "Surface ship", "Submersible mechanical unit", "Wall-mounted mechanical unit", "Ground mechanical unit", "Biological unit", "Large biological units and flagships", "Biological parts", "Aquatic lifeform", "Non-underwater biological unit (unused)", "Submersible biological unit (unused)", "Floating biological unit", "Wall-mounted biological unit", "Ground biological unit (unused)", "Space/water biological unit", "Rocks and structures", "Ice", "Anomalous entity", "Anomalous entity parts"];
   const skillNames = new Map([
     [0, "HP"],
     [1, "回避率"],
@@ -25,12 +25,78 @@
     && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
   const unitsById = new Map(data.units.map((unit) => [unit.id, unit]));
   const weapons = new Map(data.weapons.map((weapon) => [weapon.id, weapon]));
+  // Only the parent rows that own UnitDataArray's DockingID link switch to
+  // the two-hex docked pattern. Linked child units keep their own one-hex pattern.
+  const dockingParentUnitIds = new Set([
+    "UNIT_ID.B_ARVANCHE",
+    "UNIT_ID.B_B1A",
+    "UNIT_ID.B_B1A2",
+    "UNIT_ID.B_B1A3",
+    "UNIT_ID.B_B1C",
+    "UNIT_ID.B_B1C2",
+    "UNIT_ID.B_B1C3",
+    "UNIT_ID.B_B1DA",
+    "UNIT_ID.B_B1DB",
+    "UNIT_ID.B_B1DC",
+    "UNIT_ID.B_B3A1",
+    "UNIT_ID.B_B3A2",
+    "UNIT_ID.B_B3C1",
+    "UNIT_ID.B_B3C2",
+    "UNIT_ID.B_CRAW_CRAW",
+    "UNIT_ID.B_MAD_FOREST",
+    "UNIT_ID.B_MAD_FOREST2",
+    "UNIT_ID.B_MAD_FOREST3",
+    "UNIT_ID.EX_FIGHTER_A",
+    "UNIT_ID.E_BXT",
+    "UNIT_ID.E_L_DANCER_A",
+    "UNIT_ID.E_L_DANCER_B",
+    "UNIT_ID.E_L_DANCER_D",
+    "UNIT_ID.E_R13A",
+    "UNIT_ID.E_R13A2",
+    "UNIT_ID.E_R90",
+    "UNIT_ID.E_R902",
+    "UNIT_ID.E_R9A",
+    "UNIT_ID.E_R9A2",
+    "UNIT_ID.E_R9A3",
+    "UNIT_ID.E_R9A4",
+    "UNIT_ID.E_R9AX",
+    "UNIT_ID.E_R9A_BLACK",
+    "UNIT_ID.E_R9A_GRN",
+    "UNIT_ID.E_R9A_NEW",
+    "UNIT_ID.E_R9A_NEW_G",
+    "UNIT_ID.E_R9A_RD",
+    "UNIT_ID.E_R9C",
+    "UNIT_ID.E_R9D",
+    "UNIT_ID.E_R9D2",
+    "UNIT_ID.E_R9DH",
+    "UNIT_ID.E_R9DH2",
+    "UNIT_ID.E_R9DH3",
+    "UNIT_ID.E_R9DH_SHARE",
+    "UNIT_ID.E_R9K",
+    "UNIT_ID.E_R9S",
+    "UNIT_ID.E_R9SK",
+    "UNIT_ID.E_R9SK2",
+    "UNIT_ID.E_R9W",
+    "UNIT_ID.E_R9WB",
+    "UNIT_ID.E_RX10",
+    "UNIT_ID.E_RX10_SHARE",
+    "UNIT_ID.E_RX12",
+  ]);
+  // These parents switch among 3/2/1 occupied-hex patterns as their two
+  // attached pods or Psybits are destroyed.
+  const breakablePartParentIds = new Set([
+    "UNIT_ID.E_OF01",
+    "UNIT_ID.E_OF03",
+    "UNIT_ID.E_OF05",
+    "UNIT_ID.E_R9LEO",
+  ]);
   // 表記ゆれ対策の検索用別名（「バメラ」でも引けるようにする）
   const unitSearchAliases = new Map([["UNIT_ID.B_BAMERA", "バメラ"]]);
   let visibleAttackers = data.units;
   let visibleTargets = data.units;
   let interceptContextKey = "";
   let lastAttackerId = "";
+  let lastTargetId = "";
   let calculatePending = false;
   let unitPickerRole = "attacker";
   let unitPickerFaction = "all";
@@ -75,6 +141,47 @@
       const weapon = weapons.get(id);
       return weapon?.selectableAttack && Boolean(weapon.charge);
     });
+  }
+
+  function unitIsDockingParent(unit) {
+    if (!unit || Math.max(1, Number(unit.occupiedHex) || 1) !== 1) return false;
+    return dockingParentUnitIds.has(unit.id);
+  }
+
+  function updateTargetHexControl(target, targetChanged) {
+    const select = $("targetScaleDenom");
+    const badge = $("targetHexBadge");
+    const previous = select.value;
+    const baseHexes = String(Math.max(1, Number(target?.occupiedHex) || 1));
+    const dockingParent = unitIsDockingParent(target);
+    const breakableParts = breakablePartParentIds.has(target?.id);
+    select.replaceChildren();
+    if (breakableParts) {
+      select.append(
+        option("3", L("3 HEX", "3 hexes")),
+        option("2", L("2 HEX", "2 hexes")),
+        option("1", L("1 HEX", "1 hex")),
+      );
+      select.disabled = false;
+      select.value = !targetChanged && ["1", "2", "3"].includes(previous) ? previous : "3";
+      badge.textContent = L("部品連動", "Parts");
+      badge.classList.add("is-variable");
+    } else if (dockingParent) {
+      select.append(
+        option("1", L("1 HEX（単独）", "1 hex (separate)")),
+        option("2", L("2 HEX（合体時）", "2 hexes (docked)")),
+      );
+      select.disabled = false;
+      select.value = !targetChanged && (previous === "1" || previous === "2") ? previous : baseHexes;
+      badge.textContent = L("合体可", "Dockable");
+      badge.classList.add("is-variable");
+    } else {
+      select.append(option(baseHexes, `${baseHexes} HEX`));
+      select.value = baseHexes;
+      select.disabled = true;
+      badge.textContent = L("固定", "Fixed");
+      badge.classList.remove("is-variable");
+    }
   }
 
   function isDecoyUnit(unit) {
@@ -188,7 +295,10 @@
 
   function unitPickerMeta(unit) {
     const formation = L(`${unit?.formationMax || 1}機編成`, `${unit?.formationMax || 1}-unit formation`);
-    return `${factionLabel(unitFaction(unit))} / ${categoryLabel(unitCategory(unit))} / HP ${unit?.hp || 0} / ${formation} / ${unit?.occupiedHex || 1} HEX`;
+    const evasion = Math.round((unit?.avoid || 0) * 100);
+    const typeIndex = Math.min(20, Math.max(0, Number(unit?.type) || 0));
+    const typeLabel = (i18n.language === "ja" ? typeNames : typeNamesEn)[typeIndex];
+    return `${factionLabel(unitFaction(unit))} / ${categoryLabel(unitCategory(unit))} / ${typeLabel} / HP ${unit?.hp || 0} / ${formation} / ${unit?.occupiedHex || 1} HEX / ${L(`回避率 ${evasion}%`, `Evasion ${evasion}%`)}`;
   }
 
   function updateSwapButton() {
@@ -535,13 +645,17 @@
     return Math.ceil((unit.hp || 0) * multiplier - .001);
   }
 
+  function tackleRecoilMultiplier(interceptWeapon) {
+    return Number(interceptWeapon?.rangeMin) > 1 ? .85 : 1.05;
+  }
+
   function tackleSelfDamageDetails(attackWeapon, attacker, intercept) {
     if (!attackWeapon?.tackle || !intercept.weapon || intercept.rate <= 0) {
       return { active: false, damage: 0, raw: 0, maxHp: unitMaxHp(attacker, Number($("rank").value)), currentHp: 0, remainingHp: 0, multiplier: 0, destroyed: false };
     }
     const maxHp = unitMaxHp(attacker, Number($("rank").value));
     const currentHp = maxHp * intercept.attackerHp;
-    const multiplier = .85;
+    const multiplier = tackleRecoilMultiplier(intercept.weapon);
     const raw = currentHp * intercept.rate * multiplier;
     const damage = Math.min(115, Math.max(25, raw));
     const remainingHp = Math.max(0, currentHp - damage);
@@ -636,7 +750,8 @@
     const formation = Math.min(1, Math.max(0, Number($("formationCurrent").value) / Math.max(1, Number($("formationMax").value))));
     const unitType = Number($("targetType").value);
     const terrainDefense = Number($("terrainDefense").value) / 100;
-    const effectiveDefense = weapon.material === 0 && unitType !== 5 && unitType !== 14 ? terrainDefense : 0;
+    const effectiveDefense = !weapon.akuukanBuster && weapon.material === 0
+      && unitType !== 5 && unitType !== 14 ? terrainDefense : 0;
     const interceptInfo = interceptDetails(weapon, attacker, target);
     const intercept = interceptInfo.rate;
     const tackleSelfDamage = tackleSelfDamageDetails(weapon, attacker, interceptInfo);
@@ -989,8 +1104,10 @@
   function updateTargetType() {
     const target = selectedUnit("target", visibleTargets);
     if (target) {
+      const targetChanged = target.id !== lastTargetId;
+      lastTargetId = target.id;
       $("targetType").value = String(Math.min(20, Math.max(0, target.type)));
-      $("targetScaleDenom").value = String(Math.max(1, target.occupiedHex || 1));
+      updateTargetHexControl(target, targetChanged);
       $("targetAvoid").value = String(Math.round((target.avoid || 0) * 100));
       $("targetSkill").value = skillName(target, "target");
     }

@@ -80,7 +80,29 @@ Weapons and units each have attributes. There are 8 weapon attributes and 5 unit
 | Ice | +10% | ±0 | −10% | ±0 | +30% | ±0 | ±0 | ±0 |
 | Other | ±0 | ±0 | ±0 | ±0 | ±0 | ±0 | ±0 | ±0 |
 
-"Other" is assigned to units such as GRID LOCK and AMBER PUPIL.
+#### Internal unit types
+
+The game internally defines 21 unit types corresponding to attribute affinities.
+
+| Simulator label | Representative units |
+| --- | --- |
+| Mechanical units and flagships | ARROW-HEAD, HEIMDALL, KOMBILER, BOLDO |
+| Mechanical parts | BRIDGE SECTION, FRAGARACH CANNON, KOMBILER LASER |
+| Surface ships | EGIR, RAHN, HIMINGLAVA |
+| Submersible mechanical units | FROGMAN, SEA TIGER, GRANVIA F/M |
+| Wall-mounted mechanical units | CORBETT DEFENSE TURRET / ANTI-AIR TURRET |
+| Ground mechanical units | ALL-PURPOSE TANK, PISTAPH, BERRY series |
+| Biological units | GAUPER, Bydo fighters, Forces |
+| Large biological units and flagships | NOZARI, DOBKERATOPS, BERMATE |
+| Biological parts | DOBKERATOPS parts, BERMATE BERYL LEAF, MOORA parts |
+| Aquatic lifeforms | LEIDI |
+| Floating biological units | GUSTERNET, GUSTERNET VARIANT, BARACCUS |
+| Wall-mounted biological units | NEWT |
+| Space/water biological units | BREAMS |
+| Rocks and structures | SKYSCRAPER, rock formations, SHIP'S WRECKAGE |
+| Ice | Ice floes, floating ice, ice pillars |
+| Anomalous entities | GRIDLOCK series, AMBER PUPIL, Xelf-24 |
+| Anomalous entity parts | GRIDLOCK EYE |
 
 ### 04 Terrain
 
@@ -108,8 +130,10 @@ Capture rounds are a special case with 0% interception. Interception is processe
 When a tackle or Force Shoot is intercepted, the target takes reduced damage and the attacker takes recoil damage.
 
 ```
-Recoil = Attacker current HP × Interception rate × 0.85 (minimum 25, maximum 115)
+Recoil = Attacker current HP × Interception rate × range factor (minimum 25, maximum 115)
 ```
+
+The range factor is **1.05** when the interception weapon's minimum range is 1, and **0.85** when it is 2 or greater.
 
 Tackles, Force Shoot, and similar attacks cause knockback. If terrain or a unit blocks the destination, they gain additional base damage of **+25**.
 
