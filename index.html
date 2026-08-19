@@ -362,10 +362,11 @@
           <a href="#knowledgeFlow" data-i18n="notes.nav.flow">01 戦闘フロー</a>
           <a href="#knowledgeAvoid" data-i18n="notes.nav.avoid">02 回避・命中</a>
           <a href="#knowledgeAffinity" data-i18n="notes.nav.affinity">03 属性相性</a>
-          <a href="#knowledgeTerrain" data-i18n="notes.nav.terrain">04 地形</a>
-          <a href="#knowledgeIntercept" data-i18n="notes.nav.intercept">05 迎撃</a>
-          <a href="#knowledgeSeize" data-i18n="notes.nav.seize">06 鹵獲</a>
-          <a href="#knowledgeSpecial" data-i18n="notes.nav.special">07 その他</a>
+          <a href="#knowledgeWeaponKinds" data-i18n="notes.nav.weaponKinds">04 攻撃武器の種類</a>
+          <a href="#knowledgeTerrain" data-i18n="notes.nav.terrain">05 地形</a>
+          <a href="#knowledgeIntercept" data-i18n="notes.nav.intercept">06 迎撃</a>
+          <a href="#knowledgeSeize" data-i18n="notes.nav.seize">07 鹵獲</a>
+          <a href="#knowledgeSpecial" data-i18n="notes.nav.special">08 その他</a>
         </nav>
         <article class="knowledge-content">
           <section id="knowledgeFlow">
@@ -534,8 +535,93 @@
             </div>
           </section>
 
-          <section id="knowledgeTerrain">
+          <section id="knowledgeWeaponKinds">
             <div class="knowledge-section-title"><b>04</b>
+              <h3 data-i18n="notes.weaponKinds.title">攻撃武器の種類</h3>
+            </div>
+            <p data-i18n="notes.weaponKinds.intro">
+              武器には、表示上の分類・攻撃方式・ダメージ属性という3つの独立した設定があります。
+            </p>
+            <div class="knowledge-cards three">
+              <div><b>Type</b><strong data-i18n="notes.weaponKinds.typeCard">表示上の分類</strong><span
+                  data-i18n="notes.weaponKinds.typeCardDesc">機銃・直進光学・誘導ミサイルなど</span></div>
+              <div><b>Motion</b><strong data-i18n="notes.weaponKinds.motionCard">攻撃方式</strong><span
+                  data-i18n="notes.weaponKinds.motionCardDesc">直線・曲射・範囲・体当たりなど</span></div>
+              <div><b>Material</b><strong data-i18n="notes.weaponKinds.materialCard">ダメージ属性</strong><span
+                  data-i18n="notes.weaponKinds.materialCardDesc">光学・機械・生体・粒子など</span></div>
+            </div>
+
+            <h4 class="knowledge-subtitle" data-i18n="notes.weaponKinds.typeTitle">Type — ゲーム画面の武器分類</h4>
+            <p data-i18n="notes.weaponKinds.typeIntro">
+              Typeは武器画面の表示と効果音の選択に使われる分類です。属性相性の倍率を直接決める値ではなく、MotionやMaterialとは別に設定されています。
+            </p>
+            <div class="table-scroll">
+              <table class="unit-type-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="notes.weaponKinds.classification">分類</th>
+                    <th data-i18n="notes.weaponKinds.examples">主な武器</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td data-i18n="notes.weaponKinds.type0">機銃</td><td data-i18n="notes.weaponKinds.typeExamples0">バルカン、高射機関砲、バイド粒子弾</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type1">直進光学兵器</td><td data-i18n="notes.weaponKinds.typeExamples1">対空レーザー、ショットガンレーザー、XPSレーザー</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type2">偏向光学兵器</td><td data-i18n="notes.weaponKinds.typeExamples2">反射レーザー、サーチレーザー、追尾ビーム</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type3">直進ミサイル</td><td data-i18n="notes.weaponKinds.typeExamples3">爆雷、バイド汚染物質</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type4">誘導ミサイル</td><td data-i18n="notes.weaponKinds.typeExamples4">追尾ミサイル、大型誘導ミサイル、目玉追尾ミサイル</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type5">光学白兵戦兵器</td><td data-i18n="notes.weaponKinds.typeExamples5">ビームソード、ビームラッシュ、ゲインズクロー</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type6">体当たり</td><td data-i18n="notes.weaponKinds.typeExamples6">体当たり、フォースシュート、ファインアタック</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type7">バイド体液</td><td data-i18n="notes.weaponKinds.typeExamples7">バイド体液、高濃度バイド体液</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type8">貫通光学兵器</td><td data-i18n="notes.weaponKinds.typeExamples8">主砲、千式対空レーザー、強化対地レーザー</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type9">粒子兵器</td><td data-i18n="notes.weaponKinds.typeExamples9">波動砲、陽電子砲、屈折式掘削レーザー</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type10">高熱兵器</td><td data-i18n="notes.weaponKinds.typeExamples10">業火、プラズマフレイム、灼熱波動砲</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type11">物理攻撃</td><td data-i18n="notes.weaponKinds.typeExamples11">アイビーロッド、パイルバンカー、ポッドシュート</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type12">思念攻撃</td><td data-i18n="notes.weaponKinds.typeExamples12">思念波、衝撃波、サイビットシュート</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type13">化学攻撃</td><td data-i18n="notes.weaponKinds.typeExamples13">アシッドスプレイ、セクシー波動砲、バイドスプレイ</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.type14">時空波</td><td data-i18n="notes.weaponKinds.typeExamples14">亜空間バスター、亜空間ソナー、重力フィールド</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 class="knowledge-subtitle" data-i18n="notes.weaponKinds.motionTitle">Motion — 攻撃経路と対象指定</h4>
+            <p data-i18n="notes.weaponKinds.motionIntro">
+              Motionは射線・攻撃範囲・回避判定をバイパスするかを決めます。
+            </p>
+            <div class="table-scroll">
+              <table class="unit-type-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="notes.weaponKinds.motionMode">攻撃方式</th>
+                    <th data-i18n="notes.weaponKinds.behavior">挙動と代表例</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td data-i18n="notes.weaponKinds.motionStraight">直線</td><td data-i18n="notes.weaponKinds.motionStraightDesc">バルカンや対空レーザー。条件を満たすと部分遮蔽の対象になります。</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.motionCurve">曲射・誘導</td><td data-i18n="notes.weaponKinds.motionCurveDesc">反射レーザーや誘導ミサイル。直線射撃用の部分遮蔽処理には入りません。</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.motionMap">マップ範囲</td><td data-i18n="notes.weaponKinds.motionMapDesc">波動砲、デコイ爆破、機雷爆破など。通常の回避計算をバイパスします。</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.motionTackle">体当たり</td><td data-i18n="notes.weaponKinds.motionTackleDesc">体当たりやフォースシュート。ノックバック、衝突加算、反動処理につながります。</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.motionRangeMap">射程指定範囲</td><td data-i18n="notes.weaponKinds.motionRangeMapDesc">亜空間バスターII。着弾点を通常射程で指定し、周囲へ範囲効果を発生させます。</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.motionDivide">分裂</td><td data-i18n="notes.weaponKinds.motionDivideDesc">分裂波動砲。着弾後に攻撃範囲を分裂させ、通常の回避計算をバイパスします。</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.motionSelect">進路選択</td><td data-i18n="notes.weaponKinds.motionSelectDesc">誘導式波動砲。進路を選択する特殊攻撃で、通常の回避計算をバイパスします。</td></tr>
+                  <tr><td data-i18n="notes.weaponKinds.motionParts">全部位連動</td><td data-i18n="notes.weaponKinds.motionPartsDesc">屈折式掘削レーザー。本体と各ビットを親・子として連動させる特殊処理です。</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 class="knowledge-subtitle" data-i18n="notes.weaponKinds.materialTitle">Material — ダメージ属性</h4>
+            <p data-i18n="notes.weaponKinds.materialIntro">
+              Materialは光学・機械・生体・粒子・火炎・精神・氷・酸の8属性です。対象ユニットとの属性相性、光学攻撃に対する地形防御、迎撃可否に使われます。具体的な倍率は「03 属性相性」を参照してください。
+            </p>
+            <h4 class="knowledge-subtitle" data-i18n="notes.weaponKinds.exampleTitle">例 — アロー・ヘッドの武器</h4>
+            <ul class="knowledge-list">
+              <li data-i18n-html="notes.weaponKinds.exampleWave"><b>スタンダード波動砲:</b> 粒子兵器 / マップ範囲 / 粒子属性</li>
+              <li data-i18n-html="notes.weaponKinds.exampleAntiAir"><b>対空レーザー:</b> 直進光学兵器 / 直線 / 光学属性</li>
+              <li data-i18n-html="notes.weaponKinds.exampleReflect"><b>反射レーザー:</b> 偏向光学兵器 / 曲射・誘導 / 光学属性</li>
+            </ul>
+          </section>
+
+          <section id="knowledgeTerrain">
+            <div class="knowledge-section-title"><b>05</b>
               <h3 data-i18n="notes.terrain.title">地形</h3>
             </div>
             <ul class="knowledge-list">
@@ -546,7 +632,7 @@
           </section>
 
           <section id="knowledgeIntercept">
-            <div class="knowledge-section-title"><b>05</b>
+            <div class="knowledge-section-title"><b>06</b>
               <h3 data-i18n="notes.intercept.title">迎撃</h3>
             </div>
             <p data-i18n="notes.intercept.intro">機械・生体・氷属性の攻撃に対して、対象が持つ迎撃武器が候補になります。</p>
@@ -580,7 +666,7 @@
           </section>
 
           <section id="knowledgeSeize">
-            <div class="knowledge-section-title"><b>06</b>
+            <div class="knowledge-section-title"><b>07</b>
               <h3 data-i18n="notes.seize.title">鹵獲</h3>
             </div>
             <p data-i18n="notes.seize.intro">鹵獲弾は通常の武器命中・対象回避計算とは別の専用判定を使います。</p>
@@ -600,7 +686,7 @@
           </section>
 
           <section id="knowledgeSpecial">
-            <div class="knowledge-section-title"><b>07</b>
+            <div class="knowledge-section-title"><b>08</b>
               <h3 data-i18n="notes.special.title">その他</h3>
             </div>
             <p data-i18n-html="notes.flow.battleModifier"><b>戦闘アニメーションの補正矢印アイコン:</b>

@@ -9,6 +9,8 @@
   const rankBonus = [1, 1.01, 1.03, 1.06, 1.10, 1.18];
   const materialNames = ["光学", "機械", "生体", "粒子", "火炎", "精神", "氷", "酸"];
   const materialNamesEn = ["Optical", "Mechanical", "Biological", "Particle", "Flame", "Mental", "Ice", "Acid"];
+  const weaponTypeNames = ["機銃", "直進光学兵器", "偏向光学兵器", "直進ミサイル", "誘導ミサイル", "光学白兵戦兵器", "体当たり", "バイド体液", "貫通光学兵器", "粒子兵器", "高熱兵器", "物理攻撃", "思念攻撃", "化学攻撃", "時空波"];
+  const weaponTypeNamesEn = ["Machine Gun", "Linear Optical Weapon", "Vector Optical Weapon", "Linear Missile", "Guided Missile", "Optical Melee Weapon", "Ram", "Bydo Fluid", "Piercing Optical Weapon", "Particle Weapon", "Fire Attack", "Physical Attack", "Psionic Attack", "Chemical Attack", "Spacetime Wave"];
   const typeNames = ["機械(未使用)", "機械ユニット・機械旗艦", "機械系パーツ類", "水上艦", "潜水機械ユニット", "壁面機械ユニット", "地上機械ユニット", "生体ユニット", "生体大型ユニット・生体旗艦", "生体系パーツ類", "水棲生物", "非水中生体（未使用）", "潜水生体（未使用）", "浮遊生体類", "壁面生体ユニット", "地上生体ユニット（未使用）", "宇宙・水中両用生体", "岩石・構造物", "氷", "異質存在", "異質存在のパーツ類"];
   const typeNamesEn = ["Mechanical (unused)", "Mechanical units and flagships", "Mechanical parts", "Surface ship", "Submersible mechanical unit", "Wall-mounted mechanical unit", "Ground mechanical unit", "Biological unit", "Large biological units and flagships", "Biological parts", "Aquatic lifeform", "Non-underwater biological unit (unused)", "Submersible biological unit (unused)", "Floating biological unit", "Wall-mounted biological unit", "Ground biological unit (unused)", "Space/water biological unit", "Rocks and structures", "Ice", "Anomalous entity", "Anomalous entity parts"];
   const skillNames = new Map([
@@ -21,6 +23,7 @@
   ]);
   const skillNamesEn = new Map([[0, "HP"], [1, "Evasion"], [2, "Fuel (not simulated)"], [3, "Attack power"], [4, "Accuracy"], [255, "None"]]);
   const materialName = (index) => (i18n.language === "ja" ? materialNames : materialNamesEn)[index] || L("不明", "Unknown");
+  const weaponTypeName = (index) => (i18n.language === "ja" ? weaponTypeNames : weaponTypeNamesEn)[Number(index)] || L("分類不明", "Unknown class");
   const bypassesEvasion = (weapon) => Boolean(weapon
     && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
   const unitsById = new Map(data.units.map((unit) => [unit.id, unit]));
@@ -454,7 +457,7 @@
     const previous = $("weapon").value;
     const list = unitWeaponIds(attacker).map((id) => weapons.get(id)).filter(isSelectableAttackWeapon);
     $("weapon").replaceChildren();
-    for (const weapon of list) $("weapon").append(option(weapon.id, `${displayName(weapon)}  [${L("威力", "Power")} ${weapon.ap}]`));
+    for (const weapon of list) $("weapon").append(option(weapon.id, `${displayName(weapon)}  [${weaponTypeName(weapon.type)} / ${L("威力", "Power")} ${weapon.ap}]`));
     if (list.some((weapon) => weapon.id === previous)) $("weapon").value = previous;
     updateWeaponMeta();
   }
@@ -480,7 +483,7 @@
     const guaranteedLabel = guaranteed ? L(" / 必中（回避計算をバイパス）", " / Guaranteed hit (evasion calculation bypassed)") : "";
     const interceptable = incomingInterceptable(weapon) ? L(" / 迎撃対象", " / Interceptable") : L(" / 迎撃対象外", " / Not interceptable");
     const counterable = weapon.counter && !weapon.charge ? L(" / 反撃可能", " / Counterattack capable") : "";
-    $("weaponMeta").textContent = `${materialName(weapon.material)} / ${L("命中値", "Accuracy")} ${(weapon.hit * 100).toFixed(0)}% / ${range}${charge}${guaranteedLabel}${weapon.tackle ? L(" / ノックバック", " / Knockback") : ""}${interceptable}${counterable}`;
+    $("weaponMeta").textContent = `${weaponTypeName(weapon.type)} / ${materialName(weapon.material)} / ${L("命中値", "Accuracy")} ${(weapon.hit * 100).toFixed(0)}% / ${range}${charge}${guaranteedLabel}${weapon.tackle ? L(" / ノックバック", " / Knockback") : ""}${interceptable}${counterable}`;
     updateInterceptWeapons();
   }
 
@@ -705,7 +708,7 @@
         const rangeRule = relaxed
           ? `${L("距離制限", "Range limit")} ${L("なし", "None")}`
           : `${L("共通", "Shared")} ${formatHexRange(sharedInterceptRange(attackWeapon, candidate))}`;
-        select.append(option(candidate.id, `${displayName(candidate)}  [${L("威力", "Power")} ${candidate.ap} / ${L("命中", "Accuracy")} ${(candidate.hit * 100).toFixed(0)}% / ${L("弾数", "Ammo")} ${candidate.bulletNum} / ${L("射程", "Range")} ${range} / ${rangeRule}]`));
+        select.append(option(candidate.id, `${displayName(candidate)}  [${weaponTypeName(candidate.type)} / ${L("威力", "Power")} ${candidate.ap} / ${L("命中", "Accuracy")} ${(candidate.hit * 100).toFixed(0)}% / ${L("弾数", "Ammo")} ${candidate.bulletNum} / ${L("射程", "Range")} ${range} / ${rangeRule}]`));
       }
       const keepPrevious = contextKey === interceptContextKey
         && (previous === "" || candidates.some((weapon) => weapon.id === previous));
