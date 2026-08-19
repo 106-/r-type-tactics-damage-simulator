@@ -22,6 +22,7 @@
   const en = {
     "hero.languageLabel": "Display language",
     "hero.subtitle": "Combat Simulator",
+    "hero.weaponDatabaseButton": "Weapon Database",
     "hero.notesButton": "Damage System Details",
     "hero.rngButton": "RNG State Predictor",
     "app.disclaimer": "This is an unofficial tool based on reverse engineering. Results may differ from the actual game.",
@@ -122,6 +123,19 @@
     "unitPicker.single": "Single unit / object",
     "unitPicker.selectHint": "Selecting a candidate applies it immediately",
     "unitPicker.empty": "No units match these filters.",
+
+    "weaponDatabase.title": "Weapon Database",
+    "weaponDatabase.search": "Search weapons",
+    "weaponDatabase.searchPlaceholder": "Weapon name or internal ID",
+    "weaponDatabase.sortHint": "Select a column heading to sort",
+    "weaponDatabase.name": "Weapon",
+    "weaponDatabase.power": "Power",
+    "weaponDatabase.accuracy": "Accuracy",
+    "weaponDatabase.range": "Range",
+    "weaponDatabase.ammo": "Ammo",
+    "weaponDatabase.charge": "Charge",
+    "weaponDatabase.usage": "Usage",
+    "weaponDatabase.empty": "No weapons match these filters.",
 
     "attacker.title": "Attacker",
     "attacker.searchExample": "e.g. ARROW-HEAD",

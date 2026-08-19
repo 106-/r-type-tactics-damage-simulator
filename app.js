@@ -11,6 +11,8 @@
   const materialNamesEn = ["Optical", "Mechanical", "Biological", "Particle", "Flame", "Mental", "Ice", "Acid"];
   const weaponTypeNames = ["機銃", "直進光学兵器", "偏向光学兵器", "直進ミサイル", "誘導ミサイル", "光学白兵戦兵器", "体当たり", "バイド体液", "貫通光学兵器", "粒子兵器", "高熱兵器", "物理攻撃", "思念攻撃", "化学攻撃", "時空波"];
   const weaponTypeNamesEn = ["Machine Gun", "Linear Optical Weapon", "Vector Optical Weapon", "Linear Missile", "Guided Missile", "Optical Melee Weapon", "Ram", "Bydo Fluid", "Piercing Optical Weapon", "Particle Weapon", "Fire Attack", "Physical Attack", "Psionic Attack", "Chemical Attack", "Spacetime Wave"];
+  const motionNames = ["直線", "曲射・誘導", "マップ範囲", "体当たり", "射程指定範囲", "分裂", "進路選択", "全部位連動（親）", "全部位連動（子）"];
+  const motionNamesEn = ["Straight", "Curved / guided", "Map area", "Tackle", "Ranged area", "Divide", "Path selection", "Linked parts (parent)", "Linked parts (child)"];
   const typeNames = ["機械(未使用)", "機械ユニット・機械旗艦", "機械系パーツ類", "水上艦", "潜水機械ユニット", "壁面機械ユニット", "地上機械ユニット", "生体ユニット", "生体大型ユニット・生体旗艦", "生体系パーツ類", "水棲生物", "非水中生体（未使用）", "潜水生体（未使用）", "浮遊生体類", "壁面生体ユニット", "地上生体ユニット（未使用）", "宇宙・水中両用生体", "岩石・構造物", "氷", "異質存在", "異質存在のパーツ類"];
   const typeNamesEn = ["Mechanical (unused)", "Mechanical units and flagships", "Mechanical parts", "Surface ship", "Submersible mechanical unit", "Wall-mounted mechanical unit", "Ground mechanical unit", "Biological unit", "Large biological units and flagships", "Biological parts", "Aquatic lifeform", "Non-underwater biological unit (unused)", "Submersible biological unit (unused)", "Floating biological unit", "Wall-mounted biological unit", "Ground biological unit (unused)", "Space/water biological unit", "Rocks and structures", "Ice", "Anomalous entity", "Anomalous entity parts"];
   const skillNames = new Map([
@@ -24,6 +26,7 @@
   const skillNamesEn = new Map([[0, "HP"], [1, "Evasion"], [2, "Fuel (not simulated)"], [3, "Attack power"], [4, "Accuracy"], [255, "None"]]);
   const materialName = (index) => (i18n.language === "ja" ? materialNames : materialNamesEn)[index] || L("不明", "Unknown");
   const weaponTypeName = (index) => (i18n.language === "ja" ? weaponTypeNames : weaponTypeNamesEn)[Number(index)] || L("分類不明", "Unknown class");
+  const motionName = (index) => (i18n.language === "ja" ? motionNames : motionNamesEn)[Number(index)] || L("動作不明", "Unknown motion");
   const bypassesEvasion = (weapon) => Boolean(weapon
     && (weapon.akuukanBuster || weapon.motion === 2 || (weapon.motion >= 4 && weapon.motion <= 8)));
   const unitsById = new Map(data.units.map((unit) => [unit.id, unit]));
@@ -105,6 +108,8 @@
   let unitPickerFaction = "all";
   let unitPickerCategory = "all";
   let unitPickerPlayability = "all";
+  let weaponDatabaseSortKey = "ap";
+  let weaponDatabaseSortDirection = -1;
 
   // 1操作で複数の更新経路からcalculateが呼ばれるため、1フレームに1回へまとめる
   function scheduleCalculate() {
@@ -122,6 +127,157 @@
 
   function closeKnowledge() {
     $("knowledgeDialog").close();
+  }
+
+  function weaponRangeText(weapon) {
+    const min = Number(weapon.rangeMin);
+    const max = Number(weapon.rangeMax);
+    if (!Number.isFinite(min) || !Number.isFinite(max) || min < 0 || max < 0) return "—";
+    return min === max ? String(min) : `${min}–${max}`;
+  }
+
+  function weaponPowerText(value) {
+    const number = Number(value) || 0;
+    return Number.isInteger(number) ? String(number) : String(Number(number.toFixed(2)));
+  }
+
+  function fillWeaponDatabaseFilters() {
+    const controls = [
+      [$("weaponDatabaseType"), weaponTypeNames.length, weaponTypeName],
+      [$("weaponDatabaseMotion"), motionNames.length, motionName],
+      [$("weaponDatabaseMaterial"), materialNames.length, materialName],
+    ];
+    controls.forEach(([select, count, labelFor]) => {
+      const previous = select.value || "all";
+      select.replaceChildren(option("all", L("すべて", "All")));
+      for (let index = 0; index < count; index++) select.append(option(String(index), labelFor(index)));
+      select.value = [...select.options].some((item) => item.value === previous) ? previous : "all";
+    });
+    updateWeaponDatabaseFilterSummary();
+  }
+
+  function updateWeaponDatabaseFilterSummary() {
+    const activeLabels = [
+      [$("weaponDatabaseType").value, weaponTypeName],
+      [$("weaponDatabaseMotion").value, motionName],
+      [$("weaponDatabaseMaterial").value, materialName],
+    ].filter(([value]) => value !== "all")
+      .map(([value, labelFor]) => labelFor(Number(value)));
+    $("weaponFilterSummary").textContent = activeLabels.length ? activeLabels.join(" / ") : L("すべて", "All");
+  }
+
+  function weaponDatabaseSortValue(weapon, key) {
+    if (key === "name") return displayName(weapon) || "";
+    if (key === "range") return Number.isFinite(Number(weapon.rangeMin)) ? Number(weapon.rangeMin) * 100 + Number(weapon.rangeMax) : -1;
+    if (key === "ammo") return Number(weapon.bulletNum) || 0;
+    if (key === "charge") return Number(weapon.charge) || 0;
+    return Number(weapon[key]) || 0;
+  }
+
+  function appendWeaponUsage(cell, weapon) {
+    const wrapper = document.createElement("span");
+    wrapper.className = "weapon-database-usage";
+    const usages = [
+      [weapon.attack, L("攻", "A"), L("攻撃", "Attack")],
+      [weapon.counter, L("反", "C"), L("反撃", "Counter")],
+      [weapon.canIntercept, L("迎", "I"), L("迎撃", "Intercept")],
+    ];
+    usages.forEach(([enabled, label, title]) => {
+      if (!enabled) return;
+      const badge = document.createElement("span");
+      badge.textContent = label;
+      badge.title = title;
+      wrapper.append(badge);
+    });
+    if (!wrapper.childElementCount) wrapper.textContent = "—";
+    cell.append(wrapper);
+  }
+
+  function renderWeaponDatabase() {
+    const needle = i18n.searchKey($("weaponDatabaseSearch").value.trim());
+    const typeFilter = $("weaponDatabaseType").value;
+    const motionFilter = $("weaponDatabaseMotion").value;
+    const materialFilter = $("weaponDatabaseMaterial").value;
+    const rows = data.weapons.filter((weapon) => {
+      if (typeFilter !== "all" && Number(typeFilter) !== Number(weapon.type)) return false;
+      if (motionFilter !== "all" && Number(motionFilter) !== Number(weapon.motion)) return false;
+      if (materialFilter !== "all" && Number(materialFilter) !== Number(weapon.material)) return false;
+      if (!needle) return true;
+      const haystack = i18n.searchKey([
+        displayName(weapon), weapon.nameJa, weapon.nameEn, weapon.id,
+        weaponTypeName(weapon.type), motionName(weapon.motion), materialName(weapon.material),
+      ].join(" "));
+      return haystack.includes(needle);
+    });
+    rows.sort((left, right) => {
+      const a = weaponDatabaseSortValue(left, weaponDatabaseSortKey);
+      const b = weaponDatabaseSortValue(right, weaponDatabaseSortKey);
+      const compared = typeof a === "string"
+        ? a.localeCompare(b, i18n.language, { numeric: true, sensitivity: "base" })
+        : a - b;
+      return compared * weaponDatabaseSortDirection
+        || String(left.id).localeCompare(String(right.id));
+    });
+
+    const body = $("weaponDatabaseBody");
+    const fragment = document.createDocumentFragment();
+    rows.forEach((weapon) => {
+      const row = document.createElement("tr");
+      const nameCell = document.createElement("td");
+      nameCell.className = "weapon-database-name";
+      const name = document.createElement("strong");
+      name.textContent = displayName(weapon);
+      const id = document.createElement("small");
+      id.textContent = weapon.id;
+      nameCell.append(name, id);
+      row.append(nameCell);
+
+      [weaponTypeName(weapon.type), motionName(weapon.motion), materialName(weapon.material)].forEach((value) => {
+        const cell = document.createElement("td");
+        cell.textContent = value;
+        row.append(cell);
+      });
+      const numericValues = [
+        [weaponPowerText(weapon.ap), "numeric value-power"],
+        [`${Math.round((Number(weapon.hit) || 0) * 100)}%`, "numeric value-number"],
+        [weaponRangeText(weapon), "numeric value-number"],
+        [String(Number(weapon.bulletNum) || 0), "numeric value-number"],
+        [Number(weapon.charge) > 0 ? String(weapon.charge) : "—", "numeric value-number"],
+      ];
+      numericValues.forEach(([value, className]) => {
+        const cell = document.createElement("td");
+        cell.className = className;
+        cell.textContent = value;
+        row.append(cell);
+      });
+      const usageCell = document.createElement("td");
+      appendWeaponUsage(usageCell, weapon);
+      row.append(usageCell);
+      fragment.append(row);
+    });
+    body.replaceChildren(fragment);
+    $("weaponDatabaseCount").textContent = L(`${rows.length}件 / 全${data.weapons.length}件`, `${rows.length} of ${data.weapons.length} weapons`);
+    $("weaponDatabaseEmpty").hidden = rows.length > 0;
+    $("weaponDatabaseTableWrap").hidden = rows.length === 0;
+    document.querySelectorAll("[data-weapon-sort]").forEach((button) => {
+      if (button.dataset.weaponSort === weaponDatabaseSortKey) {
+        button.setAttribute("aria-sort", weaponDatabaseSortDirection > 0 ? "ascending" : "descending");
+      } else {
+        button.removeAttribute("aria-sort");
+      }
+    });
+  }
+
+  function openWeaponDatabase() {
+    $("weaponFilterToggle").setAttribute("aria-expanded", "false");
+    updateWeaponDatabaseFilterSummary();
+    renderWeaponDatabase();
+    $("weaponDatabaseDialog").showModal();
+    requestAnimationFrame(() => $("weaponDatabaseSearch").focus());
+  }
+
+  function closeWeaponDatabase() {
+    $("weaponDatabaseDialog").close();
   }
 
   function option(value, text) {
@@ -1135,6 +1291,7 @@
     i18n.setLanguage(next);
     $("languageSelect").value = i18n.language;
     fillTargetTypeNames();
+    fillWeaponDatabaseFilters();
     visibleAttackers = filteredUnits("", true);
     visibleTargets = filteredUnits("", false);
     fillUnitSelect($("attacker"), visibleAttackers, attackerId);
@@ -1151,12 +1308,15 @@
       updateUnitPickerFilterButtons();
       renderUnitPicker();
     }
+    if ($("weaponDatabaseDialog").open) renderWeaponDatabase();
     calculate();
   }
 
   $("languageSelect").value = i18n.language;
   fillTargetTypeNames();
+  fillWeaponDatabaseFilters();
   $("unitPickerSearch").value = ""; // ブラウザのフォーム復元対策（再読込時は検索条件を持ち越さない）
+  $("weaponDatabaseSearch").value = "";
   visibleAttackers = filteredUnits("", true);
   fillUnitSelect($("attacker"), visibleAttackers, "UNIT_ID.E_R9A");
   fillUnitSelect($("target"), visibleTargets, "UNIT_ID.B_B1DA");
@@ -1218,6 +1378,34 @@
     $("targetSkill").value = skillName(selectedUnit("target", visibleTargets), "target");
   });
   $("relaxInterceptRange").addEventListener("change", updateInterceptWeapons);
+  $("weaponDatabaseOpen").addEventListener("click", openWeaponDatabase);
+  $("weaponDatabaseClose").addEventListener("click", closeWeaponDatabase);
+  $("weaponDatabaseDialog").addEventListener("click", (event) => {
+    if (event.target === $("weaponDatabaseDialog")) closeWeaponDatabase();
+  });
+  $("weaponDatabaseSearch").addEventListener("input", renderWeaponDatabase);
+  $("weaponFilterToggle").addEventListener("click", () => {
+    const expanded = $("weaponFilterToggle").getAttribute("aria-expanded") === "true";
+    $("weaponFilterToggle").setAttribute("aria-expanded", String(!expanded));
+  });
+  ["weaponDatabaseType", "weaponDatabaseMotion", "weaponDatabaseMaterial"].forEach((id) => {
+    $(id).addEventListener("change", () => {
+      updateWeaponDatabaseFilterSummary();
+      renderWeaponDatabase();
+    });
+  });
+  document.querySelectorAll("[data-weapon-sort]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.weaponSort;
+      if (key === weaponDatabaseSortKey) {
+        weaponDatabaseSortDirection *= -1;
+      } else {
+        weaponDatabaseSortKey = key;
+        weaponDatabaseSortDirection = key === "name" || key === "type" || key === "motion" || key === "material" ? 1 : -1;
+      }
+      renderWeaponDatabase();
+    });
+  });
   $("knowledgeOpen").addEventListener("click", openKnowledge);
   $("knowledgeClose").addEventListener("click", closeKnowledge);
   $("knowledgeDialog").addEventListener("click", (event) => {
@@ -1225,7 +1413,7 @@
   });
   $("languageSelect").addEventListener("change", (event) => changeLanguage(event.target.value));
 
-  document.querySelectorAll("input:not(#unitPickerSearch), select").forEach((element) => {
+  document.querySelectorAll("input:not(#unitPickerSearch):not(#weaponDatabaseSearch), select:not(#weaponDatabaseType):not(#weaponDatabaseMotion):not(#weaponDatabaseMaterial)").forEach((element) => {
     element.addEventListener("input", scheduleCalculate);
     element.addEventListener("change", scheduleCalculate);
   });
